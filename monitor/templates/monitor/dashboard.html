@@ -1,0 +1,519 @@
+{% extends "monitor/base.html" %}
+{% block title %}PPPoE Monitor{% endblock %}
+{% block page_title %}Network Overview{% endblock %}
+{% block content %}
+
+<div class="space-y-5">
+
+<div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+<div>
+<h1 class="text-2xl font-bold text-gray-900">PPPoE Network Monitoring</h1>
+<p class="mt-1 text-sm text-gray-500">Real-time monitoring of Access Concentrators</p>
+</div>
+<div class="flex w-full flex-col gap-2 sm:flex-row lg:w-auto">
+
+    <a
+        href="{% url 'raw_logs' %}"
+        class="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900"
+    >
+        📄 Raw Logs
+    </a>
+
+    <form method="get" class="flex w-full sm:w-auto">
+
+        <input
+            type="text"
+            name="q"
+            value="{{ query }}"
+            placeholder="Search username, MAC or IP..."
+            class="w-full sm:w-80 rounded-l-lg border border-gray-300 bg-white px-4 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+        >
+
+        <button
+            type="submit"
+            class="rounded-r-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700"
+        >
+            Search
+        </button>
+
+    </form>
+
+</div>
+</div>
+
+<!-- TOTAL + ACCESS CONCENTRATORS -->
+
+<div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
+
+<div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs font-medium text-gray-500">Total Active PPPoE Users</p>
+<p id="total-active-users" class="mt-1 text-3xl font-bold text-gray-900">{{ total_active_users }}</p>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-lg">👥</div>
+</div>
+<div class="mt-2 flex items-center gap-2 text-xs">
+<span class="h-2 w-2 rounded-full bg-green-500"></span>
+<span class="text-gray-500">Monitoring active</span>
+</div>
+</div>
+
+{% for item in ac_data %}
+<div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm transition hover:shadow-md">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-base font-semibold text-gray-900">{{ item.ac.name }}</p>
+<p class="text-[11px] text-gray-500">{{ item.ac.ip_address }}</p>
+</div>
+<div class="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1 text-[10px] font-medium text-green-700">
+<span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+Enabled
+</div>
+</div>
+<div class="mt-3">
+<p id="ac-count-{{ item.ac.id }}" class="text-2xl font-bold text-gray-900">{{ item.active_users }}</p>
+<p class="text-[11px] text-gray-500">Active PPPoE users</p>
+</div>
+</div>
+{% endfor %}
+
+</div>
+
+<!-- REALTIME LOGS -->
+
+<div>
+
+<div class="mb-2">
+<h2 class="text-lg font-semibold text-gray-900">Realtime AC Logs</h2>
+<p class="text-xs text-gray-500">Latest PPPoE events from all Access Concentrators</p>
+</div>
+
+<div class="grid grid-cols-1 gap-3 xl:grid-cols-3">
+
+{% for item in ac_data %}
+
+<div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+
+<div class="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-4 py-2.5">
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-green-500"></span>
+<span class="font-semibold text-sm text-gray-900">{{ item.ac.name }}</span>
+</div>
+<span id="panel-count-{{ item.ac.id }}" class="text-[11px] text-gray-500">{{ item.active_users }} users</span>
+</div>
+
+<div id="logs-{{ item.ac.id }}" class="max-h-80 overflow-y-auto">
+
+{% for event in recent_events %}
+{% if event.ac.id == item.ac.id %}
+
+<div class="border-b border-gray-100 px-4 py-2.5 hover:bg-gray-50">
+<div class="flex items-start justify-between gap-3">
+
+<div class="min-w-0">
+<p class="truncate text-sm font-medium text-gray-900">{{ event.username|default:"UNKNOWN" }}</p>
+<p class="mt-0.5 truncate text-[11px] text-gray-500">{{ event.mac_address|default:"No MAC" }}</p>
+</div>
+
+<div class="shrink-0 text-right">
+
+{% if event.event_type == "LOGIN" %}
+<span class="rounded-full bg-green-50 px-2 py-0.5 text-[10px] font-medium text-green-700">LOGIN</span>
+{% elif event.event_type == "LOGOUT" %}
+<span class="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700">LOGOUT</span>
+{% elif event.event_type == "AUTH_FAILURE" %}
+<span class="rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-medium text-orange-700">AUTH FAIL</span>
+{% elif event.event_type == "CONNECTION" %}
+<span class="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-medium text-blue-700">CONNECTION</span>
+{% else %}
+<span class="rounded-full bg-gray-100 px-2 py-0.5 text-[10px] font-medium text-gray-600">{{ event.event_type }}</span>
+{% endif %}
+
+<p class="mt-1 whitespace-nowrap text-[10px] text-gray-400">{{ event.timestamp|date:"M d, Y h:i:s A" }}</p>
+
+</div>
+</div>
+</div>
+
+{% endif %}
+{% empty %}
+
+<div class="px-4 py-6 text-center">
+<p class="text-sm text-gray-400">No logs available</p>
+</div>
+
+{% endfor %}
+
+</div>
+</div>
+
+{% endfor %}
+
+</div>
+</div>
+
+</div>
+
+{% include "monitor/client_modal.html" %}
+<!-- REALTIME WEBSOCKET -->
+
+<script>
+const socket = new WebSocket("ws://" + window.location.host + "/ws/monitor/");
+
+socket.onopen = () => {
+    console.log("WEBSOCKET CONNECTED");
+};
+
+socket.onmessage = (event) => {
+    const data = JSON.parse(event.data);
+    console.log("SERVER:", data);
+
+    /* =========================================
+       REALTIME ACTIVE USER COUNTS
+       ========================================= */
+
+    if (data.type === "active_counts") {
+        const counts = data.counts || {};
+        let total = 0;
+
+        Object.entries(counts).forEach(([acId, count]) => {
+            const number = Number(count) || 0;
+            total += number;
+
+            const acCount = document.getElementById(`ac-count-${acId}`);
+            const panelCount = document.getElementById(`panel-count-${acId}`);
+
+            if (acCount) acCount.textContent = number;
+            if (panelCount) panelCount.textContent = `${number} users`;
+        });
+
+        const totalElement = document.getElementById("total-active-users");
+        if (totalElement) totalElement.textContent = total;
+
+        return;
+    }
+
+    /* =========================================
+       REALTIME PPPoE EVENTS
+       ========================================= */
+
+    if (!data.event) return;
+
+    const username = data.username || "UNKNOWN";
+    const mac = data.mac || "No MAC";
+    const ac = data.ac;
+    const eventType = data.event;
+    const timestamp = data.timestamp;
+
+    if (!ac) return;
+
+    let logContainer = null;
+
+    {% for item in ac_data %}
+    if (ac === "{{ item.ac.name }}") {
+        logContainer = document.getElementById("logs-{{ item.ac.id }}");
+    }
+    {% endfor %}
+
+    if (!logContainer) {
+        console.warn("AC panel not found:", ac);
+        return;
+    }
+
+    let badgeClass = "bg-gray-100 text-gray-600";
+    let badgeText = eventType;
+
+    if (eventType === "LOGIN") {
+        badgeClass = "bg-green-50 text-green-700";
+        badgeText = "LOGIN";
+    } else if (eventType === "LOGOUT") {
+        badgeClass = "bg-red-50 text-red-700";
+        badgeText = "LOGOUT";
+    } else if (eventType === "AUTH_FAILURE") {
+        badgeClass = "bg-orange-50 text-orange-700";
+        badgeText = "AUTH FAIL";
+    } else if (eventType === "CONNECTION") {
+        badgeClass = "bg-blue-50 text-blue-700";
+        badgeText = "CONNECTION";
+    }
+
+    let formattedTime = "";
+
+    if (timestamp) {
+        const date = new Date(timestamp);
+        if (!isNaN(date)) {
+            formattedTime = date.toLocaleString("en-US", {
+                month: "short",
+                day: "2-digit",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit"
+            });
+        }
+    }
+
+    const logElement = document.createElement("div");
+
+    logElement.className = "border-b border-gray-100 px-4 py-2.5 hover:bg-gray-50";
+
+    logElement.innerHTML = `
+        <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0">
+                <p class="truncate text-sm font-medium text-gray-900">${username}</p>
+                <p class="mt-0.5 truncate text-[11px] text-gray-500">${mac}</p>
+            </div>
+            <div class="shrink-0 text-right">
+                <span class="rounded-full ${badgeClass} px-2 py-0.5 text-[10px] font-medium">${badgeText}</span>
+                <p class="mt-1 whitespace-nowrap text-[10px] text-gray-400">${formattedTime}</p>
+            </div>
+        </div>
+    `;
+
+    logContainer.prepend(logElement);
+
+    while (logContainer.children.length > 50) {
+        logContainer.removeChild(logContainer.lastElementChild);
+    }
+
+    logElement.classList.add("bg-blue-50");
+
+    setTimeout(() => {
+        logElement.classList.remove("bg-blue-50");
+    }, 1500);
+};
+
+socket.onclose = (event) => {
+    console.log("WEBSOCKET CLOSED", event.code, event.reason);
+};
+
+socket.onerror = (error) => {
+    console.error("WEBSOCKET ERROR:", error);
+};
+
+
+
+
+const searchForm = document.querySelector('form[method="get"]');
+const searchInput = searchForm ? searchForm.querySelector('input[name="q"]') : null;
+
+const clientModal = document.getElementById("client-modal");
+const closeClientModal = document.getElementById("close-client-modal");
+const modalError = document.getElementById("client-modal-error");
+
+function formatDateTime(value) {
+
+    if (!value) {
+        return "No record";
+    }
+
+    const date = new Date(value);
+
+    if (isNaN(date)) {
+        return "Unknown";
+    }
+
+    return date.toLocaleString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+}
+
+function formatRelativeTime(value) {
+
+    if (!value) {
+        return "";
+    }
+
+    const date = new Date(value);
+
+    if (isNaN(date)) {
+        return "";
+    }
+
+    const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
+
+    if (seconds < 60) {
+        return `${seconds} second${seconds === 1 ? "" : "s"} ago`;
+    }
+
+    const minutes = Math.floor(seconds / 60);
+
+    if (minutes < 60) {
+        return `${minutes} minute${minutes === 1 ? "" : "s"} ago`;
+    }
+
+    const hours = Math.floor(minutes / 60);
+
+    if (hours < 24) {
+        return `${hours} hour${hours === 1 ? "" : "s"} ago`;
+    }
+
+    const days = Math.floor(hours / 24);
+
+    return `${days} day${days === 1 ? "" : "s"} ago`;
+
+}
+
+function formatDuration(totalSeconds) {
+
+    if (totalSeconds === null || totalSeconds === undefined) {
+        return "No duration available";
+    }
+
+    totalSeconds = Math.max(0, Number(totalSeconds));
+
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    return `${hours} hour${hours === 1 ? "" : "s"} ${minutes} minute${minutes === 1 ? "" : "s"} ${seconds} second${seconds === 1 ? "" : "s"}`;
+
+}
+
+function openClientModal() {
+    clientModal.classList.remove("hidden");
+    clientModal.classList.add("flex");
+}
+
+function closeModal() {
+    clientModal.classList.add("hidden");
+    clientModal.classList.remove("flex");
+}
+
+if (searchForm) {
+
+    searchForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        const query = searchInput.value.trim();
+
+        if (!query) {
+            return;
+        }
+
+        modalError.classList.add("hidden");
+        modalError.textContent = "";
+
+        document.getElementById("modal-username").textContent = "Searching...";
+        document.getElementById("modal-mac").textContent = "-";
+        document.getElementById("modal-up-time").textContent = "-";
+        document.getElementById("modal-down-time").textContent = "-";
+        document.getElementById("modal-duration").textContent = "-";
+        document.getElementById("modal-active-ac").textContent = "-";
+
+        openClientModal();
+
+        try {
+
+            const response = await fetch(
+                `/client-info/?q=${encodeURIComponent(query)}`
+            );
+
+            const data = await response.json();
+
+            if (!data.found) {
+
+                modalError.textContent = data.message || "Client not found.";
+                modalError.classList.remove("hidden");
+
+                document.getElementById("modal-username").textContent = "Not found";
+
+                return;
+            }
+
+            document.getElementById("modal-username").textContent =
+                data.username || "UNKNOWN";
+
+            document.getElementById("modal-mac").textContent =
+                data.mac || "No MAC";
+
+            if (data.up_time) {
+
+                document.getElementById("modal-up-time").textContent =
+                    `${formatDateTime(data.up_time)} / ${formatRelativeTime(data.up_time)}`;
+
+            } else {
+
+                document.getElementById("modal-up-time").textContent =
+                    "No record";
+
+            }
+
+            if (data.last_down_time) {
+
+                let downText =
+                    `${formatDateTime(data.last_down_time)} / ${formatRelativeTime(data.last_down_time)}`;
+
+                if (data.last_down_ac) {
+                    downText += ` in ${data.last_down_ac}`;
+                }
+
+                document.getElementById("modal-down-time").textContent =
+                    downText;
+
+            } else {
+
+                document.getElementById("modal-down-time").textContent =
+                    "No logout record";
+
+            }
+
+            document.getElementById("modal-duration").textContent =
+                formatDuration(data.duration_seconds);
+
+            document.getElementById("modal-active-ac").textContent =
+                data.active_ac || "Currently offline";
+
+        } catch (error) {
+
+            console.error("CLIENT SEARCH ERROR:", error);
+
+            modalError.textContent =
+                "Unable to retrieve client information.";
+
+            modalError.classList.remove("hidden");
+
+        }
+
+    });
+
+}
+
+if (closeClientModal) {
+    closeClientModal.addEventListener("click", closeModal);
+}
+
+if (clientModal) {
+
+    clientModal.addEventListener("click", function(event) {
+
+        if (event.target === clientModal) {
+            closeModal();
+        }
+
+    });
+
+}
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeModal();
+    }
+
+});
+
+
+</script>
+
+
+
+{% endblock %}

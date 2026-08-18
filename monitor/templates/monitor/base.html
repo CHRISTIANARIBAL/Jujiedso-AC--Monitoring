@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {% block title %}
+            PPPoE Monitor
+        {% endblock %}
+    </title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="min-h-screen bg-gray-100 text-gray-900">
+
+    <div class="flex min-h-screen flex-col">
+        <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
+
+            <div class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-6">
+
+                <!-- Dashboard Logo -->
+
+                <a
+                    href="/"
+                    class="flex items-center gap-3"
+                >
+
+                    <!-- Logo -->
+<!-- Logo -->
+
+<div
+    class="flex h-14 w-14 items-center justify-center rounded-lg shadow-sm"
+>
+    <img
+        src="{% static 'images/JUJIEDSO_LOGO.png' %}"
+        alt="Logo"
+        class="h-full w-full scale-150 object-contain"
+    >
+</div>
+                    <!-- Title -->
+
+                    <div>
+
+                        <div class="text-base font-bold text-gray-900">
+                            Dashboard
+                        </div>
+
+                        <div class="text-xs text-gray-500">
+                            PPPoE Monitor
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- Monitoring Status -->
+
+                <div class="flex items-center gap-2">
+
+                    <span
+                        class="
+                            h-2.5
+                            w-2.5
+                            rounded-full
+                            bg-green-500
+                        "
+                    ></span>
+
+                    <span class="text-sm font-medium text-gray-600">
+                        Monitoring Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ================================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- ================================================== -->
+
+<main class="relative flex-1 overflow-hidden">
+
+    <!-- Background Logo -->
+    <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <img
+            src="{% static 'images/JUJIEDSO_LOGO.png' %}"
+            alt=""
+            class="w-[600px] opacity-[0.1]"
+        >
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 mx-auto max-w-screen-2xl px-6 py-6">
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+</main>
+
+
+        <!-- ================================================== -->
+        <!-- FOOTER -->
+        <!-- ================================================== -->
+
+        <footer class="border-t border-gray-200 bg-white">
+
+            <div
+                class="
+                    mx-auto
+                    flex
+                    max-w-screen-2xl
+                    items-center
+                    justify-between
+                    px-6
+                    py-4
+                    text-xs
+                    text-gray-500
+                "
+            >
+
+                <span>
+                    PPPoE Monitor
+                </span>
+
+                <span>
+                    Network Monitoring System
+                </span>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
