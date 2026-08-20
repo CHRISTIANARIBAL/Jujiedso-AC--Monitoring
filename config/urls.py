@@ -10,4 +10,6 @@ urlpatterns = [
     path("client-info/", client_info, name="client_info"),
     path("raw-logs/", raw_logs, name="raw_logs"),
     path("raw-logs/<str:ac_name>/<str:filename>/", raw_log_viewer, name="raw_log_viewer"),
+    path("client-search/", client_search, name="client_search"),
+
 ]
