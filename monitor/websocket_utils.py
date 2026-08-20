@@ -13,7 +13,6 @@ def broadcast_pppoe_event(event):
         },
     )
 
-
 def broadcast_active_counts(counts):
     channel_layer = get_channel_layer()
 

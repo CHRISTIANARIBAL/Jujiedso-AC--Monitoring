@@ -25,75 +25,53 @@
 <body class="min-h-screen bg-gray-100 text-gray-900">
 
     <div class="flex min-h-screen flex-col">
-        <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
-
-            <div class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-6">
-
-                <!-- Dashboard Logo -->
-
-                <a
-                    href="/"
-                    class="flex items-center gap-3"
-                >
-
-                    <!-- Logo -->
-<!-- Logo -->
-
-<div
-    class="flex h-14 w-14 items-center justify-center rounded-lg shadow-sm"
->
-    <img
-        src="{% static 'images/JUJIEDSO_LOGO.png' %}"
-        alt="Logo"
-        class="h-full w-full scale-150 object-contain"
-    >
-</div>
-                    <!-- Title -->
-
-                    <div>
-
-                        <div class="text-base font-bold text-gray-900">
-                            Dashboard
-                        </div>
-
-                        <div class="text-xs text-gray-500">
-                            PPPoE Monitor
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- Monitoring Status -->
-
-                <div class="flex items-center gap-2">
-
-                    <span
-                        class="
-                            h-2.5
-                            w-2.5
-                            rounded-full
-                            bg-green-500
-                        "
-                    ></span>
-
-                    <span class="text-sm font-medium text-gray-600">
-                        Monitoring Active
-                    </span>
-
-                </div>
-
+ <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
+    <div class="relative mx-auto flex min-h-16 max-w-screen-2xl items-center justify-between px-3 py-2 sm:px-6 sm:py-0">
+        <a href="/" class="flex min-w-0 items-center gap-2 sm:gap-3">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg shadow-sm sm:h-14 sm:w-14">
+                <img src="{% static 'images/JUJIEDSO_LOGO.png' %}" alt="Logo" class="h-full w-full scale-150 object-contain">
             </div>
 
-        </nav>
+            <div class="min-w-0">
+                <div class="truncate text-sm font-bold text-gray-900 sm:text-base">
+                    PPPoE Monitor
+                </div>
 
+                <div class="mt-0.5 text-[9px] font-extrabold tracking-wide text-blue-700 sm:hidden">
+                    JUJIEDSO FIBR CODERS
+                </div>
+            </div>
+        </a>
 
+        <div class="absolute left-1/2 hidden -translate-x-1/2 text-center sm:block">
+            <div class="text-sm font-extrabold tracking-wide text-blue-700">
+                DEVELOPED BY:
+            </div>
+
+            <div class="text-xs font-bold tracking-widest text-gray-700">
+                JUJIEDSO FIBR CODERS
+            </div>
+        </div>
+
+<div class="flex shrink-0 items-center gap-3">
+    <span class="hidden text-xs font-medium text-gray-500 md:inline">
+        Developer Monitoring for Bugs — Fixes Coming Soon......
+    </span>
+
+    <div class="flex items-center gap-2">
+        <span class="h-2.5 w-2.5 rounded-full bg-green-500 shadow-sm"></span>
+        <span class="hidden text-sm font-medium text-gray-600 sm:inline">
+            Monitoring Active
+        </span>
+    </div>
+</div>
+    </div>
+</nav>
         <!-- ================================================== -->
         <!-- MAIN CONTENT -->
         <!-- ================================================== -->
 
-<main class="relative flex-1 overflow-hidden">
+<main class="relative flex-1">
 
     <!-- Background Logo -->
     <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
@@ -105,7 +83,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="relative z-10 mx-auto max-w-screen-2xl px-6 py-6">
+    <div class="relative mx-auto max-w-screen-2xl px-6 py-6">
 
         {% block content %}
         {% endblock %}

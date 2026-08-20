@@ -39,7 +39,7 @@ class Command(BaseCommand):
             )
 
             os.system(
-                f'"{sys.executable}" manage.py runserver'
+                f'"{sys.executable}" manage.py runserver 0.0.0.0:8000'
             )
 
         except KeyboardInterrupt:
