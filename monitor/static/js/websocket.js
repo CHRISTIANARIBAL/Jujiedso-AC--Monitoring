@@ -1,5 +1,10 @@
+// const socket = new WebSocket(
+//     "ws://" + window.location.host + "/ws/monitor/"
+// );
+const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+
 const socket = new WebSocket(
-    "ws://" + window.location.host + "/ws/monitor/"
+    `${protocol}//${window.location.host}/ws/monitor/`
 );
 
 socket.onopen = () => {
