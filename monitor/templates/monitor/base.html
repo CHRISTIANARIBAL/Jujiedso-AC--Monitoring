@@ -2,132 +2,54 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} PPPoE Monitor {% endblock %}</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        {% block title %}
-            PPPoE Monitor
-        {% endblock %}
-    </title>
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-
 <body class="min-h-screen bg-gray-100 text-gray-900">
-
     <div class="flex min-h-screen flex-col">
- <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
-    <div class="relative mx-auto flex min-h-16 max-w-screen-2xl items-center justify-between px-3 py-2 sm:px-6 sm:py-0">
-        <a href="/" class="flex min-w-0 items-center gap-2 sm:gap-3">
-            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg shadow-sm sm:h-14 sm:w-14">
-                <img src="{% static 'images/JUJIEDSO_LOGO.png' %}" alt="Logo" class="h-full w-full scale-150 object-contain">
-            </div>
-
-            <div class="min-w-0">
-                <div class="truncate text-sm font-bold text-gray-900 sm:text-base">
-                    PPPoE Monitor
+        <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
+            <div class="relative mx-auto flex min-h-16 max-w-screen-2xl items-center justify-between px-3 py-2 sm:px-6 sm:py-0">
+                <a href="/" class="flex min-w-0 items-center gap-2 sm:gap-3">
+                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg shadow-sm sm:h-14 sm:w-14">
+                        <img src="{% static 'images/JUJIEDSO_LOGO.png' %}" alt="Logo" class="h-full w-full scale-150 object-contain">
+                    </div>
+                    <div class="min-w-0">
+                        <div class="truncate text-sm font-bold text-gray-900 sm:text-base">PPPoE Monitor</div>
+                            <div class="mt-0.5 text-[9px] font-extrabold tracking-wide text-blue-700 sm:hidden">JUJIEDSO FIBR CODERS</div>
+                    </div>
+                </a>
+                <div class="absolute left-1/2 hidden -translate-x-1/2 text-center sm:block">
+                    <div class="text-sm font-extrabold tracking-wide text-blue-700">DEVELOPED BY:</div>
+                    <div class="text-xs font-bold tracking-widest text-gray-700">JUJIEDSO FIBR CODERS</div>
                 </div>
-
-                <div class="mt-0.5 text-[9px] font-extrabold tracking-wide text-blue-700 sm:hidden">
-                    JUJIEDSO FIBR CODERS
+                <div class="flex shrink-0 items-center gap-3">
+                    <span class="hidden text-xs font-medium text-gray-500 md:inline">Developer Monitoring for Bugs — Fixes Coming Soon......</span>
+                    <div class="flex items-center gap-2">
+                        <span class="h-2.5 w-2.5 rounded-full bg-green-500 shadow-sm"></span>
+                        <span class="hidden text-sm font-medium text-gray-600 sm:inline">Monitoring Active</span>
+                    </div>
                 </div>
             </div>
-        </a>
+        </nav>
 
-        <div class="absolute left-1/2 hidden -translate-x-1/2 text-center sm:block">
-            <div class="text-sm font-extrabold tracking-wide text-blue-700">
-                DEVELOPED BY:
+        <main class="relative flex-1">
+            <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+                <img src="{% static 'images/JUJIEDSO_LOGO.png' %}" alt="" class="w-[600px] opacity-[0.1]">
             </div>
-
-            <div class="text-xs font-bold tracking-widest text-gray-700">
-                JUJIEDSO FIBR CODERS
-            </div>
-        </div>
-
-<div class="flex shrink-0 items-center gap-3">
-    <span class="hidden text-xs font-medium text-gray-500 md:inline">
-        Developer Monitoring for Bugs — Fixes Coming Soon......
-    </span>
-
-    <div class="flex items-center gap-2">
-        <span class="h-2.5 w-2.5 rounded-full bg-green-500 shadow-sm"></span>
-        <span class="hidden text-sm font-medium text-gray-600 sm:inline">
-            Monitoring Active
-        </span>
-    </div>
-</div>
-    </div>
-</nav>
-        <!-- ================================================== -->
-        <!-- MAIN CONTENT -->
-        <!-- ================================================== -->
-
-<main class="relative flex-1">
-
-    <!-- Background Logo -->
-    <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <img
-            src="{% static 'images/JUJIEDSO_LOGO.png' %}"
-            alt=""
-            class="w-[600px] opacity-[0.1]"
-        >
-    </div>
-
-    <!-- Main Content -->
-    <div class="relative mx-auto max-w-screen-2xl px-6 py-6">
-
-        {% block content %}
-        {% endblock %}
-
-    </div>
-
-</main>
-
-
-        <!-- ================================================== -->
-        <!-- FOOTER -->
-        <!-- ================================================== -->
+            <div class="relative mx-auto max-w-screen-2xl px-6 py-6">{% block content %}{% endblock %}</div>
+        </main>
 
         <footer class="border-t border-gray-200 bg-white">
-
-            <div
-                class="
-                    mx-auto
-                    flex
-                    max-w-screen-2xl
-                    items-center
-                    justify-between
-                    px-6
-                    py-4
-                    text-xs
-                    text-gray-500
-                "
-            >
-
-                <span>
-                    PPPoE Monitor
-                </span>
-
-                <span>
-                    Network Monitoring System
-                </span>
-
+            <div class="mx-auto flex max-w-screen-2xl items-center justify-between px-6 py-4 text-xs text-gray-500">
+                <span>PPPoE Monitor</span>
+                <span>Network Monitoring System</span>
             </div>
-
         </footer>
-
-
     </div>
-
 </body>
-
 </html>
