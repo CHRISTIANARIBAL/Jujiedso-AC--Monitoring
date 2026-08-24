@@ -53,7 +53,6 @@ function renderConnectionHistory(history) {
     const historyCount = document.getElementById("modal-history-count");
 
     if (!container) return;
-
     if (historyCount) {
         const count = history ? history.length : 0;
         historyCount.textContent = `${count} connection${count === 1 ? "" : "s"}`;
@@ -69,16 +68,12 @@ function renderConnectionHistory(history) {
     }
 
     container.innerHTML = "";
-
     history.forEach((item, index) => {
         const isActive = item.active;
-
         const historyRow = document.createElement("div");
         historyRow.className = "grid grid-cols-2 gap-2";
-
         const upCard = document.createElement("div");
         upCard.className = "rounded-lg border border-blue-100 bg-blue-50 p-3";
-
         upCard.innerHTML = `
             <p class="text-[11px] font-semibold ${isActive ? "text-green-600" : "text-blue-600"}">
                 ${isActive ? "CURRENTLY ACTIVE" : "UPTIME"}
@@ -101,7 +96,6 @@ function renderConnectionHistory(history) {
         `;
 
         const downCard = document.createElement("div");
-
         if (item.down_time) {
             downCard.className = "rounded-lg border border-red-100 bg-red-50 p-3";
 
@@ -170,15 +164,11 @@ function renderConnectionHistory(history) {
         historyRow.appendChild(upCard);
         historyRow.appendChild(downCard);
         container.appendChild(historyRow);
-
         if (index < history.length - 1) {
             const separator = document.createElement("div");
-
             separator.className =
                 "flex items-center justify-center py-1 text-gray-300";
-
             separator.textContent = "↓";
-
             container.appendChild(separator);
         }
     });

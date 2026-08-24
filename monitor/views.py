@@ -9,59 +9,34 @@ import os
 from .models import *
 from datetime import timedelta
 
-
-RAW_LOG_DIR = os.path.join(
-    os.path.dirname(
-        os.path.abspath(__file__)
-    ),
+RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
     "raw_logs",
 )
 
 def get_raw_log_directory():
-    return os.path.join(
-        os.path.dirname(
-            os.path.abspath(__file__)
-        ),
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)),
         "management",
         "raw_logs",
     )
 
 def dashboard(request):
-
     query = request.GET.get("q", "").strip()
-
-    acs = AccessConcentrator.objects.filter(
-        enabled=True
-    )
-
+    acs = AccessConcentrator.objects.filter(enabled=True)
     ac_data = []
-
     total_active_users = 0
 
     for ac in acs:
-
-        active_users = PPPoESession.objects.filter(
-            ac=ac,
-            active=True
-        ).count()
-
+        active_users = PPPoESession.objects.filter(ac=ac, active=True).count()
         total_active_users += active_users
-
         ac_data.append({
             "ac": ac,
             "active_users": active_users,
         })
-
     events = PPPoEEvent.objects.select_related("ac")
 
     if query:
-        events = events.filter(
-            Q(username__icontains=query) |
-            Q(mac_address__icontains=query) |
-            Q(ip_address__icontains=query)
-        )
-
+        events = events.filter(Q(username__icontains=query) | Q(mac_address__icontains=query) | Q(ip_address__icontains=query))
     recent_events = events.order_by("-timestamp")[:50]
 
     context = {
@@ -71,11 +46,7 @@ def dashboard(request):
         "query": query,
     }
 
-    return render(
-        request,
-        "monitor/dashboard.html",
-        context
-    )
+    return render(request, "monitor/dashboard.html", context)
 
 def client_info(request):
     client_id = request.GET.get("id", "").strip()
@@ -126,7 +97,6 @@ def client_info(request):
                 "duration_seconds": duration_seconds,
                 "active": True,
             })
-
         history.sort( key=lambda item: item["up_time"],  reverse=True)
         return history
     if client_id:
@@ -137,25 +107,9 @@ def client_info(request):
 
         username = client.username
         mac = client.mac_address
-        session = PPPoESession.objects.filter(
-            username=username,
-            mac_address=mac,
-            ac=client.ac,
-            active=True
-        ).select_related("ac").order_by("-connected_at").first()
-
-        login_event = PPPoEEvent.objects.filter(
-            username=username,
-            mac_address=mac,
-            event_type=PPPoEEvent.LOGIN
-        ).order_by("-timestamp").first()
-
-        logout_event = PPPoEEvent.objects.filter(
-            username=username,
-            mac_address=mac,
-            event_type=PPPoEEvent.LOGOUT
-        ).order_by("-timestamp").first()
-
+        session = PPPoESession.objects.filter(username=username, mac_address=mac, ac=client.ac, active=True).select_related("ac").order_by("-connected_at").first()
+        login_event = PPPoEEvent.objects.filter(username=username, mac_address=mac, event_type=PPPoEEvent.LOGIN).order_by("-timestamp").first()
+        logout_event = PPPoEEvent.objects.filter(username=username, mac_address=mac, event_type=PPPoEEvent.LOGOUT).order_by("-timestamp").first()
         connected_at = None
 
         if session and session.connected_at:
@@ -261,19 +215,10 @@ def client_info(request):
             ip = None
             active_ac = None
 
-    login_event = PPPoEEvent.objects.filter(
-        username=username,
-        mac_address=mac,
-        event_type=PPPoEEvent.LOGIN
-    ).order_by("-timestamp").first()
-
-    logout_event = PPPoEEvent.objects.filter(
-        username=username,
-        mac_address=mac,
-        event_type=PPPoEEvent.LOGOUT
-    ).order_by("-timestamp").first()
-
+    login_event = PPPoEEvent.objects.filter(username=username,  mac_address=mac, event_type=PPPoEEvent.LOGIN).order_by("-timestamp").first()
+    logout_event = PPPoEEvent.objects.filter(username=username, mac_address=mac, event_type=PPPoEEvent.LOGOUT).order_by("-timestamp").first()
     connected_at = None
+
     if session and session.active:
         connected_at = session.connected_at
     elif login_event:
@@ -324,7 +269,6 @@ def client_info(request):
     })
 
 def test_broadcast(request):
-
     broadcast_pppoe_event({
         "type": "test",
         "event": "TEST",
@@ -337,51 +281,39 @@ def test_broadcast(request):
     })
 
 def raw_logs(request):
-
     raw_log_dir = get_raw_log_directory()
-
     print("RAW LOG DIRECTORY:", raw_log_dir)
 
     ac_logs = []
-
-    acs = AccessConcentrator.objects.filter(
-        enabled=True
-    ).order_by("id")
+    acs = AccessConcentrator.objects.filter(enabled=True).order_by("id")
 
     for ac in acs:
-
-        ac_directory = os.path.join(
-            raw_log_dir,
-            ac.name,
-        )
-
+        ac_directory = os.path.join(raw_log_dir, ac.name)
         print("CHECKING:", ac_directory)
 
         files = []
 
         if os.path.isdir(ac_directory):
-
             for filename in os.listdir(ac_directory):
-
                 if not filename.lower().endswith(".txt"):
                     continue
 
-                file_path = os.path.join(
-                    ac_directory,
-                    filename,
-                )
+                file_path = os.path.join(ac_directory, filename)
 
                 if os.path.isfile(file_path):
+                    try:
+                        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+                            line_count = sum(1 for _ in f)
+                    except OSError:
+                        line_count = 0
 
                     files.append({
                         "name": filename,
                         "size": os.path.getsize(file_path),
+                        "lines": line_count,
                     })
 
-        files.sort(
-            key=lambda x: x["name"],
-            reverse=True,
-        )
+        files.sort(key=lambda x: x["name"], reverse=True)
 
         ac_logs.append({
             "ac": ac,
@@ -391,24 +323,12 @@ def raw_logs(request):
     return render(
         request,
         "monitor/raw_logs.html",
-        {
-            "ac_logs": ac_logs,
-        },
+        {"ac_logs": ac_logs},
     )
-
 
 def raw_log_viewer(request, ac_name, filename):
-
-    ac_directory = os.path.join(
-        RAW_LOG_DIR,
-        ac_name,
-    )
-
-    file_path = os.path.join(
-        ac_directory,
-        filename,
-    )
-
+    ac_directory = os.path.join(RAW_LOG_DIR, ac_name)
+    file_path = os.path.join(ac_directory, filename)
     print("RAW LOG VIEWER:")
     print("AC:", ac_name)
     print("FILE:", filename)
@@ -416,23 +336,12 @@ def raw_log_viewer(request, ac_name, filename):
 
     if not os.path.isfile(file_path):
         raise Http404("Log file not found.")
-
     try:
-        with open(
-            file_path,
-            "r",
-            encoding="utf-8",
-            errors="replace",
-        ) as file:
-
+        with open(file_path, "r", encoding="utf-8", errors="replace") as file:
             log_content = file.read()
-
     except Exception as e:
         raise Http404(f"Unable to read log file: {e}")
-
-    return render(
-        request,
-        "monitor/raw_log_viewer.html",
+    return render(request, "monitor/raw_log_viewer.html",
         {
             "ac_name": ac_name,
             "filename": filename,
@@ -442,7 +351,6 @@ def raw_log_viewer(request, ac_name, filename):
 
 def client_search(request):
     query = request.GET.get("q", "").strip()
-
     if not query:
         return JsonResponse({
             "found": False,
@@ -450,53 +358,22 @@ def client_search(request):
             "message": "Please enter a search term."
         })
 
-    # ---------------------------------------------------------
-    # GET CLIENTS FROM CLIENT HISTORY
-    # ---------------------------------------------------------
-
-    clients = PPPoEClient.objects.filter(
-        Q(username__icontains=query) |
-        Q(mac_address__icontains=query)
-    ).select_related("ac")
-
+    clients = PPPoEClient.objects.filter(Q(username__icontains=query) | Q(mac_address__icontains=query)).select_related("ac")
     results = []
     seen_clients = set()
 
     for client in clients:
-
-        # -----------------------------------------------------
-        # CHECK IF THIS CLIENT IS CURRENTLY ACTIVE
-        # -----------------------------------------------------
-
-        active_session = PPPoESession.objects.filter(
-            username=client.username,
-            mac_address=client.mac_address,
-            active=True
-        ).select_related("ac").order_by("-connected_at").first()
-
-        # -----------------------------------------------------
-        # DETERMINE AC
-        # -----------------------------------------------------
-
+        active_session = PPPoESession.objects.filter(username=client.username, mac_address=client.mac_address, active=True).select_related("ac").order_by("-connected_at").first()
         if active_session:
             ac = active_session.ac
             active = True
         else:
             ac = client.ac
             active = False
-
-        # -----------------------------------------------------
-        # REMOVE DUPLICATES
-        # -----------------------------------------------------
-
-        client_key = (
-            client.username.lower(),
-            (client.mac_address or "").lower()
-        )
+        client_key = (client.username.lower(), (client.mac_address or "").lower())
 
         if client_key in seen_clients:
             continue
-
         seen_clients.add(client_key)
 
         results.append({
@@ -507,13 +384,6 @@ def client_search(request):
             "active": active,
         })
 
-    # ---------------------------------------------------------
-    # ALSO CHECK ACTIVE SESSIONS
-    # ---------------------------------------------------------
-    # This catches active clients that may not have a matching
-    # PPPoEClient record yet.
-    # ---------------------------------------------------------
-
     active_sessions = PPPoESession.objects.filter(
         Q(username__icontains=query) |
         Q(mac_address__icontains=query),
@@ -521,11 +391,7 @@ def client_search(request):
     ).select_related("ac").order_by("-connected_at")
 
     for session in active_sessions:
-
-        client_key = (
-            session.username.lower(),
-            (session.mac_address or "").lower()
-        )
+        client_key = (session.username.lower(), (session.mac_address or "").lower())
 
         if client_key in seen_clients:
             continue
@@ -540,18 +406,7 @@ def client_search(request):
             "active": True,
         })
 
-    # ---------------------------------------------------------
-    # SORT
-    # ---------------------------------------------------------
-    # Active clients first, then offline clients.
-    # ---------------------------------------------------------
-
-    results.sort(
-        key=lambda x: (
-            not x["active"],
-            (x["username"] or "").lower()
-        )
-    )
+    results.sort(key=lambda x: (not x["active"], (x["username"] or "").lower()))
 
     return JsonResponse({
         "found": bool(results),
@@ -562,4 +417,3 @@ def client_search(request):
             else "Client not found."
         )
     })
-

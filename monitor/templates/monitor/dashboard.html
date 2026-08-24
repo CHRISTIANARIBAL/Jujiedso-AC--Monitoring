@@ -4,171 +4,122 @@
 {% block page_title %}Network Overview{% endblock %}
 {% block content %}
 <div class="space-y-5">
-<div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-<div>
-<h1 class="text-2xl font-bold text-gray-900">PPPoE Network Monitoring</h1>
-<p class="mt-1 text-sm text-gray-500">Real-time monitoring of Access Concentrators</p>
-</div>
-<div class="flex w-full flex-col gap-2 sm:flex-row lg:w-auto">
-    <a
-        href="{% url 'raw_logs' %}"
-        class="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900"
-    >
-        📄 Raw Logs
-    </a>
-    <form method="get" class="flex w-full sm:w-auto">
-        <input
-            type="text"
-            name="q"
-            value="{{ query }}"
-            placeholder="Search username or MAC..."
-            class="w-full sm:w-80 rounded-l-lg border border-gray-300 bg-white px-4 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
-        >
-        <button
-            type="submit"
-            class="rounded-r-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700"
-        >
-            Search
-        </button>
-    </form>
-</div>
-</div>
-<div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
-<div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm">
-<div class="flex items-center justify-between">
-<div>
-<p class="text-xs font-medium text-gray-500">Total Active PPPoE Users</p>
-<p id="total-active-users" class="mt-1 text-3xl font-bold text-gray-900">{{ total_active_users }}</p>
-</div>
-<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-lg">👥</div>
-</div>
-<div class="mt-2 flex items-center gap-2 text-xs">
-<span class="h-2 w-2 rounded-full bg-green-500"></span>
-<span class="text-gray-500">Monitoring active</span>
-</div>
-</div>
-{% for item in ac_data %}
-<div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm transition hover:shadow-md">
-<div class="flex items-center justify-between">
-<div>
-<p class="text-base font-semibold text-gray-900">{{ item.ac.name }}</p>
-<p class="text-[11px] text-gray-500">{{ item.ac.ip_address }}</p>
-</div>
-<div class="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1 text-[10px] font-medium text-green-700">
-<span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
-Enabled
-</div>
-</div>
-<div class="mt-3">
-<p id="ac-count-{{ item.ac.id }}" class="text-2xl font-bold text-gray-900">{{ item.active_users }}</p>
-<p class="text-[11px] text-gray-500">Active PPPoE users</p>
-</div>
-</div>
-{% endfor %}
-</div>
-<!-- REALTIME LOGS -->
-<div>
-<div class="mb-2">
-<h2 class="text-lg font-semibold text-gray-900">Realtime AC Logs</h2>
-<p class="text-xs text-gray-500">Latest PPPoE events from all Access Concentrators</p>
-</div>
-<div class="grid grid-cols-1 gap-3 xl:grid-cols-3">
-{% for item in ac_data %}
-<div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
-<div class="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-4 py-2.5">
-<div class="flex items-center gap-2">
-<span class="h-2 w-2 rounded-full bg-green-500"></span>
-<span class="font-semibold text-sm text-gray-900">{{ item.ac.name }}</span>
-</div>
-<span id="panel-count-{{ item.ac.id }}" class="text-[11px] text-gray-500">{{ item.active_users }} users</span>
-</div>
-<div id="logs-{{ item.ac.id }}" class="max-h-80 overflow-y-auto">
-    {% for event in recent_events %}
-        {% if event.ac.id == item.ac.id %}
-<div
-    class="log-entry cursor-pointer border-b border-gray-100 px-4 py-2.5 hover:bg-gray-50"
-    data-username="{{ event.username|default:'' }}"
-    data-mac="{{ event.mac_address|default:'' }}" >
-<div class="flex items-start justify-between gap-3">
-<div class="min-w-0">
-<p class="truncate text-sm font-medium text-gray-900">{{ event.username|default:"UNKNOWN" }}</p>
-<p class="mt-0.5 truncate text-[11px] text-gray-500">{{ event.mac_address|default:"No MAC" }}</p>
-</div>
-<div class="shrink-0 text-right">
-{% if event.event_type == "LOGIN" %}
-<span class="rounded-full bg-green-50 px-2 py-0.5 text-[10px] font-medium text-green-700">LOGIN</span>
-{% elif event.event_type == "LOGOUT" %}
-<span class="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700">LOGOUT</span>
-{% elif event.event_type == "AUTH_FAILURE" %}
-<span class="rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-medium text-orange-700">AUTH FAIL</span>
-{% elif event.event_type == "CONNECTION" %}
-<span class="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-medium text-blue-700">CONNECTION</span>
-{% else %}
-<span class="rounded-full bg-gray-100 px-2 py-0.5 text-[10px] font-medium text-gray-600">{{ event.event_type }}</span>
-{% endif %}
-<p class="mt-1 whitespace-nowrap text-[10px] text-gray-400">{{ event.timestamp|date:"M d, Y h:i:s A" }}</p>
-</div>
-</div>
-</div>
-{% endif %}
-{% empty %}
-<div class="px-4 py-6 text-center">
-<p class="text-sm text-gray-400">No logs available</p>
-</div>
-{% endfor %}
-</div>
-</div>
-{% endfor %}
-</div>
-</div>
-</div>
-<!-- CLIENT SEARCH RESULTS MODAL -->
-<div id="client-search-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
-
-    <div class="w-full max-w-lg rounded-2xl bg-white shadow-xl">
-
-        <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
-
-            <div>
-                <h2 class="text-lg font-semibold text-gray-900">
-                    Search Results
-                </h2>
-
-                <p id="search-results-subtitle" class="text-xs text-gray-500">
-                    Matching PPPoE clients
-                </p>
-            </div>
-
-            <button
-                id="close-search-modal"
-                type="button"
-                class="text-xl text-gray-400 hover:text-gray-700"
-            >
-                &times;
-            </button>
-
+    <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between"><div>
+            <h1 class="text-2xl font-bold text-gray-900">PPPoE Network Monitoring</h1>
+            <p class="mt-1 text-sm text-gray-500">Real-time monitoring of Access Concentrators</p>
         </div>
-
-        <div
-            id="search-results-list"
-            class="max-h-96 overflow-y-auto px-5 py-4"
-        >
+        <div class="flex w-full flex-col gap-2 sm:flex-row lg:w-auto">
+            <a href="{% url 'raw_logs' %}" class="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900">📄 Raw Logs</a>
+            <form method="get" class="flex w-full sm:w-auto">
+                <input type="text" name="q" value="{{ query }}" placeholder="Search username or MAC..." class="w-full sm:w-80 rounded-l-lg border border-gray-300 bg-white px-4 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100">
+                <button type="submit" class="rounded-r-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700">Search</button>
+            </form>
         </div>
-
     </div>
+    <div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
+        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm">
+            <div class="flex items-center justify-between"><div>
+            <p class="text-xs font-medium text-gray-500">Total Active PPPoE Users</p>
+            <p id="total-active-users" class="mt-1 text-3xl font-bold text-gray-900">{{ total_active_users }}</p>
+        </div>
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-lg">👥</div>
+        </div>
+            <div class="mt-2 flex items-center gap-2 text-xs">
+                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                <span class="text-gray-500">Monitoring active</span>
+            </div>
+        </div>
+        {% for item in ac_data %}
+            <div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm transition hover:shadow-md">
+                <div class="flex items-center justify-between"><div>
+                <p class="text-base font-semibold text-gray-900">{{ item.ac.name }}</p>
+                <p class="text-[11px] text-gray-500">{{ item.ac.ip_address }}</p>
+            </div>
+            <div class="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1 text-[10px] font-medium text-green-700">
+                <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>Enabled
+            </div>
+            </div>
+                <div class="mt-3">
+                    <p id="ac-count-{{ item.ac.id }}" class="text-2xl font-bold text-gray-900">{{ item.active_users }}</p>
+                    <p class="text-[11px] text-gray-500">Active PPPoE users</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div>
+        <div class="mb-2">
+            <h2 class="text-lg font-semibold text-gray-900">Realtime AC Logs</h2>
+            <p class="text-xs text-gray-500">Latest PPPoE events from all Access Concentrators</p>
+        </div>
+        <div class="grid grid-cols-1 gap-3 xl:grid-cols-3">
+            {% for item in ac_data %}
+                <div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                    <div class="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-4 py-2.5">
+                        <div class="flex items-center gap-2">
+                            <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                            <span class="font-semibold text-sm text-gray-900">{{ item.ac.name }}</span>
+                        </div>
+                        <span id="panel-count-{{ item.ac.id }}" class="text-[11px] text-gray-500">{{ item.active_users }} users</span>
+                    </div>
+                    <div id="logs-{{ item.ac.id }}" class="max-h-80 overflow-y-auto">
+                        {% for event in recent_events %}
+                            {% if event.ac.id == item.ac.id %}
+                        <div class="log-entry cursor-pointer border-b border-gray-100 px-4 py-2.5 hover:bg-gray-50" data-username="{{ event.username|default:'' }}" data-mac="{{ event.mac_address|default:'' }}" >
+                            <div class="flex items-start justify-between gap-3">
+                                <div class="min-w-0">
+                                    <p class="truncate text-sm font-medium text-gray-900">{{ event.username|default:"UNKNOWN" }}</p>
+                                    <p class="mt-0.5 truncate text-[11px] text-gray-500">{{ event.mac_address|default:"No MAC" }}</p>
+                                </div>
+                                <div class="shrink-0 text-right">
+                                    {% if event.event_type == "LOGIN" %}
+                                        <span class="rounded-full bg-green-50 px-2 py-0.5 text-[10px] font-medium text-green-700">LOGIN</span>
+                                    {% elif event.event_type == "LOGOUT" %}
+                                        <span class="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700">LOGOUT</span>
+                                    {% elif event.event_type == "AUTH_FAILURE" %}
+                                        <span class="rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-medium text-orange-700">AUTH FAIL</span>
+                                    {% elif event.event_type == "CONNECTION" %}
+                                        <span class="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-medium text-blue-700">CONNECTION</span>
+                                    {% else %}
+                                        <span class="rounded-full bg-gray-100 px-2 py-0.5 text-[10px] font-medium text-gray-600">{{ event.event_type }}</span>
+                                    {% endif %}
+                                    <p class="mt-1 whitespace-nowrap text-[10px] text-gray-400">{{ event.timestamp|date:"M d, Y h:i:s A" }}</p>
+                                </div>
+                            </div>
+                        </div>
+                            {% endif %}
+                            {% empty %}
+                        <div class="px-4 py-6 text-center">
+                            <p class="text-sm text-gray-400">No logs available</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 
+<div id="client-search-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
+    <div class="w-full max-w-lg rounded-2xl bg-white shadow-xl">
+        <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900">Search Results</h2>
+                <p id="search-results-subtitle" class="text-xs text-gray-500">Matching PPPoE clients</p>
+            </div>
+            <button id="close-search-modal" type="button" class="text-xl text-gray-400 hover:text-gray-700">&times;</button>
+        </div>
+        <div id="search-results-list" class="max-h-96 overflow-y-auto px-5 py-4"></div>
+    </div>
 </div>
 
 {% include "monitor/client_modal.html" %}
-
 <script>
     window.MONITOR_ACS = [
         {% for item in ac_data %}
         {
             id: "{{ item.ac.id }}",
             name: "{{ item.ac.name|escapejs }}"
-        }{% if not forloop.last %},{% endif %}
-        {% endfor %}
+        } {% if not forloop.last %},{% endif %}
+            {% endfor %}
     ];
 </script>
 
@@ -176,6 +127,4 @@ Enabled
 <script src="{% static 'js/client_search.js' %}"></script>
 <script src="{% static 'js/websocket.js' %}"></script>
 <script src="{% static 'js/dashboard.js' %}"></script>
-
 {% endblock %}
-
