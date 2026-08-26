@@ -88,3 +88,6 @@ sudo tailscale up
 tailscale status
 tailscale ip
 
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
+gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type
