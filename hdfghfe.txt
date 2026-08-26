@@ -83,3 +83,8 @@ VLAN1004                   unassigned      manual up
 
 management IP of CALU-OLT4 = VLAN999       10.99.2.14      manual up
 
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+tailscale status
+tailscale ip
+
