@@ -1,0 +1,85 @@
+username: admin
+password: admin
+
+python manage.py devserver
+
+
+python scripts/setup_acs.py
+
+
+
+Temporary:
+
+How to show the Django secret key:
+	echo "$DJANGO_SECRET_KEY"
+
+How to show the Django ac encryption key:
+	echo "$DJANGO_AC_ENCRYPTION_KEY"
+
+
+then add it to environment(Temporary)
+	export DJANGO_SECRET_KEY='8ozo*8)z%3p)w7h+lbly6ijveny@jru(3j@j5(5&+g+-ujw^s&'
+
+also add the AC encryption key(Temporary):
+	export DJANGO_AC_ENCRYPTION_KEY='22M7z7A_7YUFJ7iy5l2hI2msdf4BPdLILirKId0cHDc='
+
+
+
+Permanent:
+Open Gitbash 
+
+This is for Django secret key:
+
+nano ~/.bashrc
+
+Go to the bottom and add:
+	export DJANGO_SECRET_KEY='8ozo*8)z%3p)w7h+lbly6ijveny@jru(3j@j5(5&+g+-ujw^s&'
+
+Save with:
+Ctrl + O
+Enter
+Ctrl + X
+
+Then reload:
+source ~/.bashrc
+
+
+
+
+This is for Django ac encryption key:
+
+nano ~/.bashrc
+
+Go to the bottom and add:
+	export DJANGO_AC_ENCRYPTION_KEY='22M7z7A_7YUFJ7iy5l2hI2msdf4BPdLILirKId0cHDc='
+
+
+Save with:
+Ctrl + O
+Enter
+Ctrl + X
+
+Then reload:
+source ~/.bashrc
+
+
+
+START THE REDIS
+sudo apt update
+sudo apt install redis-server -y
+redis-server --daemonize yes
+
+
+
+
+-----------------------OLT---------------------------
+calu-olt4#show ip interface brief
+Interface                  IP-Address      Method Protocol-Status
+GigaEthernet0/0            192.168.0.1     manual down
+Null0                      unassigned      manual up
+VLAN1                      unassigned      manual down
+VLAN999                    10.99.2.14      manual up
+VLAN1004                   unassigned      manual up
+
+management IP of CALU-OLT4 = VLAN999       10.99.2.14      manual up
+
