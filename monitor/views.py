@@ -8,6 +8,7 @@ from django.conf import settings
 import os
 from .models import *
 from datetime import timedelta
+from django.contrib.auth.decorators import login_required
 
 RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
@@ -20,6 +21,7 @@ def get_raw_log_directory():
         "raw_logs",
     )
 
+@login_required
 def dashboard(request):
     query = request.GET.get("q", "").strip()
     acs = AccessConcentrator.objects.filter(enabled=True)
@@ -48,6 +50,7 @@ def dashboard(request):
 
     return render(request, "monitor/dashboard.html", context)
 
+@login_required
 def client_info(request):
     client_id = request.GET.get("id", "").strip()
     query = request.GET.get("q", "").strip()
@@ -268,6 +271,7 @@ def client_info(request):
         "connection_history": connection_history,
     })
 
+@login_required
 def test_broadcast(request):
     broadcast_pppoe_event({
         "type": "test",
@@ -280,6 +284,7 @@ def test_broadcast(request):
         "status": "broadcast sent"
     })
 
+@login_required
 def raw_logs(request):
     raw_log_dir = get_raw_log_directory()
     print("RAW LOG DIRECTORY:", raw_log_dir)
@@ -326,6 +331,7 @@ def raw_logs(request):
         {"ac_logs": ac_logs},
     )
 
+@login_required
 def raw_log_viewer(request, ac_name, filename):
     ac_directory = os.path.join(RAW_LOG_DIR, ac_name)
     file_path = os.path.join(ac_directory, filename)
@@ -349,6 +355,7 @@ def raw_log_viewer(request, ac_name, filename):
         },
     )
 
+@login_required
 def client_search(request):
     query = request.GET.get("q", "").strip()
     if not query:

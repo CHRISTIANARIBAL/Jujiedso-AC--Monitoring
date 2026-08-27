@@ -19,6 +19,8 @@ cred.txt
 .vscode/
 .idea/
 
+# Django database
+db.sqlite3
 # OS files
 .DS_Store
 Thumbs.db
