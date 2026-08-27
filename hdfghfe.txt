@@ -107,3 +107,9 @@ ss -lntp | grep 8000
 
 start cloudflare
 cloudflared tunnel --url http://10.99.2.51:8000
+
+add this in setting.py
+CSRF_TRUSTED_ORIGINS = [
+    "http://10.99.2.51:8000",
+    "https://non-seo-thousand-gabriel.trycloudflare.com",
+]
