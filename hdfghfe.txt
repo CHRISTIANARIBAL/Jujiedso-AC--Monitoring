@@ -95,6 +95,15 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type
 
 setup cloudflare
+cd ~/Downloads
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+chmod +x cloudflared-linux-amd64
+sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
+cloudflared --version
+
+test cloudflare
 curl http://10.99.2.51:8000/
 ss -lntp | grep 8000
+
+start cloudflare
 cloudflared tunnel --url http://10.99.2.51:8000
