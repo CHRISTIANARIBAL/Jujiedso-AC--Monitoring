@@ -83,11 +83,18 @@ VLAN1004                   unassigned      manual up
 
 management IP of CALU-OLT4 = VLAN999       10.99.2.14      manual up
 
+Installing TailSacle
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
 tailscale status
 tailscale ip
 
+Make The Ubuntu dont sleep
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
 gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type
+
+setup cloudflare
+curl http://10.99.2.51:8000/
+ss -lntp | grep 8000
+cloudflared tunnel --url http://10.99.2.51:8000
