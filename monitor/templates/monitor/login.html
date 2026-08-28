@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - PPPoE Monitor</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100">
+
+    <div class="flex min-h-screen items-center justify-center px-4">
+
+        <div class="w-full max-w-md">
+
+            <!-- Logo / Header -->
+            <div class="mb-6 text-center">
+
+                <div class="mx-auto mb-4 flex h-24 w-24 items-center justify-center">
+                    <img
+                        src="{% static 'images/JUJIEDSO_LOGO.png' %}"
+                        alt="JUJIEDSO Logo"
+                        class="h-full w-full object-contain"
+                    >
+                </div>
+
+                <h1 class="text-2xl font-bold text-gray-900">
+                    PPPoE Monitor
+                </h1>
+
+                <p class="mt-1 text-sm text-gray-500">
+                    Network Monitoring System
+                </p>
+
+            </div>
+
+
+            <!-- Login Card -->
+            <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-lg sm:p-8">
+
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-gray-900">
+                        Welcome Back
+                    </h2>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Please sign in to access the monitoring dashboard.
+                    </p>
+                </div>
+
+
+                {% if form.errors %}
+                    <div class="mb-5 rounded-lg border border-red-200 bg-red-50 px-4 py-3">
+
+                        <p class="text-sm font-medium text-red-700">
+                            Invalid username or password.
+                        </p>
+
+                        <p class="mt-1 text-xs text-red-600">
+                            Please check your credentials and try again.
+                        </p>
+
+                    </div>
+                {% endif %}
+
+
+                <form method="post" class="space-y-5">
+
+                    {% csrf_token %}
+
+                    <!-- Username -->
+                    <div>
+                        <label
+                            for="id_username"
+                            class="mb-1.5 block text-sm font-medium text-gray-700"
+                        >
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            name="username"
+                            id="id_username"
+                            autocomplete="username"
+                            required
+                            autofocus
+                            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                            placeholder="Enter username"
+                        >
+                    </div>
+
+
+                    <!-- Password -->
+                    <div>
+                        <label
+                            for="id_password"
+                            class="mb-1.5 block text-sm font-medium text-gray-700"
+                        >
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            id="id_password"
+                            autocomplete="current-password"
+                            required
+                            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                            placeholder="Enter password"
+                        >
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    >
+                        Sign In
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Footer -->
+            <div class="mt-6 text-center">
+
+                <p class="text-xs text-gray-400">
+                    JUJIEDSO FIBR CODERS
+                </p>
+
+                <p class="mt-1 text-xs text-gray-400">
+                    PPPoE Network Monitoring System
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% extends "monitor/base.html" %}
+{% block title %}Raw MikroTik Logs{% endblock %}
+{% block page_title %}Raw MikroTik Logs{% endblock %}
+
+{% block content %}
+    <div class="space-y-5">
+        <div class="flex items-center justify-between">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900">Raw MikroTik Logs</h1>
+                <p class="mt-1 text-sm text-gray-500">Daily raw /log/print archives from all Access Concentrators</p>
+            </div>
+            <a href="{% url 'dashboard' %}" class="rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200">← Dashboard</a>
+        </div>
+        {% for item in ac_logs %}
+            <div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                <div class="flex items-center justify-between border-b border-gray-200 bg-gray-50 px-5 py-3">
+                    <div>
+                        <h2 class="text-base font-semibold text-gray-900">{{ item.ac.name }}</h2>
+                        <p class="text-xs text-gray-500">{{ item.ac.ip_address }}</p>
+                    </div>
+                    <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                        {{ item.files|length }} file{{ item.files|length|pluralize }}
+                    </span>
+                </div>
+                {% if item.files %}
+                    <div class="divide-y divide-gray-100">
+                        {% for file in item.files %}
+                            <a href="{% url 'raw_log_viewer' item.ac.name file.name %}" class="flex items-center justify-between px-5 py-3 transition hover:bg-blue-50">
+                                <div class="flex items-center gap-3">
+                                    <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gray-100 text-lg">📄</div>
+                                        <div>
+                                            <p class="text-sm font-medium text-gray-900">{{ file.name }}</p>
+                                            <p class="text-xs text-gray-400">
+                                                {{ file.lines }} log lines · {{ file.size|filesizeformat }}
+                                            </p>
+                                        </div>
+                                </div>
+                                <span class="text-xs font-medium text-blue-600">View logs →</span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="px-5 py-8 text-center">
+                        <p class="text-sm text-gray-400">No raw log files available.</p>
+                    </div>
+                {% endif %}
+            </div>
+            {% empty %}
+            <div class="rounded-xl border border-gray-200 bg-white px-5 py-10 text-center shadow-sm">
+                <p class="text-sm text-gray-400">No enabled Access Concentrators found.</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

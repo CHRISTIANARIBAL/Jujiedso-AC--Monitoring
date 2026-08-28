@@ -1,0 +1,1633 @@
+2026-08-28 00:31:35 | pppoe,ppp,error | <d30e>: user Dave authentication failed
+2026-08-28 00:33:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:33:26 | pppoe,ppp,error | <d30f>: user Dave authentication failed
+2026-08-28 00:34:40 | pppoe,info | PPPoE connection established from D4:7E:A9:97:38:0E
+2026-08-28 00:34:40 | pppoe,ppp,info,account | santateresita02velascon logged in, 100.64.10.29 from D4:7E:A9:97:38:0E
+2026-08-28 00:34:40 | pppoe,ppp,info | <pppoe-santateresita02velascon>: authenticated
+2026-08-28 00:34:40 | pppoe,ppp,info | <pppoe-santateresita02velascon>: connected
+2026-08-28 00:35:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:35:25 | pppoe,ppp,error | <d310>: user Dave authentication failed
+2026-08-28 00:39:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:39:13 | pppoe,ppp,error | <d311>: user Dave authentication failed
+2026-08-28 00:41:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:41:02 | pppoe,ppp,error | <d312>: user Dave authentication failed
+2026-08-28 00:44:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:45:00 | pppoe,ppp,error | <d313>: user Dave authentication failed
+2026-08-28 00:47:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 00:47:42 | pppoe,ppp,error | <d314>: user Dave authentication failed
+2026-08-28 00:49:39 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 00:49:40 | pppoe,ppp,error | <d315>: user Dave authentication failed
+2026-08-28 00:51:05 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 00:51:09 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 00:51:55 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 00:53:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 00:53:38 | pppoe,ppp,error | <d316>: user Dave authentication failed
+2026-08-28 00:56:17 | pppoe,ppp,info | <pppoe-poblacion09gantamg>: terminating... - peer is not responding
+2026-08-28 00:56:17 | pppoe,ppp,info,account | poblacion09gantamg logged out, 9087 65545 17041 1192 349 from B4:E4:6B:90:99:22
+2026-08-28 00:56:17 | pppoe,ppp,info | <pppoe-poblacion09gantamg>: disconnected
+2026-08-28 00:57:14 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: terminating...
+2026-08-28 00:57:14 | pppoe,ppp,info,account | loverslane01mangguraye logged out, 66292 641869138 1724421136 1836219 2609243 from 04:33:89:76:DD:37
+2026-08-28 00:57:14 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: disconnected
+2026-08-28 00:57:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 00:57:19 | pppoe,ppp,error | <d317>: user Dave authentication failed
+2026-08-28 01:04:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:04:06 | pppoe,ppp,error | <d318>: user Dave authentication failed
+2026-08-28 01:07:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:07:41 | pppoe,ppp,error | <d319>: user Dave authentication failed
+2026-08-28 01:09:10 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 01:09:13 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 01:09:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:09:25 | pppoe,ppp,error | <d31a>: user Dave authentication failed
+2026-08-28 01:10:01 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 01:12:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:12:44 | pppoe,ppp,error | <d31b>: user Dave authentication failed
+2026-08-28 01:13:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:13:01 | pppoe,ppp,error | <d31c>: user Dave authentication failed
+2026-08-28 01:14:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:14:16 | pppoe,ppp,error | <d31d>: user Dave authentication failed
+2026-08-28 01:14:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:14:41 | pppoe,ppp,error | <d31e>: user Dave authentication failed
+2026-08-28 01:15:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:15:53 | pppoe,ppp,error | <d31f>: user Dave authentication failed
+2026-08-28 01:19:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:19:22 | pppoe,ppp,error | <d320>: user Dave authentication failed
+2026-08-28 01:19:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:19:36 | pppoe,ppp,error | <d321>: user Dave authentication failed
+2026-08-28 01:20:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:20:57 | pppoe,ppp,error | <d322>: user Dave authentication failed
+2026-08-28 01:22:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:22:43 | pppoe,ppp,error | <d323>: user Dave authentication failed
+2026-08-28 01:24:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:24:42 | pppoe,ppp,error | <d324>: user Dave authentication failed
+2026-08-28 01:30:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:30:22 | pppoe,ppp,error | <d325>: user Dave authentication failed
+2026-08-28 01:30:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:30:26 | pppoe,ppp,error | <d326>: user Dave authentication failed
+2026-08-28 01:32:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:32:06 | pppoe,ppp,error | <d327>: user Dave authentication failed
+2026-08-28 01:33:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:33:46 | pppoe,ppp,error | <d328>: user Dave authentication failed
+2026-08-28 01:33:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:33:53 | pppoe,ppp,error | <d329>: user Dave authentication failed
+2026-08-28 01:35:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:35:45 | pppoe,ppp,error | <d32a>: user Dave authentication failed
+2026-08-28 01:37:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:37:42 | pppoe,ppp,error | <d32b>: user Dave authentication failed
+2026-08-28 01:39:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:39:27 | pppoe,ppp,error | <d32c>: user Dave authentication failed
+2026-08-28 01:41:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:41:19 | pppoe,ppp,error | <d32d>: user Dave authentication failed
+2026-08-28 01:41:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:41:27 | pppoe,ppp,error | <d32e>: user Dave authentication failed
+2026-08-28 01:43:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:43:12 | pppoe,ppp,error | <d32f>: user Dave authentication failed
+2026-08-28 01:43:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:43:14 | pppoe,ppp,error | <d330>: user Dave authentication failed
+2026-08-28 01:44:01 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 01:44:03 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 01:44:59 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 01:53:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:53:45 | pppoe,ppp,error | <d331>: user Dave authentication failed
+2026-08-28 01:57:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 01:57:29 | pppoe,ppp,error | <d332>: user Dave authentication failed
+2026-08-28 01:59:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 01:59:43 | pppoe,ppp,error | <d333>: user Dave authentication failed
+2026-08-28 02:02:41 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 02:02:44 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 02:03:29 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 02:06:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:07:00 | pppoe,ppp,error | <d334>: user Dave authentication failed
+2026-08-28 02:10:31 | pppoe,info | PPPoE connection established from 04:33:89:76:DD:37
+2026-08-28 02:10:32 | pppoe,ppp,error | <22c1>: user loverslane01mangguraye authentication failed
+2026-08-28 02:11:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:11:50 | pppoe,ppp,error | <d335>: user Dave authentication failed
+2026-08-28 02:12:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:12:02 | pppoe,ppp,error | <d336>: user Dave authentication failed
+2026-08-28 02:13:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:13:50 | pppoe,ppp,error | <d337>: user Dave authentication failed
+2026-08-28 02:14:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:14:01 | pppoe,ppp,error | <d338>: user Dave authentication failed
+2026-08-28 02:15:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:15:26 | pppoe,ppp,error | <d339>: user Dave authentication failed
+2026-08-28 02:17:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:17:24 | pppoe,ppp,error | <d33a>: user Dave authentication failed
+2026-08-28 02:17:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:17:29 | pppoe,ppp,error | <d33b>: user Dave authentication failed
+2026-08-28 02:19:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:19:04 | pppoe,ppp,error | <d33c>: user Dave authentication failed
+2026-08-28 02:19:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:19:09 | pppoe,ppp,error | <d33d>: user Dave authentication failed
+2026-08-28 02:20:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:20:59 | pppoe,ppp,error | <d33e>: user Dave authentication failed
+2026-08-28 02:20:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:21:00 | pppoe,ppp,error | <d33f>: user Dave authentication failed
+2026-08-28 02:26:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:26:01 | pppoe,ppp,error | <d340>: user Dave authentication failed
+2026-08-28 02:32:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:32:18 | pppoe,ppp,error | <d341>: user Dave authentication failed
+2026-08-28 02:33:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:33:08 | pppoe,ppp,error | <d342>: user Dave authentication failed
+2026-08-28 02:34:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:34:17 | pppoe,ppp,error | <d343>: user Dave authentication failed
+2026-08-28 02:34:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:34:49 | pppoe,ppp,error | <d344>: user Dave authentication failed
+2026-08-28 02:39:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:39:29 | pppoe,ppp,error | <d345>: user Dave authentication failed
+2026-08-28 02:42:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:42:04 | pppoe,ppp,error | <d346>: user Dave authentication failed
+2026-08-28 02:43:15 | pppoe,info | PPPoE connection established from 04:33:89:76:DD:37
+2026-08-28 02:43:16 | pppoe,ppp,error | <22c2>: user loverslane01mangguraye authentication failed
+2026-08-28 02:43:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 02:43:22 | pppoe,ppp,error | <d347>: user Dave authentication failed
+2026-08-28 02:43:46 | pppoe,info | PPPoE connection established from 04:33:89:76:DD:37
+2026-08-28 02:43:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:43:48 | pppoe,ppp,info,account | loverslane01mangguraye logged in, 10.99.40.29 from 04:33:89:76:DD:37
+2026-08-28 02:43:48 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: authenticated
+2026-08-28 02:43:48 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: connected
+2026-08-28 02:43:48 | pppoe,ppp,error | <d348>: user Dave authentication failed
+2026-08-28 02:50:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:50:56 | pppoe,ppp,error | <d349>: user Dave authentication failed
+2026-08-28 02:54:10 | pppoe,info | PPPoE connection established from B4:E4:6B:6D:D4:71
+2026-08-28 02:54:10 | pppoe,ppp,info,account | sanjose14balungagz logged in, 100.64.14.82 from B4:E4:6B:6D:D4:71
+2026-08-28 02:54:10 | pppoe,ppp,info | <pppoe-sanjose14balungagz>: authenticated
+2026-08-28 02:54:10 | pppoe,ppp,info | <pppoe-sanjose14balungagz>: connected
+2026-08-28 02:54:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 02:54:23 | pppoe,ppp,error | <d34a>: user Dave authentication failed
+2026-08-28 02:55:47 | pppoe,info | PPPoE connection established from 0C:C6:CC:35:32:A7
+2026-08-28 02:55:48 | pppoe,ppp,error | <22c5>: user loverslane01ysabellevs authentication failed
+2026-08-28 02:55:58 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: terminating...
+2026-08-28 02:55:58 | pppoe,ppp,info,account | loverslane01mangguraye logged out, 730 2004315 2786348 16670 17391 from 04:33:89:76:DD:37
+2026-08-28 02:55:58 | pppoe,ppp,info | <pppoe-loverslane01mangguraye>: disconnected
+2026-08-28 03:04:51 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 03:04:54 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 03:05:25 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 03:07:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:07:28 | pppoe,ppp,error | <d34b>: user Dave authentication failed
+2026-08-28 03:09:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:09:20 | pppoe,ppp,error | <d34c>: user Dave authentication failed
+2026-08-28 03:11:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:11:06 | pppoe,ppp,error | <d34d>: user Dave authentication failed
+2026-08-28 03:16:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:16:39 | pppoe,ppp,error | <d34e>: user Dave authentication failed
+2026-08-28 03:22:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:22:36 | pppoe,ppp,error | <d34f>: user Dave authentication failed
+2026-08-28 03:24:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:24:09 | pppoe,ppp,error | <d350>: user Dave authentication failed
+2026-08-28 03:27:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:27:26 | pppoe,ppp,error | <d351>: user Dave authentication failed
+2026-08-28 03:29:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:29:23 | pppoe,ppp,error | <d352>: user Dave authentication failed
+2026-08-28 03:31:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:31:22 | pppoe,ppp,error | <d353>: user Dave authentication failed
+2026-08-28 03:33:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:33:21 | pppoe,ppp,error | <d354>: user Dave authentication failed
+2026-08-28 03:37:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:37:19 | pppoe,ppp,error | <d355>: user Dave authentication failed
+2026-08-28 03:39:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:39:19 | pppoe,ppp,error | <d356>: user Dave authentication failed
+2026-08-28 03:41:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:41:18 | pppoe,ppp,error | <d357>: user Dave authentication failed
+2026-08-28 03:43:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:43:17 | pppoe,ppp,error | <d358>: user Dave authentication failed
+2026-08-28 03:45:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:45:17 | pppoe,ppp,error | <d359>: user Dave authentication failed
+2026-08-28 03:49:15 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 03:49:19 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 03:50:10 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 03:51:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:51:13 | pppoe,ppp,error | <d35a>: user Dave authentication failed
+2026-08-28 03:53:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 03:53:12 | pppoe,ppp,error | <d35b>: user Dave authentication failed
+2026-08-28 04:03:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:03:05 | pppoe,ppp,error | <d35c>: user Dave authentication failed
+2026-08-28 04:07:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:07:03 | pppoe,ppp,error | <d35d>: user Dave authentication failed
+2026-08-28 04:09:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:09:02 | pppoe,ppp,error | <d35e>: user Dave authentication failed
+2026-08-28 04:09:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:09:31 | pppoe,ppp,error | <d35f>: user Dave authentication failed
+2026-08-28 04:09:37 | pppoe,ppp,info | <pppoe-loverslane01free>: terminating...
+2026-08-28 04:09:37 | pppoe,ppp,info,account | loverslane01free logged out, 31347 814805669 15065117915 4483196 13468748 from BC:3F:8F:16:67:3B
+2026-08-28 04:09:37 | pppoe,ppp,info | <pppoe-loverslane01free>: disconnected
+2026-08-28 04:12:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:13:00 | pppoe,ppp,error | <d360>: user Dave authentication failed
+2026-08-28 04:14:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:15:00 | pppoe,ppp,error | <d361>: user Dave authentication failed
+2026-08-28 04:15:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:15:27 | pppoe,ppp,error | <d362>: user Dave authentication failed
+2026-08-28 04:16:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:16:59 | pppoe,ppp,error | <d363>: user Dave authentication failed
+2026-08-28 04:17:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:17:26 | pppoe,ppp,error | <d364>: user Dave authentication failed
+2026-08-28 04:20:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:20:56 | pppoe,ppp,error | <d365>: user Dave authentication failed
+2026-08-28 04:23:15 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 04:23:18 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 04:24:04 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 04:25:00 | pppoe,ppp,info | <pppoe-sagrada01machutesh>: terminating...
+2026-08-28 04:25:00 | pppoe,ppp,info,account | sagrada01machutesh logged out, 267487 2486455232 42186663762 12096437 37621441 from 04:95:E6:83:70:60
+2026-08-28 04:25:00 | pppoe,ppp,info | <pppoe-sagrada01machutesh>: disconnected
+2026-08-28 04:28:17 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: terminating... - peer is not responding
+2026-08-28 04:28:17 | pppoe,ppp,info,account | barobo01tenebrosojulieto logged out, 78639 1620552896 30613976505 7607859 25121603 from A0:F4:79:10:D5:BD
+2026-08-28 04:28:17 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: disconnected
+2026-08-28 04:28:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:28:57 | pppoe,ppp,error | <d366>: user Dave authentication failed
+2026-08-28 04:30:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:30:44 | pppoe,ppp,error | <d367>: user Dave authentication failed
+2026-08-28 04:32:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:32:43 | pppoe,ppp,error | <d368>: user Dave authentication failed
+2026-08-28 04:38:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:38:17 | pppoe,ppp,error | <d369>: user Dave authentication failed
+2026-08-28 04:39:00 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 04:39:02 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 04:39:50 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 04:40:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:40:16 | pppoe,ppp,error | <d36a>: user Dave authentication failed
+2026-08-28 04:43:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:43:52 | pppoe,ppp,error | <d36b>: user Dave authentication failed
+2026-08-28 04:43:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:44:00 | pppoe,ppp,error | <d36c>: user Dave authentication failed
+2026-08-28 04:45:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:45:51 | pppoe,ppp,error | <d36d>: user Dave authentication failed
+2026-08-28 04:46:47 | pppoe,info | PPPoE connection established from 3C:67:8C:46:76:2C
+2026-08-28 04:46:47 | pppoe,ppp,info,account | baclay02alivionl logged in, 100.64.13.46 from 3C:67:8C:46:76:2C
+2026-08-28 04:46:47 | pppoe,ppp,info | <pppoe-baclay02alivionl>: authenticated
+2026-08-28 04:46:47 | pppoe,ppp,info | <pppoe-baclay02alivionl>: connected
+2026-08-28 04:47:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:47:50 | pppoe,ppp,error | <d36e>: user Dave authentication failed
+2026-08-28 04:47:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:47:58 | pppoe,ppp,error | <d36f>: user Dave authentication failed
+2026-08-28 04:53:36 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 04:53:37 | pppoe,ppp,error | <d370>: user Dave authentication failed
+2026-08-28 04:57:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:57:53 | pppoe,ppp,error | <d371>: user Dave authentication failed
+2026-08-28 04:59:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 04:59:43 | pppoe,ppp,error | <d372>: user Dave authentication failed
+2026-08-28 05:01:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:01:10 | pppoe,ppp,error | <d373>: user Dave authentication failed
+2026-08-28 05:01:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:01:43 | pppoe,ppp,error | <d374>: user Dave authentication failed
+2026-08-28 05:03:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:03:09 | pppoe,ppp,error | <d375>: user Dave authentication failed
+2026-08-28 05:07:23 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 05:07:27 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 05:08:11 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 05:09:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:09:38 | pppoe,ppp,error | <d376>: user Dave authentication failed
+2026-08-28 05:11:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:11:06 | pppoe,ppp,error | <d377>: user Dave authentication failed
+2026-08-28 05:14:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:14:55 | pppoe,ppp,error | <d378>: user Dave authentication failed
+2026-08-28 05:16:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:16:59 | pppoe,ppp,error | <d379>: user Dave authentication failed
+2026-08-28 05:17:38 | pppoe,info | PPPoE connection established from B4:E4:6B:8F:A7:F3
+2026-08-28 05:17:38 | pppoe,info | PPPoE connection from B4:E4:6B:8F:A7:F3 was already active - closing previous one
+2026-08-28 05:17:38 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: terminating... - disconnected
+2026-08-28 05:17:38 | pppoe,ppp,info,account | sanjose01aligatoa logged out, 270583 9028732805 89048355520 30529513 81490941 from B4:E4:6B:8F:A7:F3
+2026-08-28 05:17:38 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: disconnected
+2026-08-28 05:17:38 | pppoe,ppp,info,account | sanjose01aligatoa logged in, 100.64.14.173 from B4:E4:6B:8F:A7:F3
+2026-08-28 05:17:38 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: authenticated
+2026-08-28 05:17:38 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: connected
+2026-08-28 05:18:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:18:52 | pppoe,ppp,error | <d37a>: user Dave authentication failed
+2026-08-28 05:18:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:18:59 | pppoe,ppp,error | <d37b>: user Dave authentication failed
+2026-08-28 05:22:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:22:51 | pppoe,ppp,error | <d37c>: user Dave authentication failed
+2026-08-28 05:22:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:22:57 | pppoe,ppp,error | <d37d>: user Dave authentication failed
+2026-08-28 05:23:38 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 05:23:43 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 05:24:29 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 05:26:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:26:54 | pppoe,ppp,error | <d37e>: user Dave authentication failed
+2026-08-28 05:28:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:28:21 | pppoe,ppp,error | <d37f>: user Dave authentication failed
+2026-08-28 05:30:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:30:20 | pppoe,ppp,error | <d380>: user Dave authentication failed
+2026-08-28 05:32:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:32:19 | pppoe,ppp,error | <d381>: user Dave authentication failed
+2026-08-28 05:36:50 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: terminating... - peer is not responding
+2026-08-28 05:36:50 | pppoe,ppp,info,account | cabilinan01barbajor logged out, 65738 309456 256003 1610 763 from D4:7E:A8:EA:2C:08
+2026-08-28 05:36:50 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: disconnected
+2026-08-28 05:36:50 | pppoe,info | PPPoE connection established from D4:7E:A8:EA:2C:08
+2026-08-28 05:36:50 | pppoe,ppp,info,account | cabilinan01barbajor logged in, 10.99.113.59 from D4:7E:A8:EA:2C:08
+2026-08-28 05:36:50 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: authenticated
+2026-08-28 05:36:50 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: connected
+2026-08-28 05:38:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:38:07 | pppoe,ppp,error | <d383>: user Dave authentication failed
+2026-08-28 05:38:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:38:09 | pppoe,ppp,error | <d384>: user Dave authentication failed
+2026-08-28 05:40:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:40:07 | pppoe,ppp,error | <d385>: user Dave authentication failed
+2026-08-28 05:40:30 | pppoe,ppp,info | <pppoe-quarry01bolongonj>: terminating... - peer is not responding
+2026-08-28 05:40:30 | pppoe,ppp,info,account | quarry01bolongonj logged out, 207503 5542098304 104193120492 23951082 86995984 from 00:2E:C7:79:B2:D2
+2026-08-28 05:40:30 | pppoe,ppp,info | <pppoe-quarry01bolongonj>: disconnected
+2026-08-28 05:41:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:41:44 | pppoe,ppp,error | <d386>: user Dave authentication failed
+2026-08-28 05:43:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:43:43 | pppoe,ppp,error | <d387>: user Dave authentication failed
+2026-08-28 05:45:34 | pppoe,ppp,info | <pppoe-sanjuan01projok>: terminating... - peer is not responding
+2026-08-28 05:45:34 | pppoe,ppp,info,account | sanjuan01projok logged out, 29184 318061366 8270247187 1544850 6645441 from D4:7E:A8:AC:06:51
+2026-08-28 05:45:34 | pppoe,ppp,info | <pppoe-sanjuan01projok>: disconnected
+2026-08-28 05:45:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:45:54 | pppoe,ppp,error | <d388>: user Dave authentication failed
+2026-08-28 05:46:49 | pppoe,info | PPPoE connection established from D4:7E:A8:AC:06:51
+2026-08-28 05:46:49 | pppoe,ppp,info,account | sanjuan01projok logged in, 10.99.38.93 from D4:7E:A8:AC:06:51
+2026-08-28 05:46:49 | pppoe,ppp,info | <pppoe-sanjuan01projok>: authenticated
+2026-08-28 05:46:49 | pppoe,ppp,info | <pppoe-sanjuan01projok>: connected
+2026-08-28 05:49:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 05:49:53 | pppoe,ppp,error | <d389>: user Dave authentication failed
+2026-08-28 05:51:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:51:07 | pppoe,ppp,error | <d38a>: user Dave authentication failed
+2026-08-28 05:51:12 | pppoe,info | PPPoE connection established from E4:72:E2:AD:5F:CB
+2026-08-28 05:51:12 | pppoe,ppp,info,account | lantungan01tigoyr logged in, 100.64.15.89 from E4:72:E2:AD:5F:CB
+2026-08-28 05:51:12 | pppoe,ppp,info | <pppoe-lantungan01tigoyr>: authenticated
+2026-08-28 05:51:12 | pppoe,ppp,info | <pppoe-lantungan01tigoyr>: connected
+2026-08-28 05:52:25 | pppoe,ppp,info | <pppoe-sanjuan01projok>: terminating... - peer is not responding
+2026-08-28 05:52:25 | pppoe,ppp,info,account | sanjuan01projok logged out, 336 5205551 21579271 17375 21454 from D4:7E:A8:AC:06:51
+2026-08-28 05:52:25 | pppoe,ppp,info | <pppoe-sanjuan01projok>: disconnected
+2026-08-28 05:54:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:54:50 | pppoe,ppp,error | <d38b>: user Dave authentication failed
+2026-08-28 05:58:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 05:58:17 | pppoe,ppp,error | <d38c>: user Dave authentication failed
+2026-08-28 06:02:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:02:09 | pppoe,ppp,error | <d38d>: user Dave authentication failed
+2026-08-28 06:06:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:06:38 | pppoe,ppp,error | <d38e>: user Dave authentication failed
+2026-08-28 06:07:28 | pppoe,info | PPPoE connection established from 4C:D0:CB:ED:04:39
+2026-08-28 06:07:28 | pppoe,ppp,info,account | catmon01beltrane logged in, 100.64.13.110 from 4C:D0:CB:ED:04:39
+2026-08-28 06:07:28 | pppoe,ppp,info | <pppoe-catmon01beltrane>: authenticated
+2026-08-28 06:07:28 | pppoe,ppp,info | <pppoe-catmon01beltrane>: connected
+2026-08-28 06:09:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:09:30 | pppoe,ppp,error | <d38f>: user Dave authentication failed
+2026-08-28 06:10:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:10:22 | pppoe,ppp,error | <d390>: user Dave authentication failed
+2026-08-28 06:13:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:13:14 | pppoe,ppp,error | <d391>: user Dave authentication failed
+2026-08-28 06:14:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:15:00 | pppoe,ppp,error | <d392>: user Dave authentication failed
+2026-08-28 06:16:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:16:19 | pppoe,ppp,error | <d393>: user Dave authentication failed
+2026-08-28 06:16:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:16:31 | pppoe,ppp,error | <d394>: user Dave authentication failed
+2026-08-28 06:18:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:18:30 | pppoe,ppp,error | <d395>: user Dave authentication failed
+2026-08-28 06:21:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:21:50 | pppoe,ppp,error | <d396>: user Dave authentication failed
+2026-08-28 06:23:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:23:50 | pppoe,ppp,error | <d397>: user Dave authentication failed
+2026-08-28 06:24:26 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 06:24:57 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 06:25:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:25:49 | pppoe,ppp,error | <d398>: user Dave authentication failed
+2026-08-28 06:26:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:26:04 | pppoe,ppp,error | <d399>: user Dave authentication failed
+2026-08-28 06:28:05 | pppoe,info | PPPoE connection established from D4:7E:A8:F7:89:E2
+2026-08-28 06:28:05 | pppoe,info | PPPoE connection from D4:7E:A8:F7:89:E2 was already active - closing previous one
+2026-08-28 06:28:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: terminating... - disconnected
+2026-08-28 06:28:05 | pppoe,ppp,info,account | romarate01lequironj logged out, 65581 1454518857 17416153901 7030112 16431795 from D4:7E:A8:F7:89:E2
+2026-08-28 06:28:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: disconnected
+2026-08-28 06:28:05 | pppoe,ppp,info,account | romarate01lequironj logged in, 100.64.12.83 from D4:7E:A8:F7:89:E2
+2026-08-28 06:28:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: authenticated
+2026-08-28 06:28:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: connected
+2026-08-28 06:28:07 | pppoe,info | PPPoE connection established from B4:E4:6B:7F:C5:32
+2026-08-28 06:28:07 | pppoe,ppp,info,account | lapaz01lendiol logged in, 100.64.15.90 from B4:E4:6B:7F:C5:32
+2026-08-28 06:28:07 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: authenticated
+2026-08-28 06:28:07 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: connected
+2026-08-28 06:28:14 | pppoe,ppp,info | <pppoe-poblacion03repasom>: terminating... - peer is not responding
+2026-08-28 06:28:14 | pppoe,ppp,info,account | poblacion03repasom logged out, 274832 7486704973 97863590554 22666626 79975882 from 14:A0:F8:22:B1:7F
+2026-08-28 06:28:14 | pppoe,ppp,info | <pppoe-poblacion03repasom>: disconnected
+2026-08-28 06:31:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:31:18 | pppoe,ppp,error | <d39a>: user Dave authentication failed
+2026-08-28 06:32:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:32:52 | pppoe,ppp,error | <d39b>: user Dave authentication failed
+2026-08-28 06:33:02 | pppoe,info | PPPoE connection established from E4:72:E2:87:6D:14
+2026-08-28 06:33:02 | pppoe,ppp,info,account | romarate02demavivasr logged in, 100.64.15.91 from E4:72:E2:87:6D:14
+2026-08-28 06:33:02 | pppoe,ppp,info | <pppoe-romarate02demavivasr>: authenticated
+2026-08-28 06:33:02 | pppoe,ppp,info | <pppoe-romarate02demavivasr>: connected
+2026-08-28 06:33:28 | pppoe,info | PPPoE connection established from D4:7E:A8:B0:45:FC
+2026-08-28 06:33:29 | pppoe,ppp,info,account | barobo03diamaljm logged in, 100.64.15.92 from D4:7E:A8:B0:45:FC
+2026-08-28 06:33:29 | pppoe,ppp,info | <pppoe-barobo03diamaljm>: authenticated
+2026-08-28 06:33:29 | pppoe,ppp,info | <pppoe-barobo03diamaljm>: connected
+2026-08-28 06:34:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:34:51 | pppoe,info | PPPoE connection established from D4:7E:A8:9C:45:28
+2026-08-28 06:34:51 | pppoe,ppp,info,account | lintugop08andrinr logged in, 100.64.15.48 from D4:7E:A8:9C:45:28
+2026-08-28 06:34:51 | pppoe,ppp,info | <pppoe-lintugop08andrinr>: authenticated
+2026-08-28 06:34:51 | pppoe,ppp,info | <pppoe-lintugop08andrinr>: connected
+2026-08-28 06:34:51 | pppoe,ppp,error | <d39c>: user Dave authentication failed
+2026-08-28 06:36:36 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:36:37 | pppoe,ppp,error | <d39d>: user Dave authentication failed
+2026-08-28 06:38:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:38:34 | pppoe,ppp,error | <d39e>: user Dave authentication failed
+2026-08-28 06:40:38 | system,info,account | user admin logged in from 103.164.146.183 via winbox
+2026-08-28 06:44:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 06:44:02 | pppoe,ppp,error | <d39f>: user Dave authentication failed
+2026-08-28 06:44:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 06:44:04 | pppoe,ppp,error | <d3a0>: user Dave authentication failed
+2026-08-28 06:57:10 | system,info,account | user admin logged out from 103.164.146.183 via winbox
+2026-08-28 07:04:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:04:24 | pppoe,ppp,error | <d3a1>: user Dave authentication failed
+2026-08-28 07:07:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:07:43 | pppoe,ppp,error | <d3a2>: user Dave authentication failed
+2026-08-28 07:07:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:07:44 | pppoe,ppp,error | <d3a3>: user Dave authentication failed
+2026-08-28 07:11:39 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:11:40 | pppoe,ppp,error | <d3a4>: user Dave authentication failed
+2026-08-28 07:13:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:13:38 | pppoe,ppp,error | <d3a5>: user Dave authentication failed
+2026-08-28 07:15:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:15:31 | pppoe,ppp,error | <d3a6>: user Dave authentication failed
+2026-08-28 07:16:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:16:57 | pppoe,ppp,error | <d3a7>: user Dave authentication failed
+2026-08-28 07:25:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:25:44 | pppoe,ppp,error | <d3a8>: user Dave authentication failed
+2026-08-28 07:30:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:30:11 | pppoe,ppp,error | <d3a9>: user Dave authentication failed
+2026-08-28 07:31:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:31:28 | pppoe,ppp,error | <d3aa>: user Dave authentication failed
+2026-08-28 07:33:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:33:31 | pppoe,ppp,error | <d3ab>: user Dave authentication failed
+2026-08-28 07:34:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:34:39 | pppoe,ppp,error | <d3ac>: user Dave authentication failed
+2026-08-28 07:35:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:35:02 | pppoe,ppp,error | <d3ad>: user Dave authentication failed
+2026-08-28 07:36:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:36:10 | pppoe,ppp,error | <d3ae>: user Dave authentication failed
+2026-08-28 07:36:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:36:34 | pppoe,ppp,error | <d3af>: user Dave authentication failed
+2026-08-28 07:38:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:38:05 | pppoe,ppp,error | <d3b0>: user Dave authentication failed
+2026-08-28 07:39:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:39:36 | pppoe,ppp,error | <d3b1>: user Dave authentication failed
+2026-08-28 07:39:46 | pppoe,ppp,info | <pppoe-bagonglipunan01paglinawanj>: terminating... - peer is not responding
+2026-08-28 07:39:46 | pppoe,ppp,info,account | bagonglipunan01paglinawanj logged out, 279125 7174714893 86508143804 36436426 86663964 from 5C:54:6D:04:B2:8F
+2026-08-28 07:39:46 | pppoe,ppp,info | <pppoe-bagonglipunan01paglinawanj>: disconnected
+2026-08-28 07:41:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:41:07 | pppoe,ppp,error | <d3b2>: user Dave authentication failed
+2026-08-28 07:42:25 | pppoe,info | PPPoE connection established from E8:AB:F3:8C:5E:F8
+2026-08-28 07:42:25 | pppoe,ppp,info,account | poblacion03jabonees logged in, 100.64.15.62 from E8:AB:F3:8C:5E:F8
+2026-08-28 07:42:25 | pppoe,ppp,info | <pppoe-poblacion03jabonees>: authenticated
+2026-08-28 07:42:25 | pppoe,ppp,info | <pppoe-poblacion03jabonees>: connected
+2026-08-28 07:42:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:42:38 | pppoe,ppp,error | <d3b3>: user Dave authentication failed
+2026-08-28 07:45:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:45:17 | pppoe,ppp,error | <d3b4>: user Dave authentication failed
+2026-08-28 07:46:15 | pppoe,info | PPPoE connection established from D4:7E:A9:BA:FC:64
+2026-08-28 07:46:15 | pppoe,ppp,info,account | sanjose03llacermt logged in, 10.99.113.64 from D4:7E:A9:BA:FC:64
+2026-08-28 07:46:15 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: authenticated
+2026-08-28 07:46:15 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: connected
+2026-08-28 07:48:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:48:43 | pppoe,ppp,error | <d3b6>: user Dave authentication failed
+2026-08-28 07:50:21 | pppoe,ppp,info | <pppoe-cabilinan04poperaj>: terminating... - peer is not responding
+2026-08-28 07:50:21 | pppoe,ppp,info,account | cabilinan04poperaj logged out, 120789 1812340363 27700831830 7377778 23147792 from B4:E4:6B:77:DC:2D
+2026-08-28 07:50:21 | pppoe,ppp,info | <pppoe-cabilinan04poperaj>: disconnected
+2026-08-28 07:51:37 | pppoe,info | PPPoE connection established from B4:E4:6B:77:DC:2D
+2026-08-28 07:51:37 | pppoe,ppp,info,account | cabilinan04poperaj logged in, 100.64.14.101 from B4:E4:6B:77:DC:2D
+2026-08-28 07:51:37 | pppoe,ppp,info | <pppoe-cabilinan04poperaj>: authenticated
+2026-08-28 07:51:37 | pppoe,ppp,info | <pppoe-cabilinan04poperaj>: connected
+2026-08-28 07:54:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:54:12 | pppoe,ppp,error | <d3b8>: user Dave authentication failed
+2026-08-28 07:57:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:57:04 | pppoe,ppp,error | <d3b9>: user Dave authentication failed
+2026-08-28 07:57:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:57:51 | pppoe,ppp,error | <d3ba>: user Dave authentication failed
+2026-08-28 07:58:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 07:58:39 | pppoe,ppp,error | <d3bb>: user Dave authentication failed
+2026-08-28 07:59:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 07:59:36 | pppoe,ppp,error | <d3bc>: user Dave authentication failed
+2026-08-28 08:00:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:00:22 | pppoe,ppp,error | <d3bd>: user Dave authentication failed
+2026-08-28 08:01:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:01:54 | pppoe,ppp,error | <d3be>: user Dave authentication failed
+2026-08-28 08:04:20 | pppoe,ppp,info | <pppoe-palo05nationalhigh>: terminating... - peer is not responding
+2026-08-28 08:04:20 | pppoe,ppp,info,account | palo05nationalhigh logged out, 204663 5804419324 47857738825 17806079 44301331 from 68:CC:6E:57:D3:CF
+2026-08-28 08:04:20 | pppoe,ppp,info | <pppoe-palo05nationalhigh>: disconnected
+2026-08-28 08:04:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:04:56 | pppoe,ppp,error | <d3bf>: user Dave authentication failed
+2026-08-28 08:05:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:05:53 | pppoe,ppp,error | <d3c0>: user Dave authentication failed
+2026-08-28 08:07:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:07:24 | pppoe,ppp,error | <d3c1>: user Dave authentication failed
+2026-08-28 08:08:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:08:55 | pppoe,ppp,error | <d3c2>: user Dave authentication failed
+2026-08-28 08:09:00 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating... - peer is not responding
+2026-08-28 08:09:00 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 263838 29903729684 41456742493 36968460 41575221 from D4:7E:A8:60:24:DB
+2026-08-28 08:09:00 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-08-28 08:10:06 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: terminating... - peer is not responding
+2026-08-28 08:10:06 | pppoe,ppp,info,account | bagongmaslog02cueringg logged out, 64694 1367136655 12618032127 5002528 11790653 from 5C:09:79:BB:20:40
+2026-08-28 08:10:06 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: disconnected
+2026-08-28 08:10:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:10:26 | pppoe,ppp,error | <d3c3>: user Dave authentication failed
+2026-08-28 08:11:08 | pppoe,info | PPPoE connection established from 5C:09:79:BB:20:40
+2026-08-28 08:11:08 | pppoe,ppp,info,account | bagongmaslog02cueringg logged in, 100.64.12.227 from 5C:09:79:BB:20:40
+2026-08-28 08:11:08 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: authenticated
+2026-08-28 08:11:08 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: connected
+2026-08-28 08:11:10 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: terminating... - peer is not responding
+2026-08-28 08:11:10 | pppoe,ppp,info,account | sanjose03llacermt logged out, 1496 281474 148782 1361 695 from D4:7E:A9:BA:FC:64
+2026-08-28 08:11:10 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: disconnected
+2026-08-28 08:13:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:13:28 | pppoe,ppp,error | <d3c4>: user Dave authentication failed
+2026-08-28 08:16:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:16:30 | pppoe,ppp,error | <d3c5>: user Dave authentication failed
+2026-08-28 08:25:16 | pppoe,ppp,info | <pppoe-sanjose01calon>: terminating... - peer is not responding
+2026-08-28 08:25:16 | pppoe,ppp,info,account | sanjose01calon logged out, 640136 22504768668 214875872426 73990918 191960954 from 40:7D:0F:17:65:0B
+2026-08-28 08:25:16 | pppoe,ppp,info | <pppoe-sanjose01calon>: disconnected
+2026-08-28 08:32:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:32:38 | pppoe,ppp,error | <d3c6>: user Dave authentication failed
+2026-08-28 08:35:39 | pppoe,ppp,info | <pppoe-baclay02alivionl>: terminating... - peer is not responding
+2026-08-28 08:35:39 | pppoe,ppp,info,account | baclay02alivionl logged out, 13732 434404943 2552568301 2072994 2910015 from 3C:67:8C:46:76:2C
+2026-08-28 08:35:39 | pppoe,ppp,info | <pppoe-baclay02alivionl>: disconnected
+2026-08-28 08:36:27 | pppoe,info | PPPoE connection established from 3C:67:8C:46:76:2C
+2026-08-28 08:36:27 | pppoe,ppp,info,account | baclay02alivionl logged in, 100.64.13.46 from 3C:67:8C:46:76:2C
+2026-08-28 08:36:27 | pppoe,ppp,info | <pppoe-baclay02alivionl>: authenticated
+2026-08-28 08:36:27 | pppoe,ppp,info | <pppoe-baclay02alivionl>: connected
+2026-08-28 08:36:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:36:32 | pppoe,ppp,error | <d3c7>: user Dave authentication failed
+2026-08-28 08:38:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:38:31 | pppoe,ppp,error | <d3c8>: user Dave authentication failed
+2026-08-28 08:40:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:40:03 | pppoe,ppp,error | <d3c9>: user Dave authentication failed
+2026-08-28 08:42:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:42:02 | pppoe,ppp,error | <d3ca>: user Dave authentication failed
+2026-08-28 08:43:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:43:10 | pppoe,ppp,error | <d3cb>: user Dave authentication failed
+2026-08-28 08:44:41 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 08:47:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:47:43 | pppoe,ppp,error | <d3cc>: user Dave authentication failed
+2026-08-28 08:53:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:53:08 | pppoe,ppp,error | <d3cd>: user Dave authentication failed
+2026-08-28 08:55:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:55:46 | pppoe,ppp,error | <d3ce>: user Dave authentication failed
+2026-08-28 08:56:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 08:56:11 | pppoe,ppp,error | <d3cf>: user Dave authentication failed
+2026-08-28 08:58:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 08:58:48 | pppoe,ppp,error | <d3d0>: user Dave authentication failed
+2026-08-28 09:00:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:00:44 | pppoe,ppp,error | <d3d1>: user Dave authentication failed
+2026-08-28 09:06:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:06:48 | pppoe,ppp,error | <d3d2>: user Dave authentication failed
+2026-08-28 09:08:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:08:19 | pppoe,ppp,error | <d3d3>: user Dave authentication failed
+2026-08-28 09:09:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:09:50 | pppoe,ppp,error | <d3d4>: user Dave authentication failed
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose02parejan>: terminating...
+2026-08-28 09:09:53 | pppoe,ppp,info,account | sanjose02parejan logged out, 184726 2043364919 44291127019 7832075 36370180 from 14:57:9F:6D:BC:7B
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose02parejan>: disconnected
+2026-08-28 09:09:53 | pppoe,info | PPPoE connection established from 14:09:DC:3E:EE:77
+2026-08-28 09:09:53 | pppoe,info | PPPoE connection from 14:09:DC:3E:EE:77 was already active - closing previous one
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose04chingchingcorp>: terminating... - disconnected
+2026-08-28 09:09:53 | pppoe,ppp,info,account | sanjose04chingchingcorp logged out, 181638 1008134241 38059500904 12590925 27273794 from 14:09:DC:3E:EE:77
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose04chingchingcorp>: disconnected
+2026-08-28 09:09:53 | pppoe,ppp,info,account | sanjose04chingchingcorp logged in, 100.64.14.165 from 14:09:DC:3E:EE:77
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose04chingchingcorp>: authenticated
+2026-08-28 09:09:53 | pppoe,ppp,info | <pppoe-sanjose04chingchingcorp>: connected
+2026-08-28 09:09:55 | pppoe,info | PPPoE connection established from B4:E4:6B:7F:C5:32
+2026-08-28 09:09:55 | pppoe,info | PPPoE connection from B4:E4:6B:7F:C5:32 was already active - closing previous one
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: terminating... - disconnected
+2026-08-28 09:09:55 | pppoe,ppp,info,account | lapaz01lendiol logged out, 9707 521476962 2345165505 808832 2145988 from B4:E4:6B:7F:C5:32
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: disconnected
+2026-08-28 09:09:55 | pppoe,ppp,info,account | lapaz01lendiol logged in, 100.64.15.90 from B4:E4:6B:7F:C5:32
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: authenticated
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-lapaz01lendiol>: connected
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: terminating...
+2026-08-28 09:09:55 | pppoe,ppp,info,account | sanjose01aligatoa logged out, 13938 138727084 2454281149 729123 2266526 from B4:E4:6B:8F:A7:F3
+2026-08-28 09:09:55 | pppoe,ppp,info | <pppoe-sanjose01aligatoa>: disconnected
+2026-08-28 09:10:02 | pppoe,ppp,info | <pppoe-romarate01manabom>: terminating... - peer is not responding
+2026-08-28 09:10:02 | pppoe,ppp,info,account | romarate01manabom logged out, 237189 4267056037 28647561763 8060166 24694853 from 0C:C6:CC:62:8E:72
+2026-08-28 09:10:02 | pppoe,ppp,info | <pppoe-romarate01manabom>: disconnected
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: terminating... - peer is not responding
+2026-08-28 09:10:05 | pppoe,ppp,info,account | romarate01lequironj logged out, 9720 150279745 1347021829 844850 1503799 from D4:7E:A8:F7:89:E2
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01lequironj>: disconnected
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01branzuelam>: terminating... - peer is not responding
+2026-08-28 09:10:05 | pppoe,ppp,info,account | romarate01branzuelam logged out, 100329 1022116018 24537618220 4132280 20501610 from E8:68:19:3C:EA:5C
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01branzuelam>: disconnected
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01bihagj>: terminating... - peer is not responding
+2026-08-28 09:10:05 | pppoe,ppp,info,account | romarate01bihagj logged out, 237191 6507110172 65077851983 17595718 57916620 from BC:3F:8F:0D:94:AF
+2026-08-28 09:10:05 | pppoe,ppp,info | <pppoe-romarate01bihagj>: disconnected
+2026-08-28 09:10:07 | pppoe,ppp,info | <pppoe-romarate01gebilaguine>: terminating... - peer is not responding
+2026-08-28 09:10:07 | pppoe,ppp,info,account | romarate01gebilaguine logged out, 100311 357177747 9288308118 1543760 7587788 from 10:C1:72:3E:7D:FE
+2026-08-28 09:10:07 | pppoe,ppp,info | <pppoe-romarate01gebilaguine>: disconnected
+2026-08-28 09:10:11 | pppoe,ppp,info | <pppoe-romarate01jaymej>: terminating... - peer is not responding
+2026-08-28 09:10:11 | pppoe,ppp,info,account | romarate01jaymej logged out, 100336 3147392810 17108128986 7590309 16360806 from B4:FB:F9:32:AC:7F
+2026-08-28 09:10:11 | pppoe,ppp,info | <pppoe-romarate01jaymej>: disconnected
+2026-08-28 09:17:18 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 09:17:19 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 09:20:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:20:04 | pppoe,ppp,error | <d3d5>: user Dave authentication failed
+2026-08-28 09:20:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:20:28 | pppoe,ppp,error | <d3d6>: user Dave authentication failed
+2026-08-28 09:26:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:26:08 | pppoe,ppp,error | <d3d7>: user Dave authentication failed
+2026-08-28 09:28:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:28:04 | pppoe,ppp,error | <d3d8>: user Dave authentication failed
+2026-08-28 09:29:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:29:11 | pppoe,ppp,error | <d3d9>: user Dave authentication failed
+2026-08-28 09:30:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:30:42 | pppoe,ppp,error | <d3da>: user Dave authentication failed
+2026-08-28 09:33:07 | system,info,account | user admin logged out from 10.99.44.70 via winbox
+2026-08-28 09:33:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:33:44 | pppoe,ppp,error | <d3db>: user Dave authentication failed
+2026-08-28 09:34:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:34:08 | pppoe,ppp,error | <d3dc>: user Dave authentication failed
+2026-08-28 09:34:34 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 09:34:35 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 09:35:20 | pppoe,info | PPPoE connection established from 00:7E:40:BD:05:DE
+2026-08-28 09:35:20 | pppoe,ppp,info,account | poblacion07dilgo logged in, 100.64.15.93 from 00:7E:40:BD:05:DE
+2026-08-28 09:35:20 | pppoe,ppp,info | <pppoe-poblacion07dilgo>: authenticated
+2026-08-28 09:35:20 | pppoe,ppp,info | <pppoe-poblacion07dilgo>: connected
+2026-08-28 09:35:39 | pppoe,info | PPPoE connection established from D4:7E:A9:D0:B5:9A
+2026-08-28 09:35:39 | pppoe,ppp,info,account | libertad03estallod logged in, 100.64.14.106 from D4:7E:A9:D0:B5:9A
+2026-08-28 09:35:39 | pppoe,ppp,info | <pppoe-libertad03estallod>: authenticated
+2026-08-28 09:35:39 | pppoe,ppp,info | <pppoe-libertad03estallod>: connected
+2026-08-28 09:38:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:38:17 | pppoe,ppp,error | <d3dd>: user Dave authentication failed
+2026-08-28 09:40:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:40:12 | pppoe,ppp,error | <d3de>: user Dave authentication failed
+2026-08-28 09:41:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 09:41:19 | pppoe,ppp,error | <d3df>: user Dave authentication failed
+2026-08-28 09:41:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:41:44 | pppoe,ppp,error | <d3e0>: user Dave authentication failed
+2026-08-28 09:43:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:43:15 | pppoe,ppp,error | <d3e1>: user Dave authentication failed
+2026-08-28 09:46:06 | system,info,account | user christian logged out from 10.99.44.70 via winbox
+2026-08-28 09:51:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 09:51:04 | pppoe,ppp,error | <d3e2>: user Dave authentication failed
+2026-08-28 09:51:19 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: terminating...
+2026-08-28 09:51:19 | pppoe,ppp,info,account | bagongmaslog02cueringg logged out, 6012 54 72 3 5 from 5C:09:79:BB:20:40
+2026-08-28 09:51:19 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: disconnected
+2026-08-28 09:57:40 | pppoe,info | PPPoE connection established from 5C:09:79:BB:20:40
+2026-08-28 09:57:40 | pppoe,ppp,info,account | bagongmaslog02cueringg logged in, 100.64.12.227 from 5C:09:79:BB:20:40
+2026-08-28 09:57:40 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: authenticated
+2026-08-28 09:57:40 | pppoe,ppp,info | <pppoe-bagongmaslog02cueringg>: connected
+2026-08-28 10:06:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:06:16 | pppoe,ppp,error | <d3e3>: user Dave authentication failed
+2026-08-28 10:06:48 | pppoe,info | PPPoE connection established from 4C:D0:CB:8E:9E:72
+2026-08-28 10:06:48 | pppoe,ppp,info,account | lubid01lisundrag logged in, 100.64.14.216 from 4C:D0:CB:8E:9E:72
+2026-08-28 10:06:48 | pppoe,ppp,info | <pppoe-lubid01lisundrag>: authenticated
+2026-08-28 10:06:48 | pppoe,ppp,info | <pppoe-lubid01lisundrag>: connected
+2026-08-28 10:07:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:07:47 | pppoe,ppp,error | <d3e4>: user Dave authentication failed
+2026-08-28 10:08:38 | pppoe,ppp,info | <pppoe-poblacion03turnow>: terminating... - peer is not responding
+2026-08-28 10:08:38 | pppoe,ppp,info,account | poblacion03turnow logged out, 288039 2504468031 38944300030 8839160 34831623 from D4:7E:A9:93:76:D2
+2026-08-28 10:08:38 | pppoe,ppp,info | <pppoe-poblacion03turnow>: disconnected
+2026-08-28 10:09:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:09:07 | pppoe,ppp,error | <d3e5>: user Dave authentication failed
+2026-08-28 10:09:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:09:18 | pppoe,ppp,error | <d3e6>: user Dave authentication failed
+2026-08-28 10:10:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:10:49 | pppoe,ppp,error | <d3e7>: user Dave authentication failed
+2026-08-28 10:11:06 | pppoe,info | PPPoE connection established from D4:7E:A9:93:76:D2
+2026-08-28 10:11:06 | pppoe,ppp,info,account | poblacion03turnow logged in, 100.64.14.11 from D4:7E:A9:93:76:D2
+2026-08-28 10:11:06 | pppoe,ppp,info | <pppoe-poblacion03turnow>: authenticated
+2026-08-28 10:11:06 | pppoe,ppp,info | <pppoe-poblacion03turnow>: connected
+2026-08-28 10:12:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:12:10 | pppoe,ppp,error | <d3e8>: user Dave authentication failed
+2026-08-28 10:12:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:12:20 | pppoe,ppp,error | <d3e9>: user Dave authentication failed
+2026-08-28 10:13:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:13:51 | pppoe,ppp,error | <d3ea>: user Dave authentication failed
+2026-08-28 10:18:40 | pppoe,info | PPPoE connection established from A0:A3:3B:71:98:03
+2026-08-28 10:18:40 | pppoe,ppp,info,account | bliss03santosj logged in, 10.99.40.30 from A0:A3:3B:71:98:03
+2026-08-28 10:18:40 | pppoe,ppp,info | <pppoe-bliss03santosj>: authenticated
+2026-08-28 10:18:40 | pppoe,ppp,info | <pppoe-bliss03santosj>: connected
+2026-08-28 10:24:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:24:29 | pppoe,ppp,error | <d3eb>: user Dave authentication failed
+2026-08-28 10:25:05 | pppoe,info | PPPoE connection established from D4:7E:A9:A6:87:F4
+2026-08-28 10:25:05 | pppoe,ppp,info,account | bobot01 logged in, 10.99.38.95 from D4:7E:A9:A6:87:F4
+2026-08-28 10:25:05 | pppoe,ppp,info | <pppoe-bobot01>: authenticated
+2026-08-28 10:25:05 | pppoe,ppp,info | <pppoe-bobot01>: connected
+2026-08-28 10:27:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:27:21 | pppoe,ppp,error | <d3ec>: user Dave authentication failed
+2026-08-28 10:28:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:28:52 | pppoe,ppp,error | <d3ed>: user Dave authentication failed
+2026-08-28 10:42:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:42:32 | pppoe,ppp,error | <d3ee>: user Dave authentication failed
+2026-08-28 10:42:47 | pppoe,ppp,info | <pppoe-bobot01>: terminating...
+2026-08-28 10:42:47 | pppoe,ppp,info,account | bobot01 logged out, 1061 3007387 10593732 11085 13373 from D4:7E:A9:A6:87:F4
+2026-08-28 10:42:47 | pppoe,ppp,info | <pppoe-bobot01>: disconnected
+2026-08-28 10:50:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:50:17 | pppoe,ppp,error | <d3ef>: user Dave authentication failed
+2026-08-28 10:51:24 | pppoe,info | PPPoE connection established from 10:C1:72:3E:7D:FE
+2026-08-28 10:51:24 | pppoe,ppp,info,account | romarate01gebilaguine logged in, 100.64.15.36 from 10:C1:72:3E:7D:FE
+2026-08-28 10:51:24 | pppoe,ppp,info | <pppoe-romarate01gebilaguine>: authenticated
+2026-08-28 10:51:24 | pppoe,ppp,info | <pppoe-romarate01gebilaguine>: connected
+2026-08-28 10:51:37 | pppoe,info | PPPoE connection established from 0C:C6:CC:62:8E:72
+2026-08-28 10:51:37 | pppoe,ppp,info,account | romarate01manabom logged in, 100.64.14.159 from 0C:C6:CC:62:8E:72
+2026-08-28 10:51:37 | pppoe,ppp,info | <pppoe-romarate01manabom>: authenticated
+2026-08-28 10:51:37 | pppoe,ppp,info | <pppoe-romarate01manabom>: connected
+2026-08-28 10:51:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:51:49 | pppoe,ppp,error | <d3f0>: user Dave authentication failed
+2026-08-28 10:51:53 | pppoe,info | PPPoE connection established from 3C:15:FB:F2:0E:FC
+2026-08-28 10:51:53 | pppoe,ppp,info,account | romarate01free logged in, 100.64.15.94 from 3C:15:FB:F2:0E:FC
+2026-08-28 10:51:53 | pppoe,ppp,info | <pppoe-romarate01free>: authenticated
+2026-08-28 10:51:53 | pppoe,ppp,info | <pppoe-romarate01free>: connected
+2026-08-28 10:51:54 | pppoe,info | PPPoE connection established from B4:FB:F9:32:AC:7F
+2026-08-28 10:51:54 | pppoe,ppp,info,account | romarate01jaymej logged in, 100.64.14.25 from B4:FB:F9:32:AC:7F
+2026-08-28 10:51:54 | pppoe,ppp,info | <pppoe-romarate01jaymej>: authenticated
+2026-08-28 10:51:54 | pppoe,ppp,info | <pppoe-romarate01jaymej>: connected
+2026-08-28 10:54:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:54:51 | pppoe,ppp,error | <d3f1>: user Dave authentication failed
+2026-08-28 10:56:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:56:12 | pppoe,ppp,error | <d3f2>: user Dave authentication failed
+2026-08-28 10:57:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:57:43 | pppoe,ppp,error | <d3f3>: user Dave authentication failed
+2026-08-28 10:57:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:57:53 | pppoe,ppp,error | <d3f4>: user Dave authentication failed
+2026-08-28 10:59:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 10:59:14 | pppoe,ppp,error | <d3f5>: user Dave authentication failed
+2026-08-28 10:59:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 10:59:24 | pppoe,ppp,error | <d3f6>: user Dave authentication failed
+2026-08-28 11:00:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:00:45 | pppoe,ppp,error | <d3f7>: user Dave authentication failed
+2026-08-28 11:02:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:02:16 | pppoe,ppp,error | <d3f8>: user Dave authentication failed
+2026-08-28 11:03:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:03:57 | pppoe,ppp,error | <d3f9>: user Dave authentication failed
+2026-08-28 11:04:41 | pppoe,ppp,info | <pppoe-lintugop02manor>: terminating... - peer is not responding
+2026-08-28 11:04:41 | pppoe,ppp,info,account | lintugop02manor logged out, 106312 495710583 10550586136 3149951 9166265 from 84:A9:C4:A7:D1:9E
+2026-08-28 11:04:41 | pppoe,ppp,info | <pppoe-lintugop02manor>: disconnected
+2026-08-28 11:05:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:05:28 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: terminating... - peer is not responding
+2026-08-28 11:05:28 | pppoe,ppp,info,account | cabilinan01barbajor logged out, 19719 637525 228118 2747 881 from D4:7E:A8:EA:2C:08
+2026-08-28 11:05:28 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: disconnected
+2026-08-28 11:05:28 | pppoe,ppp,error | <d3fa>: user Dave authentication failed
+2026-08-28 11:05:29 | pppoe,info | PPPoE connection established from D4:7E:A8:EA:2C:08
+2026-08-28 11:05:29 | pppoe,ppp,info,account | cabilinan01barbajor logged in, 10.99.113.59 from D4:7E:A8:EA:2C:08
+2026-08-28 11:05:29 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: authenticated
+2026-08-28 11:05:29 | pppoe,ppp,info | <pppoe-cabilinan01barbajor>: connected
+2026-08-28 11:06:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:06:49 | pppoe,ppp,error | <d3fc>: user Dave authentication failed
+2026-08-28 11:06:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:07:00 | pppoe,ppp,error | <d3fd>: user Dave authentication failed
+2026-08-28 11:08:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:08:21 | pppoe,ppp,error | <d3fe>: user Dave authentication failed
+2026-08-28 11:09:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:09:52 | pppoe,ppp,error | <d3ff>: user Dave authentication failed
+2026-08-28 11:11:18 | pppoe,info | PPPoE connection established from BC:3F:8F:0D:94:AF
+2026-08-28 11:11:19 | pppoe,ppp,error | <22d6>: user romarate01bihagj authentication failed
+2026-08-28 11:11:22 | pppoe,info | PPPoE connection established from D4:7E:A8:BD:87:92
+2026-08-28 11:11:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:11:22 | pppoe,ppp,info,account | alegria02cabatinganj logged in, 100.64.14.0 from D4:7E:A8:BD:87:92
+2026-08-28 11:11:22 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: authenticated
+2026-08-28 11:11:22 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: connected
+2026-08-28 11:11:23 | pppoe,ppp,error | <d400>: user Dave authentication failed
+2026-08-28 11:12:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:12:54 | pppoe,ppp,error | <d401>: user Dave authentication failed
+2026-08-28 11:13:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:13:04 | pppoe,ppp,error | <d402>: user Dave authentication failed
+2026-08-28 11:14:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:14:35 | pppoe,ppp,error | <d403>: user Dave authentication failed
+2026-08-28 11:15:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:15:56 | pppoe,ppp,error | <d404>: user Dave authentication failed
+2026-08-28 11:16:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:16:06 | pppoe,ppp,error | <d405>: user Dave authentication failed
+2026-08-28 11:16:48 | pppoe,info | PPPoE connection established from B4:FB:F9:30:90:FF
+2026-08-28 11:16:48 | pppoe,ppp,info,account | quarry01amorgandacn logged in, 100.64.13.245 from B4:FB:F9:30:90:FF
+2026-08-28 11:16:48 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: authenticated
+2026-08-28 11:16:48 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: connected
+2026-08-28 11:19:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:19:08 | pppoe,ppp,error | <d406>: user Dave authentication failed
+2026-08-28 11:21:05 | pppoe,info | PPPoE connection established from D4:7E:A9:CD:26:08
+2026-08-28 11:21:06 | pppoe,info | PPPoE connection established from D4:7E:A8:27:F4:B8
+2026-08-28 11:21:06 | pppoe,ppp,error | <22d7>: user poblacion02anggayr authentication failed
+2026-08-28 11:21:07 | pppoe,ppp,error | <22d8>: user romarate03parejaem authentication failed
+2026-08-28 11:21:11 | pppoe,info | PPPoE connection established from D4:7E:A8:3C:9F:D2
+2026-08-28 11:21:11 | pppoe,ppp,info,account | sanjose02clarabalw logged in, 100.64.15.95 from D4:7E:A8:3C:9F:D2
+2026-08-28 11:21:11 | pppoe,ppp,info | <pppoe-sanjose02clarabalw>: authenticated
+2026-08-28 11:21:11 | pppoe,ppp,info | <pppoe-sanjose02clarabalw>: connected
+2026-08-28 11:21:11 | pppoe,info | PPPoE connection established from D4:7E:A9:CD:26:08
+2026-08-28 11:21:11 | pppoe,ppp,info,account | poblacion02anggayr logged in, 100.64.15.96 from D4:7E:A9:CD:26:08
+2026-08-28 11:21:11 | pppoe,ppp,info | <pppoe-poblacion02anggayr>: authenticated
+2026-08-28 11:21:11 | pppoe,ppp,info | <pppoe-poblacion02anggayr>: connected
+2026-08-28 11:21:18 | pppoe,ppp,info | <pppoe-panaghiusa02panaghiusaelemschool>: terminating... - peer is not responding
+2026-08-28 11:21:18 | pppoe,ppp,info,account | panaghiusa02panaghiusaelemschool logged out, 105365 1807116401 15881735180 5184295 13770680 from D4:7E:A9:4F:C1:7A
+2026-08-28 11:21:18 | pppoe,ppp,info | <pppoe-panaghiusa02panaghiusaelemschool>: disconnected
+2026-08-28 11:21:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:22:00 | pppoe,ppp,error | <d407>: user Dave authentication failed
+2026-08-28 11:22:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:22:11 | pppoe,ppp,error | <d408>: user Dave authentication failed
+2026-08-28 11:23:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:23:42 | pppoe,ppp,error | <d409>: user Dave authentication failed
+2026-08-28 11:25:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:25:12 | pppoe,info | PPPoE connection established from D4:7E:A9:61:DB:43
+2026-08-28 11:25:12 | pppoe,ppp,info,account | poblacion08costanillaa logged in, 100.64.15.97 from D4:7E:A9:61:DB:43
+2026-08-28 11:25:12 | pppoe,ppp,info | <pppoe-poblacion08costanillaa>: authenticated
+2026-08-28 11:25:12 | pppoe,ppp,info | <pppoe-poblacion08costanillaa>: connected
+2026-08-28 11:25:13 | pppoe,ppp,error | <d40a>: user Dave authentication failed
+2026-08-28 11:26:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:26:44 | pppoe,ppp,error | <d40b>: user Dave authentication failed
+2026-08-28 11:26:46 | pppoe,info | PPPoE connection established from D4:7E:A9:AF:9D:25
+2026-08-28 11:26:46 | pppoe,ppp,info,account | loverslane01petalinole logged in, 100.64.14.104 from D4:7E:A9:AF:9D:25
+2026-08-28 11:26:46 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: authenticated
+2026-08-28 11:26:46 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: connected
+2026-08-28 11:28:05 | pppoe,ppp,info | <pppoe-waterfall01villamorc>: terminating... - peer is not responding
+2026-08-28 11:28:05 | pppoe,ppp,info,account | waterfall01villamorc logged out, 107670 1321515737 10994270440 3904791 9718052 from F8:6E:EE:E8:9D:57
+2026-08-28 11:28:05 | pppoe,ppp,info | <pppoe-waterfall01villamorc>: disconnected
+2026-08-28 11:28:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:28:15 | pppoe,ppp,error | <d40c>: user Dave authentication failed
+2026-08-28 11:29:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:29:36 | pppoe,ppp,error | <d40d>: user Dave authentication failed
+2026-08-28 11:29:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:29:46 | pppoe,ppp,error | <d40e>: user Dave authentication failed
+2026-08-28 11:31:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:31:07 | pppoe,ppp,error | <d40f>: user Dave authentication failed
+2026-08-28 11:31:59 | pppoe,ppp,info | <pppoe-stateresita02bacasmota>: terminating... - peer is not responding
+2026-08-28 11:31:59 | pppoe,ppp,info,account | stateresita02bacasmota logged out, 293106 2732586418 35605819245 7734717 28480056 from E8:65:D4:7A:8C:50
+2026-08-28 11:31:59 | pppoe,ppp,info | <pppoe-stateresita02bacasmota>: disconnected
+2026-08-28 11:36:19 | pppoe,ppp,info | <pppoe-poblacion01tomola>: terminating... - peer is not responding
+2026-08-28 11:36:19 | pppoe,ppp,info,account | poblacion01tomola logged out, 246670 7197802298 70601322981 21840102 60688397 from 14:A0:F8:CE:4A:83
+2026-08-28 11:36:19 | pppoe,ppp,info | <pppoe-poblacion01tomola>: disconnected
+2026-08-28 11:38:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:38:43 | pppoe,ppp,error | <d410>: user Dave authentication failed
+2026-08-28 11:41:10 | pppoe,info | PPPoE connection established from D4:7E:A9:F0:C8:EB
+2026-08-28 11:41:10 | pppoe,ppp,info,account | campouno01hernandoj logged in, 100.64.12.40 from D4:7E:A9:F0:C8:EB
+2026-08-28 11:41:10 | pppoe,ppp,info | <pppoe-campouno01hernandoj>: authenticated
+2026-08-28 11:41:10 | pppoe,ppp,info | <pppoe-campouno01hernandoj>: connected
+2026-08-28 11:41:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:41:55 | pppoe,ppp,error | <d411>: user Dave authentication failed
+2026-08-28 11:43:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:43:16 | pppoe,ppp,error | <d412>: user Dave authentication failed
+2026-08-28 11:47:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:47:49 | pppoe,ppp,error | <d413>: user Dave authentication failed
+2026-08-28 11:48:29 | pppoe,info | PPPoE connection established from F8:6E:EE:A3:1D:31
+2026-08-28 11:48:29 | pppoe,ppp,info,account | lantungan01hisolerjd logged in, 100.64.15.98 from F8:6E:EE:A3:1D:31
+2026-08-28 11:48:29 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: authenticated
+2026-08-28 11:48:29 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: connected
+2026-08-28 11:48:44 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: terminating... - peer is not responding
+2026-08-28 11:48:44 | pppoe,ppp,info,account | lantungan01hisolerjd logged out, 15 54 72 3 5 from F8:6E:EE:A3:1D:31
+2026-08-28 11:48:44 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: disconnected
+2026-08-28 11:49:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:49:20 | pppoe,ppp,error | <d414>: user Dave authentication failed
+2026-08-28 11:50:12 | pppoe,info | PPPoE connection established from F8:6E:EE:A3:1D:31
+2026-08-28 11:50:12 | pppoe,ppp,info,account | lantungan01hisolerjd logged in, 100.64.15.98 from F8:6E:EE:A3:1D:31
+2026-08-28 11:50:12 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: authenticated
+2026-08-28 11:50:12 | pppoe,ppp,info | <pppoe-lantungan01hisolerjd>: connected
+2026-08-28 11:50:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:50:52 | pppoe,ppp,error | <d415>: user Dave authentication failed
+2026-08-28 11:51:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:51:02 | pppoe,ppp,error | <d416>: user Dave authentication failed
+2026-08-28 11:51:26 | pppoe,ppp,info | <pppoe-stateresita02banaagd>: terminating... - peer is not responding
+2026-08-28 11:51:26 | pppoe,ppp,info,account | stateresita02banaagd logged out, 65508 194371566 2233651081 640478 1948896 from 28:A6:DB:16:3B:39
+2026-08-28 11:51:26 | pppoe,ppp,info | <pppoe-stateresita02banaagd>: disconnected
+2026-08-28 11:52:32 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:52:33 | pppoe,ppp,error | <d417>: user Dave authentication failed
+2026-08-28 11:54:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:54:04 | pppoe,ppp,error | <d418>: user Dave authentication failed
+2026-08-28 11:55:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:55:25 | pppoe,ppp,error | <d419>: user Dave authentication failed
+2026-08-28 11:57:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 11:57:06 | pppoe,ppp,error | <d41a>: user Dave authentication failed
+2026-08-28 11:58:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 11:58:27 | pppoe,ppp,error | <d41b>: user Dave authentication failed
+2026-08-28 12:02:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:03:00 | pppoe,ppp,error | <d41c>: user Dave authentication failed
+2026-08-28 12:04:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:04:31 | pppoe,ppp,error | <d41d>: user Dave authentication failed
+2026-08-28 12:06:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:06:03 | pppoe,ppp,error | <d41e>: user Dave authentication failed
+2026-08-28 12:06:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:06:12 | pppoe,ppp,error | <d41f>: user Dave authentication failed
+2026-08-28 12:07:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:07:44 | pppoe,ppp,error | <d420>: user Dave authentication failed
+2026-08-28 12:10:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:10:36 | pppoe,ppp,error | <d421>: user Dave authentication failed
+2026-08-28 12:12:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:12:07 | pppoe,ppp,error | <d422>: user Dave authentication failed
+2026-08-28 12:15:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:15:19 | pppoe,ppp,error | <d423>: user Dave authentication failed
+2026-08-28 12:18:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:18:21 | pppoe,ppp,error | <d424>: user Dave authentication failed
+2026-08-28 12:19:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:19:42 | pppoe,ppp,error | <d425>: user Dave authentication failed
+2026-08-28 12:21:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:21:14 | pppoe,ppp,error | <d426>: user Dave authentication failed
+2026-08-28 12:21:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:21:24 | pppoe,ppp,error | <d427>: user Dave authentication failed
+2026-08-28 12:22:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:22:45 | pppoe,ppp,error | <d428>: user Dave authentication failed
+2026-08-28 12:24:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:24:26 | pppoe,ppp,error | <d429>: user Dave authentication failed
+2026-08-28 12:27:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:27:28 | pppoe,ppp,error | <d42a>: user Dave authentication failed
+2026-08-28 12:28:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:28:49 | pppoe,ppp,error | <d42b>: user Dave authentication failed
+2026-08-28 12:30:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:30:20 | pppoe,ppp,error | <d42c>: user Dave authentication failed
+2026-08-28 12:30:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:30:30 | pppoe,ppp,error | <d42d>: user Dave authentication failed
+2026-08-28 12:31:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:31:51 | pppoe,ppp,error | <d42e>: user Dave authentication failed
+2026-08-28 12:34:51 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 12:36:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:36:25 | pppoe,ppp,error | <d42f>: user Dave authentication failed
+2026-08-28 12:38:40 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 12:39:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:39:27 | pppoe,ppp,error | <d430>: user Dave authentication failed
+2026-08-28 12:42:06 | system,info,account | user christian logged out from 10.99.44.70 via winbox
+2026-08-28 12:42:09 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 12:42:27 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 12:42:38 | system,info,account | user christian logged out from 10.99.44.70 via winbox
+2026-08-28 12:43:24 | pppoe,ppp,info | <pppoe-campouno01cejasjm>: terminating... - peer is not responding
+2026-08-28 12:43:24 | pppoe,ppp,info,account | campouno01cejasjm logged out, 76950 921079542 13597740057 3320470 12285064 from B4:E4:6B:5C:AC:97
+2026-08-28 12:43:24 | pppoe,ppp,info | <pppoe-campouno01cejasjm>: disconnected
+2026-08-28 12:43:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:44:00 | pppoe,ppp,error | <d431>: user Dave authentication failed
+2026-08-28 12:44:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:44:10 | pppoe,ppp,error | <d432>: user Dave authentication failed
+2026-08-28 12:45:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:45:41 | pppoe,ppp,error | <d433>: user Dave authentication failed
+2026-08-28 12:47:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:47:12 | pppoe,ppp,error | <d434>: user Dave authentication failed
+2026-08-28 12:50:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:50:05 | pppoe,ppp,error | <d435>: user Dave authentication failed
+2026-08-28 12:51:13 | pppoe,info | PPPoE connection established from D4:7E:A9:BA:FC:64
+2026-08-28 12:51:13 | pppoe,ppp,info,account | sanjose03llacermt logged in, 100.64.15.99 from D4:7E:A9:BA:FC:64
+2026-08-28 12:51:13 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: authenticated
+2026-08-28 12:51:13 | pppoe,ppp,info | <pppoe-sanjose03llacermt>: connected
+2026-08-28 12:51:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:51:36 | pppoe,ppp,error | <d437>: user Dave authentication failed
+2026-08-28 12:53:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:53:07 | pppoe,ppp,error | <d438>: user Dave authentication failed
+2026-08-28 12:57:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 12:57:50 | pppoe,ppp,error | <d439>: user Dave authentication failed
+2026-08-28 12:59:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 12:59:11 | pppoe,ppp,error | <d43a>: user Dave authentication failed
+2026-08-28 13:00:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:00:52 | pppoe,ppp,error | <d43b>: user Dave authentication failed
+2026-08-28 13:02:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:02:14 | pppoe,ppp,error | <d43c>: user Dave authentication failed
+2026-08-28 13:05:06 | pppoe,ppp,info | <pppoe-sagrada01santoss>: terminating... - peer is not responding
+2026-08-28 13:05:06 | pppoe,ppp,info,account | sagrada01santoss logged out, 79588 1587614472 26136140864 4911653 21746516 from 0C:C6:CC:66:22:56
+2026-08-28 13:05:06 | pppoe,ppp,info | <pppoe-sagrada01santoss>: disconnected
+2026-08-28 13:08:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:08:18 | pppoe,ppp,error | <d43d>: user Dave authentication failed
+2026-08-28 13:11:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:11:30 | pppoe,ppp,error | <d43e>: user Dave authentication failed
+2026-08-28 13:12:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:14:29 | pppoe,ppp,info | <pppoe-poblacion08telecomsk>: terminating... - peer is not responding
+2026-08-28 13:14:29 | pppoe,ppp,info,account | poblacion08telecomsk logged out, 299187 2906214050 37978646090 7995659 31192493 from 00:7E:40:BD:06:2E
+2026-08-28 13:14:29 | pppoe,ppp,info | <pppoe-poblacion08telecomsk>: disconnected
+2026-08-28 13:14:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:14:32 | pppoe,ppp,error | <d43f>: user Dave authentication failed
+2026-08-28 13:15:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:37 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:49 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:49 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:51 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:51 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:53 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:53 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:55 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:55 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:15:59 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:15:59 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:01 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:01 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:03 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:03 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:05 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:07 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:11 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:11 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:13 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:13 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:15 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:15 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:17 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:17 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:19 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:19 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:21 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:23 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:23 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:25 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:25 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:27 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:27 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:29 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:29 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:31 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:31 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:33 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:33 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:35 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:35 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:38 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:49 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:49 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:51 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:51 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:53 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:53 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:55 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:55 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:16:59 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:16:59 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:01 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:01 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:03 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:03 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:05 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:07 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:11 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:12 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:13 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:13 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:15 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:15 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:17 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:17 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:19 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:19 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:21 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:23 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:23 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:25 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:25 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:27 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:27 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:29 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:29 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:31 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:31 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:33 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:33 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:35 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:35 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:37 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:49 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:49 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:51 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:51 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:53 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:53 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:55 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:55 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:17:59 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:17:59 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:01 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:01 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:03 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:03 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:05 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:07 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:11 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:11 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:13 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:13 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:15 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:15 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:17 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:17 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:19 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:19 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:21 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:23 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:23 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:25 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:25 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:27 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:27 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:29 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:29 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:31 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:31 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:33 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:34 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:35 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:35 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:37 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:49 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:49 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:51 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:51 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:53 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:53 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:55 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:55 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:18:59 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:18:59 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:01 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:01 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:03 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:03 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:05 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:07 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:11 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:11 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:13 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:13 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:15 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:15 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:17 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:17 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:19 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:19 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:21 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:24 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:24 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:26 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:26 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:19:27 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 13:19:27 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:20:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:20:27 | pppoe,ppp,error | <d440>: user Dave authentication failed
+2026-08-28 13:20:53 | pppoe,info | PPPoE connection established from 2C:55:D3:0A:ED:7E
+2026-08-28 13:20:53 | pppoe,ppp,info,account | tinago07colasingj logged in, 100.64.15.100 from 2C:55:D3:0A:ED:7E
+2026-08-28 13:20:53 | pppoe,ppp,info | <pppoe-tinago07colasingj>: authenticated
+2026-08-28 13:20:53 | pppoe,ppp,info | <pppoe-tinago07colasingj>: connected
+2026-08-28 13:21:35 | pppoe,ppp,info | <pppoe-lintugop01sutinac>: terminating... - peer is not responding
+2026-08-28 13:21:35 | pppoe,ppp,info,account | lintugop01sutinac logged out, 114525 1782000011 26739936398 10656446 23398485 from F4:E5:F2:68:92:D3
+2026-08-28 13:21:35 | pppoe,ppp,info | <pppoe-lintugop01sutinac>: disconnected
+2026-08-28 13:21:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:21:58 | pppoe,ppp,error | <d441>: user Dave authentication failed
+2026-08-28 13:22:18 | pppoe,info | PPPoE connection established from F4:E5:F2:68:92:D3
+2026-08-28 13:22:18 | pppoe,ppp,info,account | lintugop01sutinac logged in, 100.64.14.136 from F4:E5:F2:68:92:D3
+2026-08-28 13:22:18 | pppoe,ppp,info | <pppoe-lintugop01sutinac>: authenticated
+2026-08-28 13:22:18 | pppoe,ppp,info | <pppoe-lintugop01sutinac>: connected
+2026-08-28 13:23:19 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: terminating... - peer is not responding
+2026-08-28 13:23:19 | pppoe,ppp,info,account | inasagan01rupentan logged out, 79335 994005212 12036177057 3696810 10005031 from 3C:52:A1:76:24:5F
+2026-08-28 13:23:19 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: disconnected
+2026-08-28 13:23:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:23:29 | pppoe,ppp,error | <d442>: user Dave authentication failed
+2026-08-28 13:24:23 | system,info,account | user christian logged in from 10.99.44.70 via winbox
+2026-08-28 13:28:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:28:02 | pppoe,ppp,error | <d443>: user Dave authentication failed
+2026-08-28 13:32:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:32:45 | pppoe,ppp,error | <d444>: user Dave authentication failed
+2026-08-28 13:32:58 | pppoe,info | PPPoE connection established from 70:28:0B:A1:96:01
+2026-08-28 13:32:59 | pppoe,info | PPPoE connection established from 14:57:9F:8B:6B:3C
+2026-08-28 13:32:59 | pppoe,info | PPPoE connection from 14:57:9F:8B:6B:3C was already active - closing previous one
+2026-08-28 13:32:59 | pppoe,ppp,info | <pppoe-dc01freealivior>: terminating... - disconnected
+2026-08-28 13:32:59 | pppoe,ppp,info,account | dc01freealivior logged out, 75721 4578018213 36435768836 13453955 32714033 from 14:57:9F:8B:6B:3C
+2026-08-28 13:32:59 | pppoe,ppp,info | <pppoe-dc01freealivior>: disconnected
+2026-08-28 13:32:59 | pppoe,ppp,info,account | dc01freealivior logged in, 100.64.11.250 from 14:57:9F:8B:6B:3C
+2026-08-28 13:32:59 | pppoe,ppp,info | <pppoe-dc01freealivior>: authenticated
+2026-08-28 13:32:59 | pppoe,ppp,info | <pppoe-dc01freealivior>: connected
+2026-08-28 13:32:59 | pppoe,ppp,error | <22de>: user sagrada01tancg authentication failed
+2026-08-28 13:33:00 | pppoe,info | PPPoE connection established from 5C:09:79:54:B1:F5
+2026-08-28 13:33:00 | pppoe,info | PPPoE connection from 5C:09:79:54:B1:F5 was already active - closing previous one
+2026-08-28 13:33:00 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: terminating... - disconnected
+2026-08-28 13:33:00 | pppoe,ppp,info,account | loverslane01quinoa logged out, 111647 13215353048 25463850746 18779934 27689242 from 5C:09:79:54:B1:F5
+2026-08-28 13:33:00 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: disconnected
+2026-08-28 13:33:00 | pppoe,ppp,info,account | loverslane01quinoa logged in, 100.64.15.61 from 5C:09:79:54:B1:F5
+2026-08-28 13:33:00 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: authenticated
+2026-08-28 13:33:00 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: connected
+2026-08-28 13:33:02 | pppoe,info | PPPoE connection established from B4:E4:6B:83:7D:D9
+2026-08-28 13:33:02 | pppoe,info | PPPoE connection from B4:E4:6B:83:7D:D9 was already active - closing previous one
+2026-08-28 13:33:02 | pppoe,ppp,info | <pppoe-sagrada02alegadoi>: terminating... - disconnected
+2026-08-28 13:33:02 | pppoe,ppp,info,account | sagrada02alegadoi logged out, 75716 1484878559 11643377832 4139510 10540505 from B4:E4:6B:83:7D:D9
+2026-08-28 13:33:02 | pppoe,ppp,info | <pppoe-sagrada02alegadoi>: disconnected
+2026-08-28 13:33:02 | pppoe,ppp,info,account | sagrada02alegadoi logged in, 10.99.39.60 from B4:E4:6B:83:7D:D9
+2026-08-28 13:33:02 | pppoe,ppp,info | <pppoe-sagrada02alegadoi>: authenticated
+2026-08-28 13:33:02 | pppoe,ppp,info | <pppoe-sagrada02alegadoi>: connected
+2026-08-28 13:33:04 | pppoe,info | PPPoE connection established from 70:28:0B:A1:96:01
+2026-08-28 13:33:04 | pppoe,ppp,info,account | sagrada01tancg logged in, 100.64.14.241 from 70:28:0B:A1:96:01
+2026-08-28 13:33:04 | pppoe,ppp,info | <pppoe-sagrada01tancg>: authenticated
+2026-08-28 13:33:04 | pppoe,ppp,info | <pppoe-sagrada01tancg>: connected
+2026-08-28 13:33:11 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: terminating... - peer is not responding
+2026-08-28 13:33:11 | pppoe,ppp,info,account | loverslane01petalinole logged out, 7586 41006718 1522643402 227769 1225647 from D4:7E:A9:AF:9D:25
+2026-08-28 13:33:11 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: disconnected
+2026-08-28 13:33:32 | pppoe,info | PPPoE connection established from DC:C6:4B:19:C7:6C
+2026-08-28 13:33:34 | pppoe,ppp,info,account | bagongmaslog02lagaree logged in, 100.64.15.101 from DC:C6:4B:19:C7:6C
+2026-08-28 13:33:34 | pppoe,ppp,info | <pppoe-bagongmaslog02lagaree>: authenticated
+2026-08-28 13:33:34 | pppoe,ppp,info | <pppoe-bagongmaslog02lagaree>: connected
+2026-08-28 13:33:38 | system,info,account | user admin logged out from 10.99.44.70 via winbox
+2026-08-28 13:33:43 | pppoe,info | PPPoE connection established from D4:7E:A9:AF:9D:25
+2026-08-28 13:33:43 | pppoe,ppp,info,account | loverslane01petalinole logged in, 100.64.14.104 from D4:7E:A9:AF:9D:25
+2026-08-28 13:33:43 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: authenticated
+2026-08-28 13:33:43 | pppoe,ppp,info | <pppoe-loverslane01petalinole>: connected
+2026-08-28 13:34:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:34:07 | pppoe,ppp,error | <d445>: user Dave authentication failed
+2026-08-28 13:35:13 | system,info,account | user christian logged out from 10.99.44.70 via winbox
+2026-08-28 13:35:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:35:38 | pppoe,ppp,error | <d446>: user Dave authentication failed
+2026-08-28 13:35:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:35:48 | pppoe,ppp,error | <d447>: user Dave authentication failed
+2026-08-28 13:43:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:43:13 | pppoe,ppp,error | <d448>: user Dave authentication failed
+2026-08-28 13:44:30 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 13:44:32 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 13:44:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:44:44 | pppoe,ppp,error | <d449>: user Dave authentication failed
+2026-08-28 13:46:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:46:16 | pppoe,ppp,error | <d44a>: user Dave authentication failed
+2026-08-28 13:48:17 | system,info,account | user admin logged out from 10.99.44.70 via winbox
+2026-08-28 13:49:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:49:28 | pppoe,ppp,error | <d44b>: user Dave authentication failed
+2026-08-28 13:50:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:50:49 | pppoe,ppp,error | <d44c>: user Dave authentication failed
+2026-08-28 13:51:04 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 13:52:52 | pppoe,info | PPPoE connection established from D4:7E:A9:40:6E:1A
+2026-08-28 13:52:52 | pppoe,ppp,info,account | inasagan01rupentan logged in, 100.64.15.102 from D4:7E:A9:40:6E:1A
+2026-08-28 13:52:52 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: authenticated
+2026-08-28 13:52:52 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: connected
+2026-08-28 13:54:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:54:01 | pppoe,ppp,error | <d44d>: user Dave authentication failed
+2026-08-28 13:55:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:55:32 | pppoe,ppp,error | <d44e>: user Dave authentication failed
+2026-08-28 13:56:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 13:56:53 | pppoe,ppp,error | <d44f>: user Dave authentication failed
+2026-08-28 13:56:56 | pppoe,ppp,info | <pppoe-romarate02bautistak>: terminating... - peer is not responding
+2026-08-28 13:56:56 | pppoe,ppp,info,account | romarate02bautistak logged out, 117518 834356904 16811882535 3478045 14273824 from 18:CF:24:E1:05:C6
+2026-08-28 13:56:56 | pppoe,ppp,info | <pppoe-romarate02bautistak>: disconnected
+2026-08-28 13:57:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 13:57:03 | pppoe,ppp,error | <d450>: user Dave authentication failed
+2026-08-28 14:02:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:02:58 | pppoe,ppp,error | <d451>: user Dave authentication failed
+2026-08-28 14:04:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:04:29 | pppoe,ppp,error | <d452>: user Dave authentication failed
+2026-08-28 14:04:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:04:39 | pppoe,ppp,error | <d453>: user Dave authentication failed
+2026-08-28 14:06:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:06:10 | pppoe,ppp,error | <d454>: user Dave authentication failed
+2026-08-28 14:08:22 | pppoe,info | PPPoE connection established from 18:CF:24:E1:05:C6
+2026-08-28 14:08:22 | pppoe,ppp,info,account | romarate02bautistak logged in, 100.64.15.38 from 18:CF:24:E1:05:C6
+2026-08-28 14:08:22 | pppoe,ppp,info | <pppoe-romarate02bautistak>: authenticated
+2026-08-28 14:08:22 | pppoe,ppp,info | <pppoe-romarate02bautistak>: connected
+2026-08-28 14:09:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:09:12 | pppoe,ppp,error | <d455>: user Dave authentication failed
+2026-08-28 14:10:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:10:43 | pppoe,ppp,error | <d456>: user Dave authentication failed
+2026-08-28 14:13:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:13:36 | pppoe,ppp,error | <d457>: user Dave authentication failed
+2026-08-28 14:15:34 | system,error,critical | login failure for user admin from 190.214.16.246 via api
+2026-08-28 14:16:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:16:38 | pppoe,ppp,error | <d458>: user Dave authentication failed
+2026-08-28 14:16:40 | system,error,critical | login failure for user admin from 196.29.231.40 via api
+2026-08-28 14:16:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:16:48 | pppoe,ppp,error | <d459>: user Dave authentication failed
+2026-08-28 14:17:55 | system,error,critical | login failure for user admin from 167.250.67.214 via api
+2026-08-28 14:18:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:18:19 | pppoe,ppp,error | <d45a>: user Dave authentication failed
+2026-08-28 14:18:21 | system,error,critical | login failure for user admin from 186.46.221.218 via api
+2026-08-28 14:19:27 | system,error,critical | login failure for user admin from 185.66.231.72 via api
+2026-08-28 14:19:52 | system,error,critical | login failure for user admin from 121.56.212.161 via api
+2026-08-28 14:20:59 | system,error,critical | login failure for user admin from 116.212.132.67 via api
+2026-08-28 14:21:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:21:29 | pppoe,info | PPPoE connection established from D4:7E:A8:BE:C1:54
+2026-08-28 14:21:29 | pppoe,ppp,info,account | cabilinan01butohanc logged in, 100.64.15.103 from D4:7E:A8:BE:C1:54
+2026-08-28 14:21:29 | pppoe,ppp,info | <pppoe-cabilinan01butohanc>: authenticated
+2026-08-28 14:21:29 | pppoe,ppp,info | <pppoe-cabilinan01butohanc>: connected
+2026-08-28 14:21:36 | system,error,critical | login failure for user admin from 181.112.159.226 via api
+2026-08-28 14:21:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:21:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:21:59 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:21:59 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:01 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:01 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:03 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:03 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:05 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:07 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:07 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:18 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:18 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:20 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:20 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:27 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:27 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:29 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:29 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:31 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:31 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:33 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:33 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:35 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:35 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:37 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:40 | system,error,critical | login failure for user admin from 58.187.203.188 via api
+2026-08-28 14:22:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:22:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:42 | pppoe,ppp,error | <d45c>: user Dave authentication failed
+2026-08-28 14:22:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:48 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:48 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:50 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:50 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:52 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:52 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:54 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:54 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:56 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:56 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:22:58 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:22:58 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:23:00 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:23:00 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:23:02 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:23:02 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:23:04 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:23:04 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:23:05 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:23:21 | system,error,critical | login failure for user admin from 188.137.81.21 via api
+2026-08-28 14:24:12 | system,error,critical | login failure for user admin from 45.115.252.186 via api
+2026-08-28 14:24:16 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:24:16 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:24:17 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:24:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:24:22 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:24:22 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:24:23 | pppoe,ppp,error | <d45d>: user Dave authentication failed
+2026-08-28 14:24:24 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:24:24 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:24:26 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:24:26 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:24:55 | system,error,critical | login failure for user admin from 110.136.49.196 via api
+2026-08-28 14:25:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:25:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:25:43 | system,error,critical | login failure for user admin from 186.1.173.35 via api
+2026-08-28 14:25:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:25:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:25:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:25:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:25:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:25:54 | pppoe,ppp,error | <d45e>: user Dave authentication failed
+2026-08-28 14:25:55 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 14:25:56 | system,info,account | user admin logged in from 10.99.44.70 via winbox
+2026-08-28 14:26:26 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:27:18 | system,error,critical | login failure for user admin from 45.127.223.191 via api
+2026-08-28 14:27:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:27:25 | pppoe,ppp,error | <d45f>: user Dave authentication failed
+2026-08-28 14:28:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:28:47 | pppoe,ppp,error | <d460>: user Dave authentication failed
+2026-08-28 14:28:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:28:56 | pppoe,ppp,error | <d461>: user Dave authentication failed
+2026-08-28 14:29:01 | system,error,critical | login failure for user admin from 210.4.67.210 via api
+2026-08-28 14:30:32 | system,error,critical | login failure for user admin from 200.0.57.207 via api
+2026-08-28 14:31:57 | system,error,critical | login failure for user admin from 46.19.231.182 via api
+2026-08-28 14:32:04 | system,error,critical | login failure for user admin from 102.164.30.48 via api
+2026-08-28 14:32:46 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:32:52 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:32:52 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:32:54 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:32:54 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:32:56 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:32:56 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:32:58 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:32:58 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:00 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:00 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:02 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:02 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:33:30 | pppoe,ppp,error | <d462>: user Dave authentication failed
+2026-08-28 14:33:31 | system,error,critical | login failure for user admin from 110.235.250.250 via api
+2026-08-28 14:33:43 | system,error,critical | login failure for user admin from 103.187.152.102 via api
+2026-08-28 14:33:44 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:44 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:46 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:46 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:48 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:48 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:50 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:50 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:52 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:52 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:54 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:54 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:56 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:56 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:33:58 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:33:58 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:00 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:00 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:02 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:02 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:04 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:04 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:06 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:06 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:08 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:08 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:10 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:10 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:12 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:12 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:14 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:14 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:16 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:16 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:18 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:18 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:20 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:20 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:22 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:22 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:24 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:24 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:26 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:26 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:28 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:28 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:30 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:30 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:32 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:32 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:37 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:37 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:39 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:39 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:41 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:41 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:43 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:43 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:45 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:45 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:47 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:47 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:49 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:49 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:51 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:51 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:53 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:53 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:34:57 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:34:57 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:35:03 | system,error,critical | login failure for user admin from 102.0.30.110 via api
+2026-08-28 14:35:09 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:35:09 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:35:11 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:35:11 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:35:13 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:35:13 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:35:15 | system,error,critical | login failure for user admin from 113.11.115.155 via api
+2026-08-28 14:35:22 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:35:22 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:35:24 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:35:24 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:36:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:36:22 | pppoe,ppp,error | <d463>: user Dave authentication failed
+2026-08-28 14:36:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:36:32 | pppoe,ppp,error | <d464>: user Dave authentication failed
+2026-08-28 14:36:32 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 14:36:34 | system,error,critical | login failure for user admin from 103.151.46.190 via api
+2026-08-28 14:36:46 | system,error,critical | login failure for user admin from 116.212.144.90 via api
+2026-08-28 14:37:42 | pppoe,info | PPPoE connection established from 9C:A2:F4:F1:F5:EB
+2026-08-28 14:37:44 | pppoe,ppp,error | <0365>: user inasagan01dalumpinesc authentication failed
+2026-08-28 14:37:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:37:53 | pppoe,ppp,error | <d465>: user Dave authentication failed
+2026-08-28 14:38:05 | system,error,critical | login failure for user admin from 188.151.20.218 via api
+2026-08-28 14:38:18 | system,error,critical | login failure for user admin from 45.235.11.253 via api
+2026-08-28 14:39:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:39:34 | pppoe,ppp,error | <d466>: user Dave authentication failed
+2026-08-28 14:39:37 | system,error,critical | login failure for user admin from 41.173.237.175 via api
+2026-08-28 14:39:50 | system,error,critical | login failure for user admin from 41.211.125.101 via api
+2026-08-28 14:40:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:40:55 | pppoe,ppp,error | <d467>: user Dave authentication failed
+2026-08-28 14:41:08 | system,error,critical | login failure for user admin from 80.81.157.215 via api
+2026-08-28 14:41:22 | system,error,critical | login failure for user admin from 181.93.240.18 via api
+2026-08-28 14:42:40 | system,error,critical | login failure for user admin from 41.190.134.37 via api
+2026-08-28 14:42:56 | system,error,critical | login failure for user admin from 154.159.243.26 via api
+2026-08-28 14:44:11 | system,error,critical | login failure for user admin from 46.148.35.101 via api
+2026-08-28 14:44:28 | system,error,critical | login failure for user admin from 76.72.246.203 via api
+2026-08-28 14:45:46 | system,error,critical | login failure for user admin from 102.164.23.169 via api
+2026-08-28 14:46:01 | system,error,critical | login failure for user admin from 186.46.220.98 via api
+2026-08-28 14:47:18 | system,error,critical | login failure for user admin from 91.187.52.105 via api
+2026-08-28 14:47:32 | system,error,critical | login failure for user admin from 109.108.116.253 via api
+2026-08-28 14:48:49 | system,error,critical | login failure for user admin from 103.31.42.114 via api
+2026-08-28 14:49:03 | system,error,critical | login failure for user admin from 150.107.137.53 via api
+2026-08-28 14:49:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 14:50:20 | system,error,critical | login failure for user admin from 182.160.123.113 via api
+2026-08-28 14:50:34 | system,error,critical | login failure for user admin from 102.165.124.165 via api
+2026-08-28 14:51:32 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:51:33 | pppoe,ppp,error | <d468>: user Dave authentication failed
+2026-08-28 14:51:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 14:51:43 | pppoe,ppp,error | <d469>: user Dave authentication failed
+2026-08-28 14:51:51 | system,error,critical | login failure for user admin from 91.207.184.142 via api
+2026-08-28 14:52:06 | system,error,critical | login failure for user admin from 102.134.196.129 via api
+2026-08-28 14:53:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:53:04 | pppoe,ppp,error | <d46a>: user Dave authentication failed
+2026-08-28 14:53:22 | system,error,critical | login failure for user admin from 103.139.225.10 via api
+2026-08-28 14:53:37 | system,error,critical | login failure for user admin from 45.116.69.106 via api
+2026-08-28 14:54:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:54:35 | pppoe,ppp,error | <d46b>: user Dave authentication failed
+2026-08-28 14:54:54 | system,error,critical | login failure for user admin from 124.41.204.29 via api
+2026-08-28 14:55:09 | system,error,critical | login failure for user admin from 102.165.124.165 via api
+2026-08-28 14:55:11 | system,info,account | user admin logged out from 10.99.44.70 via winbox
+2026-08-28 14:56:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:56:07 | pppoe,ppp,error | <d46c>: user Dave authentication failed
+2026-08-28 14:56:25 | system,error,critical | login failure for user admin from 189.62.218.64 via api
+2026-08-28 14:56:40 | system,error,critical | login failure for user admin from 111.90.177.100 via api
+2026-08-28 14:57:57 | system,error,critical | login failure for user admin from 118.70.90.78 via api
+2026-08-28 14:58:12 | system,error,critical | login failure for user admin from 102.217.205.154 via api
+2026-08-28 14:59:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 14:59:09 | pppoe,ppp,error | <d46d>: user Dave authentication failed
+2026-08-28 14:59:28 | system,error,critical | login failure for user admin from 109.236.47.34 via api
+2026-08-28 14:59:44 | system,error,critical | login failure for user admin from 49.0.40.66 via api
+2026-08-28 15:00:23 | system,info,account | user christian logged out from 10.99.44.70 via api
+2026-08-28 15:00:59 | system,error,critical | login failure for user admin from 36.255.225.146 via api
+2026-08-28 15:01:15 | system,error,critical | login failure for user admin from 203.202.255.246 via api
+2026-08-28 15:02:32 | system,error,critical | login failure for user admin from 198.184.26.146 via api
+2026-08-28 15:02:47 | system,error,critical | login failure for user admin from 102.210.58.36 via api
+2026-08-28 15:03:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 15:03:42 | pppoe,ppp,error | <d46e>: user Dave authentication failed
+2026-08-28 15:03:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 15:03:52 | pppoe,ppp,error | <d46f>: user Dave authentication failed
+2026-08-28 15:04:04 | system,error,critical | login failure for user admin from 102.164.23.142 via api
+2026-08-28 15:04:20 | system,error,critical | login failure for user admin from 5.97.197.186 via api
+2026-08-28 15:05:35 | system,error,critical | login failure for user admin from 46.245.39.144 via api
+2026-08-28 15:05:51 | system,error,critical | login failure for user admin from 177.131.118.5 via api
+2026-08-28 15:07:06 | system,error,critical | login failure for user admin from 178.253.103.227 via api
+2026-08-28 15:07:23 | system,error,critical | login failure for user admin from 154.73.129.130 via api
+2026-08-28 15:08:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 15:08:25 | pppoe,ppp,error | <d470>: user Dave authentication failed
+2026-08-28 15:08:38 | system,error,critical | login failure for user admin from 181.232.167.66 via api
+2026-08-28 15:09:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 15:09:56 | pppoe,ppp,error | <d471>: user Dave authentication failed
+2026-08-28 15:10:09 | system,error,critical | login failure for user admin from 185.168.175.96 via api
+2026-08-28 15:11:42 | system,error,critical | login failure for user admin from 220.179.87.204 via api
+2026-08-28 15:12:53 | system,info,account | user christian logged in from 13.71.3.104 via api
+2026-08-28 15:13:14 | system,error,critical | login failure for user admin from 45.250.170.158 via api
+2026-08-28 15:13:21 | system,info,account | user christian logged out from 13.71.3.104 via api
+2026-08-28 15:14:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-08-28 15:14:20 | pppoe,ppp,error | <d472>: user Dave authentication failed
+2026-08-28 15:14:25 | system,error,critical | login failure for user admin from 182.9.36.167 via api
+2026-08-28 15:14:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-08-28 15:14:30 | pppoe,ppp,error | <d473>: user Dave authentication failed
+2026-08-28 15:15:56 | system,error,critical | login failure for user admin from 117.244.133.246 via api
+2026-08-28 15:17:28 | system,error,critical | login failure for user admin from 170.84.145.115 via api
+2026-08-28 15:18:21 | system,info,account | user christian logged in from 10.99.44.70 via api
+2026-08-28 15:18:59 | system,error,critical | login failure for user admin from 143.0.54.242 via api
