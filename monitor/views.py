@@ -9,6 +9,10 @@ import os
 from .models import *
 from datetime import timedelta
 from django.contrib.auth.decorators import login_required
+from librouteros import connect
+from monitor.crypto import decrypt_password
+from monitor.models import AccessConcentrator
+# from monitor.mikrotik_collector import find_pppoe_interface, get_traffic_sample
 
 RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
@@ -424,3 +428,114 @@ def client_search(request):
             else "Client not found."
         )
     })
+
+@login_required
+def client_traffic(request):
+    username = request.GET.get("username", "").strip()
+
+    if not username:
+        return JsonResponse({
+            "found": False,
+            "message": "Username is required."
+        })
+
+    # Find the currently active PPPoE session
+    session = (
+        PPPoESession.objects
+        .filter(
+            username=username,
+            active=True
+        )
+        .select_related("ac")
+        .order_by("-connected_at")
+        .first()
+    )
+
+    if not session:
+        return JsonResponse({
+            "found": False,
+            "message": "Client is currently offline."
+        })
+
+    if not session.ac:
+        return JsonResponse({
+            "found": False,
+            "message": "No Access Concentrator found."
+        })
+
+    ac = session.ac
+
+    # MikroTik PPPoE dynamic interface name
+    interface_name = f"<pppoe-{username}>"
+
+    api = None
+
+    try:
+        password = decrypt_password(ac.encrypted_password)
+
+        api = connect(
+            username=ac.username,
+            password=password,
+            host=ac.ip_address,
+            port=8728,
+        )
+
+        traffic = list(
+            api(
+                "/interface/monitor-traffic",
+                **{
+                    "interface": interface_name,
+                    "once": "yes",
+                }
+            )
+        )
+
+        if not traffic:
+            return JsonResponse({
+                "found": False,
+                "message": "No traffic data returned."
+            })
+
+        data = traffic[0]
+
+        return JsonResponse({
+            "found": True,
+            "username": username,
+            "interface": interface_name,
+            "ac": ac.name,
+
+            "rx_bits_per_second": data.get(
+                "rx-bits-per-second", 0
+            ),
+
+            "tx_bits_per_second": data.get(
+                "tx-bits-per-second", 0
+            ),
+
+            "rx_packets_per_second": data.get(
+                "rx-packets-per-second", 0
+            ),
+
+            "tx_packets_per_second": data.get(
+                "tx-packets-per-second", 0
+            ),
+
+            "rx_bits": data.get("rx-bits", 0),
+            "tx_bits": data.get("tx-bits", 0),
+
+        })
+
+    except Exception as e:
+        print("TRAFFIC ERROR:", e)
+
+        return JsonResponse({
+            "found": False,
+            "message": str(e)
+        })
+
+    finally:
+        if api:
+            try:
+                api.close()
+            except Exception:
+                pass

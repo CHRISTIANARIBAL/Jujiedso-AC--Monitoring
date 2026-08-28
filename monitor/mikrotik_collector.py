@@ -2,6 +2,7 @@ from librouteros import connect
 from monitor.crypto import decrypt_password
 from monitor.models import PPPoEClient
 
+
 def normalize_mac(mac):
     if not mac:
         return None

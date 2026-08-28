@@ -14,5 +14,6 @@ urlpatterns = [
     path("client-search/", client_search, name="client_search"),
     path("login/", auth_views.LoginView.as_view(template_name="monitor/login.html"), name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
-
+    path("client-traffic/", client_traffic, name="client_traffic"),
+    # path("pppoe-live-traffic/", pppoe_live_traffic, name="pppoe_live_traffic"),
 ]

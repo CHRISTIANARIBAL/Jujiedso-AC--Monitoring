@@ -178,6 +178,7 @@ function resetClientModal() {
         modalError.classList.add("hidden");
         modalError.textContent = "";
     }
+    updateTrafficButton(false);
     setModalText("modal-username", "Loading...");
     setModalText("modal-mac", "-");
     setModalText("modal-ip", "-");
@@ -230,6 +231,7 @@ async function loadClientInfo(params) {
             return;
         }
         const isActive = !!data.active_ac;
+        updateTrafficButton(isActive);
         setModalText("modal-username", data.username || "UNKNOWN");
         setModalText("modal-mac", data.mac || "No MAC");
         setModalText("modal-ip", data.ip || "No IP");
@@ -294,3 +296,409 @@ window.formatDateTime = formatDateTime;
 window.formatRelativeTime = formatRelativeTime;
 window.formatDuration = formatDuration;
 window.renderConnectionHistory = renderConnectionHistory;
+
+
+// ============================================================
+// PPPoE LIVE TRAFFIC
+// ============================================================
+
+const trafficModal = document.getElementById("traffic-modal");
+const openTrafficButton = document.getElementById("open-client-traffic");
+const closeTrafficButton = document.getElementById("close-traffic-modal");
+
+const trafficUsername = document.getElementById("traffic-username");
+const trafficInterface = document.getElementById("traffic-interface");
+const trafficAC = document.getElementById("traffic-ac");
+
+const trafficDownload = document.getElementById("traffic-download");
+const trafficUpload = document.getElementById("traffic-upload");
+
+const trafficRxPackets = document.getElementById("traffic-rx-packets");
+const trafficTxPackets = document.getElementById("traffic-tx-packets");
+
+const trafficStatus = document.getElementById("traffic-status");
+const trafficLiveDot = document.getElementById("traffic-live-dot");
+const trafficError = document.getElementById("traffic-error");
+
+let trafficInterval = null;
+let currentTrafficUsername = null;
+
+
+// ------------------------------------------------------------
+// Format traffic speed
+// ------------------------------------------------------------
+
+function formatTraffic(bits) {
+
+    bits = Number(bits) || 0;
+
+    if (bits >= 1000000000) {
+        return `${(bits / 1000000000).toFixed(2)} Gbps`;
+    }
+
+    if (bits >= 1000000) {
+        return `${(bits / 1000000).toFixed(2)} Mbps`;
+    }
+
+    if (bits >= 1000) {
+        return `${(bits / 1000).toFixed(2)} Kbps`;
+    }
+
+    return `${bits.toFixed(0)} bps`;
+}
+
+
+// ------------------------------------------------------------
+// Format packets
+// ------------------------------------------------------------
+
+function formatPackets(value) {
+
+    value = Number(value) || 0;
+
+    return `${Math.round(value).toLocaleString()} / sec`;
+}
+
+
+// ------------------------------------------------------------
+// Reset traffic display
+// ------------------------------------------------------------
+
+function resetTrafficDisplay() {
+
+    if (trafficDownload) {
+        trafficDownload.textContent = "0 Mbps";
+    }
+
+    if (trafficUpload) {
+        trafficUpload.textContent = "0 Mbps";
+    }
+
+    if (trafficRxPackets) {
+        trafficRxPackets.textContent = "0 / sec";
+    }
+
+    if (trafficTxPackets) {
+        trafficTxPackets.textContent = "0 / sec";
+    }
+
+    if (trafficError) {
+        trafficError.classList.add("hidden");
+        trafficError.textContent = "";
+    }
+
+    if (trafficStatus) {
+        trafficStatus.textContent = "CONNECTING...";
+        trafficStatus.className =
+            "text-xs font-semibold text-yellow-600";
+    }
+
+    if (trafficLiveDot) {
+        trafficLiveDot.className =
+            "h-2.5 w-2.5 rounded-full bg-yellow-500";
+    }
+}
+
+
+// ------------------------------------------------------------
+// Load traffic
+// ------------------------------------------------------------
+
+async function loadClientTraffic() {
+
+    if (!currentTrafficUsername) {
+        return;
+    }
+
+    try {
+
+        const response = await fetch(
+            `/client-traffic/?username=${encodeURIComponent(currentTrafficUsername)}`
+        );
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.found) {
+
+            if (trafficStatus) {
+                trafficStatus.textContent = "OFFLINE";
+                trafficStatus.className =
+                    "text-xs font-semibold text-red-600";
+            }
+
+            if (trafficLiveDot) {
+                trafficLiveDot.className =
+                    "h-2.5 w-2.5 rounded-full bg-red-500";
+            }
+
+            if (trafficError) {
+                trafficError.textContent =
+                    data.message || "Unable to retrieve traffic.";
+                trafficError.classList.remove("hidden");
+            }
+
+            return;
+        }
+
+        // Basic information
+        if (trafficUsername) {
+            trafficUsername.textContent = data.username || "-";
+        }
+
+        if (trafficInterface) {
+            trafficInterface.textContent =
+                data.interface || "-";
+        }
+
+        if (trafficAC) {
+            trafficAC.textContent =
+                data.ac || "-";
+        }
+
+        // Traffic
+        if (trafficDownload) {
+            trafficDownload.textContent =
+                formatTraffic(data.rx_bits_per_second);
+        }
+
+        if (trafficUpload) {
+            trafficUpload.textContent =
+                formatTraffic(data.tx_bits_per_second);
+        }
+
+        // Packets
+        if (trafficRxPackets) {
+            trafficRxPackets.textContent =
+                formatPackets(data.rx_packets_per_second);
+        }
+
+        if (trafficTxPackets) {
+            trafficTxPackets.textContent =
+                formatPackets(data.tx_packets_per_second);
+        }
+
+        // LIVE status
+        if (trafficStatus) {
+            trafficStatus.textContent = "LIVE";
+            trafficStatus.className =
+                "text-xs font-semibold text-green-600";
+        }
+
+        if (trafficLiveDot) {
+            trafficLiveDot.className =
+                "h-2.5 w-2.5 rounded-full bg-green-500";
+        }
+
+        if (trafficError) {
+            trafficError.classList.add("hidden");
+            trafficError.textContent = "";
+        }
+
+    } catch (error) {
+
+        console.error("TRAFFIC ERROR:", error);
+
+        if (trafficStatus) {
+            trafficStatus.textContent = "ERROR";
+            trafficStatus.className =
+                "text-xs font-semibold text-red-600";
+        }
+
+        if (trafficLiveDot) {
+            trafficLiveDot.className =
+                "h-2.5 w-2.5 rounded-full bg-red-500";
+        }
+
+        if (trafficError) {
+            trafficError.textContent =
+                "Unable to retrieve traffic data.";
+            trafficError.classList.remove("hidden");
+        }
+    }
+}
+
+
+// ------------------------------------------------------------
+// Open traffic modal
+// ------------------------------------------------------------
+
+function openTrafficModal(username) {
+
+    if (!trafficModal || !username) {
+        return;
+    }
+
+    currentTrafficUsername = username;
+
+    resetTrafficDisplay();
+
+    if (trafficUsername) {
+        trafficUsername.textContent = username;
+    }
+
+    trafficModal.classList.remove("hidden");
+    trafficModal.classList.add("flex");
+
+    // First request immediately
+    loadClientTraffic();
+
+    // Stop previous polling
+    if (trafficInterval) {
+        clearInterval(trafficInterval);
+    }
+
+    // Update every 2 seconds
+    trafficInterval = setInterval(
+        loadClientTraffic,
+        2000
+    );
+}
+
+
+// ------------------------------------------------------------
+// Close traffic modal
+// ------------------------------------------------------------
+
+function closeTrafficModal() {
+
+    if (trafficInterval) {
+        clearInterval(trafficInterval);
+        trafficInterval = null;
+    }
+
+    currentTrafficUsername = null;
+
+    if (trafficModal) {
+        trafficModal.classList.add("hidden");
+        trafficModal.classList.remove("flex");
+    }
+}
+
+
+// ------------------------------------------------------------
+// Traffic button
+// ------------------------------------------------------------
+
+if (openTrafficButton) {
+
+    openTrafficButton.addEventListener("click", function() {
+
+        const usernameElement =
+            document.getElementById("modal-username");
+
+        if (!usernameElement) {
+            return;
+        }
+
+        const username =
+            usernameElement.textContent.trim();
+
+        if (
+            !username ||
+            username === "-" ||
+            username === "Loading..." ||
+            username === "Not found"
+        ) {
+            return;
+        }
+
+        openTrafficModal(username);
+    });
+}
+
+
+// ------------------------------------------------------------
+// Close button
+// ------------------------------------------------------------
+
+if (closeTrafficButton) {
+
+    closeTrafficButton.addEventListener(
+        "click",
+        closeTrafficModal
+    );
+}
+
+
+// ------------------------------------------------------------
+// Click outside traffic modal
+// ------------------------------------------------------------
+
+if (trafficModal) {
+
+    trafficModal.addEventListener(
+        "click",
+        function(event) {
+
+            if (event.target === trafficModal) {
+                closeTrafficModal();
+            }
+
+        }
+    );
+}
+
+
+// ------------------------------------------------------------
+// ESC closes traffic modal
+// ------------------------------------------------------------
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            if (
+                trafficModal &&
+                !trafficModal.classList.contains("hidden")
+            ) {
+                closeTrafficModal();
+            }
+
+        }
+
+    }
+);
+
+
+// ------------------------------------------------------------
+// Enable / disable traffic button based on client status
+// ------------------------------------------------------------
+
+function updateTrafficButton(active) {
+
+    if (!openTrafficButton) {
+        return;
+    }
+
+    openTrafficButton.disabled = !active;
+
+    if (active) {
+
+        openTrafficButton.classList.remove(
+            "bg-gray-400",
+            "cursor-not-allowed"
+        );
+
+        openTrafficButton.classList.add(
+            "bg-gray-900"
+        );
+
+    } else {
+
+        openTrafficButton.classList.remove(
+            "bg-gray-900"
+        );
+
+        openTrafficButton.classList.add(
+            "bg-gray-400",
+            "cursor-not-allowed"
+        );
+
+    }
+}

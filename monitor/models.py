@@ -62,3 +62,54 @@ class PPPoEClient(models.Model):
 
     def __str__(self):
         return f"{self.username} - {self.mac_address}"
+
+# class PPPoETrafficHistory(models.Model):
+#     client = models.ForeignKey(
+#         PPPoEClient,
+#         on_delete=models.CASCADE,
+#         null=True,
+#         blank=True,
+#         related_name="traffic_history",
+#     )
+
+#     ac = models.ForeignKey(
+#         AccessConcentrator,
+#         on_delete=models.CASCADE,
+#         null=True,
+#         blank=True,
+#         related_name="pppoe_traffic_history",
+#     )
+
+#     interface_name = models.CharField(max_length=255)
+
+#     timestamp = models.DateTimeField(auto_now_add=True)
+
+#     # Traffic rate
+#     tx_bits_per_second = models.BigIntegerField(default=0)
+#     rx_bits_per_second = models.BigIntegerField(default=0)
+
+#     # Packet rate
+#     tx_packets_per_second = models.BigIntegerField(default=0)
+#     rx_packets_per_second = models.BigIntegerField(default=0)
+
+#     # FastPath traffic
+#     fp_tx_bits_per_second = models.BigIntegerField(default=0)
+#     fp_rx_bits_per_second = models.BigIntegerField(default=0)
+
+#     fp_tx_packets_per_second = models.BigIntegerField(default=0)
+#     fp_rx_packets_per_second = models.BigIntegerField(default=0)
+
+#     # Drops
+#     tx_drops_per_second = models.BigIntegerField(default=0)
+#     rx_drops_per_second = models.BigIntegerField(default=0)
+#     tx_queue_drops_per_second = models.BigIntegerField(default=0)
+
+#     # Errors
+#     tx_errors_per_second = models.BigIntegerField(default=0)
+#     rx_errors_per_second = models.BigIntegerField(default=0)
+
+#     class Meta:
+#         ordering = ["timestamp"]
+
+#     def __str__(self):
+#         return f"{self.interface_name} - {self.timestamp}"
