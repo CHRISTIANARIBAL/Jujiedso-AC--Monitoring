@@ -128,6 +128,13 @@ git ls-files db.sqlite3
 
 
 create the gitignore
+
+nano .gitignore
+Save with:
+Ctrl + O
+Enter
+Ctrl + X
+
 # Python
 __pycache__/
 *.py[cod]
