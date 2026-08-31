@@ -122,3 +122,5 @@ backup db and raw logs first
 cp db.sqlite3 ~/db_backup.sqlite3
 cp -r monitor/management/raw_logs ~/raw_logs_backup
 
+check weather git is still tracking the db
+git ls-files db.sqlite3
