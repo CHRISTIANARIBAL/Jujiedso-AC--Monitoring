@@ -112,4 +112,9 @@ add this in setting.py
 CSRF_TRUSTED_ORIGINS = [
     "http://10.99.2.51:8000",
     "https://non-seo-thousand-gabriel.trycloudflare.com",
+	"other links",
 ]
+
+
+Update local code from github
+git pull origin main
