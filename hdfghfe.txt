@@ -124,3 +124,39 @@ cp -r monitor/management/raw_logs ~/raw_logs_backup
 
 check weather git is still tracking the db
 git ls-files db.sqlite3
+
+
+
+create the gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Django
+db.sqlite3
+*.sqlite3
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Django static/media
+staticfiles/
+media/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
