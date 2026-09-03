@@ -118,6 +118,9 @@ CSRF_TRUSTED_ORIGINS = [
 
 Update local code from github
 
+git status
+git pull origin main
+
 backup db and raw logs first
 cp db.sqlite3 ~/db_backup.sqlite3
 cp -r monitor/management/raw_logs ~/raw_logs_backup
