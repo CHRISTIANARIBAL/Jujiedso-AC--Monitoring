@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLT Direct Parser</title>
+    <link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div>
+                <h1>OLT Direct Parser</h1>
+                <p>ONU MAC Address Lookup</p>
+            </div>
+            <div id="selectedOLT" class="selected-olt">No OLT selected</div>
+        </header>
+
+        <section class="olt-buttons">
+            <button class="olt-button" data-olt="CALU-OLT1">CALU-OLT1</button>
+            <button class="olt-button" data-olt="CALU-OLT2">CALU-OLT2</button>
+            <button class="olt-button" data-olt="CALU-OLT3">CALU-OLT3</button>
+            <button class="olt-button" data-olt="CALU-OLT4">CALU-OLT4</button>
+            <button class="olt-button" data-olt="CALU-OLT5">CALU-OLT5</button>
+            <button class="olt-button" data-olt="COMM-OLT1">COMM-OLT1</button>
+        </section>
+
+        <section class="credentials">
+            <input id="username" type="text" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <input id="mac" type="text" placeholder="MAC Address">
+            <button id="lookupButton">LOOKUP</button>
+        </section>
+
+        <section id="result" class="result"></section>
+
+        <section class="terminal-container">
+            <div class="terminal-header">
+                <span>TERMINAL</span>
+                <span id="terminalStatus">READY</span>
+            </div>
+            <pre id="terminal"></pre>
+        </section>
+    </div>
+
+    <script src="/web/app.js"></script>
+</body>
+</html>
