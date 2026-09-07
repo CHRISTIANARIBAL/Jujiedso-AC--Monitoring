@@ -112,6 +112,7 @@ add this in setting.py
 CSRF_TRUSTED_ORIGINS = [
     "http://10.99.2.51:8000",
     "https://non-seo-thousand-gabriel.trycloudflare.com",
+	"https://falling-warning-telecom-students.trycloudflare.com"
 	"other links",
 ]
 
