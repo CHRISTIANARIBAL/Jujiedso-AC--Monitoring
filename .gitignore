@@ -28,4 +28,4 @@ db.sqlite3
 Thumbs.db
 
 # Django static files
-staticfiles/
+staticfiles/db.sqlite3.backup
