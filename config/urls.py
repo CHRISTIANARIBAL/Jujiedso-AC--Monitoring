@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from monitor.views import *
 from django.contrib.auth import views as auth_views
 
@@ -16,4 +16,5 @@ urlpatterns = [
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path("client-traffic/", client_traffic, name="client_traffic"),
     # path("pppoe-live-traffic/", pppoe_live_traffic, name="pppoe_live_traffic"),
+    path('onu/', include('onu_monitor.urls')),
 ]

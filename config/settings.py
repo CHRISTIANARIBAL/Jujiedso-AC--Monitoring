@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'monitor',
     'channels',
+    'onu_monitor',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
