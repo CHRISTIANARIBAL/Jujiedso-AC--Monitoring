@@ -17,8 +17,13 @@ async def run_vsol(olt_name, olt, username, password, mac):
     )
 
     try:
-        terminal.append(f"Connecting to {olt_name} ({olt['ip']})...")
-
+        terminal.append("==========================================")
+        terminal.append(f"OLT: {olt_name}")
+        terminal.append(f"IP: {olt['ip']}")
+        terminal.append(f"BRAND: {olt['brand']}")
+        terminal.append("==========================================")
+        terminal.append("")
+        terminal.append("Connecting...")
         await connection.connect()
         terminal.append("Connected.")
 
@@ -87,7 +92,13 @@ async def run_bdcom(olt_name, olt, username, password, mac):
     )
 
     try:
-        terminal.append(f"Connecting to {olt_name} ({olt['ip']})...")
+        terminal.append("==========================================")
+        terminal.append(f"OLT: {olt_name}")
+        terminal.append(f"IP: {olt['ip']}")
+        terminal.append(f"BRAND: {olt['brand']}")
+        terminal.append("==========================================")
+        terminal.append("")
+        terminal.append("Connecting...")
 
         success = await connection.connect()
 
