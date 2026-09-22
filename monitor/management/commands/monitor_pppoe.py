@@ -4,7 +4,7 @@ import hashlib
 from datetime import datetime
 from django.core.management.base import BaseCommand
 from librouteros import connect
-from monitor.models import AccessConcentrator
+from monitor.models import *
 from monitor.session_sync import sync_ac_sessions
 from monitor.log_collector import build_active_lookup, process_logs
 from monitor.websocket_utils import broadcast_active_counts
@@ -119,9 +119,14 @@ class Command(BaseCommand):
                     active_users = list(api("/ppp/active/print"))
                     active_count = sync_ac_sessions(ac, mikrotik_sessions=active_users)
                     active_counts[str(ac.id)] = active_count
+
                     active_lookup = build_active_lookup(active_users)
                     logs = list(api("/log/print"))
                     saved_count = save_new_raw_logs(ac, logs)
+
+                    traffic_saved = collect_pppoe_traffic(api, ac, active_users,)
+                    self.stdout.write(self.style.SUCCESS(f"{ac.name}: "f"{traffic_saved} traffic samples saved"))
+                    active_lookup = build_active_lookup(active_users)
 
                     if saved_count > 0:
                         self.stdout.write(self.style.SUCCESS(
@@ -163,3 +168,93 @@ class Command(BaseCommand):
             self.stdout.write("\nWaiting 30 seconds...")
             
             time.sleep(30)
+
+def collect_pppoe_traffic(api, ac, active_users):
+    saved_count = 0
+
+    for session in active_users:
+        username = session.get("name")
+
+        if not username:
+            continue
+
+        interface_name = f"<pppoe-{username}>"
+
+        try:
+            traffic = list(
+                api(
+                    "/interface/monitor-traffic",
+                    **{
+                        "interface": interface_name,
+                        "once": "yes",
+                    },
+                )
+            )
+
+            if not traffic:
+                continue
+
+            data = traffic[0]
+
+            client = PPPoEClient.objects.filter(
+                username=username,
+                ac=ac,
+            ).first()
+
+            if not client:
+                continue
+
+            PPPoETrafficHistory.objects.create(
+                client=client,
+                ac=ac,
+                interface_name=interface_name,
+                tx_bits_per_second=data.get(
+                    "tx-bits-per-second", 0
+                ),
+                rx_bits_per_second=data.get(
+                    "rx-bits-per-second", 0
+                ),
+                tx_packets_per_second=data.get(
+                    "tx-packets-per-second", 0
+                ),
+                rx_packets_per_second=data.get(
+                    "rx-packets-per-second", 0
+                ),
+                fp_tx_bits_per_second=data.get(
+                    "fp-tx-bits-per-second", 0
+                ),
+                fp_rx_bits_per_second=data.get(
+                    "fp-rx-bits-per-second", 0
+                ),
+                fp_tx_packets_per_second=data.get(
+                    "fp-tx-packets-per-second", 0
+                ),
+                fp_rx_packets_per_second=data.get(
+                    "fp-rx-packets-per-second", 0
+                ),
+                tx_drops_per_second=data.get(
+                    "tx-drops-per-second", 0
+                ),
+                rx_drops_per_second=data.get(
+                    "rx-drops-per-second", 0
+                ),
+                tx_queue_drops_per_second=data.get(
+                    "tx-queue-drops-per-second", 0
+                ),
+                tx_errors_per_second=data.get(
+                    "tx-errors-per-second", 0
+                ),
+                rx_errors_per_second=data.get(
+                    "rx-errors-per-second", 0
+                ),
+            )
+
+            saved_count += 1
+
+        except Exception as e:
+            print(
+                f"{ac.name}: traffic error for "
+                f"{username}: {e}"
+            )
+
+    return saved_count

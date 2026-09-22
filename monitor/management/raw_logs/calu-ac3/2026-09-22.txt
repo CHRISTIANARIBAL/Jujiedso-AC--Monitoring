@@ -1,0 +1,1310 @@
+2026-09-21 23:11:56 | warning | denied winbox/dude connect from 16.5.0.241
+2026-09-21 23:11:57 | warning | denied winbox/dude connect from 16.5.0.241
+2026-09-21 23:19:37 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-21 23:19:37 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-21 23:19:37 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-21 23:19:37 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-21 23:19:37 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-21 23:19:37 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 1966 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-21 23:19:37 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-21 23:23:22 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-21 23:23:22 | pppoe,ppp,info,account | montealegre02delacernam logged out, 225 12957 23409 68 64 from D4:7E:A9:6E:8B:15
+2026-09-21 23:23:22 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-21 23:23:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-21 23:23:57 | pppoe,ppp,error | <d033>: user Dave authentication failed - radius timeout
+2026-09-21 23:31:51 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-21 23:31:51 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-21 23:31:51 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-21 23:31:51 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-21 23:32:23 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating...
+2026-09-21 23:32:23 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 33 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-21 23:32:23 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-21 23:34:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-21 23:34:35 | pppoe,ppp,error | <d034>: user Dave authentication failed - radius timeout
+2026-09-21 23:34:57 | pppoe,ppp,info | <pppoe-catmon01beltrane>: terminating... - peer is not responding
+2026-09-21 23:34:57 | pppoe,ppp,info,account | catmon01beltrane logged out, 65471 1434243641 13051584801 5499162 12794371 from 4C:D0:CB:ED:04:39
+2026-09-21 23:34:57 | pppoe,ppp,info | <pppoe-catmon01beltrane>: disconnected
+2026-09-21 23:35:18 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-21 23:35:18 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-21 23:35:18 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-21 23:35:18 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-21 23:54:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-21 23:54:20 | pppoe,ppp,error | <d035>: user Dave authentication failed - radius timeout
+2026-09-21 23:54:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-21 23:54:23 | pppoe,ppp,error | <d036>: user Dave authentication failed - radius timeout
+2026-09-21 23:58:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-21 23:58:53 | pppoe,ppp,error | <d037>: user Dave authentication failed - radius timeout
+2026-09-22 00:07:02 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating...
+2026-09-22 00:07:02 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 48234 3298490152 13787724163 4860158 12705795 from D4:7E:A8:60:24:DB
+2026-09-22 00:07:02 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-09-22 00:15:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:15:35 | pppoe,ppp,error | <d038>: user Dave authentication failed - radius timeout
+2026-09-22 00:20:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 00:20:11 | pppoe,ppp,error | <d039>: user Dave authentication failed - radius timeout
+2026-09-22 00:20:38 | pppoe,ppp,info | <pppoe-tinago01mantuhacw>: terminating... - peer is not responding
+2026-09-22 00:20:38 | pppoe,ppp,info,account | tinago01mantuhacw logged out, 6785 132383402 2098865961 389090 1743262 from B4:FB:F9:11:BB:68
+2026-09-22 00:20:38 | pppoe,ppp,info | <pppoe-tinago01mantuhacw>: disconnected
+2026-09-22 00:20:47 | pppoe,ppp,info | <pppoe-balide01chavezdj>: terminating... - peer is not responding
+2026-09-22 00:20:47 | pppoe,ppp,info,account | balide01chavezdj logged out, 541603 5532997225 158797524001 30757122 124025068 from D4:7E:A9:EC:5F:A9
+2026-09-22 00:20:47 | pppoe,ppp,info | <pppoe-balide01chavezdj>: disconnected
+2026-09-22 00:21:11 | pppoe,info | PPPoE connection established from D4:7E:A9:EC:5F:A9
+2026-09-22 00:21:12 | pppoe,ppp,info,account | balide01chavezdj logged in, 100.64.17.231 from D4:7E:A9:EC:5F:A9
+2026-09-22 00:21:12 | pppoe,ppp,info | <pppoe-balide01chavezdj>: authenticated
+2026-09-22 00:21:12 | pppoe,ppp,info | <pppoe-balide01chavezdj>: connected
+2026-09-22 00:27:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:27:44 | pppoe,ppp,error | <d03a>: user Dave authentication failed - radius timeout
+2026-09-22 00:29:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:29:15 | pppoe,ppp,error | <d03b>: user Dave authentication failed - radius timeout
+2026-09-22 00:30:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 00:30:49 | pppoe,ppp,error | <d03c>: user Dave authentication failed - radius timeout
+2026-09-22 00:38:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:38:22 | pppoe,ppp,error | <d03d>: user Dave authentication failed - radius timeout
+2026-09-22 00:41:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 00:41:27 | pppoe,ppp,error | <d03e>: user Dave authentication failed - radius timeout
+2026-09-22 00:42:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:42:55 | pppoe,ppp,error | <d03f>: user Dave authentication failed - radius timeout
+2026-09-22 00:55:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 00:55:07 | pppoe,ppp,error | <d040>: user Dave authentication failed - radius timeout
+2026-09-22 00:55:37 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 00:55:37 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 4819 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 00:55:37 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 00:56:49 | pppoe,info | PPPoE connection established from 70:28:BC:AC:20:7F
+2026-09-22 00:56:49 | pppoe,ppp,info,account | cabilinan02gonzalesj logged in, 100.64.19.21 from 70:28:BC:AC:20:7F
+2026-09-22 00:56:49 | pppoe,ppp,info | <pppoe-cabilinan02gonzalesj>: authenticated
+2026-09-22 00:56:49 | pppoe,ppp,info | <pppoe-cabilinan02gonzalesj>: connected
+2026-09-22 00:58:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 00:58:06 | pppoe,ppp,error | <d042>: user Dave authentication failed - radius timeout
+2026-09-22 01:08:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:08:44 | pppoe,ppp,error | <d043>: user Dave authentication failed - radius timeout
+2026-09-22 01:10:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:10:15 | pppoe,ppp,error | <d044>: user Dave authentication failed - radius timeout
+2026-09-22 01:17:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:17:50 | pppoe,ppp,error | <d045>: user Dave authentication failed - radius timeout
+2026-09-22 01:19:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:19:21 | pppoe,ppp,error | <d046>: user Dave authentication failed - radius timeout
+2026-09-22 01:19:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 01:19:25 | pppoe,ppp,error | <d047>: user Dave authentication failed - radius timeout
+2026-09-22 01:20:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:20:52 | pppoe,ppp,error | <d048>: user Dave authentication failed - radius timeout
+2026-09-22 01:21:48 | pppoe,ppp,info | <pppoe-sanjose02sanchezb>: terminating... - peer is not responding
+2026-09-22 01:21:48 | pppoe,ppp,info,account | sanjose02sanchezb logged out, 71959 1480942300 32799325891 6915280 27215108 from D4:7E:A9:EB:74:2D
+2026-09-22 01:21:48 | pppoe,ppp,info | <pppoe-sanjose02sanchezb>: disconnected
+2026-09-22 01:22:59 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:23:00 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:23:01 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:23:02 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:23:03 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:23:04 | warning | denied winbox/dude connect from 16.5.0.234
+2026-09-22 01:25:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:25:25 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 01:25:25 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 01:25:25 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 01:25:25 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 01:25:26 | pppoe,ppp,error | <d049>: user Dave authentication failed - radius timeout
+2026-09-22 01:26:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:26:57 | pppoe,ppp,error | <d04a>: user Dave authentication failed - radius timeout
+2026-09-22 01:28:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:28:28 | pppoe,ppp,error | <d04b>: user Dave authentication failed - radius timeout
+2026-09-22 01:30:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 01:30:03 | pppoe,ppp,error | <d04c>: user Dave authentication failed - radius timeout
+2026-09-22 01:31:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 01:31:34 | pppoe,ppp,error | <d04d>: user Dave authentication failed - radius timeout
+2026-09-22 01:33:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 01:33:05 | pppoe,ppp,error | <d04e>: user Dave authentication failed - radius timeout
+2026-09-22 01:40:38 | warning | denied winbox/dude connect from 85.217.149.21
+2026-09-22 01:45:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:45:10 | pppoe,ppp,error | <d04f>: user Dave authentication failed - radius timeout
+2026-09-22 01:57:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 01:57:19 | pppoe,ppp,error | <d050>: user Dave authentication failed - radius timeout
+2026-09-22 01:58:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 01:58:54 | pppoe,ppp,error | <d051>: user Dave authentication failed - radius timeout
+2026-09-22 02:00:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:00:21 | pppoe,ppp,error | <d052>: user Dave authentication failed - radius timeout
+2026-09-22 02:04:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:04:55 | pppoe,ppp,error | <d053>: user Dave authentication failed - radius timeout
+2026-09-22 02:06:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:06:26 | pppoe,ppp,error | <d054>: user Dave authentication failed - radius timeout
+2026-09-22 02:14:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:14:01 | pppoe,ppp,error | <d055>: user Dave authentication failed - radius timeout
+2026-09-22 02:14:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:14:05 | pppoe,ppp,error | <d056>: user Dave authentication failed - radius timeout
+2026-09-22 02:18:18 | pppoe,info | PPPoE connection established from D4:7E:A8:4D:7C:02
+2026-09-22 02:18:19 | pppoe,ppp,info,account | inroad02tipactipacm logged in, 100.64.18.92 from D4:7E:A8:4D:7C:02
+2026-09-22 02:18:19 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: authenticated
+2026-09-22 02:18:19 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: connected
+2026-09-22 02:22:12 | warning | denied winbox/dude connect from 64.62.156.222
+2026-09-22 02:25:14 | warning | denied winbox/dude connect from 64.62.156.192
+2026-09-22 02:32:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:32:18 | pppoe,ppp,error | <d057>: user Dave authentication failed - radius timeout
+2026-09-22 02:32:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:32:19 | pppoe,ppp,error | <d058>: user Dave authentication failed - radius timeout
+2026-09-22 02:33:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:33:49 | pppoe,ppp,error | <d059>: user Dave authentication failed - radius timeout
+2026-09-22 02:33:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:33:50 | pppoe,ppp,error | <d05a>: user Dave authentication failed - radius timeout
+2026-09-22 02:35:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:35:20 | pppoe,ppp,error | <d05b>: user Dave authentication failed - radius timeout
+2026-09-22 02:35:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:35:21 | pppoe,ppp,error | <d05c>: user Dave authentication failed - radius timeout
+2026-09-22 02:45:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:45:58 | pppoe,ppp,error | <d05d>: user Dave authentication failed - radius timeout
+2026-09-22 02:45:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:45:59 | pppoe,ppp,error | <d05e>: user Dave authentication failed - radius timeout
+2026-09-22 02:50:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:50:31 | pppoe,ppp,error | <d05f>: user Dave authentication failed - radius timeout
+2026-09-22 02:50:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:50:32 | pppoe,ppp,error | <d060>: user Dave authentication failed - radius timeout
+2026-09-22 02:52:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 02:52:02 | pppoe,ppp,error | <d061>: user Dave authentication failed - radius timeout
+2026-09-22 02:52:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 02:52:03 | pppoe,ppp,error | <d062>: user Dave authentication failed - radius timeout
+2026-09-22 03:07:09 | pppoe,ppp,info | <pppoe-poblacion04purapc>: terminating... - peer is not responding
+2026-09-22 03:07:09 | pppoe,ppp,info,account | poblacion04purapc logged out, 267273 12196415042 170456531201 57862239 150993575 from D4:7E:A8:AF:5B:D9
+2026-09-22 03:07:09 | pppoe,ppp,info | <pppoe-poblacion04purapc>: disconnected
+2026-09-22 03:08:17 | pppoe,info | PPPoE connection established from D4:7E:A8:AF:5B:D9
+2026-09-22 03:08:17 | pppoe,ppp,info,account | poblacion04purapc logged in, 100.64.17.143 from D4:7E:A8:AF:5B:D9
+2026-09-22 03:08:17 | pppoe,ppp,info | <pppoe-poblacion04purapc>: authenticated
+2026-09-22 03:08:17 | pppoe,ppp,info | <pppoe-poblacion04purapc>: connected
+2026-09-22 03:19:26 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 03:19:26 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 6840 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 03:19:26 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 03:20:59 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 03:20:59 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 03:20:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 03:20:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 03:35:15 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - peer is not responding
+2026-09-22 03:35:15 | pppoe,ppp,info,account | montealegre02bunala logged out, 856 8107 12746 45 46 from 34:4C:68:53:80:E7
+2026-09-22 03:35:15 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 03:39:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 03:39:07 | pppoe,ppp,error | <d063>: user Dave authentication failed - radius timeout
+2026-09-22 03:39:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 03:39:08 | pppoe,ppp,error | <d064>: user Dave authentication failed - radius timeout
+2026-09-22 03:40:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 03:40:38 | pppoe,ppp,error | <d065>: user Dave authentication failed - radius timeout
+2026-09-22 03:40:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 03:40:39 | pppoe,ppp,error | <d066>: user Dave authentication failed - radius timeout
+2026-09-22 03:42:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 03:42:09 | pppoe,ppp,error | <d067>: user Dave authentication failed - radius timeout
+2026-09-22 03:42:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 03:42:10 | pppoe,ppp,error | <d068>: user Dave authentication failed - radius timeout
+2026-09-22 03:43:39 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 03:43:40 | pppoe,ppp,error | <d069>: user Dave authentication failed - radius timeout
+2026-09-22 03:43:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 03:43:41 | pppoe,ppp,error | <d06a>: user Dave authentication failed - radius timeout
+2026-09-22 03:45:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 03:45:11 | pppoe,ppp,error | <d06b>: user Dave authentication failed - radius timeout
+2026-09-22 03:45:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 03:45:12 | pppoe,ppp,error | <d06c>: user Dave authentication failed - radius timeout
+2026-09-22 04:04:17 | pppoe,ppp,info | <pppoe-resthouse01bronolaw>: terminating... - peer is not responding
+2026-09-22 04:04:17 | pppoe,ppp,info,account | resthouse01bronolaw logged out, 229476 5692991241 61965296072 27463866 57341207 from A4:C6:4F:ED:56:2B
+2026-09-22 04:04:17 | pppoe,ppp,info | <pppoe-resthouse01bronolaw>: disconnected
+2026-09-22 04:04:24 | pppoe,ppp,info | <pppoe-resthouse03saragenam>: terminating... - peer is not responding
+2026-09-22 04:04:24 | pppoe,ppp,info,account | resthouse03saragenam logged out, 229425 2591430080 33914703276 12583878 31397565 from 5C:09:79:F4:0A:4D
+2026-09-22 04:04:24 | pppoe,ppp,info | <pppoe-resthouse03saragenam>: disconnected
+2026-09-22 04:04:28 | pppoe,ppp,info | <pppoe-resthouse01felecianol>: terminating... - peer is not responding
+2026-09-22 04:04:28 | pppoe,ppp,info,account | resthouse01felecianol logged out, 229426 160104544 8746966398 1001962 7248685 from A0:A3:3B:1C:7B:E9
+2026-09-22 04:04:28 | pppoe,ppp,info | <pppoe-resthouse01felecianol>: disconnected
+2026-09-22 04:14:21 | pppoe,info | PPPoE connection established from 3C:52:A1:76:24:3D
+2026-09-22 04:14:21 | pppoe,ppp,info,account | campo101moneraa logged in, 100.64.18.60 from 3C:52:A1:76:24:3D
+2026-09-22 04:14:21 | pppoe,ppp,info | <pppoe-campo101moneraa>: authenticated
+2026-09-22 04:14:21 | pppoe,ppp,info | <pppoe-campo101moneraa>: connected
+2026-09-22 04:32:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:32:16 | pppoe,ppp,error | <d06d>: user Dave authentication failed - radius timeout
+2026-09-22 04:32:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:32:17 | pppoe,ppp,error | <d06e>: user Dave authentication failed - radius timeout
+2026-09-22 04:35:24 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:36:14 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:36:43 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:37:30 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:37:35 | pppoe,ppp,info | <pppoe-anonang03brgyofficefree>: terminating... - peer is not responding
+2026-09-22 04:37:35 | pppoe,ppp,info,account | anonang03brgyofficefree logged out, 167426 1771152094 13940503870 5849240 13750726 from D4:7E:A8:C4:3E:AF
+2026-09-22 04:37:35 | pppoe,ppp,info | <pppoe-anonang03brgyofficefree>: disconnected
+2026-09-22 04:37:38 | pppoe,ppp,info | <pppoe-anonang04itoda>: terminating... - peer is not responding
+2026-09-22 04:37:38 | pppoe,ppp,info,account | anonang04itoda logged out, 167420 632688163 15320405871 3426010 12709041 from 70:28:2C:B6:95:A1
+2026-09-22 04:37:38 | pppoe,ppp,info | <pppoe-anonang04itoda>: disconnected
+2026-09-22 04:37:40 | pppoe,ppp,info | <pppoe-anonang08padillol>: terminating... - peer is not responding
+2026-09-22 04:37:40 | pppoe,ppp,info,account | anonang08padillol logged out, 167421 10717813332 27335184119 19561493 29347737 from D4:7E:A9:E6:7A:3D
+2026-09-22 04:37:40 | pppoe,ppp,info | <pppoe-anonang08padillol>: disconnected
+2026-09-22 04:37:43 | pppoe,info | PPPoE connection established from E4:72:E2:80:E1:4C
+2026-09-22 04:37:43 | pppoe,ppp,info,account | resthouse02villarina logged in, 10.99.44.104 from E4:72:E2:80:E1:4C
+2026-09-22 04:37:43 | pppoe,ppp,info | <pppoe-resthouse02villarina>: authenticated
+2026-09-22 04:37:43 | pppoe,ppp,info | <pppoe-anonang01barrosa>: terminating... - peer is not responding
+2026-09-22 04:37:43 | pppoe,ppp,info,account | anonang01barrosa logged out, 167462 2172880374 28045457941 10061132 27163034 from D4:7E:A9:2C:A4:B3
+2026-09-22 04:37:43 | pppoe,ppp,info | <pppoe-anonang01barrosa>: disconnected
+2026-09-22 04:37:47 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:37:51 | pppoe,ppp,info | <pppoe-resthouse02villarina>: connected
+2026-09-22 04:38:32 | warning | denied winbox/dude connect from 18.116.101.220
+2026-09-22 04:39:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:39:52 | pppoe,ppp,error | <d06f>: user Dave authentication failed - radius timeout
+2026-09-22 04:40:48 | pppoe,ppp,info | <pppoe-loverslane01conchaj3>: terminating...
+2026-09-22 04:40:48 | pppoe,ppp,info,account | loverslane01conchaj3 logged out, 76974 1899241304 47418329373 7208576 38184996 from B4:FB:F9:03:28:82
+2026-09-22 04:40:48 | pppoe,ppp,info | <pppoe-loverslane01conchaj3>: disconnected
+2026-09-22 04:40:48 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: terminating...
+2026-09-22 04:40:48 | pppoe,ppp,info,account | loverslane01quinoa logged out, 45324 2777283552 13475396934 6623379 13965478 from 5C:09:79:54:B1:F5
+2026-09-22 04:40:48 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: disconnected
+2026-09-22 04:40:56 | pppoe,info | PPPoE connection established from 70:28:0B:A1:96:01
+2026-09-22 04:40:57 | pppoe,ppp,info,account | sagrada01tancg logged in, 100.64.19.22 from 70:28:0B:A1:96:01
+2026-09-22 04:40:57 | pppoe,ppp,info | <pppoe-sagrada01tancg>: authenticated
+2026-09-22 04:40:57 | pppoe,ppp,info | <pppoe-sagrada01tancg>: connected
+2026-09-22 04:41:19 | pppoe,info | PPPoE connection established from 10:C1:72:55:23:D7
+2026-09-22 04:41:19 | pppoe,info | PPPoE connection established from B4:FB:F9:03:28:82
+2026-09-22 04:41:19 | pppoe,info | PPPoE connection established from 5C:09:79:54:B1:F5
+2026-09-22 04:41:20 | pppoe,info | PPPoE connection established from 34:1E:6B:E7:6D:22
+2026-09-22 04:41:21 | pppoe,ppp,info,account | sagrada01cortesr logged in, 100.64.19.23 from 10:C1:72:55:23:D7
+2026-09-22 04:41:21 | pppoe,ppp,info | <pppoe-sagrada01cortesr>: authenticated
+2026-09-22 04:41:21 | pppoe,ppp,info | <pppoe-sagrada01cortesr>: connected
+2026-09-22 04:41:21 | pppoe,ppp,info,account | loverslane01conchaj3 logged in, 100.64.16.213 from B4:FB:F9:03:28:82
+2026-09-22 04:41:21 | pppoe,ppp,info | <pppoe-loverslane01conchaj3>: authenticated
+2026-09-22 04:41:21 | pppoe,ppp,info | <pppoe-loverslane01conchaj3>: connected
+2026-09-22 04:41:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:41:22 | pppoe,ppp,info,account | loverslane01punoa logged in, 100.64.19.24 from 34:1E:6B:E7:6D:22
+2026-09-22 04:41:22 | pppoe,ppp,info | <pppoe-loverslane01punoa>: authenticated
+2026-09-22 04:41:22 | pppoe,ppp,info | <pppoe-loverslane01punoa>: connected
+2026-09-22 04:41:22 | pppoe,ppp,info,account | loverslane01quinoa logged in, 100.64.18.80 from 5C:09:79:54:B1:F5
+2026-09-22 04:41:22 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: authenticated
+2026-09-22 04:41:22 | pppoe,ppp,info | <pppoe-loverslane01quinoa>: connected
+2026-09-22 04:41:23 | pppoe,ppp,error | <d070>: user Dave authentication failed - radius timeout
+2026-09-22 04:41:23 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:41:24 | pppoe,ppp,error | <d071>: user Dave authentication failed - radius timeout
+2026-09-22 04:42:38 | pppoe,ppp,info | <pppoe-resthouse02villarina>: terminating... - peer is not responding
+2026-09-22 04:42:38 | pppoe,ppp,info,account | resthouse02villarina logged out, 296 1953 5426 23 31 from E4:72:E2:80:E1:4C
+2026-09-22 04:42:38 | pppoe,ppp,info | <pppoe-resthouse02villarina>: disconnected
+2026-09-22 04:44:43 | pppoe,info | PPPoE connection established from E4:72:E2:80:E1:4C
+2026-09-22 04:44:47 | pppoe,ppp,info,account | resthouse02villarina logged in, 10.99.44.104 from E4:72:E2:80:E1:4C
+2026-09-22 04:44:47 | pppoe,ppp,info | <pppoe-resthouse02villarina>: authenticated
+2026-09-22 04:44:47 | pppoe,ppp,info | <pppoe-resthouse02villarina>: connected
+2026-09-22 04:45:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:45:56 | pppoe,ppp,error | <d072>: user Dave authentication failed - radius timeout
+2026-09-22 04:45:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:45:57 | pppoe,ppp,error | <d073>: user Dave authentication failed - radius timeout
+2026-09-22 04:45:59 | pppoe,ppp,info | <pppoe-resthouse02villarina>: terminating... - peer is not responding
+2026-09-22 04:45:59 | pppoe,ppp,info,account | resthouse02villarina logged out, 75 24137 35913 228 248 from E4:72:E2:80:E1:4C
+2026-09-22 04:45:59 | pppoe,ppp,info | <pppoe-resthouse02villarina>: disconnected
+2026-09-22 04:49:15 | pppoe,info | PPPoE connection established from E4:72:E2:80:E1:4C
+2026-09-22 04:49:15 | pppoe,ppp,info,account | resthouse02villarina logged in, 10.99.44.104 from E4:72:E2:80:E1:4C
+2026-09-22 04:49:15 | pppoe,ppp,info | <pppoe-resthouse02villarina>: authenticated
+2026-09-22 04:49:15 | pppoe,ppp,info | <pppoe-resthouse02villarina>: connected
+2026-09-22 04:50:21 | pppoe,ppp,info | <pppoe-resthouse02villarina>: terminating... - peer is not responding
+2026-09-22 04:50:21 | pppoe,ppp,info,account | resthouse02villarina logged out, 66 2847 5558 23 24 from E4:72:E2:80:E1:4C
+2026-09-22 04:50:21 | pppoe,ppp,info | <pppoe-resthouse02villarina>: disconnected
+2026-09-22 04:50:56 | pppoe,ppp,info | <pppoe-campo101moneraa>: terminating...
+2026-09-22 04:50:56 | pppoe,ppp,info,account | campo101moneraa logged out, 2195 1439965 53861168 16610 38090 from 3C:52:A1:76:24:3D
+2026-09-22 04:50:56 | pppoe,ppp,info | <pppoe-campo101moneraa>: disconnected
+2026-09-22 04:51:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:52:00 | pppoe,ppp,error | <d074>: user Dave authentication failed - radius timeout
+2026-09-22 04:52:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:52:01 | pppoe,ppp,error | <d075>: user Dave authentication failed - radius timeout
+2026-09-22 04:53:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:53:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:53:32 | pppoe,ppp,error | <d076>: user Dave authentication failed - radius timeout
+2026-09-22 04:53:32 | pppoe,ppp,error | <d077>: user Dave authentication failed - radius timeout
+2026-09-22 04:55:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:55:03 | pppoe,ppp,error | <d078>: user Dave authentication failed - radius timeout
+2026-09-22 04:55:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:55:04 | pppoe,ppp,error | <d079>: user Dave authentication failed - radius timeout
+2026-09-22 04:56:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:56:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:56:34 | pppoe,ppp,error | <d07a>: user Dave authentication failed - radius timeout
+2026-09-22 04:56:35 | pppoe,ppp,error | <d07b>: user Dave authentication failed - radius timeout
+2026-09-22 04:56:37 | pppoe,info | PPPoE connection established from E4:72:E2:80:E1:4C
+2026-09-22 04:57:07 | pppoe,ppp,error | <1187>: authentication failed: peer didn't respond to CHAP challenge
+2026-09-22 04:58:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 04:58:05 | pppoe,ppp,error | <d07c>: user Dave authentication failed - radius timeout
+2026-09-22 04:58:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 04:58:06 | pppoe,ppp,error | <d07d>: user Dave authentication failed - radius timeout
+2026-09-22 04:58:51 | pppoe,ppp,info | <pppoe-baclay02bulaybulayj>: terminating... - peer is not responding
+2026-09-22 04:58:51 | pppoe,ppp,info,account | baclay02bulaybulayj logged out, 29512 46083411 3688433 171353 22454 from 14:A0:F8:84:E0:D3
+2026-09-22 04:58:51 | pppoe,ppp,info | <pppoe-baclay02bulaybulayj>: disconnected
+2026-09-22 05:00:17 | pppoe,info | PPPoE connection established from E4:72:E2:80:E1:4C
+2026-09-22 05:00:19 | pppoe,ppp,info,account | resthouse02villarina logged in, 10.99.44.104 from E4:72:E2:80:E1:4C
+2026-09-22 05:00:19 | pppoe,ppp,info | <pppoe-resthouse02villarina>: authenticated
+2026-09-22 05:00:19 | pppoe,ppp,info | <pppoe-resthouse02villarina>: connected
+2026-09-22 05:05:39 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:05:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:05:40 | pppoe,ppp,error | <d07e>: user Dave authentication failed - radius timeout
+2026-09-22 05:05:41 | pppoe,ppp,error | <d07f>: user Dave authentication failed - radius timeout
+2026-09-22 05:07:10 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:07:11 | pppoe,ppp,error | <d080>: user Dave authentication failed - radius timeout
+2026-09-22 05:07:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:07:12 | pppoe,ppp,error | <d081>: user Dave authentication failed - radius timeout
+2026-09-22 05:08:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:08:42 | pppoe,ppp,error | <d082>: user Dave authentication failed - radius timeout
+2026-09-22 05:08:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:08:44 | pppoe,ppp,error | <d083>: user Dave authentication failed - radius timeout
+2026-09-22 05:16:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:16:18 | pppoe,ppp,error | <d084>: user Dave authentication failed - radius timeout
+2026-09-22 05:16:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:16:19 | pppoe,ppp,error | <d085>: user Dave authentication failed - radius timeout
+2026-09-22 05:19:05 | pppoe,ppp,info | <pppoe-resthouse02villarina>: terminating... - peer is not responding
+2026-09-22 05:19:05 | pppoe,ppp,info,account | resthouse02villarina logged out, 1127 3396361 4772658 28926 27388 from E4:72:E2:80:E1:4C
+2026-09-22 05:19:05 | pppoe,ppp,info | <pppoe-resthouse02villarina>: disconnected
+2026-09-22 05:20:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:20:51 | pppoe,ppp,error | <d086>: user Dave authentication failed - radius timeout
+2026-09-22 05:20:52 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:20:52 | pppoe,ppp,error | <d087>: user Dave authentication failed - radius timeout
+2026-09-22 05:23:23 | pppoe,info | PPPoE connection established from D4:7E:A8:60:24:DB
+2026-09-22 05:23:24 | pppoe,ppp,error | <2979>: user poblacion01siaojingky authentication failed - radius timeout
+2026-09-22 05:29:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:29:57 | pppoe,ppp,error | <d088>: user Dave authentication failed - radius timeout
+2026-09-22 05:29:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:29:59 | pppoe,ppp,error | <d089>: user Dave authentication failed - radius timeout
+2026-09-22 05:30:27 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 05:30:28 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 05:30:28 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 05:30:28 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 05:30:28 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 05:30:34 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:30:34 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 05:30:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 05:30:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 05:30:36 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 05:30:36 | pppoe,info | PPPoE connection from 34:4C:68:53:80:E7 was already active - closing previous one
+2026-09-22 05:30:37 | pppoe,ppp,error | <0b7b>: user montealegre02bunala authentication failed - radius timeout
+2026-09-22 05:31:09 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 05:31:09 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 35 392 320 8 8 from 34:4C:93:FB:BE:9F
+2026-09-22 05:31:09 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 05:32:04 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:32:04 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 05:32:04 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 05:32:04 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 05:32:13 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 05:32:13 | pppoe,ppp,info,account | montealegre02delacernam logged out, 105 192 242 5 7 from D4:7E:A9:6E:8B:15
+2026-09-22 05:32:13 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 05:32:19 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 05:32:19 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 15 54 72 3 5 from 34:4C:93:FB:BE:9F
+2026-09-22 05:32:19 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 05:34:04 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 05:34:04 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 05:34:04 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 05:34:04 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 05:34:59 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - hungup
+2026-09-22 05:34:59 | pppoe,ppp,info,account | montealegre02delacernam logged out, 55 15664 16612 71 78 from D4:7E:A9:6E:8B:15
+2026-09-22 05:34:59 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 05:35:58 | pppoe,info | PPPoE connection established from 3C:52:A1:76:24:3D
+2026-09-22 05:35:59 | pppoe,ppp,error | <03ee>: user campo101moneraa authentication failed - radius timeout
+2026-09-22 05:37:44 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:37:45 | pppoe,ppp,error | <0b7e>: user montealegre01paculbadj authentication failed - radius timeout
+2026-09-22 05:37:50 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:37:50 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 05:37:50 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 05:37:50 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 05:39:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:39:06 | pppoe,ppp,error | <d08a>: user Dave authentication failed - radius timeout
+2026-09-22 05:39:11 | pppoe,ppp,info | <pppoe-sanjosepa01ardientekd>: terminating... - peer is not responding
+2026-09-22 05:39:11 | pppoe,ppp,info,account | sanjosepa01ardientekd logged out, 181609 7498405233 81251659128 31716864 76979732 from 80:B5:75:0C:B6:61
+2026-09-22 05:39:11 | pppoe,ppp,info | <pppoe-sanjosepa01ardientekd>: disconnected
+2026-09-22 05:39:35 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 05:39:35 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 105 254 242 6 7 from 34:4C:93:FB:BE:9F
+2026-09-22 05:39:35 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 05:40:18 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 05:40:18 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 05:40:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 05:40:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 05:40:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:40:35 | pppoe,ppp,error | <d08b>: user Dave authentication failed - radius timeout
+2026-09-22 05:40:36 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:40:37 | pppoe,ppp,error | <d08c>: user Dave authentication failed - radius timeout
+2026-09-22 05:42:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 05:42:06 | pppoe,ppp,error | <d08d>: user Dave authentication failed - radius timeout
+2026-09-22 05:42:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:42:08 | pppoe,ppp,error | <d08e>: user Dave authentication failed - radius timeout
+2026-09-22 05:43:43 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 05:43:43 | pppoe,ppp,info,account | montealegre02delacernam logged out, 206 317598 460900 1156 1233 from D4:7E:A9:6E:8B:15
+2026-09-22 05:43:43 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 05:44:20 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:44:20 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 05:44:20 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 05:44:20 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 05:45:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:45:10 | pppoe,ppp,error | <d08f>: user Dave authentication failed - radius timeout
+2026-09-22 05:46:25 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 05:46:25 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 125 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 05:46:25 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 05:47:28 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 05:47:28 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 05:47:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 05:47:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 05:49:13 | pppoe,ppp,info | <pppoe-cabilinan02pucota>: terminating... - peer is not responding
+2026-09-22 05:49:13 | pppoe,ppp,info,account | cabilinan02pucota logged out, 37196 136131576 2594621040 690229 2248420 from B0:A7:B9:EF:BB:31
+2026-09-22 05:49:13 | pppoe,ppp,info | <pppoe-cabilinan02pucota>: disconnected
+2026-09-22 05:54:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 05:54:17 | pppoe,ppp,error | <d090>: user Dave authentication failed - radius timeout
+2026-09-22 05:57:33 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 05:57:33 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 606 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 05:57:33 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:02:25 | pppoe,info | PPPoE connection established from E4:72:E2:AD:5F:CB
+2026-09-22 06:02:25 | pppoe,ppp,info,account | lantungan01tigoyr logged in, 100.64.18.115 from E4:72:E2:AD:5F:CB
+2026-09-22 06:02:25 | pppoe,ppp,info | <pppoe-lantungan01tigoyr>: authenticated
+2026-09-22 06:02:25 | pppoe,ppp,info | <pppoe-lantungan01tigoyr>: connected
+2026-09-22 06:05:15 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 06:05:15 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 06:05:15 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 06:05:15 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 06:06:18 | pppoe,ppp,info | <pppoe-lintugop01mantuhaca>: terminating... - peer is not responding
+2026-09-22 06:06:18 | pppoe,ppp,info,account | lintugop01mantuhaca logged out, 562324 13549000615 272524971081 66197914 219679246 from E8:AB:F3:CC:8D:19
+2026-09-22 06:06:18 | pppoe,ppp,info | <pppoe-lintugop01mantuhaca>: disconnected
+2026-09-22 06:07:24 | pppoe,info | PPPoE connection established from D4:7E:A8:C4:3E:AF
+2026-09-22 06:07:24 | pppoe,ppp,info,account | anonang03brgyofficefree logged in, 100.64.17.76 from D4:7E:A8:C4:3E:AF
+2026-09-22 06:07:24 | pppoe,ppp,info | <pppoe-anonang03brgyofficefree>: authenticated
+2026-09-22 06:07:24 | pppoe,ppp,info | <pppoe-anonang03brgyofficefree>: connected
+2026-09-22 06:12:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:12:30 | pppoe,ppp,error | <d091>: user Dave authentication failed - radius timeout
+2026-09-22 06:13:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:13:59 | pppoe,ppp,error | <d092>: user Dave authentication failed - radius timeout
+2026-09-22 06:14:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:14:01 | pppoe,ppp,error | <d093>: user Dave authentication failed - radius timeout
+2026-09-22 06:15:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:15:30 | pppoe,ppp,error | <d094>: user Dave authentication failed - radius timeout
+2026-09-22 06:15:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:15:32 | pppoe,ppp,error | <d095>: user Dave authentication failed - radius timeout
+2026-09-22 06:17:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:17:01 | pppoe,ppp,error | <d096>: user Dave authentication failed - radius timeout
+2026-09-22 06:17:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:17:03 | pppoe,ppp,error | <d097>: user Dave authentication failed - radius timeout
+2026-09-22 06:18:41 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 06:18:41 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 806 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 06:18:41 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:20:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:20:05 | pppoe,ppp,error | <d098>: user Dave authentication failed - radius timeout
+2026-09-22 06:21:08 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:21:08 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:21:08 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:21:08 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:21:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating...
+2026-09-22 06:21:18 | pppoe,ppp,info,account | montealegre02delacernam logged out, 11 54 72 3 5 from D4:7E:A9:6E:8B:15
+2026-09-22 06:21:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 06:21:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:21:35 | pppoe,ppp,error | <d099>: user Dave authentication failed - radius timeout
+2026-09-22 06:21:36 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:21:37 | pppoe,ppp,error | <d09a>: user Dave authentication failed - radius timeout
+2026-09-22 06:22:27 | pppoe,info | PPPoE connection established from 50:1D:93:79:0F:E6
+2026-09-22 06:22:27 | pppoe,ppp,info,account | baclay02salvacionl logged in, 100.64.19.25 from 50:1D:93:79:0F:E6
+2026-09-22 06:22:27 | pppoe,ppp,info | <pppoe-baclay02salvacionl>: authenticated
+2026-09-22 06:22:27 | pppoe,ppp,info | <pppoe-baclay02salvacionl>: connected
+2026-09-22 06:23:38 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:23:38 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:23:38 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:23:38 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:24:01 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating...
+2026-09-22 06:24:01 | pppoe,ppp,info,account | montealegre02delacernam logged out, 23 192 242 5 7 from D4:7E:A9:6E:8B:15
+2026-09-22 06:24:01 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 06:24:36 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:24:37 | pppoe,ppp,error | <d09b>: user Dave authentication failed - radius timeout
+2026-09-22 06:26:20 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 06:26:20 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 06:26:20 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 06:26:20 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 06:26:45 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 06:26:45 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 25 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 06:26:45 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:30:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:30:41 | pppoe,ppp,error | <d09c>: user Dave authentication failed - radius timeout
+2026-09-22 06:30:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:30:43 | pppoe,ppp,error | <d09d>: user Dave authentication failed - radius timeout
+2026-09-22 06:32:07 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: terminating... - peer is not responding
+2026-09-22 06:32:07 | pppoe,ppp,info,account | inroad02tipactipacm logged out, 15227 31043239 929378296 247973 713533 from D4:7E:A8:4D:7C:02
+2026-09-22 06:32:07 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: disconnected
+2026-09-22 06:32:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:32:12 | pppoe,ppp,error | <d09e>: user Dave authentication failed - radius timeout
+2026-09-22 06:32:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:32:14 | pppoe,ppp,error | <d09f>: user Dave authentication failed - radius timeout
+2026-09-22 06:39:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:39:48 | pppoe,ppp,error | <d0a0>: user Dave authentication failed - radius timeout
+2026-09-22 06:39:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:39:50 | pppoe,ppp,error | <d0a1>: user Dave authentication failed - radius timeout
+2026-09-22 06:41:11 | pppoe,info | PPPoE connection established from D4:7E:A8:60:24:DB
+2026-09-22 06:41:11 | pppoe,ppp,info,account | poblacion01siaojingky logged in, 100.64.18.247 from D4:7E:A8:60:24:DB
+2026-09-22 06:41:11 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: authenticated
+2026-09-22 06:41:11 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: connected
+2026-09-22 06:41:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:41:19 | pppoe,ppp,error | <d0a2>: user Dave authentication failed - radius timeout
+2026-09-22 06:41:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:41:21 | pppoe,ppp,error | <d0a3>: user Dave authentication failed - radius timeout
+2026-09-22 06:41:36 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating... - peer is not responding
+2026-09-22 06:41:36 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 25 1148 2128 13 14 from D4:7E:A8:60:24:DB
+2026-09-22 06:41:36 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-09-22 06:41:37 | pppoe,info | PPPoE connection established from D4:7E:A8:60:24:DB
+2026-09-22 06:41:37 | pppoe,ppp,info,account | poblacion01siaojingky logged in, 100.64.18.247 from D4:7E:A8:60:24:DB
+2026-09-22 06:41:37 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: authenticated
+2026-09-22 06:41:37 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: connected
+2026-09-22 06:42:12 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating... - peer is not responding
+2026-09-22 06:42:12 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 35 1211150 179425 1205 473 from D4:7E:A8:60:24:DB
+2026-09-22 06:42:12 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-09-22 06:42:36 | pppoe,info | PPPoE connection established from D4:7E:A8:60:24:DB
+2026-09-22 06:42:36 | pppoe,ppp,info,account | poblacion01siaojingky logged in, 100.64.18.247 from D4:7E:A8:60:24:DB
+2026-09-22 06:42:36 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: authenticated
+2026-09-22 06:42:36 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: connected
+2026-09-22 06:42:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:42:52 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 06:42:52 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 06:42:52 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 06:42:52 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 06:42:52 | pppoe,ppp,error | <d0a4>: user Dave authentication failed - radius timeout
+2026-09-22 06:43:35 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating...
+2026-09-22 06:43:35 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 59 96746 165637 340 400 from D4:7E:A8:60:24:DB
+2026-09-22 06:43:35 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-09-22 06:45:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:45:52 | pppoe,ppp,error | <d0a5>: user Dave authentication failed - radius timeout
+2026-09-22 06:48:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 06:48:28 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 336 215715 1221784 1209 1609 from 34:4C:93:FB:BE:9F
+2026-09-22 06:48:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:48:38 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:48:38 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:48:38 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:48:38 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:49:43 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 06:49:43 | pppoe,ppp,info,account | montealegre02delacernam logged out, 66 192 242 5 7 from D4:7E:A9:6E:8B:15
+2026-09-22 06:49:43 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 06:49:45 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:49:45 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:49:45 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:49:45 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:51:08 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 06:51:08 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 06:51:08 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 06:51:08 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 06:51:20 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 06:51:20 | pppoe,ppp,info,account | montealegre02delacernam logged out, 96 15552 18382 70 92 from D4:7E:A9:6E:8B:15
+2026-09-22 06:51:20 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 06:51:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:51:59 | pppoe,ppp,error | <d0a6>: user Dave authentication failed - radius timeout
+2026-09-22 06:53:16 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:53:16 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:53:16 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:53:16 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:53:42 | pppoe,info | PPPoE connection established from D4:7E:A8:60:24:DB
+2026-09-22 06:53:42 | pppoe,ppp,info,account | poblacion01siaojingky logged in, 100.64.18.247 from D4:7E:A8:60:24:DB
+2026-09-22 06:53:42 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: authenticated
+2026-09-22 06:53:42 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: connected
+2026-09-22 06:53:51 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 06:53:51 | pppoe,ppp,info,account | montealegre02delacernam logged out, 35 192 242 5 7 from D4:7E:A9:6E:8B:15
+2026-09-22 06:53:51 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 06:53:57 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: terminating...
+2026-09-22 06:53:57 | pppoe,ppp,info,account | poblacion01siaojingky logged out, 16 384161 3752535 1536 3510 from D4:7E:A8:60:24:DB
+2026-09-22 06:53:57 | pppoe,ppp,info | <pppoe-poblacion01siaojingky>: disconnected
+2026-09-22 06:54:08 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 06:54:08 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 06:54:08 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 06:54:08 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 06:54:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 06:54:59 | pppoe,ppp,error | <d0a7>: user Dave authentication failed - radius timeout
+2026-09-22 06:55:11 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 06:55:11 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 06:55:11 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 06:55:11 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 06:55:18 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating...
+2026-09-22 06:55:18 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 250 141746 302675 618 647 from 34:4C:93:FB:BE:9F
+2026-09-22 06:55:18 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:55:23 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - peer is not responding
+2026-09-22 06:55:23 | pppoe,ppp,info,account | montealegre02bunala logged out, 75 445654 302451 963 980 from 34:4C:68:53:80:E7
+2026-09-22 06:55:23 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 06:55:24 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 06:55:24 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 06:55:24 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 06:55:39 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 06:55:39 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 15 32 100 2 9 from 34:4C:93:FB:BE:9F
+2026-09-22 06:55:39 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 06:58:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:58:03 | pppoe,ppp,error | <d0a8>: user Dave authentication failed - radius timeout
+2026-09-22 06:59:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 06:59:34 | pppoe,ppp,error | <d0a9>: user Dave authentication failed - radius timeout
+2026-09-22 06:59:53 | pppoe,ppp,info | <pppoe-santamaria01santaanal>: terminating... - peer is not responding
+2026-09-22 06:59:53 | pppoe,ppp,info,account | santamaria01santaanal logged out, 93752 600562268 10421183133 3104044 9478553 from 10:C1:72:26:DD:CB
+2026-09-22 06:59:53 | pppoe,ppp,info | <pppoe-santamaria01santaanal>: disconnected
+2026-09-22 07:01:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:01:03 | pppoe,ppp,error | <d0aa>: user Dave authentication failed - radius timeout
+2026-09-22 07:01:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:01:05 | pppoe,ppp,error | <d0ab>: user Dave authentication failed - radius timeout
+2026-09-22 07:04:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:04:06 | pppoe,ppp,error | <d0ac>: user Dave authentication failed - radius timeout
+2026-09-22 07:04:07 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:04:08 | pppoe,ppp,error | <d0ad>: user Dave authentication failed - radius timeout
+2026-09-22 07:08:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:08:41 | pppoe,ppp,error | <d0ae>: user Dave authentication failed - radius timeout
+2026-09-22 07:12:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - hungup
+2026-09-22 07:12:18 | pppoe,ppp,info,account | montealegre02delacernam logged out, 1027 2922444 28554853 8002 26156 from D4:7E:A9:6E:8B:15
+2026-09-22 07:12:18 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 07:12:28 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 07:12:28 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 07:12:28 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 07:12:28 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 07:12:46 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:12:46 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:12:46 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:12:46 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 07:13:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:13:12 | pppoe,ppp,error | <d0af>: user Dave authentication failed - radius timeout
+2026-09-22 07:13:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:13:14 | pppoe,ppp,error | <d0b0>: user Dave authentication failed - radius timeout
+2026-09-22 07:13:18 | pppoe,info | PPPoE connection established from B4:E4:6B:77:8A:A8
+2026-09-22 07:13:18 | pppoe,ppp,info,account | cabilinan02patrolbase logged in, 100.64.19.26 from B4:E4:6B:77:8A:A8
+2026-09-22 07:13:18 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: authenticated
+2026-09-22 07:13:18 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: connected
+2026-09-22 07:13:26 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 07:13:26 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 07:13:26 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 07:13:26 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 07:13:31 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 07:13:31 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 45 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 07:13:31 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 07:14:37 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating...
+2026-09-22 07:14:37 | pppoe,ppp,info,account | montealegre02bunala logged out, 71 6831 10883 31 30 from 34:4C:68:53:80:E7
+2026-09-22 07:14:37 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 07:14:39 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:14:39 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:14:39 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:14:39 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 07:14:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:14:44 | pppoe,ppp,error | <d0b2>: user Dave authentication failed - radius timeout
+2026-09-22 07:15:05 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 07:15:05 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 25 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 07:15:05 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 07:15:28 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:15:28 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:15:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:15:28 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 07:16:13 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 07:16:13 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 45 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 07:16:13 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 07:17:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:17:46 | pppoe,ppp,error | <d0b3>: user Dave authentication failed - radius timeout
+2026-09-22 07:18:56 | pppoe,ppp,info | <pppoe-inasagan01dalumpinesc>: terminating... - peer is not responding
+2026-09-22 07:18:56 | pppoe,ppp,info,account | inasagan01dalumpinesc logged out, 52857 1116620546 12465931847 3754979 10940582 from 9C:A2:F4:F1:F5:EB
+2026-09-22 07:18:56 | pppoe,ppp,info | <pppoe-inasagan01dalumpinesc>: disconnected
+2026-09-22 07:19:16 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:19:17 | pppoe,ppp,error | <d0b4>: user Dave authentication failed - radius timeout
+2026-09-22 07:20:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:20:48 | pppoe,ppp,error | <d0b5>: user Dave authentication failed - radius timeout
+2026-09-22 07:22:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:22:19 | pppoe,ppp,error | <d0b6>: user Dave authentication failed - radius timeout
+2026-09-22 07:23:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:23:52 | pppoe,ppp,error | <d0b7>: user Dave authentication failed - radius timeout
+2026-09-22 07:24:54 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 07:24:54 | pppoe,ppp,info,account | montealegre02delacernam logged out, 745 243219 1763598 1307 2235 from D4:7E:A9:6E:8B:15
+2026-09-22 07:24:54 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 07:25:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:25:23 | pppoe,ppp,error | <d0b8>: user Dave authentication failed - radius timeout
+2026-09-22 07:29:56 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:29:57 | pppoe,ppp,error | <d0b9>: user Dave authentication failed - radius timeout
+2026-09-22 07:32:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:32:59 | pppoe,ppp,error | <d0ba>: user Dave authentication failed - radius timeout
+2026-09-22 07:33:53 | pppoe,info | PPPoE connection established from D4:7E:A8:4D:7C:02
+2026-09-22 07:33:54 | pppoe,ppp,info,account | inroad02tipactipacm logged in, 100.64.18.92 from D4:7E:A8:4D:7C:02
+2026-09-22 07:33:54 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: authenticated
+2026-09-22 07:33:54 | pppoe,ppp,info | <pppoe-inroad02tipactipacm>: connected
+2026-09-22 07:37:20 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:37:21 | pppoe,ppp,error | <0b94>: user montealegre01paculbadj authentication failed - radius timeout
+2026-09-22 07:37:26 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:37:26 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:37:26 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:37:26 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 07:39:08 | pppoe,ppp,info | <pppoe-resthouse01pandanr>: terminating... - peer is not responding
+2026-09-22 07:39:08 | pppoe,ppp,info,account | resthouse01pandanr logged out, 217639 1899588845 24458558454 6481695 20470749 from 5C:09:79:08:34:93
+2026-09-22 07:39:08 | pppoe,ppp,info | <pppoe-resthouse01pandanr>: disconnected
+2026-09-22 07:42:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:42:03 | pppoe,ppp,error | <d0bb>: user Dave authentication failed - radius timeout
+2026-09-22 07:43:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:43:35 | pppoe,ppp,error | <d0bc>: user Dave authentication failed - radius timeout
+2026-09-22 07:44:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating...
+2026-09-22 07:44:36 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 429 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 07:44:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 07:47:01 | pppoe,ppp,info | <pppoe-cabilinan04castanare>: terminating... - peer is not responding
+2026-09-22 07:47:01 | pppoe,ppp,info,account | cabilinan04castanare logged out, 127982 2231676742 34784744266 9206507 30286809 from D4:7E:A8:83:15:F9
+2026-09-22 07:47:01 | pppoe,ppp,info | <pppoe-cabilinan04castanare>: disconnected
+2026-09-22 07:49:34 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:49:34 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:49:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:49:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 07:49:59 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 07:49:59 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 26 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 07:49:59 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 07:52:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:52:41 | pppoe,ppp,error | <d0bd>: user Dave authentication failed - radius timeout
+2026-09-22 07:52:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 07:52:43 | pppoe,ppp,error | <d0be>: user Dave authentication failed - radius timeout
+2026-09-22 07:54:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 07:54:12 | pppoe,ppp,error | <d0bf>: user Dave authentication failed - radius timeout
+2026-09-22 07:55:48 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 07:55:48 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 07:55:48 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 07:55:48 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 08:02:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 08:02:34 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 405 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 08:02:34 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 08:06:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:06:21 | pppoe,ppp,error | <d0c0>: user Dave authentication failed - radius timeout
+2026-09-22 08:06:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:06:23 | pppoe,ppp,error | <d0c1>: user Dave authentication failed - radius timeout
+2026-09-22 08:12:25 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:12:26 | pppoe,ppp,error | <d0c2>: user Dave authentication failed - radius timeout
+2026-09-22 08:13:58 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:13:59 | pppoe,ppp,error | <d0c3>: user Dave authentication failed - radius timeout
+2026-09-22 08:24:04 | pppoe,ppp,info | <pppoe-poblacion02sazonovm>: terminating... - peer is not responding
+2026-09-22 08:24:04 | pppoe,ppp,info,account | poblacion02sazonovm logged out, 54630 902457746 20313862448 6298428 15927580 from F8:6C:E1:61:05:61
+2026-09-22 08:24:04 | pppoe,ppp,info | <pppoe-poblacion02sazonovm>: disconnected
+2026-09-22 08:29:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:29:10 | pppoe,ppp,error | <d0c4>: user Dave authentication failed - radius timeout
+2026-09-22 08:33:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:33:43 | pppoe,ppp,error | <d0c5>: user Dave authentication failed - radius timeout
+2026-09-22 08:36:07 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 08:36:07 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 08:36:07 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 08:36:07 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 08:37:54 | pppoe,ppp,info | <pppoe-resthouse01juareza>: terminating... - peer is not responding
+2026-09-22 08:37:54 | pppoe,ppp,info,account | resthouse01juareza logged out, 245893 6325927602 43314102572 16793175 41269094 from 14:57:9F:2B:E8:CC
+2026-09-22 08:37:54 | pppoe,ppp,info | <pppoe-resthouse01juareza>: disconnected
+2026-09-22 08:39:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:39:45 | pppoe,ppp,error | <d0c6>: user Dave authentication failed - radius timeout
+2026-09-22 08:42:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:42:48 | pppoe,ppp,error | <d0c7>: user Dave authentication failed - radius timeout
+2026-09-22 08:44:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:44:19 | pppoe,ppp,error | <d0c8>: user Dave authentication failed - radius timeout
+2026-09-22 08:45:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:45:50 | pppoe,ppp,error | <d0c9>: user Dave authentication failed - radius timeout
+2026-09-22 08:47:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:47:21 | pppoe,ppp,error | <d0ca>: user Dave authentication failed - radius timeout
+2026-09-22 08:47:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - hungup
+2026-09-22 08:47:59 | pppoe,ppp,info,account | montealegre02bunala logged out, 711 164966 340212 813 743 from 34:4C:68:53:80:E7
+2026-09-22 08:47:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 08:48:02 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 08:48:02 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 08:48:02 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 08:48:02 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 08:48:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:48:52 | pppoe,ppp,error | <d0cb>: user Dave authentication failed - radius timeout
+2026-09-22 08:50:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:50:25 | pppoe,ppp,error | <d0cc>: user Dave authentication failed - radius timeout
+2026-09-22 08:50:54 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 08:50:55 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 08:50:55 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 08:50:55 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 08:51:36 | pppoe,info | PPPoE connection established from 34:4C:93:FB:BE:9F
+2026-09-22 08:51:36 | pppoe,info | PPPoE connection from 34:4C:93:FB:BE:9F was already active - closing previous one
+2026-09-22 08:51:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - disconnected
+2026-09-22 08:51:36 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 41 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 08:51:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 08:51:36 | pppoe,ppp,info,account | montealegre01paculbadj logged in, 100.64.18.253 from 34:4C:93:FB:BE:9F
+2026-09-22 08:51:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: authenticated
+2026-09-22 08:51:36 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: connected
+2026-09-22 08:51:38 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - peer is not responding
+2026-09-22 08:51:38 | pppoe,ppp,info,account | montealegre02bunala logged out, 216 16633 38029 87 118 from 34:4C:68:53:80:E7
+2026-09-22 08:51:38 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 08:51:46 | pppoe,ppp,info | <pppoe-bemposa02olings>: terminating... - peer is not responding
+2026-09-22 08:51:46 | pppoe,ppp,info,account | bemposa02olings logged out, 52147 383979582 5044742144 1876402 4309606 from 3C:67:8C:11:91:DC
+2026-09-22 08:51:46 | pppoe,ppp,info | <pppoe-bemposa02olings>: disconnected
+2026-09-22 08:51:52 | pppoe,ppp,info | <pppoe-bemposa01panongr>: terminating... - peer is not responding
+2026-09-22 08:51:52 | pppoe,ppp,info,account | bemposa01panongr logged out, 52159 756562261 9227708501 2737793 7878644 from 5C:09:79:9D:46:14
+2026-09-22 08:51:52 | pppoe,ppp,info | <pppoe-bemposa01panongr>: disconnected
+2026-09-22 08:51:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:51:54 | pppoe,ppp,error | <d0cd>: user Dave authentication failed - radius timeout
+2026-09-22 08:52:11 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-22 08:52:11 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 35 192 242 5 7 from 34:4C:93:FB:BE:9F
+2026-09-22 08:52:11 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-22 08:52:27 | pppoe,ppp,info | <pppoe-alegria01abadial>: terminating... - peer is not responding
+2026-09-22 08:52:27 | pppoe,ppp,info,account | alegria01abadial logged out, 52189 398505775 6277267007 1139078 5199570 from E4:72:E2:8E:95:5E
+2026-09-22 08:52:27 | pppoe,ppp,info | <pppoe-alegria01abadial>: disconnected
+2026-09-22 08:53:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 08:53:25 | pppoe,ppp,error | <d0ce>: user Dave authentication failed - radius timeout
+2026-09-22 08:53:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:53:27 | pppoe,ppp,error | <d0cf>: user Dave authentication failed - radius timeout
+2026-09-22 08:56:13 | pppoe,info | PPPoE connection established from F8:6E:EE:9E:FA:C0
+2026-09-22 08:56:24 | pppoe,ppp,info,account | alegria02cabatinganjh logged in, 100.64.16.209 from F8:6E:EE:9E:FA:C0
+2026-09-22 08:56:24 | pppoe,ppp,info | <pppoe-alegria02cabatinganjh>: authenticated
+2026-09-22 08:56:28 | pppoe,ppp,info | <pppoe-alegria02cabatinganjh>: connected
+2026-09-22 08:56:30 | pppoe,ppp,info | <pppoe-bemposa01estrerad>: terminating... - peer is not responding
+2026-09-22 08:56:30 | pppoe,ppp,info,account | bemposa01estrerad logged out, 52446 941675508 3431530077 2735611 4135832 from B4:FB:F9:4E:5D:8F
+2026-09-22 08:56:30 | pppoe,ppp,info | <pppoe-bemposa01estrerad>: disconnected
+2026-09-22 08:56:32 | pppoe,ppp,info | <pppoe-alegria02cabatinganjh>: terminating... - could not determine local IP address
+2026-09-22 08:56:32 | pppoe,ppp,info,account | alegria02cabatinganjh logged out, 12 130 234 7 16 from F8:6E:EE:9E:FA:C0
+2026-09-22 08:56:32 | pppoe,ppp,info | <pppoe-alegria02cabatinganjh>: disconnected
+2026-09-22 08:57:21 | pppoe,info | PPPoE connection established from DC:C6:4B:27:C0:26
+2026-09-22 08:57:30 | pppoe,ppp,info,account | alegria02dotosmee logged in, 100.64.17.105 from DC:C6:4B:27:C0:26
+2026-09-22 08:57:30 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: authenticated
+2026-09-22 08:57:33 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: connected
+2026-09-22 08:58:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 08:58:01 | pppoe,ppp,error | <d0d0>: user Dave authentication failed - radius timeout
+2026-09-22 08:58:15 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: terminating... - peer is not responding
+2026-09-22 08:58:15 | pppoe,ppp,info,account | alegria02dotosmee logged out, 54 2249 6308 38 61 from DC:C6:4B:27:C0:26
+2026-09-22 08:58:15 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: disconnected
+2026-09-22 09:00:40 | pppoe,ppp,info | <pppoe-alegria01miralonat>: terminating... - peer is not responding
+2026-09-22 09:00:40 | pppoe,ppp,info,account | alegria01miralonat logged out, 52695 537628216 6253514728 1982543 5411026 from 5C:09:79:97:09:F9
+2026-09-22 09:00:40 | pppoe,ppp,info | <pppoe-alegria01miralonat>: disconnected
+2026-09-22 09:05:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:05:36 | pppoe,ppp,error | <d0d1>: user Dave authentication failed - radius timeout
+2026-09-22 09:06:22 | pppoe,info | PPPoE connection established from 5C:09:79:97:09:F9
+2026-09-22 09:06:22 | pppoe,ppp,info,account | alegria01miralonat logged in, 100.64.19.8 from 5C:09:79:97:09:F9
+2026-09-22 09:06:22 | pppoe,ppp,info | <pppoe-alegria01miralonat>: authenticated
+2026-09-22 09:06:22 | pppoe,ppp,info | <pppoe-alegria01miralonat>: connected
+2026-09-22 09:06:43 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: terminating... - peer is not responding
+2026-09-22 09:06:43 | pppoe,ppp,info,account | bemposa01estenzoromar logged out, 52928 2097387616 15572012791 7216993 15128992 from D4:7E:A9:5F:49:10
+2026-09-22 09:06:43 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: disconnected
+2026-09-22 09:07:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:07:05 | pppoe,ppp,error | <d0d2>: user Dave authentication failed - radius timeout
+2026-09-22 09:07:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:07:07 | pppoe,ppp,info | <pppoe-alegria01miralonat>: terminating... - peer is not responding
+2026-09-22 09:07:07 | pppoe,ppp,info,account | alegria01miralonat logged out, 45 5272 12027 61 89 from 5C:09:79:97:09:F9
+2026-09-22 09:07:07 | pppoe,ppp,info | <pppoe-alegria01miralonat>: disconnected
+2026-09-22 09:07:07 | pppoe,ppp,error | <d0d3>: user Dave authentication failed - radius timeout
+2026-09-22 09:08:12 | pppoe,info | PPPoE connection established from D4:7E:A9:5F:49:10
+2026-09-22 09:08:24 | pppoe,ppp,info,account | bemposa01estenzoromar logged in, 100.64.18.178 from D4:7E:A9:5F:49:10
+2026-09-22 09:08:24 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: authenticated
+2026-09-22 09:08:24 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: connected
+2026-09-22 09:10:53 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: terminating... - peer is not responding
+2026-09-22 09:10:53 | pppoe,ppp,info,account | bemposa01estenzoromar logged out, 156 37159 73560 428 555 from D4:7E:A9:5F:49:10
+2026-09-22 09:10:53 | pppoe,ppp,info | <pppoe-bemposa01estenzoromar>: disconnected
+2026-09-22 09:11:38 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:11:39 | pppoe,ppp,error | <d0d4>: user Dave authentication failed - radius timeout
+2026-09-22 09:12:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-22 09:12:06 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-22 09:12:08 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-22 09:12:08 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-22 09:12:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-22 09:12:10 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-22 09:13:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:13:10 | pppoe,ppp,error | <d0d5>: user Dave authentication failed - radius timeout
+2026-09-22 09:13:22 | warning | denied winbox/dude connect from 20.172.68.47
+2026-09-22 09:13:23 | warning | denied winbox/dude connect from 20.172.68.47
+2026-09-22 09:13:31 | pppoe,ppp,info | <pppoe-alegria02cabatinganal>: terminating... - peer is not responding
+2026-09-22 09:13:31 | pppoe,ppp,info,account | alegria02cabatinganal logged out, 53466 523780628 11091919087 2230118 9180185 from 04:33:89:CA:51:58
+2026-09-22 09:13:31 | pppoe,ppp,info | <pppoe-alegria02cabatinganal>: disconnected
+2026-09-22 09:14:05 | pppoe,info | PPPoE connection established from D4:7E:A8:BD:87:92
+2026-09-22 09:14:05 | pppoe,ppp,info,account | alegria02cabatinganj logged in, 100.64.19.27 from D4:7E:A8:BD:87:92
+2026-09-22 09:14:05 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: authenticated
+2026-09-22 09:14:11 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: connected
+2026-09-22 09:14:23 | warning | denied winbox/dude connect from 20.84.144.164
+2026-09-22 09:14:24 | warning | denied winbox/dude connect from 20.84.144.164
+2026-09-22 09:14:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:14:41 | pppoe,ppp,error | <d0d6>: user Dave authentication failed - radius timeout
+2026-09-22 09:14:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:14:43 | pppoe,ppp,error | <d0d7>: user Dave authentication failed - radius timeout
+2026-09-22 09:15:20 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: terminating... - peer is not responding
+2026-09-22 09:15:20 | pppoe,ppp,info,account | alegria02cabatinganj logged out, 76 145202 2115994 1949 3413 from D4:7E:A8:BD:87:92
+2026-09-22 09:15:20 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: disconnected
+2026-09-22 09:17:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:17:43 | pppoe,ppp,error | <d0d8>: user Dave authentication failed - radius timeout
+2026-09-22 09:20:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:20:45 | pppoe,ppp,error | <d0d9>: user Dave authentication failed - radius timeout
+2026-09-22 09:20:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:20:47 | pppoe,ppp,error | <d0da>: user Dave authentication failed - radius timeout
+2026-09-22 09:22:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:22:16 | pppoe,ppp,error | <d0db>: user Dave authentication failed - radius timeout
+2026-09-22 09:22:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:22:18 | pppoe,ppp,error | <d0dc>: user Dave authentication failed - radius timeout
+2026-09-22 09:23:47 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:23:47 | pppoe,ppp,error | <d0dd>: user Dave authentication failed - radius timeout
+2026-09-22 09:25:24 | pppoe,info | PPPoE connection established from 5C:09:79:0A:C0:C2
+2026-09-22 09:25:24 | pppoe,ppp,info,account | ceboneg02julg logged in, 100.64.18.130 from 5C:09:79:0A:C0:C2
+2026-09-22 09:25:24 | pppoe,ppp,info | <pppoe-ceboneg02julg>: authenticated
+2026-09-22 09:25:24 | pppoe,ppp,info | <pppoe-ceboneg02julg>: connected
+2026-09-22 09:25:24 | pppoe,info | PPPoE connection established from 60:FA:9D:06:0C:D7
+2026-09-22 09:25:25 | pppoe,ppp,info,account | ceboneg01agadj logged in, 100.64.17.137 from 60:FA:9D:06:0C:D7
+2026-09-22 09:25:25 | pppoe,ppp,info | <pppoe-ceboneg01agadj>: authenticated
+2026-09-22 09:25:25 | pppoe,ppp,info | <pppoe-ceboneg01agadj>: connected
+2026-09-22 09:25:25 | pppoe,info | PPPoE connection established from 34:1E:6B:E2:77:32
+2026-09-22 09:25:25 | pppoe,ppp,info,account | ceboneg01rosarioa logged in, 100.64.17.75 from 34:1E:6B:E2:77:32
+2026-09-22 09:25:25 | pppoe,ppp,info | <pppoe-ceboneg01rosarioa>: authenticated
+2026-09-22 09:25:25 | pppoe,ppp,info | <pppoe-ceboneg01rosarioa>: connected
+2026-09-22 09:25:26 | pppoe,info | PPPoE connection established from 34:1E:6B:FA:59:9D
+2026-09-22 09:25:26 | pppoe,ppp,info,account | ceboneg02cabertee logged in, 100.64.18.189 from 34:1E:6B:FA:59:9D
+2026-09-22 09:25:26 | pppoe,ppp,info | <pppoe-ceboneg02cabertee>: authenticated
+2026-09-22 09:25:26 | pppoe,ppp,info | <pppoe-ceboneg02cabertee>: connected
+2026-09-22 09:25:26 | pppoe,info | PPPoE connection established from 14:09:DC:64:E3:2C
+2026-09-22 09:25:26 | pppoe,ppp,info,account | ceboneg01onyota logged in, 100.64.19.28 from 14:09:DC:64:E3:2C
+2026-09-22 09:25:26 | pppoe,ppp,info | <pppoe-ceboneg01onyota>: authenticated
+2026-09-22 09:25:26 | pppoe,ppp,info | <pppoe-ceboneg01onyota>: connected
+2026-09-22 09:25:27 | pppoe,info | PPPoE connection established from 5C:09:79:E8:F9:73
+2026-09-22 09:25:27 | pppoe,ppp,info,account | ceboneg02questrat logged in, 100.64.18.131 from 5C:09:79:E8:F9:73
+2026-09-22 09:25:27 | pppoe,ppp,info | <pppoe-ceboneg02questrat>: authenticated
+2026-09-22 09:25:27 | pppoe,ppp,info | <pppoe-ceboneg02questrat>: connected
+2026-09-22 09:25:27 | pppoe,info | PPPoE connection established from 14:57:9F:3B:3F:75
+2026-09-22 09:25:27 | pppoe,ppp,info,account | ceboneg01maranggac logged in, 100.64.16.226 from 14:57:9F:3B:3F:75
+2026-09-22 09:25:27 | pppoe,ppp,info | <pppoe-ceboneg01maranggac>: authenticated
+2026-09-22 09:25:27 | pppoe,ppp,info | <pppoe-ceboneg01maranggac>: connected
+2026-09-22 09:25:28 | pppoe,info | PPPoE connection established from 5C:09:79:03:80:4C
+2026-09-22 09:25:28 | pppoe,ppp,info,account | ceboneg01calisagand logged in, 100.64.17.129 from 5C:09:79:03:80:4C
+2026-09-22 09:25:28 | pppoe,ppp,info | <pppoe-ceboneg01calisagand>: authenticated
+2026-09-22 09:25:28 | pppoe,ppp,info | <pppoe-ceboneg01calisagand>: connected
+2026-09-22 09:25:31 | pppoe,info | PPPoE connection established from 3C:67:8C:14:ED:07
+2026-09-22 09:25:31 | pppoe,ppp,info,account | ceboneg01monternilr logged in, 100.64.18.132 from 3C:67:8C:14:ED:07
+2026-09-22 09:25:31 | pppoe,ppp,info | <pppoe-ceboneg01monternilr>: authenticated
+2026-09-22 09:25:31 | pppoe,ppp,info | <pppoe-ceboneg01monternilr>: connected
+2026-09-22 09:25:33 | pppoe,info | PPPoE connection established from 5C:09:79:43:FF:B3
+2026-09-22 09:25:33 | pppoe,ppp,info,account | ceboneg01anggayn logged in, 100.64.16.251 from 5C:09:79:43:FF:B3
+2026-09-22 09:25:33 | pppoe,ppp,info | <pppoe-ceboneg01anggayn>: authenticated
+2026-09-22 09:25:33 | pppoe,ppp,info | <pppoe-ceboneg01anggayn>: connected
+2026-09-22 09:26:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:26:52 | pppoe,ppp,error | <d0de>: user Dave authentication failed - radius timeout
+2026-09-22 09:27:05 | pppoe,ppp,info | <pppoe-poblacion01abarqueza>: terminating...
+2026-09-22 09:27:05 | pppoe,ppp,info,account | poblacion01abarqueza logged out, 132382 7158855916 61735420795 23398467 51334842 from D4:7E:A8:9F:83:0A
+2026-09-22 09:27:05 | pppoe,ppp,info | <pppoe-poblacion01abarqueza>: disconnected
+2026-09-22 09:29:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:29:54 | pppoe,ppp,error | <d0df>: user Dave authentication failed - radius timeout
+2026-09-22 09:35:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:35:56 | pppoe,ppp,error | <d0e0>: user Dave authentication failed - radius timeout
+2026-09-22 09:35:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:35:58 | pppoe,ppp,error | <d0e1>: user Dave authentication failed - radius timeout
+2026-09-22 09:35:59 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 09:35:59 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 09:35:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 09:35:59 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 09:36:19 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - hungup
+2026-09-22 09:36:19 | pppoe,ppp,info,account | montealegre02bunala logged out, 20 9964 15989 43 47 from 34:4C:68:53:80:E7
+2026-09-22 09:36:19 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 09:36:50 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 09:36:50 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 09:36:50 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 09:36:50 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 09:37:13 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating...
+2026-09-22 09:37:13 | pppoe,ppp,info,account | montealegre02delacernam logged out, 22 192 242 5 7 from D4:7E:A9:6E:8B:15
+2026-09-22 09:37:13 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 09:37:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:37:27 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 09:37:27 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 09:37:27 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 09:37:27 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 09:37:27 | pppoe,ppp,error | <d0e2>: user Dave authentication failed - radius timeout
+2026-09-22 09:37:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:37:29 | pppoe,ppp,error | <d0e3>: user Dave authentication failed - radius timeout
+2026-09-22 09:37:42 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 09:37:42 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 09:37:42 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 09:37:42 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 09:38:21 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:40:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:40:30 | pppoe,ppp,error | <d0e4>: user Dave authentication failed - radius timeout
+2026-09-22 09:42:00 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:42:01 | pppoe,ppp,error | <d0e5>: user Dave authentication failed - radius timeout
+2026-09-22 09:43:31 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:43:32 | pppoe,ppp,error | <d0e6>: user Dave authentication failed - radius timeout
+2026-09-22 09:43:33 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:43:34 | pppoe,ppp,error | <d0e7>: user Dave authentication failed - radius timeout
+2026-09-22 09:48:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:48:07 | pppoe,ppp,error | <d0e8>: user Dave authentication failed - radius timeout
+2026-09-22 09:49:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 09:49:36 | pppoe,ppp,error | <d0e9>: user Dave authentication failed - radius timeout
+2026-09-22 09:49:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:49:38 | pppoe,ppp,error | <d0ea>: user Dave authentication failed - radius timeout
+2026-09-22 09:51:27 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:27 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:29 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:29 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:30 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating...
+2026-09-22 09:51:30 | pppoe,ppp,info,account | montealegre02bunala logged out, 843 154071 502170 728 816 from 34:4C:68:53:80:E7
+2026-09-22 09:51:30 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 09:51:31 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:31 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:33 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:33 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:35 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:35 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:35 | pppoe,info | PPPoE connection established from 34:4C:68:53:80:E7
+2026-09-22 09:51:35 | pppoe,ppp,info,account | montealegre02bunala logged in, 100.64.18.255 from 34:4C:68:53:80:E7
+2026-09-22 09:51:35 | pppoe,ppp,info | <pppoe-montealegre02bunala>: authenticated
+2026-09-22 09:51:36 | pppoe,ppp,info | <pppoe-montealegre02bunala>: connected
+2026-09-22 09:51:37 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:37 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:39 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:39 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:41 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:41 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:43 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:43 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:45 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:45 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:47 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:47 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:49 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:49 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:51 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:51 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:53 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:53 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:55 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:55 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:57 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:57 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:51:59 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:51:59 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:01 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:01 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:03 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:03 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:05 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:05 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:07 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:07 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:09 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:09 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:11 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:12 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:13 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:13 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:15 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:15 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:17 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:17 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:19 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:19 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:21 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:21 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:23 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:23 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:25 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:25 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:27 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:27 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:29 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:29 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:31 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:31 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:33 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:33 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:35 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:35 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:37 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:37 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:39 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:39 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:41 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:41 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:43 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:43 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:45 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:45 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:47 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:47 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:49 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:49 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:51 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:51 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:53 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:53 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:55 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:55 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:57 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 09:52:57 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 09:52:59 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating...
+2026-09-22 09:52:59 | pppoe,ppp,info,account | montealegre02delacernam logged out, 917 3030022 30306981 11979 29325 from D4:7E:A9:6E:8B:15
+2026-09-22 09:52:59 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 09:53:05 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:05 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:05 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 09:53:05 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 09:53:17 | pppoe,info | PPPoE connection established from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:17 | pppoe,info | PPPoE connection from D4:7E:A9:6E:8B:15 was already active - closing previous one
+2026-09-22 09:53:17 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - disconnected
+2026-09-22 09:53:17 | pppoe,ppp,info,account | montealegre02delacernam logged out, 11 2137 9159 15 36 from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:17 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 09:53:17 | pppoe,ppp,info,account | montealegre02delacernam logged in, 100.64.18.218 from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:17 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: authenticated
+2026-09-22 09:53:17 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: connected
+2026-09-22 09:53:17 | pppoe,info | PPPoE connection established from 34:4C:AD:D7:A1:90
+2026-09-22 09:53:18 | pppoe,ppp,error | <0ba3>: user montealegre01paculbadj authentication failed - radius timeout
+2026-09-22 09:53:31 | pppoe,ppp,info | <pppoe-montealegre02bunala>: terminating... - peer is not responding
+2026-09-22 09:53:31 | pppoe,ppp,info,account | montealegre02bunala logged out, 115 237781 737785 1151 1104 from 34:4C:68:53:80:E7
+2026-09-22 09:53:31 | pppoe,ppp,info | <pppoe-montealegre02bunala>: disconnected
+2026-09-22 09:53:42 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: terminating... - peer is not responding
+2026-09-22 09:53:42 | pppoe,ppp,info,account | montealegre02delacernam logged out, 25 54686 61809 245 264 from D4:7E:A9:6E:8B:15
+2026-09-22 09:53:42 | pppoe,ppp,info | <pppoe-montealegre02delacernam>: disconnected
+2026-09-22 09:53:51 | pppoe,info | PPPoE connection established from D4:7E:A9:EA:F7:BD
+2026-09-22 09:53:51 | pppoe,ppp,info,account | montealigre02caracute logged in, 100.64.19.29 from D4:7E:A9:EA:F7:BD
+2026-09-22 09:53:51 | pppoe,ppp,info | <pppoe-montealigre02caracute>: authenticated
+2026-09-22 09:53:51 | pppoe,ppp,info | <pppoe-montealigre02caracute>: connected
+2026-09-22 09:57:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 09:57:14 | pppoe,ppp,error | <d0eb>: user Dave authentication failed - radius timeout
+2026-09-22 10:01:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:01:45 | pppoe,ppp,error | <d0ec>: user Dave authentication failed - radius timeout
+2026-09-22 10:01:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:01:47 | pppoe,ppp,error | <d0ed>: user Dave authentication failed - radius timeout
+2026-09-22 10:02:22 | pppoe,ppp,info | <pppoe-ceboneg01agadj>: terminating... - peer is not responding
+2026-09-22 10:02:22 | pppoe,ppp,info,account | ceboneg01agadj logged out, 2218 22070097 200052198 54429 175241 from 60:FA:9D:06:0C:D7
+2026-09-22 10:02:22 | pppoe,ppp,info | <pppoe-ceboneg01agadj>: disconnected
+2026-09-22 10:03:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:03:16 | pppoe,ppp,error | <d0ee>: user Dave authentication failed - radius timeout
+2026-09-22 10:03:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:03:18 | pppoe,ppp,error | <d0ef>: user Dave authentication failed - radius timeout
+2026-09-22 10:04:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:04:47 | pppoe,ppp,error | <d0f0>: user Dave authentication failed - radius timeout
+2026-09-22 10:04:49 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:04:49 | pppoe,ppp,error | <d0f1>: user Dave authentication failed - radius timeout
+2026-09-22 10:06:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:06:21 | pppoe,ppp,error | <d0f2>: user Dave authentication failed - radius timeout
+2026-09-22 10:07:37 | pppoe,ppp,info | <pppoe-libertad04solonjj>: terminating... - peer is not responding
+2026-09-22 10:07:37 | pppoe,ppp,info,account | libertad04solonjj logged out, 197552 4111638728 65645666686 21800833 55688680 from 14:A0:F8:82:FF:37
+2026-09-22 10:07:37 | pppoe,ppp,info | <pppoe-libertad04solonjj>: disconnected
+2026-09-22 10:09:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:09:21 | pppoe,ppp,error | <d0f3>: user Dave authentication failed - radius timeout
+2026-09-22 10:09:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:09:23 | pppoe,ppp,error | <d0f4>: user Dave authentication failed - radius timeout
+2026-09-22 10:15:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:15:27 | pppoe,ppp,error | <d0f5>: user Dave authentication failed - radius timeout
+2026-09-22 10:16:50 | pppoe,info | PPPoE connection established from 34:4C:F2:3A:3F:1C
+2026-09-22 10:16:50 | pppoe,ppp,info,account | tagulalo01bartei logged in, 100.64.19.30 from 34:4C:F2:3A:3F:1C
+2026-09-22 10:16:50 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: authenticated
+2026-09-22 10:16:50 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: connected
+2026-09-22 10:18:29 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:18:29 | pppoe,ppp,error | <d0f7>: user Dave authentication failed - radius timeout
+2026-09-22 10:21:25 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: terminating... - peer is not responding
+2026-09-22 10:21:25 | pppoe,ppp,info,account | tagulalo01bartei logged out, 275 487321 463006 1366 1244 from 34:4C:F2:3A:3F:1C
+2026-09-22 10:21:25 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: disconnected
+2026-09-22 10:22:44 | pppoe,info | PPPoE connection established from 34:4C:F2:3A:3F:1C
+2026-09-22 10:22:44 | pppoe,ppp,info,account | tagulalo01bartei logged in, 100.64.19.30 from 34:4C:F2:3A:3F:1C
+2026-09-22 10:22:44 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: authenticated
+2026-09-22 10:22:44 | pppoe,ppp,info | <pppoe-tagulalo01bartei>: connected
+2026-09-22 10:23:02 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:23:03 | pppoe,ppp,error | <d0f9>: user Dave authentication failed - radius timeout
+2026-09-22 10:24:32 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:30:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:30:36 | pppoe,ppp,error | <d0fa>: user Dave authentication failed - radius timeout
+2026-09-22 10:30:37 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:30:38 | pppoe,ppp,error | <d0fb>: user Dave authentication failed - radius timeout
+2026-09-22 10:32:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:32:09 | pppoe,ppp,error | <d0fc>: user Dave authentication failed - radius timeout
+2026-09-22 10:33:48 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:27 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:27 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:29 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:29 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:31 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:31 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:33 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:33 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:35 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:35 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:37 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:37 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:39 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:40 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:41 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:41 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:43 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:43 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:45 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:45 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:47 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:47 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:49 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:49 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:51 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:51 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:53 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:53 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:55 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:55 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:57 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:34:57 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:34:59 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:35:00 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:35:01 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:35:02 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:36:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:36:41 | pppoe,ppp,error | <d0fd>: user Dave authentication failed - radius timeout
+2026-09-22 10:38:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:38:12 | pppoe,ppp,error | <d0fe>: user Dave authentication failed - radius timeout
+2026-09-22 10:38:42 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:24 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:24 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:26 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:26 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:28 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:28 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:30 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:30 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:32 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:32 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:34 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:34 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:39:36 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 10:39:36 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:44:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:44:18 | pppoe,ppp,error | <d0ff>: user Dave authentication failed - radius timeout
+2026-09-22 10:47:17 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:47:18 | pppoe,ppp,error | <d100>: user Dave authentication failed - radius timeout
+2026-09-22 10:47:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:47:20 | pppoe,ppp,error | <d101>: user Dave authentication failed - radius timeout
+2026-09-22 10:48:07 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 10:50:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 10:50:21 | pppoe,ppp,error | <d102>: user Dave authentication failed - radius timeout
+2026-09-22 10:50:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:50:23 | pppoe,ppp,error | <d103>: user Dave authentication failed - radius timeout
+2026-09-22 10:54:31 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: terminating... - peer is not responding
+2026-09-22 10:54:31 | pppoe,ppp,info,account | quarry01amorgandacn logged out, 60709 649404679 6623327083 1604817 5489176 from B4:FB:F9:30:90:FF
+2026-09-22 10:54:31 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: disconnected
+2026-09-22 10:57:57 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 10:57:58 | pppoe,ppp,error | <d104>: user Dave authentication failed - radius timeout
+2026-09-22 11:05:32 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: terminating... - peer is not responding
+2026-09-22 11:05:32 | pppoe,ppp,info,account | cabilinan02patrolbase logged out, 13934 519172733 4900329195 1435507 4091210 from B4:E4:6B:77:8A:A8
+2026-09-22 11:05:32 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: disconnected
+2026-09-22 11:06:32 | pppoe,info | PPPoE connection established from B4:E4:6B:77:8A:A8
+2026-09-22 11:06:32 | pppoe,ppp,info,account | cabilinan02patrolbase logged in, 100.64.19.26 from B4:E4:6B:77:8A:A8
+2026-09-22 11:06:32 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: authenticated
+2026-09-22 11:06:32 | pppoe,ppp,info | <pppoe-cabilinan02patrolbase>: connected
+2026-09-22 11:07:21 | pppoe,info | PPPoE connection established from B4:FB:F9:30:90:FF
+2026-09-22 11:07:21 | pppoe,ppp,info,account | quarry01amorgandacn logged in, 100.64.18.231 from B4:FB:F9:30:90:FF
+2026-09-22 11:07:21 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: authenticated
+2026-09-22 11:07:21 | pppoe,ppp,info | <pppoe-quarry01amorgandacn>: connected
+2026-09-22 11:15:26 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:16:09 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 11:16:10 | pppoe,ppp,error | <d106>: user Dave authentication failed - radius timeout
+2026-09-22 11:16:11 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 11:16:12 | pppoe,ppp,error | <d107>: user Dave authentication failed - radius timeout
+2026-09-22 11:16:51 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:17:40 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 11:17:41 | pppoe,ppp,error | <d108>: user Dave authentication failed - radius timeout
+2026-09-22 11:17:42 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 11:17:43 | pppoe,ppp,error | <d109>: user Dave authentication failed - radius timeout
+2026-09-22 11:19:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 11:19:14 | pppoe,ppp,error | <d10a>: user Dave authentication failed - radius timeout
+2026-09-22 11:20:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 11:20:45 | pppoe,ppp,error | <d10b>: user Dave authentication failed - radius timeout
+2026-09-22 11:28:18 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-22 11:28:19 | pppoe,ppp,error | <d10c>: user Dave authentication failed - radius timeout
+2026-09-22 11:28:20 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-22 11:28:21 | pppoe,ppp,error | <d10d>: user Dave authentication failed - radius timeout
+2026-09-22 11:35:05 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:04 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:05 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:06 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:07 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:08 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:09 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:10 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:11 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:12 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:13 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:14 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:15 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:16 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:17 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:18 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:19 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:20 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:21 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:22 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:23 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:24 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:25 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:26 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:27 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:28 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:29 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:30 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:31 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:32 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:33 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:34 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:35 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:36 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:37 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:38 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:39 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:40 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:41 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:42 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:43 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:44 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:45 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:46 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:47 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-22 11:36:48 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-22 11:36:49 | system,info,account | user christian logged out from 43.228.106.21 via api

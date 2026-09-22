@@ -12,12 +12,73 @@ from django.contrib.auth.decorators import login_required
 from librouteros import connect
 from monitor.crypto import decrypt_password
 from monitor.models import AccessConcentrator
-# from monitor.mikrotik_collector import find_pppoe_interface, get_traffic_sample
+
 
 RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
     "raw_logs",
 )
+
+def client_traffic_history(request):
+    username = request.GET.get("username")
+    range_value = request.GET.get("range", "1h").lower()
+    since_timestamp = request.GET.get("since")
+
+    if not username:
+        return JsonResponse({
+            "found": False,
+            "message": "Username is required.",
+        })
+
+    ranges = {
+        "1h": timedelta(hours=1),
+        "6h": timedelta(hours=6),
+        "12h": timedelta(hours=12),
+        "24h": timedelta(hours=24),
+        "7d": timedelta(days=7),
+    }
+
+    if range_value not in ranges:
+        range_value = "1h"
+
+    since = timezone.now() - ranges[range_value]
+
+    if since_timestamp:
+        try:
+            since = max(
+                since,
+                timezone.datetime.fromisoformat(
+                    since_timestamp.replace("Z", "+00:00")
+                ),
+            )
+        except ValueError:
+            pass
+
+    history = (
+        PPPoETrafficHistory.objects
+        .filter(
+            client__username=username,
+            timestamp__gte=since,
+        )
+        .order_by("timestamp")
+    )
+
+    samples = [
+        {
+            "timestamp": row.timestamp.isoformat(),
+            "rx": row.rx_bits_per_second,
+            "tx": row.tx_bits_per_second,
+        }
+        for row in history
+    ]
+
+    return JsonResponse({
+        "found": True,
+        "username": username,
+        "range": range_value,
+        "samples": samples,
+    })
+
 
 def get_raw_log_directory():
     return os.path.join(os.path.dirname(os.path.abspath(__file__)),
