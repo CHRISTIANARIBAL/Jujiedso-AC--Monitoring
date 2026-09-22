@@ -61,8 +61,8 @@
     </div>
 </div>
 <!-- TRAFFIC MODAL -->
-<div id="traffic-modal" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/40 px-4 py-4">
-    <div class="w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl">
+<div id="traffic-modal" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/50 p-4">
+    <div class="w-full max-w-3xl max-h-[calc(100vh-2rem)] overflow-y-auto rounded-2xl bg-white shadow-2xl">
         <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
             <div><h2 class="text-lg font-semibold text-gray-900">📊 PPPoE Traffic</h2>
                 <p id="traffic-username" class="text-xs text-gray-500">-</p>
@@ -71,7 +71,7 @@
         </div>
         <div class="space-y-4 p-5">
             <div class="rounded-lg bg-gray-50 p-3">
-                <div class="flex items-center justify-between">
+                <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
                     <div><p class="text-[10px] font-medium uppercase text-gray-400">Interface</p>
                         <p id="traffic-interface" class="mt-1 text-sm font-semibold text-gray-800">-</p>
                     </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <div class="rounded-xl border border-blue-100 bg-blue-50 p-4">
                     <div class="flex items-center gap-2">
                         <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100">↓</div>
@@ -99,7 +99,7 @@
                     <p class="mt-1 text-[10px] text-gray-500">TX</p>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <div class="rounded-lg border border-gray-200 p-3">
                     <p class="text-[10px] font-medium uppercase text-gray-400">RX Packets</p>
                     <p id="traffic-rx-packets" class="mt-1 text-lg font-bold text-gray-900">0 / sec</p>
@@ -109,6 +109,48 @@
                     <p id="traffic-tx-packets" class="mt-1 text-lg font-bold text-gray-900">0 / sec</p>
                 </div>
             </div>
+
+<div class="rounded-xl border border-gray-200 bg-white p-3">
+    <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-2">
+        <div>
+            <p class="text-sm font-semibold text-gray-900">Traffic History</p>
+            <p id="traffic-history-range-label" class="text-[10px] text-gray-400">Last 1 hour</p>
+        </div>
+        <div class="flex gap-1">
+            <button type="button" data-traffic-range="1h" class="traffic-range-btn rounded-md bg-gray-900 px-2 py-1 text-[10px] font-semibold text-white">1H</button>
+            <button type="button" data-traffic-range="6h" class="traffic-range-btn rounded-md bg-gray-100 px-2 py-1 text-[10px] font-semibold text-gray-600">6H</button>
+            <button type="button" data-traffic-range="12h" class="traffic-range-btn rounded-md bg-gray-100 px-2 py-1 text-[10px] font-semibold text-gray-600">12H</button>
+            <button type="button" data-traffic-range="24h" class="traffic-range-btn rounded-md bg-gray-100 px-2 py-1 text-[10px] font-semibold text-gray-600">24H</button>
+            <button type="button" data-traffic-range="7d" class="traffic-range-btn rounded-md bg-gray-100 px-2 py-1 text-[10px] font-semibold text-gray-600">7D</button>
+        </div>
+    </div>
+    <div class="w-full overflow-hidden">
+    <div id="traffic-history-chart" class="w-full"></div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+    <div class="rounded-lg border border-gray-200 p-3">
+        <p class="text-[10px] font-medium uppercase text-gray-400">RX Statistics</p>
+        <div class="mt-2 space-y-1 text-xs">
+            <div class="flex justify-between"><span class="text-gray-500">Current</span><span id="traffic-rx-current" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Average</span><span id="traffic-rx-average" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Maximum</span><span id="traffic-rx-maximum" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Minimum</span><span id="traffic-rx-minimum" class="font-semibold">-</span></div>
+        </div>
+    </div>
+    <div class="rounded-lg border border-gray-200 p-3">
+        <p class="text-[10px] font-medium uppercase text-gray-400">TX Statistics</p>
+        <div class="mt-2 space-y-1 text-xs">
+            <div class="flex justify-between"><span class="text-gray-500">Current</span><span id="traffic-tx-current" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Average</span><span id="traffic-tx-average" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Maximum</span><span id="traffic-tx-maximum" class="font-semibold">-</span></div>
+            <div class="flex justify-between"><span class="text-gray-500">Minimum</span><span id="traffic-tx-minimum" class="font-semibold">-</span></div>
+        </div>
+    </div>
+</div>
+
+
             <div class="flex items-center justify-center gap-2 rounded-lg bg-gray-50 py-3">
                 <span id="traffic-live-dot" class="h-2.5 w-2.5 rounded-full bg-green-500"></span>
                 <span id="traffic-status" class="text-xs font-semibold text-green-600">LIVE</span>
@@ -117,3 +159,5 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
