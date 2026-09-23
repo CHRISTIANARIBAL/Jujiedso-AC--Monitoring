@@ -1,4 +1,7 @@
+import re
+
 from ..mac_utils import format_vsol_mac
+
 
 class VSOL:
     def __init__(self, ip):
@@ -39,6 +42,52 @@ class VSOL:
         print(f"Executing: {command}")
         return None
 
+    def get_reverse_mac_command(self, onu):
+        match = re.fullmatch(
+            r"epon(\d+/\d+):(\d+)",
+            onu.strip(),
+            re.IGNORECASE
+        )
+
+        if not match:
+            return None
+
+        interface = match.group(1)
+        onu_id = match.group(2)
+
+        return {
+            "interface": f"interface epon {interface}",
+            "mac": f"show onu {onu_id} mac-address-table"
+        }
+
+    def parse_reverse_mac(self, output):
+        output = output.replace("\r", "")
+        output = output.replace("\x08", "")
+
+        for line in output.splitlines():
+            line = line.strip()
+
+            if not line:
+                continue
+
+            columns = line.split()
+
+            if len(columns) < 6:
+                continue
+
+            mac = columns[2]
+            mac_clean = re.sub(r"[^0-9a-fA-F]", "", mac)
+
+            if len(mac_clean) != 12:
+                continue
+
+            return ":".join(
+                mac_clean[i:i + 2]
+                for i in range(0, 12, 2)
+            ).upper()
+
+        return None
+
     def get_opm(self, onu):
         command = "show onu opm-diag all"
         print(f"Executing: {command}")
@@ -65,8 +114,8 @@ class VSOL:
                 "TX_Power": float(columns[4]),
                 "RX_Power": float(columns[5]),
             }
+
         return None
-    
 
     async def get_customer_info(self, connection, mac):
 

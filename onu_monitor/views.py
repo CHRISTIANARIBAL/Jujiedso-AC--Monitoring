@@ -25,6 +25,7 @@ def get_olts(request):
 
     return JsonResponse(result)
 
+
 @csrf_exempt
 @require_POST
 def lookup(request):
@@ -39,7 +40,8 @@ def lookup(request):
     olt_name = data.get("olt")
     username = data.get("username")
     password = data.get("password")
-    mac = data.get("mac")
+    lookup_mode = data.get("mode", "mac")
+    value = data.get("value")
 
     if not olt_name:
         return JsonResponse({
@@ -53,10 +55,16 @@ def lookup(request):
             "error": "Invalid OLT."
         }, status=400)
 
-    if not mac:
+    if lookup_mode not in ["mac", "onu"]:
         return JsonResponse({
             "success": False,
-            "error": "MAC address is required."
+            "error": "Invalid lookup mode."
+        }, status=400)
+
+    if not value:
+        return JsonResponse({
+            "success": False,
+            "error": "Lookup value is required."
         }, status=400)
 
     if not username:
@@ -73,9 +81,6 @@ def lookup(request):
 
     olt = OLTS[olt_name]
 
-    # username = olt["username"]
-    # password = olt["password"]
-
     try:
         if olt["brand"] == "VSOL":
             result = asyncio.run(
@@ -84,7 +89,8 @@ def lookup(request):
                     olt,
                     username,
                     password,
-                    mac
+                    value,
+                    lookup_mode
                 )
             )
 
@@ -95,7 +101,8 @@ def lookup(request):
                     olt,
                     username,
                     password,
-                    mac
+                    value,
+                    lookup_mode
                 )
             )
 

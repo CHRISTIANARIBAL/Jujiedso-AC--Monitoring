@@ -7,7 +7,7 @@ from .olt.vsol import VSOL
 from .olt.bdcom import BDCOM
 
 
-async def run_vsol(olt_name, olt, username, password, mac):
+async def run_vsol(olt_name, olt, username, password, value, lookup_mode="mac"):
     terminal = []
 
     connection = VSOLConnection(
@@ -24,7 +24,9 @@ async def run_vsol(olt_name, olt, username, password, mac):
         terminal.append("==========================================")
         terminal.append("")
         terminal.append("Connecting...")
+
         await connection.connect()
+
         terminal.append("Connected.")
 
         await connection.enable(password)
@@ -33,16 +35,67 @@ async def run_vsol(olt_name, olt, username, password, mac):
         await connection.configure_terminal()
         terminal.append("Terminal configured.")
 
-        vsol_mac = format_vsol_mac(mac)
+        vsol = VSOL(olt["ip"])
+
+        if lookup_mode == "onu":
+            onu = value.strip()
+
+            commands = vsol.get_reverse_mac_command(onu)
+
+            if not commands:
+                return {
+                    "success": False,
+                    "terminal": "\n".join(terminal),
+                    "error": "Invalid ONU format. Example: epon0/2:40"
+                }
+
+            terminal.append(f"$ {commands['interface']}")
+
+            await connection.send_command(
+                commands["interface"]
+            )
+
+            terminal.append(f"$ {commands['mac']}")
+
+            output = await connection.send_command(
+                commands["mac"]
+            )
+
+            terminal.append(output)
+
+            mac = vsol.parse_reverse_mac(output)
+
+            if not mac:
+                return {
+                    "success": False,
+                    "terminal": "\n".join(terminal),
+                    "error": "MAC address not found for this ONU."
+                }
+
+            interface = onu.split(":")[0]
+
+            return {
+                "success": True,
+                "terminal": "\n".join(terminal),
+                "lookup_mode": "onu",
+                "onu": {
+                    "mac": mac,
+                    "interface": interface,
+                    "onu": onu
+                }
+            }
+
+        vsol_mac = format_vsol_mac(value)
+
         command = f"show mac address-table address {vsol_mac}"
 
         terminal.append(f"$ {command}")
 
         output = await connection.send_command(command)
+
         terminal.append(output)
 
-        olt_parser = VSOL(olt["ip"])
-        onu = olt_parser.parse_mac_lookup(output)
+        onu = vsol.parse_mac_lookup(output)
 
         if not onu:
             return {
@@ -56,15 +109,17 @@ async def run_vsol(olt_name, olt, username, password, mac):
         terminal.append(f"$ {opm_command}")
 
         opm_output = await connection.send_command(opm_command)
+
         terminal.append(opm_output)
 
-        optical = olt_parser.parse_opm(opm_output, onu)
+        optical = vsol.parse_opm(opm_output, onu)
 
         return {
             "success": True,
             "terminal": "\n".join(terminal),
+            "lookup_mode": "mac",
             "onu": {
-                "mac": mac,
+                "mac": value,
                 "interface": onu.split(":")[0],
                 "onu": onu
             },
@@ -81,8 +136,7 @@ async def run_vsol(olt_name, olt, username, password, mac):
     finally:
         await connection.close()
 
-
-async def run_bdcom(olt_name, olt, username, password, mac):
+async def run_bdcom(olt_name, olt, username, password, value, lookup_mode="mac"):
     terminal = []
 
     connection = BDCOMConnection(
@@ -113,7 +167,56 @@ async def run_bdcom(olt_name, olt, username, password, mac):
 
         bdcom = BDCOM(olt["ip"])
 
-        bdcom_mac = format_bdcom_mac(mac)
+        # ==========================================
+        # REVERSE LOOKUP
+        # ONU -> MAC
+        # ==========================================
+
+        if lookup_mode == "onu":
+            onu = value.strip()
+
+            command = bdcom.get_reverse_mac_command(onu)
+
+            if not command:
+                return {
+                    "success": False,
+                    "terminal": "\n".join(terminal),
+                    "error": "Invalid ONU format. Example: gpon0/2:27"
+                }
+
+            terminal.append(f"$ {command}")
+
+            output = await connection.send_command(command)
+            terminal.append(output)
+
+            mac = bdcom.parse_reverse_mac(output)
+
+            if not mac:
+                return {
+                    "success": False,
+                    "terminal": "\n".join(terminal),
+                    "error": "MAC address not found for this ONU."
+                }
+
+            interface = onu.split(":")[0]
+
+            return {
+                "success": True,
+                "terminal": "\n".join(terminal),
+                "lookup_mode": "onu",
+                "onu": {
+                    "mac": mac,
+                    "interface": interface,
+                    "onu": onu
+                }
+            }
+
+        # ==========================================
+        # NORMAL MAC LOOKUP
+        # MAC -> ONU -> OPM
+        # ==========================================
+
+        bdcom_mac = format_bdcom_mac(value)
         command = f"show mac address-table {bdcom_mac}"
 
         terminal.append(f"$ {command}")
@@ -146,8 +249,9 @@ async def run_bdcom(olt_name, olt, username, password, mac):
         return {
             "success": True,
             "terminal": "\n".join(terminal),
+            "lookup_mode": "mac",
             "onu": {
-                "mac": mac,
+                "mac": value,
                 "interface": interface,
                 "onu": onu
             },

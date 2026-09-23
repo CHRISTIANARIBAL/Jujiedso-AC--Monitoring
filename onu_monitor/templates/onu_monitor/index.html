@@ -31,7 +31,11 @@
         <section class="credentials">
             <input id="username" type="text" placeholder="Username">
             <input id="password" type="password" placeholder="Password">
-            <input id="mac" type="text" placeholder="MAC Address">
+            <select id="lookupMode">
+                <option value="mac">MAC ADDRESS</option>
+                <option value="onu">ONU / PON</option>
+            </select>
+            <input id="lookupValue" type="text" placeholder="MAC Address">
             <button id="lookupButton">LOOKUP</button>
         </section>
 
