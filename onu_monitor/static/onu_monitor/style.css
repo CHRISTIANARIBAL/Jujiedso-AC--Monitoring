@@ -74,7 +74,8 @@ body {
     margin-bottom: 15px;
 }
 
-.credentials input {
+.credentials input,
+.credentials select {
     flex: 1;
     min-width: 150px;
     padding: 11px;
@@ -86,7 +87,8 @@ body {
     outline: none;
 }
 
-.credentials input:focus {
+.credentials input:focus,
+.credentials select:focus {
     border-color: #2563eb;
 }
 
@@ -132,6 +134,7 @@ body {
     padding: 12px;
     background: #f3f4f6;
     border-radius: 5px;
+    min-width: 0;
 }
 
 .result-label {
@@ -143,6 +146,8 @@ body {
     margin-top: 5px;
     font-size: 16px;
     font-weight: bold;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .terminal-container {
@@ -174,8 +179,172 @@ body {
     min-height: 500px;
     max-height: 650px;
     overflow-y: auto;
+    overflow-x: auto;
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
     color: #c9d1d9;
     font-size: 14px;
     line-height: 1.5;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+    .app {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .credentials {
+        flex-wrap: wrap;
+    }
+
+    .credentials input,
+    .credentials select {
+        flex: 1 1 45%;
+    }
+
+    #lookupButton {
+        flex: 1 1 100%;
+    }
+
+    .result-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+    .app {
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .selected-olt {
+        width: 100%;
+    }
+
+    .olt-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .olt-button {
+        width: 100%;
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+
+    .credentials {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .credentials input,
+    .credentials select,
+    #lookupButton {
+        width: 100%;
+        min-width: 0;
+        flex: none;
+    }
+
+    #lookupButton {
+        padding: 13px;
+    }
+
+    .result {
+        padding: 12px;
+    }
+
+    .result h3 {
+        font-size: 16px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .result-item {
+        padding: 11px;
+    }
+
+    .result-label {
+        font-size: 11px;
+    }
+
+    .result-value {
+        font-size: 14px;
+    }
+
+    .terminal-container {
+        margin-top: 12px;
+    }
+
+    .terminal-header {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    #terminal {
+        min-height: 350px;
+        max-height: 500px;
+        padding: 12px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 380px) {
+    .app {
+        padding: 8px;
+    }
+
+    .olt-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .olt-button {
+        font-size: 13px;
+    }
+
+    .result {
+        padding: 10px;
+    }
+
+    .result-value {
+        font-size: 13px;
+    }
+
+    #terminal {
+        font-size: 11px;
+    }
 }

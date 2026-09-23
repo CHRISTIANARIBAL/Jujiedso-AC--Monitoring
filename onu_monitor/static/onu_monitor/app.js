@@ -156,8 +156,65 @@ lookupButton.addEventListener("click", async () => {
 function displayResult(data) {
     const onu = data.onu || {};
     const optical = data.optical || {};
+    const pppoeClients = data.pppoe_clients || [];
 
     if (data.lookup_mode === "onu") {
+        let pppoeHtml = "";
+
+        if (pppoeClients.length === 0) {
+            pppoeHtml = `
+                <h3>PPPoE CLIENT</h3>
+
+                <div class="result-item">
+                    <div class="result-label">STATUS</div>
+                    <div class="result-value">NO MATCHING PPPoE CLIENT</div>
+                </div>
+            `;
+        } else {
+            pppoeHtml = `
+                <h3>PPPoE CLIENT${pppoeClients.length > 1 ? "S" : ""}</h3>
+
+                <div class="result-grid">
+                    ${pppoeClients.map(client => `
+                        <div class="result-item">
+                            <div class="result-label">USERNAME</div>
+                            <div class="result-value">${client.username || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">MAC</div>
+                            <div class="result-value">${client.mac || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">AC</div>
+                            <div class="result-value">${client.ac || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">OLT</div>
+                            <div class="result-value">${client.olt_name || client.connection_name || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">OLT INTERFACE</div>
+                            <div class="result-value">${client.connection_interface || client.olt_interface || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">CONNECTION TYPE</div>
+                            <div class="result-value">${client.connection_type || "-"}</div>
+                        </div>
+
+                        <div class="result-item">
+                            <div class="result-label">LAST SEEN</div>
+                            <div class="result-value">${client.last_seen || "-"}</div>
+                        </div>
+                    `).join("")}
+                </div>
+            `;
+        }
+
         resultContainer.innerHTML = `
             <h3>ONU INFORMATION</h3>
 
@@ -179,6 +236,8 @@ function displayResult(data) {
                 </div>
 
             </div>
+
+            ${pppoeHtml}
         `;
 
         return;

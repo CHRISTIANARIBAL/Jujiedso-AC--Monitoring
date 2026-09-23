@@ -2084,3 +2084,1384 @@
 2026-09-23 13:29:14 | pppoe,ppp,error | <1314>: user Dave authentication failed
 2026-09-23 13:30:19 | system,info,account | user christian logged in from 43.228.106.21 via api
 2026-09-23 13:30:45 | warning | denied winbox/dude connect from 88.80.145.197
+2026-09-23 13:33:06 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 13:33:40 | pppoe,ppp,info | <pppoe-tagulalo02manitg>: terminating... - peer is not responding
+2026-09-23 13:33:40 | pppoe,ppp,info,account | tagulalo02manitg logged out, 74726 1013476132 6761734807 1796573 5686220 from D4:7E:A9:2D:F9:14
+2026-09-23 13:33:40 | pppoe,ppp,info | <pppoe-tagulalo02manitg>: disconnected
+2026-09-23 13:35:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:35:16 | pppoe,ppp,error | <1315>: user Dave authentication failed
+2026-09-23 13:36:03 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: terminating... - peer is not responding
+2026-09-23 13:36:03 | pppoe,ppp,info,account | barobo01tenebrosojulieto logged out, 26381 212195523 6617269750 1179494 5266465 from A0:F4:79:10:D5:BD
+2026-09-23 13:36:03 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: disconnected
+2026-09-23 13:38:47 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: terminating... - peer is not responding
+2026-09-23 13:38:47 | pppoe,ppp,info,account | alegria02cabatinganj logged out, 86686 5170392919 41973959329 17019752 42846832 from D4:7E:A8:BD:87:92
+2026-09-23 13:38:47 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: disconnected
+2026-09-23 13:39:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:55 | pppoe,info | PPPoE connection established from D4:7E:A8:BD:87:92
+2026-09-23 13:39:55 | pppoe,ppp,info,account | alegria02cabatinganj logged in, 100.64.11.193 from D4:7E:A8:BD:87:92
+2026-09-23 13:39:55 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: authenticated
+2026-09-23 13:39:55 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: connected
+2026-09-23 13:39:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:39:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:39:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:40:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:40:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:19 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:41:20 | pppoe,ppp,error | <1316>: user Dave authentication failed
+2026-09-23 13:41:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:41:22 | pppoe,ppp,error | <1317>: user Dave authentication failed
+2026-09-23 13:41:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:41:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:41:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:51 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:42:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:52 | pppoe,ppp,error | <1318>: user Dave authentication failed
+2026-09-23 13:42:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:42:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:54 | pppoe,ppp,error | <1319>: user Dave authentication failed
+2026-09-23 13:42:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:42:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:42:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:43:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:43:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:22 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:44:23 | pppoe,ppp,error | <131a>: user Dave authentication failed
+2026-09-23 13:44:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:44:25 | pppoe,ppp,error | <131b>: user Dave authentication failed
+2026-09-23 13:44:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:35 | pppoe,info | PPPoE connection established from A0:F4:79:10:D5:BD
+2026-09-23 13:44:35 | pppoe,ppp,info,account | barobo01tenebrosojulieto logged in, 100.64.10.71 from A0:F4:79:10:D5:BD
+2026-09-23 13:44:35 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: authenticated
+2026-09-23 13:44:35 | pppoe,ppp,info | <pppoe-barobo01tenebrosojulieto>: connected
+2026-09-23 13:44:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:44:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:44:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:31 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: terminating... - peer is not responding
+2026-09-23 13:45:31 | pppoe,ppp,info,account | alegria02cabatinganj logged out, 335 21454492 330983764 95141 266472 from D4:7E:A8:BD:87:92
+2026-09-23 13:45:31 | pppoe,ppp,info | <pppoe-alegria02cabatinganj>: disconnected
+2026-09-23 13:45:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:53 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:45:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:54 | pppoe,ppp,error | <131c>: user Dave authentication failed
+2026-09-23 13:45:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:45:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:56 | pppoe,ppp,error | <131d>: user Dave authentication failed
+2026-09-23 13:45:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:45:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:45:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:46:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:46:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:56 | pppoe,ppp,info | <pppoe-commonwealth01freemaglipacj>: terminating... - peer is not responding
+2026-09-23 13:47:56 | pppoe,ppp,info,account | commonwealth01freemaglipacj logged out, 297314 6095350146 51078899730 18406542 46783199 from BC:3F:8F:22:0A:EC
+2026-09-23 13:47:56 | pppoe,ppp,info | <pppoe-commonwealth01freemaglipacj>: disconnected
+2026-09-23 13:47:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:47:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:47:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:55 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:48:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:56 | pppoe,ppp,error | <131e>: user Dave authentication failed
+2026-09-23 13:48:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:48:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:48:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:17 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 13:49:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:49:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:49:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:50:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:29 | pppoe,ppp,error | <131f>: user Dave authentication failed
+2026-09-23 13:50:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:50:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:50:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:20 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 13:51:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:51:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:51:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:19 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 13:52:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:39 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 13:52:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:52:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:52:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:53:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:29 | pppoe,ppp,error | <1320>: user Dave authentication failed
+2026-09-23 13:53:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 13:53:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:31 | pppoe,ppp,error | <1321>: user Dave authentication failed
+2026-09-23 13:53:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:53:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:53:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:54:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:54:59 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:55:00 | pppoe,ppp,error | <1322>: user Dave authentication failed
+2026-09-23 13:55:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:13 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 13:55:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:21 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:21 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:23 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:23 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:25 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:25 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:27 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:27 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:29 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:29 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:31 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:31 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:33 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:33 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:35 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:35 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:37 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:37 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:39 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:39 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:41 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:41 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:43 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:43 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:45 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:45 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:47 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:47 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:49 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:49 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:51 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:51 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:53 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:53 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:55 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:55 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:57 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:57 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:55:59 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:55:59 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:01 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:56:01 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:03 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:56:03 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:05 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:56:05 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:07 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:56:07 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 13:56:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 13:56:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 13:56:31 | pppoe,ppp,error | <1323>: user Dave authentication failed
+2026-09-23 13:57:54 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 13:58:18 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 13:59:40 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:00:12 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:01:04 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:01:05 | pppoe,ppp,error | <1324>: user Dave authentication failed
+2026-09-23 14:01:06 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:01:07 | pppoe,ppp,error | <1325>: user Dave authentication failed
+2026-09-23 14:01:21 | pppoe,ppp,info | <pppoe-resthouse01felecianol>: terminating... - peer is not responding
+2026-09-23 14:01:21 | pppoe,ppp,info,account | resthouse01felecianol logged out, 36656 22524792 1423620306 177654 1180592 from A0:A3:3B:1C:7B:E9
+2026-09-23 14:01:21 | pppoe,ppp,info | <pppoe-resthouse01felecianol>: disconnected
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-tinago07roblee>: terminating... - peer is not responding
+2026-09-23 14:01:22 | pppoe,ppp,info,account | tinago07roblee logged out, 36664 72995072 1596798365 324240 1306278 from 14:09:DC:47:56:BA
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-tinago07roblee>: disconnected
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-lubid02rector>: terminating... - peer is not responding
+2026-09-23 14:01:22 | pppoe,ppp,info,account | lubid02rector logged out, 36693 357954711 5295845638 1130068 4172108 from 5C:09:79:C1:3E:DA
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-lubid02rector>: disconnected
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-kalubian01anganat>: terminating... - peer is not responding
+2026-09-23 14:01:22 | pppoe,ppp,info,account | kalubian01anganat logged out, 36682 80432393 1955337929 439026 1628724 from 4C:D0:CB:94:DF:05
+2026-09-23 14:01:22 | pppoe,ppp,info | <pppoe-kalubian01anganat>: disconnected
+2026-09-23 14:01:23 | pppoe,ppp,info | <pppoe-lantungan04sulleguer>: terminating... - peer is not responding
+2026-09-23 14:01:23 | pppoe,ppp,info,account | lantungan04sulleguer logged out, 36641 78398960 804727934 202220 731183 from E4:72:E2:4A:89:5E
+2026-09-23 14:01:23 | pppoe,ppp,info | <pppoe-lantungan04sulleguer>: disconnected
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-baclay02bagonoce>: terminating... - peer is not responding
+2026-09-23 14:01:24 | pppoe,ppp,info,account | baclay02bagonoce logged out, 36721 83068787 1538581662 291555 1350275 from 40:AE:30:88:B8:AB
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-baclay02bagonoce>: disconnected
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-lantungan01pradiaa>: terminating... - peer is not responding
+2026-09-23 14:01:24 | pppoe,ppp,info,account | lantungan01pradiaa logged out, 36687 811384864 865390888 905198 835680 from 5C:54:6D:F4:DE:B4
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-lantungan01pradiaa>: disconnected
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-baclay02nuevas>: terminating... - peer is not responding
+2026-09-23 14:01:24 | pppoe,ppp,info,account | baclay02nuevas logged out, 36691 76254151 1004829399 159136 858757 from 68:CC:6E:1B:6C:29
+2026-09-23 14:01:24 | pppoe,ppp,info | <pppoe-baclay02nuevas>: disconnected
+2026-09-23 14:01:27 | pppoe,ppp,info | <pppoe-quarry01linaresj>: terminating... - peer is not responding
+2026-09-23 14:01:27 | pppoe,ppp,info,account | quarry01linaresj logged out, 36666 335602000 3347862867 1342904 3239125 from 5C:09:79:DB:55:18
+2026-09-23 14:01:27 | pppoe,ppp,info | <pppoe-quarry01linaresj>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-inroad02mamaca>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | inroad02mamaca logged out, 36660 381419636 13019127161 2189108 10418855 from 10:C1:72:5B:CA:21
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-inroad02mamaca>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-palo05nationalhigh>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | palo05nationalhigh logged out, 36690 4355227572 48429363511 15523799 42133886 from 68:CC:6E:57:D3:CF
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-palo05nationalhigh>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-baclay01patrolbase>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | baclay01patrolbase logged out, 36665 670749997 11664028907 2378508 9934725 from 5C:54:6D:00:E7:FA
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-baclay01patrolbase>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-resthouse03saragenam>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | resthouse03saragenam logged out, 36658 130150140 2512039755 607708 2178417 from 5C:09:79:F4:0A:4D
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-resthouse03saragenam>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-lantungan01romanillosm>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | lantungan01romanillosm logged out, 36660 248849221 7550618233 1078851 6082544 from 2C:55:D3:03:90:BF
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-lantungan01romanillosm>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-tinago07tomaroye>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | tinago07tomaroye logged out, 36697 289106602 5635797014 1554449 4542730 from B4:B0:24:52:10:D1
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-tinago07tomaroye>: disconnected
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-inroad01aroa>: terminating... - peer is not responding
+2026-09-23 14:01:28 | pppoe,ppp,info,account | inroad01aroa logged out, 36706 757612566 16496494835 2999815 13963637 from A0:F4:79:B6:45:57
+2026-09-23 14:01:28 | pppoe,ppp,info | <pppoe-inroad01aroa>: disconnected
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-resthouse01bronolaw>: terminating... - peer is not responding
+2026-09-23 14:01:29 | pppoe,ppp,info,account | resthouse01bronolaw logged out, 36691 234703346 3396637065 1081773 3017151 from A4:C6:4F:ED:56:2B
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-resthouse01bronolaw>: disconnected
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-lantungan01villaflorr>: terminating... - peer is not responding
+2026-09-23 14:01:29 | pppoe,ppp,info,account | lantungan01villaflorr logged out, 36672 195166973 5731920483 1082939 4517895 from B4:FB:F9:06:79:37
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-lantungan01villaflorr>: disconnected
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-lantungan01datoym>: terminating... - peer is not responding
+2026-09-23 14:01:29 | pppoe,ppp,info,account | lantungan01datoym logged out, 36655 93739197 688059186 281112 645495 from 5C:54:6D:C5:2A:BE
+2026-09-23 14:01:29 | pppoe,ppp,info | <pppoe-lantungan01datoym>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-baclay02rollenr>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | baclay02rollenr logged out, 36682 113051524 2020385485 443862 1728780 from B4:FB:F9:02:53:3A
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-baclay02rollenr>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-km3101sinoc>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | km3101sinoc logged out, 36674 731636977 7880415932 1892850 6871009 from 28:A6:DB:13:49:39
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-km3101sinoc>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-lantungan02dalumpinesik>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | lantungan02dalumpinesik logged out, 36668 133222709 1864179815 917776 2093707 from 10:C1:72:54:F7:27
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-lantungan02dalumpinesik>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-inroad01gumaponm>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | inroad01gumaponm logged out, 36712 9794163677 115000702456 36286174 101461408 from 0C:C6:CC:B2:18:00
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-inroad01gumaponm>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-baclay01quijadar>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | baclay01quijadar logged out, 36677 188230864 4021331545 1102357 3326566 from B4:FB:F9:30:AB:C2
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-baclay01quijadar>: disconnected
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-inroad01cadungongj>: terminating... - peer is not responding
+2026-09-23 14:01:30 | pppoe,ppp,info,account | inroad01cadungongj logged out, 36692 208407908 4744836612 876861 3944419 from 04:33:89:A4:28:81
+2026-09-23 14:01:30 | pppoe,ppp,info | <pppoe-inroad01cadungongj>: disconnected
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-lantungan01bobot>: terminating... - peer is not responding
+2026-09-23 14:01:31 | pppoe,ppp,info,account | lantungan01bobot logged out, 36687 481539297 12055498875 3753406 9071710 from DC:C6:4B:93:F3:4E
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-lantungan01bobot>: disconnected
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-km3101lunor>: terminating... - peer is not responding
+2026-09-23 14:01:31 | pppoe,ppp,info,account | km3101lunor logged out, 36684 347079788 5519742564 1446990 4637804 from 5C:09:79:62:52:39
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-km3101lunor>: disconnected
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-tinago01mantuhacw>: terminating... - peer is not responding
+2026-09-23 14:01:31 | pppoe,ppp,info,account | tinago01mantuhacw logged out, 36659 335886727 5547964759 1325974 4710353 from B4:FB:F9:11:BB:68
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-tinago01mantuhacw>: disconnected
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-tinago07labiagam>: terminating... - peer is not responding
+2026-09-23 14:01:31 | pppoe,ppp,info,account | tinago07labiagam logged out, 36685 614624228 4041956415 1430665 3929215 from E4:72:E2:7F:1C:A2
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-tinago07labiagam>: disconnected
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-lantungan01eslita>: terminating... - peer is not responding
+2026-09-23 14:01:31 | pppoe,ppp,info,account | lantungan01eslita logged out, 36676 3653253574 41701374902 20151797 35017065 from 28:A6:DB:0D:A5:69
+2026-09-23 14:01:31 | pppoe,ppp,info | <pppoe-lantungan01eslita>: disconnected
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-lantungan03kambalr>: terminating... - peer is not responding
+2026-09-23 14:01:32 | pppoe,ppp,info,account | lantungan03kambalr logged out, 36666 229056938 2320375012 1124671 2101772 from A0:F4:79:AD:B3:C3
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-lantungan03kambalr>: disconnected
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-inroad02elemschool>: terminating... - peer is not responding
+2026-09-23 14:01:32 | pppoe,ppp,info,account | inroad02elemschool logged out, 36669 894833535 5786749344 2619807 5439807 from 14:30:04:D6:CC:23
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-inroad02elemschool>: disconnected
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-quarry01vasaylajeqr>: terminating... - peer is not responding
+2026-09-23 14:01:32 | pppoe,ppp,info,account | quarry01vasaylajeqr logged out, 36689 137327113 2125025339 610746 1821323 from 84:A9:C4:95:95:5B
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-quarry01vasaylajeqr>: disconnected
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-resthouse02bronolaa>: terminating... - peer is not responding
+2026-09-23 14:01:32 | pppoe,ppp,info,account | resthouse02bronolaa logged out, 36667 302571439 7010740973 2373324 5721546 from 60:DE:F3:12:D3:FF
+2026-09-23 14:01:32 | pppoe,ppp,info | <pppoe-resthouse02bronolaa>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lantungan04asurojj>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | lantungan04asurojj logged out, 36666 216892730 5940669953 1513943 4674011 from 14:09:DC:61:D3:84
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lantungan04asurojj>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lantungan01romanillosml>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | lantungan01romanillosml logged out, 36700 267031052 8746516411 1592871 7118445 from 4C:D0:CB:F5:71:C4
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lantungan01romanillosml>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lubid01monsullerw>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | lubid01monsullerw logged out, 36658 137674749 3159264093 374405 2670290 from 34:4C:CB:4B:C9:C2
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-lubid01monsullerw>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-tinago07duhilagf>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | tinago07duhilagf logged out, 36688 118713398 2596811685 536131 2182777 from F4:4C:7F:13:E0:9A
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-tinago07duhilagf>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-palo05tatadjlantungannhs>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | palo05tatadjlantungannhs logged out, 36684 595238701 7235130409 2551726 6365943 from F4:4C:7F:01:91:8A
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-palo05tatadjlantungannhs>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-inroad01gumaponwj>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | inroad01gumaponwj logged out, 36674 438906501 6084029673 1430387 4843372 from 5C:54:6D:00:2C:BF
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-inroad01gumaponwj>: disconnected
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-tinago07colasingj>: terminating... - peer is not responding
+2026-09-23 14:01:33 | pppoe,ppp,info,account | tinago07colasingj logged out, 36701 777657577 6153022982 3284452 7835063 from 2C:55:D3:0A:ED:7E
+2026-09-23 14:01:33 | pppoe,ppp,info | <pppoe-tinago07colasingj>: disconnected
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-tinago07labiagar>: terminating... - peer is not responding
+2026-09-23 14:01:34 | pppoe,ppp,info,account | tinago07labiagar logged out, 36692 1107807943 4103652915 2019422 3848933 from 80:B5:75:20:67:96
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-tinago07labiagar>: disconnected
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-lantungan03freepalo>: terminating... - peer is not responding
+2026-09-23 14:01:34 | pppoe,ppp,info,account | lantungan03freepalo logged out, 36698 176422063 4353568504 859623 3628606 from E4:72:E2:55:DD:FE
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-lantungan03freepalo>: disconnected
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-quarry06bendes>: terminating... - peer is not responding
+2026-09-23 14:01:34 | pppoe,ppp,info,account | quarry06bendes logged out, 36685 731232851 9066532794 4483052 11685673 from E8:AB:F3:7F:D7:5F
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-quarry06bendes>: disconnected
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-baclay01silaoc>: terminating... - peer is not responding
+2026-09-23 14:01:34 | pppoe,ppp,info,account | baclay01silaoc logged out, 36654 519417423 9274162695 2038013 7916917 from 80:41:26:14:35:97
+2026-09-23 14:01:34 | pppoe,ppp,info | <pppoe-baclay01silaoc>: disconnected
+2026-09-23 14:01:35 | pppoe,ppp,info | <pppoe-lantungan01cuizonm>: terminating... - peer is not responding
+2026-09-23 14:01:35 | pppoe,ppp,info,account | lantungan01cuizonm logged out, 36683 76354794 1460879298 361597 1197089 from 4C:D0:CB:EF:F9:5F
+2026-09-23 14:01:35 | pppoe,ppp,info | <pppoe-lantungan01cuizonm>: disconnected
+2026-09-23 14:01:35 | pppoe,ppp,info | <pppoe-inroad02tipactipacg>: terminating... - peer is not responding
+2026-09-23 14:01:35 | pppoe,ppp,info,account | inroad02tipactipacg logged out, 36669 103991083 2696109413 377726 2296700 from E4:72:E2:04:78:D2
+2026-09-23 14:01:35 | pppoe,ppp,info | <pppoe-inroad02tipactipacg>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-kalubian04javiera>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | kalubian04javiera logged out, 36697 183354307 5179903944 836516 4288162 from 14:57:9F:89:70:D8
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-kalubian04javiera>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan02olimbaj>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | lantungan02olimbaj logged out, 36698 300411690 4637823289 917500 3956481 from E4:72:E2:AE:5B:B8
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan02olimbaj>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan02quizonr>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | lantungan02quizonr logged out, 36686 278605314 4231685457 802702 3585075 from C4:FF:1F:86:46:24
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan02quizonr>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-quarry01tigoye>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | quarry01tigoye logged out, 36673 329858816 10733148362 1719656 8562279 from 0C:C6:CC:4A:7C:24
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-quarry01tigoye>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan01freemendeza>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | lantungan01freemendeza logged out, 36720 348816887 7244768819 1920585 6261105 from 8C:FD:18:AC:A4:79
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lantungan01freemendeza>: disconnected
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lubid02jacae>: terminating... - peer is not responding
+2026-09-23 14:01:36 | pppoe,ppp,info,account | lubid02jacae logged out, 36683 956484049 10280802425 3413253 14984063 from 14:A0:F8:AB:95:93
+2026-09-23 14:01:36 | pppoe,ppp,info | <pppoe-lubid02jacae>: disconnected
+2026-09-23 14:01:37 | pppoe,ppp,info | <pppoe-resthouse01durensk>: terminating... - peer is not responding
+2026-09-23 14:01:37 | pppoe,ppp,info,account | resthouse01durensk logged out, 36551 131708028 2853110227 698304 2311658 from 4C:D0:CB:C5:8C:2F
+2026-09-23 14:01:37 | pppoe,ppp,info | <pppoe-resthouse01durensk>: disconnected
+2026-09-23 14:01:37 | pppoe,ppp,info | <pppoe-inroad01ocate>: terminating... - peer is not responding
+2026-09-23 14:01:37 | pppoe,ppp,info,account | inroad01ocate logged out, 36661 207126823 5835231319 1285985 4600055 from 9C:71:3A:FB:ED:24
+2026-09-23 14:01:37 | pppoe,ppp,info | <pppoe-inroad01ocate>: disconnected
+2026-09-23 14:02:35 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:02:36 | pppoe,ppp,error | <1326>: user Dave authentication failed
+2026-09-23 14:03:00 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:03:56 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:04:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:04:09 | pppoe,ppp,error | <1327>: user Dave authentication failed
+2026-09-23 14:07:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:07:09 | pppoe,ppp,error | <1328>: user Dave authentication failed
+2026-09-23 14:07:56 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:08:01 | warning | denied winbox/dude connect from 69.5.169.241
+2026-09-23 14:08:28 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:10:22 | pppoe,ppp,info | <pppoe-resthouse02villarina>: terminating... - peer is not responding
+2026-09-23 14:10:22 | pppoe,ppp,info,account | resthouse02villarina logged out, 76200 1402508876 14682530639 4296769 13732736 from E4:72:E2:80:E1:4C
+2026-09-23 14:10:22 | pppoe,ppp,info | <pppoe-resthouse02villarina>: disconnected
+2026-09-23 14:11:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:11:42 | pppoe,ppp,error | <1329>: user Dave authentication failed
+2026-09-23 14:11:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:11:45 | pppoe,ppp,error | <132a>: user Dave authentication failed
+2026-09-23 14:13:13 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:13:14 | pppoe,ppp,error | <132b>: user Dave authentication failed
+2026-09-23 14:13:15 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:13:16 | pppoe,ppp,error | <132c>: user Dave authentication failed
+2026-09-23 14:14:36 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:14:44 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:14:45 | pppoe,ppp,error | <132d>: user Dave authentication failed
+2026-09-23 14:17:04 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:17:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:17:47 | pppoe,ppp,error | <132e>: user Dave authentication failed
+2026-09-23 14:20:48 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:20:49 | pppoe,ppp,error | <132f>: user Dave authentication failed
+2026-09-23 14:20:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:20:51 | pppoe,ppp,error | <1330>: user Dave authentication failed
+2026-09-23 14:22:21 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:22:22 | pppoe,ppp,error | <1331>: user Dave authentication failed
+2026-09-23 14:23:19 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:23:52 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:26:54 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:26:55 | pppoe,ppp,error | <1332>: user Dave authentication failed
+2026-09-23 14:28:17 | pppoe,ppp,info | <pppoe-lavictoria02senodm>: terminating... - peer is not responding
+2026-09-23 14:28:17 | pppoe,ppp,info,account | lavictoria02senodm logged out, 246711 2847369549 27896360094 9797388 26189124 from 14:57:9F:A7:4C:4F
+2026-09-23 14:28:17 | pppoe,ppp,info | <pppoe-lavictoria02senodm>: disconnected
+2026-09-23 14:28:24 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:28:25 | pppoe,ppp,error | <1333>: user Dave authentication failed
+2026-09-23 14:28:26 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:28:27 | pppoe,ppp,error | <1334>: user Dave authentication failed
+2026-09-23 14:31:53 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: terminating... - peer is not responding
+2026-09-23 14:31:53 | pppoe,ppp,info,account | montealegre01paculbadj logged out, 101934 134379557 2266698364 322867 1868279 from 34:4C:93:FB:BE:9F
+2026-09-23 14:31:53 | pppoe,ppp,info | <pppoe-montealegre01paculbadj>: disconnected
+2026-09-23 14:32:46 | pppoe,ppp,info | <pppoe-poblacion08laysonj>: terminating... - peer is not responding
+2026-09-23 14:32:46 | pppoe,ppp,info,account | poblacion08laysonj logged out, 88405 1590043933 10600189803 3993492 9854361 from D4:7E:A8:1E:58:23
+2026-09-23 14:32:46 | pppoe,ppp,info | <pppoe-poblacion08laysonj>: disconnected
+2026-09-23 14:32:50 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:33:08 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:34:28 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:34:29 | pppoe,ppp,error | <1335>: user Dave authentication failed
+2026-09-23 14:34:30 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:34:31 | pppoe,ppp,error | <1336>: user Dave authentication failed
+2026-09-23 14:35:30 | pppoe,info | PPPoE connection established from D4:7E:A9:EB:74:2D
+2026-09-23 14:35:30 | pppoe,ppp,info,account | sanjose02sanchezb logged in, 100.64.14.2 from D4:7E:A9:EB:74:2D
+2026-09-23 14:35:30 | pppoe,ppp,info | <pppoe-sanjose02sanchezb>: authenticated
+2026-09-23 14:35:30 | pppoe,ppp,info | <pppoe-sanjose02sanchezb>: connected
+2026-09-23 14:35:43 | pppoe,ppp,info | <pppoe-panaghiusa02godinezd>: terminating... - peer is not responding
+2026-09-23 14:35:43 | pppoe,ppp,info,account | panaghiusa02godinezd logged out, 67268 1756193 787823 9319 4142 from 60:2E:20:F1:9A:75
+2026-09-23 14:35:43 | pppoe,ppp,info | <pppoe-panaghiusa02godinezd>: disconnected
+2026-09-23 14:35:45 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 14:37:48 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:37:48 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:37:50 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:37:50 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:09 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:09 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:11 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:11 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:13 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:13 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:15 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:15 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:17 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:17 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:38:19 | system,info,account | user christian logged in from 10.99.2.51 via api
+2026-09-23 14:38:19 | system,info,account | user christian logged out from 10.99.2.51 via api
+2026-09-23 14:39:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:39:02 | pppoe,ppp,error | <1338>: user Dave authentication failed
+2026-09-23 14:39:25 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 14:42:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:42:04 | pppoe,ppp,error | <1339>: user Dave authentication failed
+2026-09-23 14:42:05 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:42:06 | pppoe,ppp,error | <133a>: user Dave authentication failed
+2026-09-23 14:44:58 | system,info,account | user edison logged out from 43.228.106.21 via winbox
+2026-09-23 14:45:08 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:45:09 | pppoe,ppp,error | <133b>: user Dave authentication failed
+2026-09-23 14:45:13 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 14:45:14 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 14:46:46 | system,info,account | user edison logged out from 43.228.106.146 via winbox
+2026-09-23 14:52:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:52:42 | pppoe,ppp,error | <133c>: user Dave authentication failed
+2026-09-23 14:52:43 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:52:44 | pppoe,ppp,error | <133d>: user Dave authentication failed
+2026-09-23 14:54:12 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:54:13 | pppoe,ppp,error | <133e>: user Dave authentication failed
+2026-09-23 14:54:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:54:15 | pppoe,ppp,error | <133f>: user Dave authentication failed
+2026-09-23 14:55:45 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 14:55:46 | pppoe,ppp,error | <1340>: user Dave authentication failed
+2026-09-23 14:58:46 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 14:58:47 | pppoe,ppp,error | <1341>: user Dave authentication failed
+2026-09-23 15:01:29 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 15:01:30 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 15:02:11 | system,info,account | user edison logged out from 43.228.106.146 via winbox
+2026-09-23 15:04:50 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 15:04:51 | pppoe,ppp,error | <1342>: user Dave authentication failed
+2026-09-23 15:07:16 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 15:08:21 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 15:08:39 | pppoe,info | PPPoE connection established from D4:7E:A9:40:6E:1A
+2026-09-23 15:08:39 | pppoe,ppp,info,account | inasagan01rupentan logged in, 100.64.14.3 from D4:7E:A9:40:6E:1A
+2026-09-23 15:08:39 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: authenticated
+2026-09-23 15:08:39 | pppoe,ppp,info | <pppoe-inasagan01rupentan>: connected
+2026-09-23 15:08:47 | pppoe,info | PPPoE connection established from DC:C6:4B:27:C0:26
+2026-09-23 15:08:47 | pppoe,ppp,info,account | alegria02dotosmee logged in, 100.64.13.102 from DC:C6:4B:27:C0:26
+2026-09-23 15:08:47 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: authenticated
+2026-09-23 15:08:47 | pppoe,ppp,info | <pppoe-alegria02dotosmee>: connected
+2026-09-23 15:10:40 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 15:12:23 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 15:12:27 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 15:12:29 | pppoe,ppp,error | <1343>: user Dave authentication failed
+2026-09-23 15:17:01 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 15:17:02 | pppoe,ppp,error | <1344>: user Dave authentication failed
+2026-09-23 15:19:16 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 15:19:17 | system,info,account | user edison logged in from 43.228.106.146 via winbox
+2026-09-23 15:20:03 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 15:20:04 | pppoe,ppp,error | <1345>: user Dave authentication failed
+2026-09-23 15:21:32 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 15:21:33 | pppoe,ppp,error | <1346>: user Dave authentication failed
+2026-09-23 15:21:34 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 15:21:35 | pppoe,ppp,error | <1347>: user Dave authentication failed
+2026-09-23 15:28:11 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 15:30:28 | system,info,account | user christian logged in from 43.228.106.21 via api
+2026-09-23 15:32:55 | system,info,account | user christian logged out from 43.228.106.21 via api
+2026-09-23 15:33:41 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1B
+2026-09-23 15:33:42 | pppoe,ppp,error | <1348>: user Dave authentication failed
+2026-09-23 15:35:14 | pppoe,info | PPPoE connection established from 70:28:0A:68:DA:1A
+2026-09-23 15:35:15 | pppoe,ppp,error | <1349>: user Dave authentication failed
+2026-09-23 15:37:32 | system,info,account | user christian logged in from 43.228.106.21 via api

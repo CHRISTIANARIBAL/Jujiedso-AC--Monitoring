@@ -72,7 +72,7 @@ function renderConnectionHistory(history) {
     history.forEach((item, index) => {
         const isActive = item.active;
         const historyRow = document.createElement("div");
-        historyRow.className = "grid grid-cols-1 gap-2";
+        historyRow.className = "grid grid-cols-1 sm:grid-cols-2 gap-2";
         const upCard = document.createElement("div");
         upCard.className = "rounded-lg border border-blue-100 bg-blue-50 p-3";
         upCard.innerHTML = `
