@@ -57,6 +57,11 @@ class PPPoEClient(models.Model):
     username = models.CharField(max_length=100)
     mac_address = models.CharField(max_length=50)
     ac = models.ForeignKey(AccessConcentrator, on_delete=models.CASCADE)
+    olt_interface = models.CharField(max_length=255, null=True, blank=True)
+    olt_name = models.CharField(max_length=100, null=True, blank=True)
+    connection_type = models.CharField(max_length=50, null=True, blank=True)
+    connection_name = models.CharField(max_length=150, null=True, blank=True)
+    connection_interface = models.CharField(max_length=255, null=True, blank=True)
     first_seen = models.DateTimeField(auto_now_add=True)
     last_seen = models.DateTimeField(auto_now=True)
 

@@ -1,21 +1,35 @@
+import os
+import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+django.setup()
+
 from librouteros import connect
-import time
+from monitor.crypto import decrypt_password
+from monitor.models import AccessConcentrator
+
+ac = AccessConcentrator.objects.get(name="calu-ac1 new")
+
+password = decrypt_password(ac.encrypted_password)
 
 api = connect(
-    username="christian",
-    password="chr1st14n",
-    host="43.228.106.2",
+    username=ac.username,
+    password=password,
+    host=ac.ip_address,
     port=8728,
 )
 
-print("API LOGIN OK")
-print("Connection is being kept alive.")
-print("Press CTRL+C to disconnect.")
+username = "alangalang01nietoe"
 
-try:
-    while True:
-        list(api("/system/resource/print"))
-        print("API connection still alive...")
-        time.sleep(5)
-except KeyboardInterrupt:
-    print("\nStopped by user.")
+results = list(
+    api("/interface/pppoe-server/print",
+        {
+            "?user": username,
+            ".proplist": "name,user,service,interface"
+        }
+    )
+)
+
+print("\nRESULT:")
+for row in results:
+    print(row)
