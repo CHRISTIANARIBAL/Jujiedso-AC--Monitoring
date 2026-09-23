@@ -117,7 +117,7 @@ class Command(BaseCommand):
                         self.stdout.write(f"\nCollecting {ac.name}...")
 
                     active_users = list(api("/ppp/active/print"))
-                    active_count = sync_ac_sessions(ac, mikrotik_sessions=active_users)
+                    active_count = sync_ac_sessions(ac, mikrotik_sessions=active_users, api=api,)
                     active_counts[str(ac.id)] = active_count
 
                     active_lookup = build_active_lookup(active_users)

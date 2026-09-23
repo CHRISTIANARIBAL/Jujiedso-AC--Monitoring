@@ -72,7 +72,7 @@ function renderConnectionHistory(history) {
     history.forEach((item, index) => {
         const isActive = item.active;
         const historyRow = document.createElement("div");
-        historyRow.className = "grid grid-cols-2 gap-2";
+        historyRow.className = "grid grid-cols-1 gap-2";
         const upCard = document.createElement("div");
         upCard.className = "rounded-lg border border-blue-100 bg-blue-50 p-3";
         upCard.innerHTML = `
@@ -185,6 +185,8 @@ function resetClientModal() {
     setModalText("modal-ip", "-");
     setModalText("modal-status", "Loading...");
     setModalText("modal-active-ac", "-");
+    setModalText("modal-olt", "-");
+    setModalText("modal-olt-interface", "-");
     setModalText("modal-duration", "-");
     const historyContainer = document.getElementById("modal-connection-history");
     if (historyContainer) {
@@ -231,6 +233,9 @@ async function loadClientInfo(params) {
             renderConnectionHistory(data.connection_history || []);
             return;
         }
+        const connectionType = data.connection_type;
+        const connectionName = data.connection_name;
+        const connectionInterface = data.connection_interface;
         const isActive = !!data.active_ac;
         updateTrafficButton(isActive);
         setModalText("modal-username", data.username || "UNKNOWN");
@@ -238,6 +243,17 @@ async function loadClientInfo(params) {
         setModalText("modal-ip", data.ip || "No IP");
         setModalText("modal-status", isActive ? "ACTIVE" : "OFFLINE");
         setModalText("modal-active-ac", data.active_ac || "Currently offline");
+        setModalText(
+            "modal-olt",
+            connectionType && connectionName
+                ? `${connectionType}: ${connectionName}`
+                : data.olt_name || "Unknown connection"
+        );
+
+        setModalText(
+            "modal-olt-interface",
+            connectionInterface || data.olt_interface || "Unknown interface"
+        );
         setModalText("modal-duration", formatDuration(data.duration_seconds));
 
         renderConnectionHistory(data.connection_history || []);

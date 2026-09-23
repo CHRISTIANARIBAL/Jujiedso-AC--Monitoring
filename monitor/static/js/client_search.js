@@ -77,6 +77,9 @@ function renderSearchResult(client) {
                 <p class="mt-1 truncate text-[11px] text-gray-500">
                     ${client.mac || "No MAC"}
                 </p>
+                <p class="mt-1 truncate text-[11px] font-medium text-purple-600">
+                    OLT: ${client.olt_name || "Unknown OLT"}
+                </p>
             </div>
             <div class="shrink-0 text-right">
                 ${
@@ -101,18 +104,29 @@ function renderSearchResult(client) {
                 </p>
             </div>
         </div>
+        ${
+            client.olt_interface
+                ? `
+                    <p class="mt-2 truncate text-[10px] text-gray-400">
+                        ${client.olt_interface}
+                    </p>
+                `
+                : ""
+        }
     `;
 
     result.addEventListener("click", async function() {
         closeSearchResultsModal();
-        if (typeof window.openClientInfoFromLog !== "function") {
-            console.error("openClientInfoFromLog() is not available.");
+        if (typeof window.openClientInfoById !== "function") {
+            console.error("openClientInfoById() is not available.");
             return;
         }
-        await window.openClientInfoFromLog(client.username, client.mac);
+        await window.openClientInfoById(client.id);
     });
     return result;
 }
+
+
 async function performClientSearch(query) {
     showSearchLoading(query);
     openSearchModal();

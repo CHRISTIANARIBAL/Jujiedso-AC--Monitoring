@@ -1,19 +1,53 @@
 from django.utils import timezone
 from .models import *
-from .mikrotik_collector import get_active_sessions
+from .mikrotik_collector import get_connection_info
 
-def sync_ac_sessions(ac, mikrotik_sessions=None):
+
+def sync_ac_sessions(ac, mikrotik_sessions=None, api=None):
     if mikrotik_sessions is None:
-        mikrotik_sessions = get_active_sessions(ac)
+        raise ValueError("mikrotik_sessions is required")
+
     current_users = {}
+
+    pppoe_interfaces = []
+
+    if api is not None:
+        pppoe_interfaces = list(
+            api.path("interface", "pppoe-server").select(
+                "name",
+                "user",
+                "service",
+                "interface",
+            )
+        )
+
+    connection_map = {}
+
+    for row in pppoe_interfaces:
+        username = row.get("user")
+        interface = row.get("interface")
+
+        if username and interface:
+            connection_map[username] = interface
 
     for session in mikrotik_sessions:
         username = session.get("name")
+        mac = session.get("caller-id")
+
         if not username:
             continue
+
+        connection_interface = connection_map.get(username)
+        connection_type, connection_name = get_connection_info(
+            connection_interface
+        )
+
         current_users[username] = {
             "ip_address": session.get("address"),
-            "mac_address": session.get("caller-id"),
+            "mac_address": mac,
+            "connection_type": connection_type,
+            "connection_name": connection_name,
+            "connection_interface": connection_interface,
         }
 
     database_sessions = {
@@ -26,11 +60,40 @@ def sync_ac_sessions(ac, mikrotik_sessions=None):
 
     for username, data in current_users.items():
         if data["mac_address"]:
-            PPPoEClient.objects.update_or_create(
-                username=username,
-                mac_address=data["mac_address"],
-                ac=ac,
+            client = (
+                PPPoEClient.objects
+                .filter(
+                    username=username,
+                    ac=ac,
+                    mac_address=data["mac_address"].strip().upper(),
+                )
+                .order_by("-last_seen", "-id")
+                .first()
             )
+
+            if not client:
+                client = PPPoEClient.objects.create(
+                    username=username,
+                    mac_address=data["mac_address"].strip().upper(),
+                    ac=ac,
+                    connection_type=data["connection_type"],
+                    connection_name=data["connection_name"],
+                    connection_interface=data["connection_interface"],
+                )
+            else:
+                client.connection_type = data["connection_type"]
+                client.connection_name = data["connection_name"]
+                client.connection_interface = data["connection_interface"]
+                client.last_seen = timezone.now()
+                client.save(
+                    update_fields=[
+                        "connection_type",
+                        "connection_name",
+                        "connection_interface",
+                        "last_seen",
+                    ]
+                )
+
         if username not in database_sessions:
             PPPoESession.objects.create(
                 username=username,
