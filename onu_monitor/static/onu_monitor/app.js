@@ -6,7 +6,8 @@ const terminalStatus = document.getElementById("terminalStatus");
 
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
-const macInput = document.getElementById("mac");
+const lookupMode = document.getElementById("lookupMode");
+const lookupValue = document.getElementById("lookupValue");
 
 const lookupButton = document.getElementById("lookupButton");
 const resultContainer = document.getElementById("result");
@@ -45,13 +46,23 @@ function selectOLT(oltName) {
     writeTerminal("");
 
     terminalStatus.textContent = "READY";
-    macInput.value = "";
+    lookupValue.value = "";
 }
 
 oltButtons.forEach(button => {
     button.addEventListener("click", () => {
         selectOLT(button.dataset.olt);
     });
+});
+
+lookupMode.addEventListener("change", () => {
+    lookupValue.value = "";
+
+    if (lookupMode.value === "onu") {
+        lookupValue.placeholder = "ONU / PON (e.g. gpon0/2:27)";
+    } else {
+        lookupValue.placeholder = "MAC Address";
+    }
 });
 
 lookupButton.addEventListener("click", async () => {
@@ -62,7 +73,8 @@ lookupButton.addEventListener("click", async () => {
 
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
-    const mac = macInput.value.trim();
+    const mode = lookupMode.value;
+    const value = lookupValue.value.trim();
 
     if (!username) {
         alert("Enter the username.");
@@ -74,8 +86,12 @@ lookupButton.addEventListener("click", async () => {
         return;
     }
 
-    if (!mac) {
-        alert("Enter a MAC address.");
+    if (!value) {
+        alert(
+            mode === "onu"
+                ? "Enter an ONU / PON."
+                : "Enter a MAC address."
+        );
         return;
     }
 
@@ -86,7 +102,13 @@ lookupButton.addEventListener("click", async () => {
 
     writeTerminal(`OLT: ${selectedOLT}`);
     writeTerminal(`USERNAME: ${username}`);
-    writeTerminal(`MAC: ${mac}`);
+
+    if (mode === "onu") {
+        writeTerminal(`ONU: ${value}`);
+    } else {
+        writeTerminal(`MAC: ${value}`);
+    }
+
     writeTerminal("");
     writeTerminal("Starting lookup...");
     writeTerminal("");
@@ -101,7 +123,8 @@ lookupButton.addEventListener("click", async () => {
                 olt: selectedOLT,
                 username: username,
                 password: password,
-                mac: mac
+                mode: mode,
+                value: value
             })
         });
 
@@ -133,6 +156,33 @@ lookupButton.addEventListener("click", async () => {
 function displayResult(data) {
     const onu = data.onu || {};
     const optical = data.optical || {};
+
+    if (data.lookup_mode === "onu") {
+        resultContainer.innerHTML = `
+            <h3>ONU INFORMATION</h3>
+
+            <div class="result-grid">
+
+                <div class="result-item">
+                    <div class="result-label">MAC</div>
+                    <div class="result-value">${onu.mac || "-"}</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">ONU</div>
+                    <div class="result-value">${onu.onu || "-"}</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">INTERFACE</div>
+                    <div class="result-value">${onu.interface || "-"}</div>
+                </div>
+
+            </div>
+        `;
+
+        return;
+    }
 
     resultContainer.innerHTML = `
         <h3>ONU INFORMATION</h3>
