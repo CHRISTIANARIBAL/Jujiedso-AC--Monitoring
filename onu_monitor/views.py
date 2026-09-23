@@ -28,7 +28,8 @@ def get_olts(request):
 
 @csrf_exempt
 @require_POST
-def lookup(request):
+async def lookup(request):
+    print("DEBUG: ONU LOOKUP VIEW STARTED", flush=True)
     try:
         data = json.loads(request.body)
     except json.JSONDecodeError:
@@ -82,28 +83,26 @@ def lookup(request):
     olt = OLTS[olt_name]
 
     try:
+        print("DEBUG: CALLING OLT SERVICE", flush=True)
+
         if olt["brand"] == "VSOL":
-            result = asyncio.run(
-                run_vsol(
-                    olt_name,
-                    olt,
-                    username,
-                    password,
-                    value,
-                    lookup_mode
-                )
+            result = await run_vsol(
+                olt_name,
+                olt,
+                username,
+                password,
+                value,
+                lookup_mode
             )
 
         elif olt["brand"] == "BDCOM":
-            result = asyncio.run(
-                run_bdcom(
-                    olt_name,
-                    olt,
-                    username,
-                    password,
-                    value,
-                    lookup_mode
-                )
+            result = await run_bdcom(
+                olt_name,
+                olt,
+                username,
+                password,
+                value,
+                lookup_mode
             )
 
         else:
@@ -111,6 +110,8 @@ def lookup(request):
                 "success": False,
                 "error": "Unsupported OLT brand."
             }, status=400)
+
+        print("DEBUG: OLT SERVICE RETURNED", flush=True)
 
         return JsonResponse(result)
 
