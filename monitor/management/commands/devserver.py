@@ -21,12 +21,12 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS("PPPoE monitor started."))
 
             # Start ONU monitor
-            self.stdout.write(self.style.SUCCESS("Starting ONU monitor..."))
-            onu_process = subprocess.Popen([
-                sys.executable,
-                "OLT-Monitor/server.py",
-            ])
-            self.stdout.write(self.style.SUCCESS("ONU monitor started on port 5000."))
+            # self.stdout.write(self.style.SUCCESS("Starting ONU monitor..."))
+            # onu_process = subprocess.Popen([
+            #     sys.executable,
+            #     "OLT-Monitor/server.py",
+            # ])
+            # self.stdout.write(self.style.SUCCESS("ONU monitor started on port 5000."))
 
             # Start Django
             self.stdout.write(self.style.SUCCESS("Starting Django server..."))

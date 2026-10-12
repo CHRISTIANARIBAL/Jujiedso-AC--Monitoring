@@ -1,4 +1,4 @@
-# Python virtual environment
+# Python virtual environments
 env/
 venv/
 .venv/
@@ -7,26 +7,40 @@ venv/
 __pycache__/
 *.py[cod]
 
-# Environment / secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
 # Credentials
 cred.txt
+*.pem
+*.key
 
-# IDE
+# IDE and editor
 .vscode/
 .idea/
 
-db.sqlite3
+# Django databases and backups
 *.sqlite3
-# Django database
-db.sqlite3
+*.sqlite3-*
+*.sqlite3.*
+db.sqlite3*
+*.db
+
+# Raw monitoring logs
+monitor/management/raw_logs/
+
+# Python and Django generated files
+staticfiles/
+media/
+
 # OS files
 .DS_Store
 Thumbs.db
 
-# Django static files
-db.sqlite3.backup
-db.sqlite3.backup
+# Logs
+*.log
+
+# Confidential files
+hdfghfe.txt
