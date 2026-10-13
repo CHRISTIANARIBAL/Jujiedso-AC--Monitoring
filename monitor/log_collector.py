@@ -19,15 +19,31 @@ def normalize_mac(mac):
         return None
     return mac.strip().upper()
 
+
 def parse_log_timestamp(timestamp):
     if not timestamp:
         return timezone.now()
+
     if isinstance(timestamp, datetime):
+        if timezone.is_naive(timestamp):
+            return timezone.make_aware(
+                timestamp,
+                timezone.get_current_timezone()
+            )
         return timestamp
+
     try:
-        return datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
+        parsed_datetime = datetime.strptime(
+            timestamp,
+            "%Y-%m-%d %H:%M:%S"
+        )
+        return timezone.make_aware(
+            parsed_datetime,
+            timezone.get_current_timezone()
+        )
     except (ValueError, TypeError):
         return timezone.now()
+
 
 def make_log_hash(ac, timestamp, topics, message):
     raw = (

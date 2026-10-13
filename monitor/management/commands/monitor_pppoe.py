@@ -1,7 +1,8 @@
 import os
 import time
 import hashlib
-from datetime import datetime
+from datetime import datetime, timedelta
+from django.utils import timezone
 from django.core.management.base import BaseCommand
 from librouteros import connect
 from monitor.models import *
@@ -94,12 +95,95 @@ def save_new_raw_logs(ac, logs):
             file.write(line + "\n")
     return len(new_lines)
 
+RETENTION_DAYS = 7
+TRAFFIC_RETENTION_DAYS = 15
+CLEANUP_INTERVAL_SECONDS = 24 * 60 * 60
+
+
+def cleanup_old_raw_logs(retention_days=RETENTION_DAYS):
+    """Delete dated raw log files outside the current seven-calendar-day window."""
+    if not os.path.isdir(RAW_LOG_DIR):
+        return 0
+
+    # Keep today and the previous six calendar dates (seven dates total).
+    cutoff_date = timezone.localdate() - timedelta(days=retention_days - 1)
+    deleted_count = 0
+
+    for ac_name in os.listdir(RAW_LOG_DIR):
+        ac_directory = os.path.join(RAW_LOG_DIR, ac_name)
+        if not os.path.isdir(ac_directory):
+            continue
+
+        for filename in os.listdir(ac_directory):
+            if not filename.lower().endswith(".txt"):
+                continue
+
+            # Only delete files matching the collector's YYYY-MM-DD.txt format.
+            try:
+                log_date = datetime.strptime(filename, "%Y-%m-%d.txt").date()
+            except ValueError:
+                continue
+
+            if log_date < cutoff_date:
+                file_path = os.path.join(ac_directory, filename)
+                try:
+                    os.remove(file_path)
+                    deleted_count += 1
+                except FileNotFoundError:
+                    # Another process may have removed the file already.
+                    continue
+
+    return deleted_count
+
+
+def cleanup_old_history(
+    retention_days=RETENTION_DAYS,
+    traffic_retention_days=TRAFFIC_RETENTION_DAYS,
+):
+    """Keep raw logs/events for 7 days and traffic history for 15 days."""
+    deleted_raw_files = cleanup_old_raw_logs(retention_days)
+    event_cutoff = timezone.now() - timedelta(days=retention_days)
+    traffic_cutoff = timezone.now() - timedelta(days=traffic_retention_days)
+
+    deleted_events, _ = PPPoEEvent.objects.filter(
+        timestamp__lt=event_cutoff
+    ).delete()
+    deleted_traffic, _ = PPPoETrafficHistory.objects.filter(
+        timestamp__lt=traffic_cutoff
+    ).delete()
+
+    return deleted_events, deleted_traffic, deleted_raw_files
+
+
 class Command(BaseCommand):
     help = "Monitor active PPPoE sessions and MikroTik logs"
     def handle(self, *args, **options):
         self.stdout.write(self.style.SUCCESS("PPPoE monitoring started..."))
         connections = {}
+        last_cleanup = None
+
         while True:
+            # Run immediately at startup, then approximately once every 24 hours.
+            now_monotonic = time.monotonic()
+            if (
+                last_cleanup is None
+                or now_monotonic - last_cleanup >= CLEANUP_INTERVAL_SECONDS
+            ):
+                try:
+                    deleted_events, deleted_traffic, deleted_raw_files = cleanup_old_history()
+                    self.stdout.write(self.style.SUCCESS(
+                        "Retention cleanup completed: "
+                        f"{deleted_events} old events, "
+                        f"{deleted_traffic} old traffic samples, "
+                        f"{deleted_raw_files} old raw log files deleted."
+                    ))
+                except Exception as e:
+                    self.stdout.write(self.style.ERROR(
+                        f"Retention cleanup failed: {e}"
+                    ))
+                finally:
+                    last_cleanup = time.monotonic()
+
             active_counts = {}
             acs = AccessConcentrator.objects.filter(enabled=True)
 
