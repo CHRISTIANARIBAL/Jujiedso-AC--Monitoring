@@ -30,3 +30,5 @@ Thumbs.db
 # Django static files
 db.sqlite3.backup
 db.sqlite3.backup
+# Ignore generated raw monitoring logs
+monitor/management/raw_logs/
