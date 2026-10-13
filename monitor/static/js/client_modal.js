@@ -62,7 +62,7 @@ function renderConnectionHistory(history) {
     if (!history || history.length === 0) {
         container.innerHTML = `
             <div class="py-6 text-center">
-                <p class="text-sm text-gray-400">No connection history in the last 24 hours.</p>
+                <p class="text-sm text-gray-400">No connection history in the last 7 days.</p>
             </div>
         `;
         return;
@@ -455,90 +455,152 @@ function renderTrafficHistory(samples, forceReload = false) {
 
     // First load or range change: create the chart
     if (!trafficHistoryChart || forceReload) {
-        const options = {
-            chart: {
-                type: "area",
-                height: 260,
-                toolbar: {
-                    show: false,
-                },
-                zoom: {
-                    enabled: false,
-                },
-                animations: {
-                    enabled: true,
-                    dynamicAnimation: {
-                        enabled: true,
-                        speed: 300,
-                    },
-                },
+
+const options = {
+    chart: {
+        type: "area",
+        height: 300,
+        background: "#ffffff",
+        foreColor: "#64748b",
+        toolbar: {
+            show: false,
+        },
+        zoom: {
+            enabled: false,
+        },
+        animations: {
+            enabled: true,
+            dynamicAnimation: {
+                enabled: true,
+                speed: 300,
             },
-            series: [
-                {
-                    name: "Download (RX)",
-                    data: rxData,
-                },
-                {
-                    name: "Upload (TX)",
-                    data: txData,
-                },
-            ],
-            stroke: {
-                curve: "smooth",
-                width: 2,
-            },
-            fill: {
-                type: "gradient",
-                gradient: {
-                    opacityFrom: 0.35,
-                    opacityTo: 0.05,
-                },
-            },
-            dataLabels: {
-                enabled: false,
-            },
-            xaxis: {
-                type: "datetime",
-                labels: {
-                    datetimeUTC: false,
-                    style: {
-                        fontSize: "10px",
-                    },
-                },
-            },
-            yaxis: {
-                labels: {
-                    formatter: function(value) {
-                        return formatTraffic(value);
-                    },
-                    style: {
-                        fontSize: "10px",
-                    },
-                },
-            },
-            tooltip: {
-                x: {
-                    format: "MMM dd, HH:mm",
-                },
-                y: {
-                    formatter: function(value) {
-                        return formatTraffic(value);
-                    },
-                },
-            },
-            legend: {
-                position: "top",
-                horizontalAlign: "left",
+        },
+        parentHeightOffset: 0,
+    },
+
+    series: [
+        {
+            name: "Download (RX)",
+            data: rxData,
+        },
+        {
+            name: "Upload (TX)",
+            data: txData,
+        },
+    ],
+
+    colors: ["#3b82f6", "#22c55e"],
+
+    stroke: {
+        curve: "straight",
+        width: [1.5, 1.5],
+        lineCap: "round",
+    },
+
+    fill: {
+        type: "solid",
+        opacity: [0.25, 0.12],
+    },
+
+    dataLabels: {
+        enabled: false,
+    },
+
+    markers: {
+        size: 0,
+        hover: {
+            size: 4,
+        },
+    },
+
+    xaxis: {
+        type: "datetime",
+        tickAmount: 8,
+        axisBorder: {
+            show: true,
+            color: "#e2e8f0",
+        },
+        axisTicks: {
+            show: false,
+        },
+        labels: {
+            datetimeUTC: false,
+            style: {
+                colors: "#64748b",
                 fontSize: "11px",
             },
-            grid: {
-                borderColor: "#e5e7eb",
-                strokeDashArray: 3,
+        },
+    },
+
+    yaxis: {
+        min: 0,
+        forceNiceScale: true,
+        labels: {
+            formatter: function (value) {
+                return formatTraffic(value);
             },
-            noData: {
-                text: "No traffic history available",
+            style: {
+                colors: "#64748b",
+                fontSize: "11px",
             },
-        };
+        },
+    },
+
+
+tooltip: {
+    enabled: true,
+    theme: "light",
+    shared: true,
+    intersect: false,
+    followCursor: true,
+    x: {
+        formatter: function (value) {
+            return new Date(value).toLocaleTimeString("en-PH", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false,
+            });
+        },
+    },
+    y: {
+        formatter: function (value) {
+            return formatTraffic(value);
+        },
+    },
+},
+
+
+    legend: {
+        show: true,
+        position: "top",
+        horizontalAlign: "left",
+        fontSize: "11px",
+        markers: {
+            size: 4,
+        },
+    },
+
+    grid: {
+        borderColor: "#e2e8f0",
+        strokeDashArray: 0,
+        padding: {
+            left: 8,
+            right: 8,
+        },
+    },
+
+    noData: {
+        text: "No traffic history available",
+        align: "center",
+        verticalAlign: "middle",
+        style: {
+            color: "#64748b",
+            fontSize: "13px",
+        },
+    },
+};
+
 
         trafficHistoryChart = new ApexCharts(chartElement, options);
         trafficHistoryChart.render();
@@ -619,6 +681,7 @@ async function loadTrafficHistory(forceReload = false) {
             "12h": "Last 12 hours",
             "24h": "Last 24 hours",
             "7d": "Last 7 days",
+            "15d": "Last 15 days",
         };
 
         const rangeLabel = document.getElementById(

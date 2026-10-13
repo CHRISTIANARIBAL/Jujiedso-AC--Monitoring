@@ -36,6 +36,7 @@ def client_traffic_history(request):
         "12h": timedelta(hours=12),
         "24h": timedelta(hours=24),
         "7d": timedelta(days=7),
+        "15d": timedelta(days=15),
     }
 
     if range_value not in ranges:
@@ -123,7 +124,7 @@ def client_info(request):
     def build_connection_history(username, mac):
         if not mac:
             return []
-        since = timezone.now() - timedelta(hours=24)
+        since = timezone.now() - timedelta(days=7)
         events = list(
             PPPoEEvent.objects.filter(
                 mac_address=mac,
