@@ -4,11 +4,15 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 DEBUG = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    #"your-domain.com",
+    #"your-server-public-ip",
+    '*'
+]
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8000",
-    "https://localhost:8000",
-    "https://*.app.github.dev",
+    #"http://localhost:8000",
+    #"https://localhost:8000",
+    #"https://your-domain.com"
 ]
 INSTALLED_APPS = [
     'daphne',
@@ -98,3 +102,6 @@ STATICFILES_DIRS = [
 LOGIN_URL = "/login/"
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/login/"
+#CSRF_COOKIE_SECURE = True
+#SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True

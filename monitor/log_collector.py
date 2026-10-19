@@ -7,12 +7,18 @@ from monitor.models import PPPoESession, PPPoEEvent, PPPoEClient
 
 IGNORED_USERS = {
     "Dave",
-    "inasagan01rupentan"
+    "inasagan01rupentan",
+    "poblacion06tabudlongn",
+    "telecomadmin",
+    "admin",
 }
 IGNORED_MACS = {
     "70:28:0A:68:DA:1A",
     "70:28:0A:68:DA:1B",
-    "3C:52:A1:76:24:5F"
+    "3C:52:A1:76:24:5F",
+    "D4:7E:A9:68:AB:1A",
+    "3C:67:8C:39:E9:7F ",
+    "70:28:0A:68:DA:1C",
 }
 def normalize_mac(mac):
     if not mac:
