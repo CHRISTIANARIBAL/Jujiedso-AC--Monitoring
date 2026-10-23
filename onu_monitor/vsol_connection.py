@@ -22,7 +22,6 @@ class VSOLConnection:
         self.writer.write(self.password + "\r\n")
         # Give the OLT a moment to finish login
         await asyncio.sleep(1)
-        print("VSOL login successful.")
 
     async def close(self):
 
@@ -42,8 +41,6 @@ class VSOLConnection:
             self.writer = None
             self.reader = None
 
-            print("VSOL Telnet connection closed successfully.")
-            print("==========================================")
     async def enable(self, enable_password):
         self.writer.write("enable\r\n")
         output = ""

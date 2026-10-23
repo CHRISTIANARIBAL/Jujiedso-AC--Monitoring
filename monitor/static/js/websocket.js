@@ -9,31 +9,110 @@ socket.onopen = () => {
 socket.onmessage = (event) => {
     const data = JSON.parse(event.data);
     console.log("SERVER:", data);
-    if (data.type === "active_counts") {
-        const counts = data.counts || {};
-        let total = 0;
 
-        Object.entries(counts).forEach(([acId, count]) => {
-            const number = Number(count) || 0;
-            total += number;
-            const acCount =
-                document.getElementById(`ac-count-${acId}`);
-            const panelCount =
-                document.getElementById(`panel-count-${acId}`);
+if (data.type === "active_counts") {
+    const counts = data.counts || {};
+    let total = 0;
 
-            if (acCount) {
-                acCount.textContent = number;
-            }
-            if (panelCount) {
-                panelCount.textContent = `${number} users`;
-            }
-        });
-        const totalElement = document.getElementById("total-active-users");
-        if (totalElement) {
-            totalElement.textContent = total;
+    let savedCounts = {};
+
+    try {
+        savedCounts = JSON.parse(
+            localStorage.getItem("pppoe-monitor-last-counts-v1") || "{}"
+        );
+    } catch (error) {
+        console.warn("Could not read previous counts:", error);
+    }
+
+    const currentCounts = {};
+
+    function updateComparison(elementId, key, current) {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+
+        const previous = savedCounts[key];
+
+        if (previous === undefined || !Number.isFinite(Number(previous))) {
+            element.textContent = "Previous: --";
+            element.className = "mt-1 text-xs text-gray-500";
+            return;
+        }
+
+        const difference = current - Number(previous);
+
+        let change = "No change";
+        let color = "text-gray-500";
+
+        if (difference > 0) {
+            change = `↑ ${difference}`;
+            color = "text-green-600";
+        } else if (difference < 0) {
+            change = `↓ ${Math.abs(difference)}`;
+            color = "text-red-600";
+        }
+
+        element.textContent = `Previous: ${previous} · ${change}`;
+        element.className = `mt-1 text-xs font-medium ${color}`;
+    }
+
+    Object.entries(counts).forEach(([acId, count]) => {
+        const number = Number(count) || 0;
+        total += number;
+
+        currentCounts[`ac:${acId}`] = number;
+
+        const acCount = document.getElementById(`ac-count-${acId}`);
+        const panelCount = document.getElementById(`panel-count-${acId}`);
+
+        if (acCount) {
+            acCount.textContent = number;
+        }
+
+        if (panelCount) {
+            panelCount.textContent = `${number} users`;
+        }
+
+        updateComparison(
+            `ac-comparison-${acId}`,
+            `ac:${acId}`,
+            number
+        );
+    });
+
+    const totalElement = document.getElementById("total-active-users");
+
+    if (totalElement) {
+        totalElement.textContent = total;
+    }
+
+    updateComparison("total-active-comparison", "total", total);
+
+    // Save current values only after comparisons are calculated.
+    currentCounts.total = total;
+
+    try {
+        localStorage.setItem(
+            "pppoe-monitor-last-counts-v1",
+            JSON.stringify({
+                ...savedCounts,
+                ...currentCounts
+            })
+        );
+    } catch (error) {
+        console.warn("Could not save previous counts:", error);
+    }
+
+    return;
+}
+
+    if (data.type === "location_summary") {
+        if (typeof window.updateLocationSummary === "function") {
+            window.updateLocationSummary(data.locations || []);
         }
         return;
     }
+
+
 
     if (!data.event) {
         return;

@@ -101,7 +101,7 @@ lookupButton.addEventListener("click", async () => {
     clearTerminal();
 
     writeTerminal(`OLT: ${selectedOLT}`);
-    writeTerminal(`USERNAME: ${username}`);
+    // writeTerminal(`USERNAME: ${username}`);
 
     if (mode === "onu") {
         writeTerminal(`ONU: ${value}`);
@@ -114,10 +114,22 @@ lookupButton.addEventListener("click", async () => {
     writeTerminal("");
 
     try {
+        const csrfToken = document.cookie
+            .split("; ")
+            .find((cookie) => cookie.startsWith("csrftoken="))
+            ?.split("=")
+            .slice(1)
+            .join("=");
+
+        if (!csrfToken) {
+            throw new Error("CSRF token missing. Refresh the page and try again.");
+        }
+
         const response = await fetch("/onu/api/lookup/", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "X-CSRFToken": decodeURIComponent(csrfToken)
             },
             body: JSON.stringify({
                 olt: selectedOLT,

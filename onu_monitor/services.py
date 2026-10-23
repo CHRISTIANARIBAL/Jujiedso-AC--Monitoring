@@ -93,15 +93,8 @@ async def run_vsol(olt_name, olt, username, password, value, lookup_mode="mac"):
             if not mac:
                 return {"success": False, "terminal": "\n".join(terminal), "error": "MAC address not found for this ONU."}
 
-            print("DEBUG 1: MAC FOUND:", mac, flush=True)
-
             interface = onu.split(":")[0]
-
-            print("DEBUG 2: BEFORE PPPoE LOOKUP", flush=True)
-
             pppoe_clients = await find_pppoe_clients(mac)
-
-            print("DEBUG 3: AFTER PPPoE LOOKUP:", pppoe_clients, flush=True)
 
             return {
                 "success": True,
@@ -223,15 +216,8 @@ async def run_bdcom(olt_name, olt, username, password, value, lookup_mode="mac")
             if not mac:
                 return {"success": False, "terminal": "\n".join(terminal), "error": "MAC address not found for this ONU."}
 
-            print("DEBUG 1: MAC FOUND:", mac, flush=True)
-
             interface = onu.split(":")[0]
-
-            print("DEBUG 2: BEFORE PPPoE LOOKUP", flush=True)
-
             pppoe_clients = await find_pppoe_clients(mac)
-
-            print("DEBUG 3: AFTER PPPoE LOOKUP:", pppoe_clients, flush=True)
 
             return {
                 "success": True,

@@ -152,6 +152,3 @@ class BDCOMConnection:
 
             self.writer = None
             self.reader = None
-
-            print("BDCOM Telnet connection closed successfully.")
-            print("==========================================")

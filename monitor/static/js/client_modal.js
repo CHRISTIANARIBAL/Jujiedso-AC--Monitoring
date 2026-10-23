@@ -20,6 +20,34 @@ function formatDateTime(value) {
         second: "2-digit"
     });
 }
+
+
+function formatHistoryDate(value) {
+    if (!value) return "Unknown date";
+
+    const date = new Date(value);
+    if (isNaN(date.getTime())) return "Unknown date";
+
+    const today = new Date();
+    const yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
+
+    const isSameDay = (a, b) =>
+        a.getFullYear() === b.getFullYear() &&
+        a.getMonth() === b.getMonth() &&
+        a.getDate() === b.getDate();
+
+    if (isSameDay(date, today)) return "Today";
+    if (isSameDay(date, yesterday)) return "Yesterday";
+
+    return date.toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+    });
+}
+
 function formatRelativeTime(value) {
     if (!value) return "";
     const date = new Date(value);
@@ -33,14 +61,41 @@ function formatRelativeTime(value) {
     const days = Math.floor(hours / 24);
     return `${days} day${days === 1 ? "" : "s"} ago`;
 }
+
 function formatDuration(totalSeconds) {
-    if (totalSeconds === null || totalSeconds === undefined) return "No duration available";
-    totalSeconds = Math.max(0, Number(totalSeconds));
-    const hours = Math.floor(totalSeconds / 3600);
+    if (totalSeconds === null || totalSeconds === undefined) {
+        return "No duration available";
+    }
+
+    totalSeconds = Number(totalSeconds);
+
+    if (!Number.isFinite(totalSeconds)) {
+        return "No duration available";
+    }
+
+    totalSeconds = Math.max(0, Math.floor(totalSeconds));
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
     const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = totalSeconds % 60;
-    return `${hours} hour${hours === 1 ? "" : "s"} ${minutes} minute${minutes === 1 ? "" : "s"} ${seconds} second${seconds === 1 ? "" : "s"}`;
+
+    const parts = [];
+
+    if (days > 0) {
+        parts.push(`${days} day${days === 1 ? "" : "s"}`);
+    }
+
+    if (hours > 0) parts.push(`${hours}h`);
+    if (minutes > 0) parts.push(`${minutes}m`);
+
+    if (seconds > 0 || parts.length === 0) {
+        parts.push(`${seconds}s`);
+    }
+
+    return parts.join(" ");
 }
+
 function getDurationBetween(startValue, endValue) {
     if (!startValue || !endValue) return null;
     const start = new Date(startValue);
@@ -49,11 +104,18 @@ function getDurationBetween(startValue, endValue) {
     const seconds = Math.max(0, Math.floor((end - start) / 1000));
     return formatDuration(seconds);
 }
-function renderConnectionHistory(history) {
+
+let allConnectionHistory = [];
+function renderConnectionHistory(history, saveHistory = true) {
+    if (saveHistory) {
+        allConnectionHistory = history || [];
+        populateHistoryDateFilter();
+    }
     const container = document.getElementById("modal-connection-history");
     const historyCount = document.getElementById("modal-history-count");
 
     if (!container) return;
+
     if (historyCount) {
         const count = history ? history.length : 0;
         historyCount.textContent = `${count} connection${count === 1 ? "" : "s"}`;
@@ -69,12 +131,68 @@ function renderConnectionHistory(history) {
     }
 
     container.innerHTML = "";
+    let previousDateKey = null;
+
     history.forEach((item, index) => {
+        const dateValue = item.up_time || item.down_time;
+        const date = dateValue ? new Date(dateValue) : null;
+
+        const dateKey =
+            date && !isNaN(date.getTime())
+                ? `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+                : "unknown";
+
+        // Add a date header when the calendar date changes.
+        if (dateKey !== previousDateKey) {
+            const dateBlock = document.createElement("div");
+            dateBlock.className = "flex items-center gap-3 py-3";
+
+            let dateLabel = "Unknown date";
+
+            if (date && !isNaN(date.getTime())) {
+                const today = new Date();
+                const yesterday = new Date();
+                yesterday.setDate(today.getDate() - 1);
+
+                const isSameDay = (a, b) =>
+                    a.getFullYear() === b.getFullYear() &&
+                    a.getMonth() === b.getMonth() &&
+                    a.getDate() === b.getDate();
+
+                if (isSameDay(date, today)) {
+                    dateLabel = "Today";
+                } else if (isSameDay(date, yesterday)) {
+                    dateLabel = "Yesterday";
+                } else {
+                    dateLabel = date.toLocaleDateString("en-US", {
+                        weekday: "long",
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric"
+                    });
+                }
+            }
+
+            dateBlock.innerHTML = `
+                <div class="h-px flex-1 bg-gray-200"></div>
+                <div class="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-xs font-bold text-gray-600">
+                    ${dateLabel}
+                </div>
+                <div class="h-px flex-1 bg-gray-200"></div>
+            `;
+
+            container.appendChild(dateBlock);
+            previousDateKey = dateKey;
+        }
+
         const isActive = item.active;
+
         const historyRow = document.createElement("div");
         historyRow.className = "grid grid-cols-1 sm:grid-cols-2 gap-2";
+
         const upCard = document.createElement("div");
         upCard.className = "rounded-lg border border-blue-100 bg-blue-50 p-3";
+
         upCard.innerHTML = `
             <p class="text-[11px] font-semibold ${isActive ? "text-green-600" : "text-blue-600"}">
                 ${isActive ? "CURRENTLY ACTIVE" : "UPTIME"}
@@ -89,7 +207,7 @@ function renderConnectionHistory(history) {
                 </p>
             </div>
             <p class="mt-2 text-xs text-gray-500">
-                ${isActive ? "Connected for" : "Connected for"}
+                Connected for
                 <span class="font-semibold text-gray-700">
                     ${formatDuration(item.duration_seconds)}
                 </span>
@@ -97,18 +215,20 @@ function renderConnectionHistory(history) {
         `;
 
         const downCard = document.createElement("div");
+
         if (item.down_time) {
             downCard.className = "rounded-lg border border-red-100 bg-red-50 p-3";
 
-        const nextUpEntry = history.find(
+            const nextUpEntry = history.find(
                 entry =>
-                entry.up_time &&
-                new Date(entry.up_time) > new Date(item.down_time)
-        );
-        const nextUpTime = nextUpEntry ? nextUpEntry.up_time : null;
-        const downDuration = getDurationBetween(item.down_time, nextUpTime);
-        
-        downCard.innerHTML = `
+                    entry.up_time &&
+                    new Date(entry.up_time) > new Date(item.down_time)
+            );
+
+            const nextUpTime = nextUpEntry ? nextUpEntry.up_time : null;
+            const downDuration = getDurationBetween(item.down_time, nextUpTime);
+
+            downCard.innerHTML = `
                 <p class="text-[11px] font-semibold text-red-600">
                     DOWNTIME
                 </p>
@@ -165,6 +285,7 @@ function renderConnectionHistory(history) {
         historyRow.appendChild(upCard);
         historyRow.appendChild(downCard);
         container.appendChild(historyRow);
+
         if (index < history.length - 1) {
             const separator = document.createElement("div");
             separator.className =
@@ -174,6 +295,7 @@ function renderConnectionHistory(history) {
         }
     });
 }
+
 function resetClientModal() {
     if (modalError) {
         modalError.classList.add("hidden");
@@ -184,6 +306,7 @@ function resetClientModal() {
     setModalText("modal-mac", "-");
     setModalText("modal-ip", "-");
     setModalText("modal-status", "Loading...");
+    setModalText("modal-plan", "Loading...");
     setModalText("modal-active-ac", "-");
     setModalText("modal-olt", "-");
     setModalText("modal-olt-interface", "-");
@@ -201,16 +324,30 @@ function resetClientModal() {
         historyCount.textContent = "0 events";
     }
 }
+
 function openClientModal() {
+    if (window.ModalNavigation) {
+        window.ModalNavigation.open("client-modal");
+        return;
+    }
+
     if (!clientModal) return;
     clientModal.classList.remove("hidden");
     clientModal.classList.add("flex");
 }
+
 function closeModal() {
+    if (window.ModalNavigation) {
+        window.ModalNavigation.back();
+        return;
+    }
+
     if (!clientModal) return;
+
     clientModal.classList.add("hidden");
     clientModal.classList.remove("flex");
 }
+
 function showModalError(message) {
     if (!modalError) return;
     modalError.textContent = message;
@@ -242,6 +379,8 @@ async function loadClientInfo(params) {
         setModalText("modal-mac", data.mac || "No MAC");
         setModalText("modal-ip", data.ip || "No IP");
         setModalText("modal-status", isActive ? "ACTIVE" : "OFFLINE");
+        const planLabel = data.bandwidth_mbps ? `${data.plan} — ${data.bandwidth_mbps} Mbps` : (data.plan || "Unknown plan");
+        setModalText("modal-plan", planLabel);
         setModalText("modal-active-ac", data.active_ac || "Currently offline");
         setModalText(
             "modal-olt",
@@ -273,13 +412,31 @@ async function openClientInfoFromLog(username, mac) {
 
     await loadClientInfo({ q: searchValue });
 }
-async function openClientInfoById(clientId) {
+
+
+async function openClientInfoById(clientId, options = {}) {
     if (!clientId) {
         console.warn("No client ID supplied.");
         return;
     }
+
+    // clientModalReturnToDown = options.fromDownList === true;
+
+    // const backButton = document.getElementById(
+    //     "back-to-down-clients"
+    // );
+
+    // if (backButton) {
+    //     backButton.classList.toggle(
+    //         "hidden",
+    //         !clientModalReturnToDown
+    //     );
+    // }
+
     await loadClientInfo({ id: clientId });
 }
+
+
 document.addEventListener("click", function(event) {
     const logEntry = event.target.closest(".log-entry");
     if (!logEntry) return;
@@ -299,11 +456,6 @@ if (clientModal) {
         }
     });
 }
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        closeModal();
-    }
-});
 
 window.openClientInfoFromLog = openClientInfoFromLog;
 window.openClientInfoById = openClientInfoById;
@@ -313,6 +465,115 @@ window.formatDateTime = formatDateTime;
 window.formatRelativeTime = formatRelativeTime;
 window.formatDuration = formatDuration;
 window.renderConnectionHistory = renderConnectionHistory;
+
+
+function getHistoryDateKey(value) {
+    if (!value) return null;
+
+    const date = new Date(value);
+    if (isNaN(date.getTime())) return null;
+
+    return [
+        date.getFullYear(),
+        String(date.getMonth() + 1).padStart(2, "0"),
+        String(date.getDate()).padStart(2, "0")
+    ].join("-");
+}
+
+function formatHistoryDateLabel(dateKey) {
+    if (!dateKey) return "Unknown date";
+
+    const [year, month, day] = dateKey.split("-").map(Number);
+    const date = new Date(year, month - 1, day);
+    const today = new Date();
+    const yesterday = new Date();
+    yesterday.setDate(today.getDate() - 1);
+
+    const sameDay = (a, b) =>
+        a.getFullYear() === b.getFullYear() &&
+        a.getMonth() === b.getMonth() &&
+        a.getDate() === b.getDate();
+
+    if (sameDay(date, today)) return "Today";
+    if (sameDay(date, yesterday)) return "Yesterday";
+
+    return date.toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+    });
+}
+
+function initializeHistoryFilters() {
+    const dateFilter = document.getElementById("history-date-filter");
+
+    if (!dateFilter) return;
+
+    if (dateFilter.dataset.initialized !== "true") {
+        dateFilter.dataset.initialized = "true";
+
+        dateFilter.addEventListener("change", () => {
+            applyHistoryDateFilter();
+        });
+    }
+
+    populateHistoryDateFilter();
+}
+
+function populateHistoryDateFilter() {
+    const dateFilter = document.getElementById("history-date-filter");
+    if (!dateFilter) return;
+
+    const previousValue = dateFilter.value || "all";
+    const dates = new Set();
+
+    allConnectionHistory.forEach(item => {
+        const upDate = getHistoryDateKey(item.up_time);
+        const downDate = getHistoryDateKey(item.down_time);
+
+        if (upDate) dates.add(upDate);
+        if (downDate) dates.add(downDate);
+    });
+
+    dateFilter.innerHTML = "";
+
+    const allOption = document.createElement("option");
+    allOption.value = "all";
+    allOption.textContent = "All available dates";
+    dateFilter.appendChild(allOption);
+
+    [...dates].sort().reverse().forEach(dateKey => {
+        const option = document.createElement("option");
+        option.value = dateKey;
+        option.textContent = formatHistoryDateLabel(dateKey);
+        dateFilter.appendChild(option);
+    });
+
+    dateFilter.value = dates.has(previousValue) || previousValue === "all"
+        ? previousValue
+        : "all";
+}
+
+function applyHistoryDateFilter() {
+    const dateFilter = document.getElementById("history-date-filter");
+    if (!dateFilter) return;
+
+    const selectedDate = dateFilter.value;
+
+    const filteredHistory = allConnectionHistory.filter(item => {
+        if (selectedDate === "all") return true;
+
+        return (
+            getHistoryDateKey(item.up_time) === selectedDate ||
+            getHistoryDateKey(item.down_time) === selectedDate
+        );
+    });
+
+    renderConnectionHistory(filteredHistory, false);
+}
+
+initializeHistoryFilters();
 
 
 // ============================================================
@@ -923,8 +1184,12 @@ function openTrafficModal(username) {
         trafficUsername.textContent = username;
     }
 
-    trafficModal.classList.remove("hidden");
-    trafficModal.classList.add("flex");
+    if (window.ModalNavigation) {
+        window.ModalNavigation.open("traffic-modal");
+    } else {
+        trafficModal.classList.remove("hidden");
+        trafficModal.classList.add("flex");
+    }
 
     // Stop previous polling
     if (trafficInterval) {
@@ -946,6 +1211,27 @@ function openTrafficModal(username) {
 
 
 // ------------------------------------------------------------
+// Traffic modal cleanup
+// Runs when closed by Back, Escape, or closeAll()
+// ------------------------------------------------------------
+
+if (trafficModal) {
+    trafficModal.addEventListener("modal:before-close", () => {
+        if (trafficInterval) {
+            clearInterval(trafficInterval);
+            trafficInterval = null;
+        }
+
+        if (trafficHistoryInterval) {
+            clearInterval(trafficHistoryInterval);
+            trafficHistoryInterval = null;
+        }
+
+        currentTrafficUsername = null;
+    });
+}
+
+// ------------------------------------------------------------
 // Close traffic modal
 // ------------------------------------------------------------
 
@@ -962,7 +1248,9 @@ function closeTrafficModal() {
 
     currentTrafficUsername = null;
 
-    if (trafficModal) {
+    if (window.ModalNavigation) {
+        window.ModalNavigation.back();
+    } else if (trafficModal) {
         trafficModal.classList.add("hidden");
         trafficModal.classList.remove("flex");
     }
@@ -1031,30 +1319,6 @@ if (trafficModal) {
         }
     );
 }
-
-
-// ------------------------------------------------------------
-// ESC closes traffic modal
-// ------------------------------------------------------------
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (event.key === "Escape") {
-
-            if (
-                trafficModal &&
-                !trafficModal.classList.contains("hidden")
-            ) {
-                closeTrafficModal();
-            }
-
-        }
-
-    }
-);
-
 
 // ------------------------------------------------------------
 // Enable / disable traffic button based on client status

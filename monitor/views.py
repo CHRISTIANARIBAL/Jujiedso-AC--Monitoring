@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.db.models import Q
 from django.http import JsonResponse, Http404
 from monitor.models import AccessConcentrator
@@ -12,7 +12,9 @@ from django.contrib.auth.decorators import login_required
 from librouteros import connect
 from monitor.crypto import decrypt_password
 from monitor.models import AccessConcentrator
-
+from librouteros.query import Key
+from monitor.log_collector import IGNORED_USERS, IGNORED_MACS
+from monitor.location_detection import get_location_summary
 
 RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
@@ -101,7 +103,7 @@ def dashboard(request):
             "ac": ac,
             "active_users": active_users,
         })
-    events = PPPoEEvent.objects.select_related("ac")
+    events = (PPPoEEvent.objects.select_related("ac").exclude(username__in=IGNORED_USERS).exclude(mac_address__in=IGNORED_MACS))
 
     if query:
         events = events.filter(Q(username__icontains=query) | Q(mac_address__icontains=query) | Q(ip_address__icontains=query))
@@ -205,6 +207,11 @@ def client_info(request):
             .first()
         )
 
+        plan_data = get_client_plan(
+            username,
+            session.ac if session and session.active else client.ac,
+        )
+
         login_event = (
             PPPoEEvent.objects
             .filter(
@@ -254,11 +261,18 @@ def client_info(request):
                 duration_seconds = 0
 
         connection_history = build_connection_history(username, mac)
-
+        plan_data = get_client_plan(
+            username,
+            session.ac if session and session.active else client.ac,
+        )
         return JsonResponse({
             "found": True,
             "username": username or "UNKNOWN",
             "mac": mac or "No MAC",
+
+            "plan": plan_data["plan"],
+            "max_limit": plan_data["max_limit"],
+            "bandwidth_mbps": plan_data["bandwidth_mbps"],
 
             # New generic connection fields
             "connection_type": client.connection_type,
@@ -402,6 +416,12 @@ def client_info(request):
 
     connection_history = build_connection_history(username, mac)
 
+    plan_data = get_client_plan(
+        username,
+        session.ac if session and session.active else (
+            active_ac or (client.ac if client else None)
+        ),
+    )
     return JsonResponse({
         "found": True,
         "username": username or "UNKNOWN",
@@ -416,6 +436,10 @@ def client_info(request):
         ),
         "duration_seconds": duration_seconds,
         "active_ac": active_ac.name if active_ac else None,
+
+        "plan": plan_data["plan"],
+        "max_limit": plan_data["max_limit"],
+        "bandwidth_mbps": plan_data["bandwidth_mbps"],
 
         # Generic connection information
         "connection_type": client.connection_type if client else None,
@@ -445,14 +469,12 @@ def test_broadcast(request):
 @login_required
 def raw_logs(request):
     raw_log_dir = get_raw_log_directory()
-    print("RAW LOG DIRECTORY:", raw_log_dir)
 
     ac_logs = []
     acs = AccessConcentrator.objects.filter(enabled=True).order_by("id")
 
     for ac in acs:
         ac_directory = os.path.join(raw_log_dir, ac.name)
-        print("CHECKING:", ac_directory)
 
         files = []
 
@@ -493,10 +515,6 @@ def raw_logs(request):
 def raw_log_viewer(request, ac_name, filename):
     ac_directory = os.path.join(RAW_LOG_DIR, ac_name)
     file_path = os.path.join(ac_directory, filename)
-    print("RAW LOG VIEWER:")
-    print("AC:", ac_name)
-    print("FILE:", filename)
-    print("PATH:", file_path)
 
     if not os.path.isfile(file_path):
         raise Http404("Log file not found.")
@@ -714,7 +732,6 @@ def client_traffic(request):
         })
 
     except Exception as e:
-        print("TRAFFIC ERROR:", e)
 
         return JsonResponse({
             "found": False,
@@ -727,3 +744,115 @@ def client_traffic(request):
                 api.close()
             except Exception:
                 pass
+
+
+def get_client_plan(username, ac):
+    """Read a PPPoE client's Simple Queue and map its max-limit to a plan."""
+    if not username or not ac:
+        return {
+            "plan": "Unknown plan",
+            "max_limit": None,
+            "bandwidth_mbps": None,
+        }
+
+    api = None
+
+    try:
+        password = decrypt_password(ac.encrypted_password)
+        api = connect(
+            username=ac.username,
+            password=password,
+            host=ac.ip_address,
+            port=8728,
+        )
+
+        queue_name = f"<pppoe-{username}>"
+        queues = list(api.path("/queue/simple").select(Key("name"), Key("max-limit")).where(Key("name") == queue_name))
+
+        if not queues:
+            return {
+                "plan": "Unknown plan",
+                "max_limit": None,
+                "bandwidth_mbps": None,
+            }
+
+        max_limit = queues[0].get("max-limit", "")
+        normalized = str(max_limit).replace(" ", "").lower()
+        if normalized in ("1000/1000", "1k/1k"): return {"plan": "Disconnected", "max_limit": max_limit, "bandwidth_mbps": None}
+
+        plans = {
+            "10240k/10240k": ("Sparrow", 10),
+            "10240000/10240000": ("Sparrow", 10),
+
+            "20480k/20480k": ("Falcon", 20),
+            "20480000/20480000": ("Falcon", 20),
+
+            "30720k/30720k": ("Hawk", 30),
+            "30720000/30720000": ("Hawk", 30),
+
+            "40960k/40960k": ("Phoenix", 40),
+            "40960000/40960000": ("Phoenix", 40),
+        }
+
+        plan_info = plans.get(normalized)
+
+        if not plan_info:
+            return {
+                "plan": "Unknown plan",
+                "max_limit": max_limit or None,
+                "bandwidth_mbps": None,
+            }
+
+        return {
+            "plan": plan_info[0],
+            "max_limit": max_limit,
+            "bandwidth_mbps": plan_info[1],
+        }
+
+    except Exception:
+        # A plan lookup failure should not break the client modal.
+        return {
+            "plan": "Unavailable",
+            "max_limit": None,
+            "bandwidth_mbps": None,
+        }
+
+    finally:
+        if api is not None:
+            try:
+                api.close()
+            except Exception:
+                pass
+
+
+@login_required
+def location_summary_api(request):
+    locations = get_location_summary()
+
+    return JsonResponse({
+        "locations": locations,
+        "total_locations": len(locations),
+        "total_clients": sum(item["total"] for item in locations),
+        "total_online": sum(item["online"] for item in locations),
+        "total_down": sum(item["down"] for item in locations),
+    })
+
+
+@login_required
+def profile_view(request):
+    profile, created = UserProfile.objects.get_or_create(
+        user=request.user
+    )
+
+    if request.method == "POST":
+        if "profile_picture" in request.FILES:
+            profile.profile_picture = request.FILES["profile_picture"]
+            profile.save(update_fields=["profile_picture"])
+
+        return redirect("profile")
+
+    return render(
+        request,
+        "monitor/profile.html",
+        {"profile": profile},
+    )

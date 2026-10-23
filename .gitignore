@@ -44,3 +44,26 @@ Thumbs.db
 
 # Confidential files
 hdfghfe.txt
+# Database backups
+backups/
+*.dump
+
+.env
+.env.*
+!.env.example
+!.env.docker.example
+# Local Docker exports and backups
+old-web-container.tar
+profile-pictures-backup.tar.gz
+compose.yaml.before-nginx
+*.bak
+resource_processes_*.csv
+resource_samples_*.csv
+resource_summary_*.csv
+
+# Local Nginx configuration backups
+nginx/*.backup-*
+nginx/*.before-*
+
+# Local patch/diff notes
+/e build web

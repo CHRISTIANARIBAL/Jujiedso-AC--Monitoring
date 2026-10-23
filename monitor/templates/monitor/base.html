@@ -40,22 +40,106 @@
         <span class="hidden text-sm font-medium text-gray-600 sm:inline">Monitoring Active</span>
     </div>
 
-    {% if user.is_authenticated %}
-        <div class="flex items-center gap-2 border-l border-gray-200 pl-3">
-            <span class="hidden text-xs font-medium text-gray-600 sm:inline">
-                Hello <b>{{ user.username }}</b>
-            </span>
 
-            <form method="post" action="{% url 'logout' %}">
-                {% csrf_token %}
-                <button
-                    type="submit"
-                    class="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs font-medium text-red-600 transition hover:bg-red-100 hover:text-red-700">
-                    Logout
-                </button>
-            </form>
+    {% if user.is_authenticated %}
+        <div class="relative border-l border-gray-200 pl-3"
+            id="profile-menu-container">
+
+            <button
+                type="button"
+                id="profile-menu-button"
+                aria-expanded="false"
+                aria-controls="profile-menu"
+                class="flex items-center gap-2 rounded-xl px-2 py-1.5 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <div class="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-gray-200 bg-gray-100">
+                    {% if user.profile.profile_picture %}
+                        <img
+                            src="{{ user.profile.profile_picture.url }}"
+                            alt="Profile picture"
+                            class="h-full w-full object-cover">
+                    {% else %}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            class="h-6 w-6 text-gray-400">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.1a8.25 8.25 0 0 1 15 0A17.9 17.9 0 0 1 12 21.75c-2.7 0-5.25-.6-7.5-1.65Z"/>
+                        </svg>
+                    {% endif %}
+                </div>
+
+                <span class="hidden text-xs font-medium text-gray-600 sm:inline">
+                    Hello <b>{{ user.username }}</b>
+                </span>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-4 w-4 text-gray-400">
+                    <path fill-rule="evenodd"
+                        d="M5.22 7.22a.75.75 0 0 1 1.06 0L10 10.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 8.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"/>
+                </svg>
+            </button>
+
+            <div
+                id="profile-menu"
+                class="absolute right-0 top-full z-50 mt-2 hidden w-56 overflow-hidden rounded-xl border border-gray-200 bg-white py-2 shadow-lg">
+
+                <div class="border-b border-gray-100 px-4 py-3">
+                    <p class="truncate text-sm font-semibold text-gray-900">
+                        {{ user.username }}
+                    </p>
+                    <p class="truncate text-xs text-gray-500">
+                        {{ user.email|default:"No email address set" }}
+                    </p>
+                </div>
+
+                <a href="{% url 'profile' %}"
+                class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 transition hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        class="h-5 w-5 text-gray-500">
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.1a8.25 8.25 0 0 1 15 0A17.9 17.9 0 0 1 12 21.75c-2.7 0-5.25-.6-7.5-1.65Z"/>
+                    </svg>
+                    My Profile
+                </a>
+
+                <div class="my-1 border-t border-gray-100"></div>
+
+                <form method="post" action="{% url 'logout' %}">
+                    {% csrf_token %}
+                    <button type="submit"
+                        class="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-red-600 transition hover:bg-red-50">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            class="h-5 w-5">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6A2.25 2.25 0 0 0 5.25 5.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3-3H9m0 0 3-3m-3 3 3 3"/>
+                        </svg>
+                        Logout
+                    </button>
+                </form>
+            </div>
         </div>
     {% endif %}
+
 </div>
             </div>
         </nav>
@@ -74,5 +158,42 @@
             </div>
         </footer>
     </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("profile-menu-button");
+    const menu = document.getElementById("profile-menu");
+    const container = document.getElementById("profile-menu-container");
+
+    if (!button || !menu || !container) return;
+
+    function closeMenu() {
+        menu.classList.add("hidden");
+        button.setAttribute("aria-expanded", "false");
+    }
+
+    button.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        const isOpen = !menu.classList.contains("hidden");
+
+        menu.classList.toggle("hidden", isOpen);
+        button.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!container.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeMenu();
+            button.focus();
+        }
+    });
+});
+</script>
 </body>
 </html>

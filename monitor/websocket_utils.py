@@ -16,3 +16,15 @@ def broadcast_active_counts(counts):
             "counts": counts,
         },
     )
+
+
+def broadcast_location_summary(locations):
+    channel_layer = get_channel_layer()
+
+    async_to_sync(channel_layer.group_send)(
+        "pppoe_monitor",
+        {
+            "type": "location_summary",
+            "locations": locations,
+        },
+    )

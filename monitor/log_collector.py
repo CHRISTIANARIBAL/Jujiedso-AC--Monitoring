@@ -3,6 +3,7 @@ import re
 from datetime import timedelta, datetime
 from django.utils import timezone
 from monitor.websocket_utils import broadcast_pppoe_event
+from django.db import IntegrityError, transaction
 from monitor.models import PPPoESession, PPPoEEvent, PPPoEClient
 
 IGNORED_USERS = {
@@ -135,7 +136,6 @@ def find_client_by_mac(ac, mac):
     return (PPPoEClient.objects.filter(ac=ac, mac_address__iexact=mac).order_by("-last_seen").first())
 
 def broadcast_event(event):
-    print("WS BROADCAST:", event.event_type, event.username, event.mac_address)
     broadcast_pppoe_event({
         "event": event.event_type,
         "username": event.username,
@@ -145,7 +145,19 @@ def broadcast_event(event):
         "timestamp": event.timestamp.isoformat() if event.timestamp else None,
         "message": event.raw_message,
     })
-    print("WS BROADCAST SENT")
+
+def create_event_once(**event_data):
+    """
+    Create an event only if its unique log_hash has not already been stored.
+    Return the event if created, or None if another worker already stored it.
+    """
+    try:
+        with transaction.atomic():
+            event = PPPoEEvent.objects.create(**event_data)
+        return event
+    except IntegrityError:
+        # The unique log_hash constraint prevents duplicate events.
+        return None
     
 def process_logs(ac, logs, active_lookup):
     created_count = 0
@@ -209,7 +221,7 @@ def process_logs(ac, logs, active_lookup):
             if client:
                 username = client.username
         if event_type == PPPoEEvent.AUTH_FAILURE:
-            event = PPPoEEvent.objects.create(
+            event = create_event_once(
                 username=username,
                 ac=ac,
                 event_type=event_type,
@@ -219,14 +231,10 @@ def process_logs(ac, logs, active_lookup):
                 timestamp=event_timestamp,
                 log_hash=log_hash,
             )
+            if event is None:
+                continue
             broadcast_event(event)
             created_count += 1
-            print(
-                f"EVENT: "
-                f"{event_type} | "
-                f"{username or 'UNKNOWN'} | "
-                f"{mac or 'NO MAC'}"
-            )
             continue
 
         if event_type in (
@@ -234,7 +242,7 @@ def process_logs(ac, logs, active_lookup):
             PPPoEEvent.CONNECTION,
         ):
             if not username:
-                event = PPPoEEvent.objects.create(
+                event = create_event_once(
                     username=None,
                     ac=ac,
                     event_type=event_type,
@@ -244,14 +252,11 @@ def process_logs(ac, logs, active_lookup):
                     timestamp=event_timestamp,
                     log_hash=log_hash,
                 )
+                if event is None:
+                    continue
                 broadcast_event(event)
                 created_count += 1
-                print(
-                    f"EVENT: "
-                    f"{event_type} | "
-                    f"UNKNOWN | "
-                    f"{mac or 'NO MAC'}"
-                )
+
                 continue
 
             if event_type == PPPoEEvent.CONNECTION:
@@ -266,7 +271,7 @@ def process_logs(ac, logs, active_lookup):
                     "timestamp": event_timestamp,
                     "mac": mac,
                 }
-                event = PPPoEEvent.objects.create(
+                event = create_event_once(
                     username=username,
                     ac=ac,
                     event_type=PPPoEEvent.LOGIN,
@@ -276,18 +281,16 @@ def process_logs(ac, logs, active_lookup):
                     timestamp=event_timestamp,
                     log_hash=log_hash,
                 )
+                if event is None:
+                    continue
                 broadcast_event(event)
                 created_count += 1
-                print(
-                    f"EVENT: LOGIN | "
-                    f"{username} | "
-                    f"{mac or 'NO MAC'}"
-                )
+
                 continue
         # LOGOUT
         if event_type == PPPoEEvent.LOGOUT:
             if not username:
-                event = PPPoEEvent.objects.create(
+                event = create_event_once(
                     username=None,
                     ac=ac,
                     event_type=event_type,
@@ -297,13 +300,11 @@ def process_logs(ac, logs, active_lookup):
                     timestamp=event_timestamp,
                     log_hash=log_hash,
                 )
+                if event is None:
+                    continue
                 broadcast_event(event)
                 created_count += 1
-                print(
-                    f"EVENT: LOGOUT | "
-                    f"UNKNOWN | "
-                    f"{mac or 'NO MAC'}"
-                )
+
                 continue
 
             previous_logout = recent_logouts.get(username)
@@ -316,7 +317,7 @@ def process_logs(ac, logs, active_lookup):
                 "timestamp": event_timestamp,
                 "mac": mac,
             }
-            event = PPPoEEvent.objects.create(
+            event = create_event_once(
                 username=username,
                 ac=ac,
                 event_type=PPPoEEvent.LOGOUT,
@@ -326,19 +327,17 @@ def process_logs(ac, logs, active_lookup):
                 timestamp=event_timestamp,
                 log_hash=log_hash,
             )
+            if event is None:
+                continue
             broadcast_event(event)
             created_count += 1
-            print(
-                f"EVENT: LOGOUT | "
-                f"{username} | "
-                f"{mac or 'NO MAC'}"
-            )
+
             continue
 
         if event_type == PPPoEEvent.OTHER:
             if (username and "terminating" in message.lower()):
                 continue
-            event = PPPoEEvent.objects.create(
+            event = create_event_once(
                 username=username,
                 ac=ac,
                 event_type=event_type,
@@ -348,11 +347,9 @@ def process_logs(ac, logs, active_lookup):
                 timestamp=event_timestamp,
                 log_hash=log_hash,
             )
+            if event is None:
+                continue
             broadcast_event(event)
             created_count += 1
-            print(
-                f"EVENT: OTHER | "
-                f"{username or 'UNKNOWN'} | "
-                f"{mac or 'NO MAC'}"
-            )
+
     return created_count

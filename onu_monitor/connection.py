@@ -14,8 +14,6 @@ class TelnetConnection:
             self.port
         )
 
-        print(f"Connected to {self.host}")
-
     async def send_command(self, command):
         self.writer.write(command + "\r\n")
         output = await self.reader.read(4096)

@@ -1,6 +1,8 @@
 import os
 import time
 import hashlib
+import threading
+import logging
 from datetime import datetime, timedelta
 from django.utils import timezone
 from django.core.management.base import BaseCommand
@@ -8,9 +10,13 @@ from librouteros import connect
 from monitor.models import *
 from monitor.session_sync import sync_ac_sessions
 from monitor.log_collector import build_active_lookup, process_logs
-from monitor.websocket_utils import broadcast_active_counts
+from monitor.live_log_listener import start_listener_thread
+from monitor.live_log_state import update_active_lookup
+from monitor.websocket_utils import (broadcast_active_counts, broadcast_location_summary)
+from monitor.location_detection import get_location_summary
 from monitor.crypto import decrypt_password
 
+logger = logging.getLogger(__name__)
 RAW_LOG_DIR = os.path.join(
     os.path.dirname(
         os.path.dirname(os.path.abspath(__file__))
@@ -158,9 +164,17 @@ def cleanup_old_history(
 class Command(BaseCommand):
     help = "Monitor active PPPoE sessions and MikroTik logs"
     def handle(self, *args, **options):
-        self.stdout.write(self.style.SUCCESS("PPPoE monitoring started..."))
+        print(
+            "MONITOR PID:", os.getpid(),
+            "PARENT:", os.getppid(),
+            "DJANGO_AUTORELOAD_ENV:",
+            os.environ.get("DJANGO_AUTORELOAD_ENV"),
+        )
+        # self.stdout.write(self.style.SUCCESS("PPPoE monitoring started..."))
         connections = {}
         last_cleanup = None
+        listener_stop_event = threading.Event()
+        listener_threads = {}
 
         while True:
             # Run immediately at startup, then approximately once every 24 hours.
@@ -171,12 +185,12 @@ class Command(BaseCommand):
             ):
                 try:
                     deleted_events, deleted_traffic, deleted_raw_files = cleanup_old_history()
-                    self.stdout.write(self.style.SUCCESS(
-                        "Retention cleanup completed: "
-                        f"{deleted_events} old events, "
-                        f"{deleted_traffic} old traffic samples, "
-                        f"{deleted_raw_files} old raw log files deleted."
-                    ))
+                    # self.stdout.write(self.style.SUCCESS(
+                    #     "Retention cleanup completed: "
+                    #     f"{deleted_events} old events, "
+                    #     f"{deleted_traffic} old traffic samples, "
+                    #     f"{deleted_raw_files} old raw log files deleted."
+                    # ))
                 except Exception as e:
                     self.stdout.write(self.style.ERROR(
                         f"Retention cleanup failed: {e}"
@@ -187,16 +201,32 @@ class Command(BaseCommand):
             active_counts = {}
             acs = AccessConcentrator.objects.filter(enabled=True)
 
+
             for ac in acs:
                 try:
+                    # Start one live log listener for each enabled AC.
+                    listener_thread = listener_threads.get(ac.id)
+
+                    if listener_thread is None or not listener_thread.is_alive():
+                        listener_threads[ac.id] = start_listener_thread(
+                            ac.id,
+                            listener_stop_event,
+                        )
+                        # self.stdout.write(
+                        #     self.style.SUCCESS(
+                        #         f"{ac.name}: live log listener started"
+                        #     )
+                        # )
+
                     api = connections.get(ac.id)
+
                     if api is None:
-                        self.stdout.write(f"\nConnecting to {ac.name}...")
+                        # self.stdout.write(f"\nConnecting to {ac.name}...")
                         password = decrypt_password(ac.encrypted_password)
                         api = connect(username=ac.username, password=password, host=ac.ip_address, port=8728)
                         connections[ac.id] = api
 
-                        self.stdout.write(self.style.SUCCESS(f"{ac.name}: connected"))
+                        # self.stdout.write(self.style.SUCCESS(f"{ac.name}: connected"))
                     else:
                         self.stdout.write(f"\nCollecting {ac.name}...")
 
@@ -205,12 +235,12 @@ class Command(BaseCommand):
                     active_counts[str(ac.id)] = active_count
 
                     active_lookup = build_active_lookup(active_users)
+                    update_active_lookup(ac.id, active_lookup)
                     logs = list(api("/log/print"))
                     saved_count = save_new_raw_logs(ac, logs)
 
                     traffic_saved = collect_pppoe_traffic(api, ac, active_users,)
-                    self.stdout.write(self.style.SUCCESS(f"{ac.name}: "f"{traffic_saved} traffic samples saved"))
-                    active_lookup = build_active_lookup(active_users)
+                    # self.stdout.write(self.style.SUCCESS(f"{ac.name}: "f"{traffic_saved} traffic samples saved"))
 
                     if saved_count > 0:
                         self.stdout.write(self.style.SUCCESS(
@@ -249,8 +279,22 @@ class Command(BaseCommand):
                             )
 
             broadcast_active_counts(active_counts)
+            try:
+                locations = get_location_summary()
+
+                # Convert the summary to JSON-safe primitive values.
+                broadcast_location_summary(locations)
+
+                # self.stdout.write(self.style.SUCCESS(
+                #     f"Broadcast location summary: {len(locations)} locations"
+                # ))
+
+            except Exception as e:
+                self.stdout.write(self.style.ERROR(
+                    f"Location summary broadcast failed: {e}"
+                ))
+
             self.stdout.write("\nWaiting 30 seconds...")
-            
             time.sleep(30)
 
 def collect_pppoe_traffic(api, ac, active_users):
@@ -335,10 +379,11 @@ def collect_pppoe_traffic(api, ac, active_users):
 
             saved_count += 1
 
-        except Exception as e:
-            print(
-                f"{ac.name}: traffic error for "
-                f"{username}: {e}"
+        except Exception:
+            logger.exception(
+                "%s: traffic collection failed for %s",
+                ac.name,
+                username,
             )
 
     return saved_count

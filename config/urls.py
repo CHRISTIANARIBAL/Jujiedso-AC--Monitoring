@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path, include
 from monitor.views import *
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,4 +19,12 @@ urlpatterns = [
     path("client-traffic/", client_traffic, name="client_traffic"),
     path("client-traffic-history/", client_traffic_history, name="client_traffic_history"),
     path('onu/', include('onu_monitor.urls')),
+    path("api/location-summary/", location_summary_api, name="location_summary_api"),
+    path("profile/", profile_view, name="profile"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(
+        settings.MEDIA_URL,
+        document_root=settings.MEDIA_ROOT,
+    )
