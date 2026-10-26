@@ -21,6 +21,10 @@
             <div class="flex items-center justify-between"><div>
             <p class="text-xs font-medium text-gray-500">Total Active PPPoE Users</p>
             <p id="total-active-users" class="mt-1 text-3xl font-bold text-gray-900">{{ total_active_users }}</p>
+            <p id="total-active-comparison"
+            class="mt-1 text-xs text-gray-500">
+                Previous: --
+            </p>
         </div>
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-lg">👥</div>
         </div>
@@ -33,7 +37,7 @@
             <div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm transition hover:shadow-md">
                 <div class="flex items-center justify-between"><div>
                 <p class="text-base font-semibold text-gray-900">{{ item.ac.name }}</p>
-                <p class="text-[11px] text-gray-500">{{ item.ac.ip_address }}</p>
+
             </div>
             <div class="flex items-center gap-1.5 rounded-full bg-green-50 px-2 py-1 text-[10px] font-medium text-green-700">
                 <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>Enabled
@@ -41,12 +45,17 @@
             </div>
                 <div class="mt-3">
                     <p id="ac-count-{{ item.ac.id }}" class="text-2xl font-bold text-gray-900">{{ item.active_users }}</p>
+                    <p id="ac-comparison-{{ item.ac.id }}"
+                        class="mt-1 text-xs text-gray-500">
+                            Previous: --
+                        </p>
                     <p class="text-[11px] text-gray-500">Active PPPoE users</p>
                 </div>
             </div>
         {% endfor %}
     </div>
     <div>
+
         <div class="mb-2">
             <h2 class="text-lg font-semibold text-gray-900">Realtime AC Logs</h2>
             <p class="text-xs text-gray-500">Latest PPPoE events from all Access Concentrators</p>
@@ -96,6 +105,166 @@
             </div>
         {% endfor %}
     </div>
+
+
+
+<!-- Barangay Outage Watchlist -->
+<section
+    id="barangay-outage-section"
+    class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
+>
+    <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+            <h2 class="text-lg font-semibold text-red-700">
+                Barangays Requiring Attention
+            </h2>
+            <p class="text-xs text-gray-500">
+                Automatically detected from disconnected PPPoE clients
+            </p>
+        </div>
+
+        <span
+            id="barangay-outage-count"
+            class="w-fit rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-red-700"
+        >
+            0 affected
+        </span>
+    </div>
+
+    <div
+        id="barangay-outage-list"
+        class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"
+    ></div>
+</section>
+
+
+<!-- Barangay Connection Status -->
+<section class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+            <h2 class="text-lg font-semibold text-gray-900">
+                Barangay Connection Status
+            </h2>
+            <p class="text-xs text-gray-500">
+                Automatically detected from PPPoE usernames
+            </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 text-sm">
+            <span class="text-gray-500">
+                Locations: <strong id="location-total">0</strong>
+            </span>
+            <span class="text-green-700">
+                Online: <strong id="location-online-total">0</strong>
+            </span>
+            <button type="button" id="location-down-button" class="text-red-700 hover:underline cursor-pointer">
+                Down:
+                <strong id="location-down-total">0</strong>
+            </button>
+        </div>
+    </div>
+
+
+
+<div
+    id="location-status-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4 py-6"
+>
+    <div class="w-full max-w-3xl overflow-hidden rounded-xl bg-white shadow-xl">
+        <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
+            <div>
+                <h3 id="location-status-modal-title"
+                    class="text-lg font-semibold text-gray-900">
+                    Down Clients
+                </h3>
+                <p id="location-status-modal-subtitle"
+                   class="text-xs text-gray-500">
+                    Clients currently offline
+                </p>
+            </div>
+
+            <button
+                id="close-location-status-modal"
+                type="button"
+                class="rounded-lg px-3 py-1 text-xl text-gray-500 hover:bg-gray-100"
+                aria-label="Close"
+            >&times;</button>
+        </div>
+
+        <div class="border-b border-gray-100 p-4">
+            <input
+                id="location-status-modal-search"
+                type="search"
+                placeholder="Search username, MAC, or location..."
+                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+            >
+        </div>
+
+        <div
+            id="location-status-modal-list"
+            class="max-h-[60vh] overflow-y-auto px-5 py-2"
+        ></div>
+    </div>
+</div>
+
+
+    <div class="mt-4">
+        <input
+            id="location-search"
+            type="search"
+            placeholder="Search barangay or location..."
+            class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+        >
+    </div>
+
+    <div
+        id="location-status-message"
+        class="py-6 text-center text-sm text-gray-500"
+        role="status"
+    >
+        Loading location statistics...
+    </div>
+
+    <div id="location-cards" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+
+<div class="mt-4 flex justify-center">
+    <button id="toggle-location-cards" type="button" class="hidden rounded-lg border border-gray-300 bg-white px-5 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50" aria-expanded="false">
+        Show More Locations
+    </button>
+</div>
+
+</section>
+
+<!-- Clients belonging to a selected location -->
+<div
+    id="location-clients-modal"
+    class="fixed inset-0 z-40 hidden items-center justify-center bg-black/40 px-4 py-6"
+>
+    <div class="w-full max-w-3xl overflow-hidden rounded-xl bg-white shadow-xl">
+        <div class="flex items-center justify-between border-b border-gray-200 px-4 py-3">
+            <div>
+                <h3 id="location-clients-title" class="font-semibold text-gray-900">
+                    Location Clients
+                </h3>
+                <p id="location-clients-subtitle" class="text-xs text-gray-500"></p>
+            </div>
+
+            <button
+                id="close-location-clients"
+                type="button"
+                class="rounded-lg px-3 py-1 text-xl text-gray-500 hover:bg-gray-100"
+                aria-label="Close"
+            >&times;</button>
+        </div>
+
+        <div id="location-clients-list" class="max-h-[65vh] overflow-y-auto p-4"></div>
+    </div>
+</div>
+
+
+
+
+
 </div>
 
 <div id="client-search-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
@@ -123,7 +292,9 @@
     ];
 </script>
 
+<script src="{% static 'js/modal_navigation.js' %}"></script>
 <script src="{% static 'js/client_modal.js' %}"></script>
+<script src="{% static 'js/location_status.js' %}"></script>
 <script src="{% static 'js/client_search.js' %}"></script>
 <script src="{% static 'js/websocket.js' %}"></script>
 <script src="{% static 'js/dashboard.js' %}"></script>

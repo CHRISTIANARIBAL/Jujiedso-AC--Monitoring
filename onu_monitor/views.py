@@ -4,11 +4,11 @@ import json
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.http import require_GET, require_POST
-from django.views.decorators.csrf import csrf_exempt
 from .config import OLTS
 from .services import run_vsol, run_bdcom
+from django.views.decorators.csrf import ensure_csrf_cookie
 
-
+@ensure_csrf_cookie
 def index(request):
     return render(request, "onu_monitor/index.html")
 
@@ -25,11 +25,8 @@ def get_olts(request):
 
     return JsonResponse(result)
 
-
-@csrf_exempt
 @require_POST
 async def lookup(request):
-    print("DEBUG: ONU LOOKUP VIEW STARTED", flush=True)
     try:
         data = json.loads(request.body)
     except json.JSONDecodeError:
@@ -83,7 +80,6 @@ async def lookup(request):
     olt = OLTS[olt_name]
 
     try:
-        print("DEBUG: CALLING OLT SERVICE", flush=True)
 
         if olt["brand"] == "VSOL":
             result = await run_vsol(
@@ -110,8 +106,6 @@ async def lookup(request):
                 "success": False,
                 "error": "Unsupported OLT brand."
             }, status=400)
-
-        print("DEBUG: OLT SERVICE RETURNED", flush=True)
 
         return JsonResponse(result)
 

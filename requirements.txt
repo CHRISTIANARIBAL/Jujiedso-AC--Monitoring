@@ -19,6 +19,9 @@ jinxed==2.1.0
 librouteros==4.1.1
 msgpack==1.2.1
 packaging==26.3
+psycopg==3.3.6
+psycopg2==2.9.13
+psycopg2-binary==2.9.13
 pycparser==3.0
 pyOpenSSL==26.4.0
 redis==8.1.0
@@ -32,3 +35,7 @@ tzdata==2026.3
 ujson==5.13.0
 wcwidth==0.8.2
 zope.interface==8.5
+
+python-dotenv==1.2.4
+whitenoise>=6.9,<7.0
+Pillow>=10.0.0
