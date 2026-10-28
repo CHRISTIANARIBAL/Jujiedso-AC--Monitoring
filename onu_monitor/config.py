@@ -2,7 +2,7 @@
 OLTS = {
     "CALU-OLT1": {
         "ip": "10.99.2.11",
-        "brand": "VSOL",
+        "brand": "BDCOM",
     },
     "CALU-OLT2": {
         "ip": "10.99.2.22",
