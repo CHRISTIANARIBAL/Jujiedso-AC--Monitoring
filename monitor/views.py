@@ -856,3 +856,10 @@ def profile_view(request):
         "monitor/profile.html",
         {"profile": profile},
     )
+
+@login_required
+def barangay_monitor(request):
+    return render(
+        request,
+        "monitor/barangay_monitor.html"
+    )

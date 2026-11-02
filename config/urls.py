@@ -21,6 +21,7 @@ urlpatterns = [
     path('onu/', include('onu_monitor.urls')),
     path("api/location-summary/", location_summary_api, name="location_summary_api"),
     path("profile/", profile_view, name="profile"),
+    path("down-up-barangay/", barangay_monitor, name="barangay_monitor"),
 ]
 
 if settings.DEBUG:
