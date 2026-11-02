@@ -1,0 +1,59 @@
+
+{% extends "monitor/base.html" %}
+{% load static %}
+{% block title %}Down/Up Barangay | PPPoE Monitor{% endblock %}
+{% block page_title %}Down/Up Barangay{% endblock %}
+{% block content %}
+<div class="space-y-4">
+    <!-- PAGE HEADER -->
+    <div class="px-1">
+        <h1 class="text-xl font-bold text-gray-900 sm:text-2xl">Barangays Requiring Attention</h1>
+        <p class="mt-1 text-xs text-gray-500 sm:text-sm">Automatically detected from disconnected PPPoE clients</p>
+    </div>
+    <!-- BARANGAY OUTAGE WATCHLIST -->
+    <section class="rounded-xl border border-gray-200 bg-white p-3 shadow-sm sm:p-5">
+        
+    <div class="mb-4 flex flex-wrap items-center justify-between gap-3 sm:mb-5">
+        <div class="min-w-0">
+            <h2 class="text-base font-semibold text-red-700 sm:text-lg">Barangays Requiring Attention</h2>
+            <p class="mt-1 text-xs text-gray-500">Live barangay outage monitoring</p>
+        </div>
+        <div class="flex shrink-0 items-center gap-2">
+            <button id="barangay-sound-toggle" type="button" aria-pressed="false" class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-xs font-semibold text-gray-700 transition hover:bg-gray-50">
+                <span id="barangay-sound-icon">🔇</span>
+                <span id="barangay-sound-label">Enable Sound</span>
+            </button>
+            <span id="barangay-outage-count" class="rounded-full bg-red-100 px-3 py-1 text-xs font-semibold text-red-700 sm:text-sm">Loading...</span>
+        </div>
+    </div>
+
+        <div id="barangay-outage-list" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <div id="barangay-loading" class="py-8 text-center text-sm text-gray-500">Loading barangay statistics...</div>
+    </section>
+</div>
+<!-- DOWN CLIENTS MODAL -->
+<div id="barangay-clients-modal" class="fixed inset-0 z-[90] hidden items-center justify-center overflow-hidden bg-black/50 p-2 sm:p-4">
+    <div class="flex max-h-[calc(100dvh-1rem)] w-full max-w-3xl flex-col overflow-hidden rounded-xl bg-white shadow-xl sm:max-h-[calc(100dvh-2rem)] sm:rounded-2xl">
+        <!-- MODAL HEADER -->
+        <div class="flex shrink-0 items-center gap-3 border-b border-gray-200 px-3 py-3 sm:px-5">
+            <div class="min-w-0 flex-1">
+                <h3 id="barangay-clients-title" class="break-words text-base font-semibold text-gray-900 sm:text-lg">Down Clients</h3>
+                <p id="barangay-clients-subtitle" class="mt-1 text-xs text-gray-500"></p>
+            </div>
+            <button id="close-barangay-clients" type="button" aria-label="Close down clients" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-xl text-gray-500 hover:bg-gray-100">&times;</button>
+        </div>
+        <!-- SEARCH -->
+        <div class="shrink-0 border-b border-gray-100 p-3 sm:p-4">
+            <input id="barangay-client-search" type="search" placeholder="Search username or MAC..." class="w-full min-w-0 rounded-lg border border-gray-300 px-3 py-2.5 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100">
+        </div>
+        <!-- CLIENT LIST -->
+        <div id="barangay-clients-list" class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-2 sm:px-5"></div>
+    </div>
+</div>
+
+{% include "monitor/client_modal.html" %}
+<audio id="barangay-alert-audio" src="{% static 'sounds/alert.mp3' %}" preload="auto"></audio>
+<script src="{% static 'js/modal_navigation.js' %}"></script>
+<script src="{% static 'js/client_modal.js' %}"></script>
+<script src="{% static 'js/barangay_status.js' %}"></script>
+{% endblock %}

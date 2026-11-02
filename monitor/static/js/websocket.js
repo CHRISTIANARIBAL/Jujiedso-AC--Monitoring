@@ -10,10 +10,10 @@ socket.onmessage = (event) => {
     const data = JSON.parse(event.data);
     console.log("SERVER:", data);
 
+
 if (data.type === "active_counts") {
     const counts = data.counts || {};
     let total = 0;
-
     let savedCounts = {};
 
     try {
@@ -24,7 +24,7 @@ if (data.type === "active_counts") {
         console.warn("Could not read previous counts:", error);
     }
 
-    const currentCounts = {};
+    const nextSavedCounts = { ...savedCounts };
 
     function updateComparison(elementId, key, current) {
         const element = document.getElementById(elementId);
@@ -35,10 +35,12 @@ if (data.type === "active_counts") {
         if (previous === undefined || !Number.isFinite(Number(previous))) {
             element.textContent = "Previous: --";
             element.className = "mt-1 text-xs text-gray-500";
+            nextSavedCounts[key] = current;
             return;
         }
 
-        const difference = current - Number(previous);
+        const previousCount = Number(previous);
+        const difference = current - previousCount;
 
         let change = "No change";
         let color = "text-gray-500";
@@ -49,17 +51,20 @@ if (data.type === "active_counts") {
         } else if (difference < 0) {
             change = `↓ ${Math.abs(difference)}`;
             color = "text-red-600";
+
+            // Update previous count only when reduction is greater than 8
+            if (Math.abs(difference) > 8) {
+                nextSavedCounts[key] = current;
+            }
         }
 
-        element.textContent = `Previous: ${previous} · ${change}`;
+        element.textContent = `Previous: ${previousCount} · ${change}`;
         element.className = `mt-1 text-xs font-medium ${color}`;
     }
 
     Object.entries(counts).forEach(([acId, count]) => {
         const number = Number(count) || 0;
         total += number;
-
-        currentCounts[`ac:${acId}`] = number;
 
         const acCount = document.getElementById(`ac-count-${acId}`);
         const panelCount = document.getElementById(`panel-count-${acId}`);
@@ -87,16 +92,11 @@ if (data.type === "active_counts") {
 
     updateComparison("total-active-comparison", "total", total);
 
-    // Save current values only after comparisons are calculated.
-    currentCounts.total = total;
-
+    // Save only initialized or qualifying updated baselines
     try {
         localStorage.setItem(
             "pppoe-monitor-last-counts-v1",
-            JSON.stringify({
-                ...savedCounts,
-                ...currentCounts
-            })
+            JSON.stringify(nextSavedCounts)
         );
     } catch (error) {
         console.warn("Could not save previous counts:", error);
@@ -104,6 +104,7 @@ if (data.type === "active_counts") {
 
     return;
 }
+
 
     if (data.type === "location_summary") {
         if (typeof window.updateLocationSummary === "function") {
