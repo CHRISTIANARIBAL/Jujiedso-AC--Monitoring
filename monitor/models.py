@@ -120,3 +120,33 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f"{self.user.username}'s profile"
+
+
+class PPPoEClientPlanMemory(models.Model):
+    username = models.CharField(max_length=100)
+    ac = models.ForeignKey(
+        AccessConcentrator,
+        on_delete=models.CASCADE,
+        related_name="client_plan_memories",
+    )
+
+    plan_name = models.CharField(max_length=50)
+    plan_version = models.CharField(
+        max_length=10,
+        null=True,
+        blank=True,
+    )
+    bandwidth_mbps = models.PositiveIntegerField(default=0)
+
+    last_detected_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["username", "ac"],
+                name="unique_pppoe_client_plan_memory",
+            )
+        ]
+
+    def __str__(self):
+        return f"{self.username} - {self.plan_name}"

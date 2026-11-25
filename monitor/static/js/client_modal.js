@@ -363,6 +363,15 @@ async function loadClientInfo(params) {
             throw new Error(`HTTP ${response.status}`);
         }
         const data = await response.json();
+        console.log("CLIENT INFO RESPONSE:", data);
+
+        console.log("PLAN MEMORY DEBUG:", {
+            plan: data.plan,
+            last_plan: data.last_plan,
+            last_plan_version: data.last_plan_version,
+            last_bandwidth_mbps: data.last_bandwidth_mbps,
+            active_ac: data.active_ac
+        });
         if (!data.found) {
             showModalError(data.message || "Client not found.");
             setModalText("modal-username", "Not found");
@@ -379,8 +388,29 @@ async function loadClientInfo(params) {
         setModalText("modal-mac", data.mac || "No MAC");
         setModalText("modal-ip", data.ip || "No IP");
         setModalText("modal-status", isActive ? "ACTIVE" : "OFFLINE");
-        const planLabel = data.bandwidth_mbps ? `${data.plan} — ${data.bandwidth_mbps} Mbps` : (data.plan || "Unknown plan");
+        const planName = data.plan || "Unknown plan";
+        const planVersion = data.version ? ` (${data.version})` : "";
+
+        let planLabel;
+
+        if (data.plan === "Disconnected" && data.last_plan) {
+            const lastVersion = data.last_plan_version
+                ? ` (${data.last_plan_version})`
+                : "";
+
+            const lastBandwidth = data.last_bandwidth_mbps
+                ? ` — ${data.last_bandwidth_mbps} Mbps`
+                : "";
+
+            planLabel = `Disconnected — Last Plan: ${data.last_plan}${lastVersion}${lastBandwidth}`;
+        } else {
+            planLabel = data.bandwidth_mbps
+                ? `${planName}${planVersion} — ${data.bandwidth_mbps} Mbps`
+                : `${planName}${planVersion}`;
+        }
+
         setModalText("modal-plan", planLabel);
+        setModalText("modal-plan-version", planVersion || "—");
         setModalText("modal-active-ac", data.active_ac || "Currently offline");
         setModalText(
             "modal-olt",

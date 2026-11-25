@@ -15,6 +15,7 @@ from monitor.models import AccessConcentrator
 from librouteros.query import Key
 from monitor.log_collector import IGNORED_USERS, IGNORED_MACS
 from monitor.location_detection import get_location_summary
+from collections import defaultdict
 
 RAW_LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
     "management",
@@ -207,10 +208,10 @@ def client_info(request):
             .first()
         )
 
-        plan_data = get_client_plan(
-            username,
-            session.ac if session and session.active else client.ac,
-        )
+        # plan_data = get_client_plan(
+        #     username,
+        #     session.ac if session and session.active else client.ac,
+        # )
 
         login_event = (
             PPPoEEvent.objects
@@ -261,7 +262,7 @@ def client_info(request):
                 duration_seconds = 0
 
         connection_history = build_connection_history(username, mac)
-        plan_data = get_client_plan(
+        plan_data = get_client_plan_with_memory(
             username,
             session.ac if session and session.active else client.ac,
         )
@@ -271,8 +272,14 @@ def client_info(request):
             "mac": mac or "No MAC",
 
             "plan": plan_data["plan"],
+            "version": plan_data.get("version"),
             "max_limit": plan_data["max_limit"],
             "bandwidth_mbps": plan_data["bandwidth_mbps"],
+
+            "version": plan_data.get("version"),
+            "last_plan": plan_data.get("last_plan"),
+            "last_plan_version": plan_data.get("last_plan_version"),
+            "last_bandwidth_mbps": plan_data.get("last_bandwidth_mbps"),
 
             # New generic connection fields
             "connection_type": client.connection_type,
@@ -416,7 +423,7 @@ def client_info(request):
 
     connection_history = build_connection_history(username, mac)
 
-    plan_data = get_client_plan(
+    plan_data = get_client_plan_with_memory(
         username,
         session.ac if session and session.active else (
             active_ac or (client.ac if client else None)
@@ -438,9 +445,9 @@ def client_info(request):
         "active_ac": active_ac.name if active_ac else None,
 
         "plan": plan_data["plan"],
+        "version": plan_data.get("version"),
         "max_limit": plan_data["max_limit"],
         "bandwidth_mbps": plan_data["bandwidth_mbps"],
-
         # Generic connection information
         "connection_type": client.connection_type if client else None,
         "connection_name": client.connection_name if client else None,
@@ -745,9 +752,80 @@ def client_traffic(request):
             except Exception:
                 pass
 
+def identify_v2_plan(max_limit, burst_threshold, burst_limit):
+    """
+    Identify verified V2 plans using actual MikroTik queue configurations.
+    Returns None if the configuration does not match a verified V2 plan.
+    """
+
+    def normalize_rate(value):
+        value = str(value or "").strip().lower().replace(" ", "")
+
+        multiplier = 1
+
+        if value.endswith("k"):
+            multiplier = 1_000
+            value = value[:-1]
+        elif value.endswith("m"):
+            multiplier = 1_000_000
+            value = value[:-1]
+        elif value.endswith("g"):
+            multiplier = 1_000_000_000
+            value = value[:-1]
+
+        return int(round(float(value) * multiplier))
+
+    def parse_symmetric_rate(value):
+        parts = str(value or "").split("/")
+
+        if len(parts) != 2:
+            return None
+
+        upload = normalize_rate(parts[0])
+        download = normalize_rate(parts[1])
+
+        if upload != download:
+            return None
+
+        return upload
+
+    committed = parse_symmetric_rate(max_limit)
+    threshold = parse_symmetric_rate(burst_threshold)
+    burst = parse_symmetric_rate(burst_limit)
+
+    if None in (committed, threshold, burst):
+        return None
+
+    v2_plans = {
+        (10_240_000, 75_000_000, 97_280_000):
+            {"plan": "Sparrow V2", "bandwidth_mbps": 10},
+
+        (20_480_000, 95_000_000, 206_800_000):
+            {"plan": "Falcon V2", "bandwidth_mbps": 20},
+
+        (30_720_000, 230_000_000, 409_600_000):
+            {"plan": "Hawk V2", "bandwidth_mbps": 30},
+
+        (51_200_000, 280_000_000, 512_000_000):
+            {"plan": "Phoenix V2", "bandwidth_mbps": 50},
+        
+        (61_440_000, 203_600_000, 317_200_000): {
+            "plan": "Eagle", "bandwidth_mbps": 60},
+    }
+
+    return v2_plans.get((committed, threshold, burst))
 
 def get_client_plan(username, ac):
-    """Read a PPPoE client's Simple Queue and map its max-limit to a plan."""
+    """
+    Identify a PPPoE client's plan.
+
+    Priority:
+    1. Disconnected detection
+    2. Verified V2 configurations
+    3. Original V1 max-limit mapping
+    4. Unknown plan
+    """
+
     if not username or not ac:
         return {
             "plan": "Unknown plan",
@@ -757,8 +835,118 @@ def get_client_plan(username, ac):
 
     api = None
 
+    def normalize_rate(value):
+        """Convert RouterOS rate values to bits per second."""
+        value = str(value).strip().lower().replace(" ", "")
+
+        multiplier = 1
+
+        if value.endswith("k"):
+            multiplier = 1_000
+            value = value[:-1]
+        elif value.endswith("m"):
+            multiplier = 1_000_000
+            value = value[:-1]
+        elif value.endswith("g"):
+            multiplier = 1_000_000_000
+            value = value[:-1]
+
+        return int(round(float(value) * multiplier))
+
+
+    def parse_rate_pair(value):
+        parts = str(value or "").split("/")
+
+        if len(parts) != 2:
+            return None
+
+        upload = normalize_rate(parts[0])
+        download = normalize_rate(parts[1])
+
+        return upload, download
+
+
+    def discover_queue_configurations(ac):
+        api = None
+        discovered = defaultdict(list)
+
+        try:
+            password = decrypt_password(ac.encrypted_password)
+
+            api = connect(
+                username=ac.username,
+                password=password,
+                host=ac.ip_address,
+                port=8728,
+            )
+
+            queues = list(
+                api.path("/queue/simple").select(
+                    Key("name"),
+                    Key("max-limit"),
+                    Key("burst-threshold"),
+                    Key("burst-limit"),
+                )
+            )
+
+            for queue in queues:
+                name = queue.get("name", "")
+
+                # Only inspect PPPoE client queues.
+                if not name.startswith("<pppoe-"):
+                    continue
+
+                committed = parse_rate_pair(
+                    queue.get("max-limit")
+                )
+                threshold = parse_rate_pair(
+                    queue.get("burst-threshold")
+                )
+                burst = parse_rate_pair(
+                    queue.get("burst-limit")
+                )
+
+                if not committed or not threshold or not burst:
+                    continue
+
+                # Keep asymmetric configurations visible too.
+                config = (committed, threshold, burst)
+
+                discovered[config].append(name)
+
+            return discovered
+
+        finally:
+            if api is not None:
+                try:
+                    api.close()
+                except Exception:
+                    pass
+
+    def parse_queue_rate(value):
+        """Read a symmetric upload/download rate pair."""
+        if not value:
+            return None
+
+        parts = str(value).strip().split("/")
+
+        if len(parts) != 2:
+            return None
+
+        upload = normalize_rate(parts[0])
+        download = normalize_rate(parts[1])
+
+        if upload is None or download is None:
+            return None
+
+        if upload != download:
+            return None
+
+        return upload
+
     try:
         password = decrypt_password(ac.encrypted_password)
+
         api = connect(
             username=ac.username,
             password=password,
@@ -767,18 +955,84 @@ def get_client_plan(username, ac):
         )
 
         queue_name = f"<pppoe-{username}>"
-        queues = list(api.path("/queue/simple").select(Key("name"), Key("max-limit")).where(Key("name") == queue_name))
+
+        queues = list(
+            api.path("/queue/simple")
+            .select(
+                Key("name"),
+                Key("max-limit"),
+                Key("burst-threshold"),
+                Key("burst-limit"),
+            )
+            .where(Key("name") == queue_name)
+        )
 
         if not queues:
+            # Check whether the PPPoE client is currently active.
+            active_sessions = list(
+                api.path("/ppp/active")
+                .select(
+                    Key("name"),
+                )
+                .where(Key("name") == username)
+            )
+
+            if not active_sessions:
+                return {
+                    "plan": "Disconnected",
+                    "max_limit": None,
+                    "bandwidth_mbps": None,
+                }
+
             return {
                 "plan": "Unknown plan",
                 "max_limit": None,
                 "bandwidth_mbps": None,
             }
 
-        max_limit = queues[0].get("max-limit", "")
+        queue = queues[0]
+
+        max_limit = queue.get("max-limit", "")
+        burst_threshold = queue.get("burst-threshold", "")
+        burst_limit = queue.get("burst-limit", "")
+
         normalized = str(max_limit).replace(" ", "").lower()
-        if normalized in ("1000/1000", "1k/1k"): return {"plan": "Disconnected", "max_limit": max_limit, "bandwidth_mbps": None}
+
+        # -------------------------------------------------
+        # 1. ORIGINAL DISCONNECTED DETECTION - PRESERVED
+        # -------------------------------------------------
+        if normalized in ("1000/1000", "1k/1k"):
+            return {
+                "plan": "Disconnected",
+                "max_limit": max_limit,
+                "bandwidth_mbps": None,
+            }
+
+        # -------------------------------------------------
+        # 2. VERIFIED V2 CONFIGURATIONS
+        # Uses the separate V2 identification function.
+        # -------------------------------------------------
+
+        v2_info = identify_v2_plan(
+            max_limit,
+            burst_threshold,
+            burst_limit,
+        )
+
+        if v2_info:
+            return {
+                "plan": v2_info["plan"],
+                "max_limit": max_limit,
+                "bandwidth_mbps": v2_info["bandwidth_mbps"],
+                "version": "V2",
+                "burst_threshold": burst_threshold,
+                "burst_limit": burst_limit,
+            }
+
+        # -------------------------------------------------
+        # 3. ORIGINAL V1 LOGIC - PRESERVED
+        # Do not change these original mappings.
+        # -------------------------------------------------
 
         plans = {
             "10240k/10240k": ("Sparrow", 10),
@@ -807,10 +1061,14 @@ def get_client_plan(username, ac):
             "plan": plan_info[0],
             "max_limit": max_limit,
             "bandwidth_mbps": plan_info[1],
+            "version": "V1",
+            "burst_threshold": burst_threshold,
+            "burst_limit": burst_limit,
         }
 
-    except Exception:
-        # A plan lookup failure should not break the client modal.
+    except Exception as exc:
+        print(f"Plan lookup error for {username}: {exc}")
+
         return {
             "plan": "Unavailable",
             "max_limit": None,
@@ -824,6 +1082,54 @@ def get_client_plan(username, ac):
             except Exception:
                 pass
 
+
+def get_client_plan_with_memory(username, ac):
+    """
+    Detect the live plan and remember it.
+    If disconnected, retrieve the last successfully detected plan.
+    """
+
+    plan_data = get_client_plan(username, ac)
+
+    # Do not save disconnected, unknown, or unavailable results.
+    if plan_data["plan"] not in (
+        "Disconnected",
+        "Unknown plan",
+        "Unavailable",
+    ):
+        if username and ac:
+            PPPoEClientPlanMemory.objects.update_or_create(
+                username=username,
+                ac=ac,
+                defaults={
+                    "plan_name": plan_data["plan"],
+                    "plan_version": plan_data.get("version") or "",
+                    "bandwidth_mbps": plan_data.get("bandwidth_mbps") or 0,
+                },
+            )
+
+        plan_data["last_plan"] = None
+        plan_data["last_plan_version"] = None
+        plan_data["last_bandwidth_mbps"] = None
+        return plan_data
+
+    # Retrieve previously remembered plan for disconnected clients.
+    if plan_data["plan"] in ("Disconnected", "Unknown plan") and username and ac:
+        remembered = PPPoEClientPlanMemory.objects.filter(
+            username=username,
+            ac=ac,
+        ).first()
+
+        if remembered:
+            plan_data["last_plan"] = remembered.plan_name
+            plan_data["last_plan_version"] = remembered.plan_version
+            plan_data["last_bandwidth_mbps"] = remembered.bandwidth_mbps
+        else:
+            plan_data["last_plan"] = None
+            plan_data["last_plan_version"] = None
+            plan_data["last_bandwidth_mbps"] = None
+
+    return plan_data
 
 @login_required
 def location_summary_api(request):
